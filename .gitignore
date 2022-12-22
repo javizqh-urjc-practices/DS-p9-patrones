@@ -39,6 +39,7 @@ build/*
 
 # Visual Studio settings
 .vscode/*
+TODO
 
 # Residual files
 terminalSize.txt
