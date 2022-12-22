@@ -13,6 +13,7 @@
 #include <chrono>
 #include <ctime>
 #include <ostream>
+#include "UserConfig.h"
 #ifndef USER_H
 #define	USER_H
 
@@ -27,6 +28,7 @@ public:
   * @param name 
   */
   User(std::string number = "00000",std::string nif = "00000000",std::string name = "default");
+  User(UserConfig UserConfig, std::string number = "00000",std::string nif = "00000000",std::string name = "default");
   ~User();
   bool isSameNIF(std::string NIF);
   bool isSameEmployeeNumber(std::string NIF);
@@ -70,12 +72,17 @@ public:
   * @param employeeNumber 
   */
   void setEmployeeNumber(std::string);
+
+  void setConfig(UserConfig newConfig) {userConfiguration = newConfig;};
+  UserConfig getConfiguration(){ return userConfiguration;};
+  
 protected:
   char name [21];
   char NIF [9]; /* 8 digits */
   char employeeNumber [6]; /* 5 digits */
   char lastLogTime [25];
   bool adminPermission;
+  UserConfig userConfiguration;
 
 };
 

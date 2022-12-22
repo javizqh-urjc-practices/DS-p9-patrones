@@ -23,8 +23,8 @@ MenuBar * MenuBar::Create(const std::string type){
   }
 }
 
-void MenuBar::setUserName(std::string userName){
-  this->userName = userName;
+void MenuBar::setUser(User user){
+  this->user = user;
 }
 
 void MenuBar::setCurrentMenu(std::string currentMenu){

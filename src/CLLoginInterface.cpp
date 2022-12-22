@@ -13,12 +13,14 @@
 CLLoginInterface::CLLoginInterface(){}
 
 void CLLoginInterface::showWelcomeMessage(){
+  std::cout << "\u001b[0m"; // No color
+  system("clear");
   std::cout << "\u001b[2J\u001b[0;0H";
-  printCenterFromFile("config/CLIWelcomeMessage.ascii", "green");
+  printCenterFromFile("config/CLIWelcomeMessage.ascii", {0,255,0},{0,0,0});
   std::cout << "\n\n\n";
-  printCenter("Enter your employee number: ",5);
+  printCenter("Enter your employee number: ",{255,255,255},{0,0,0},5);
   std::cout << "\n\n\n";
-  printCenter("Enter your NIF: ",8);
+  printCenter("Enter your NIF: ",{255,255,255},{0,0,0},8);
   std::cout << "\u001b[s";
 }
 

@@ -23,6 +23,17 @@ User::User(std::string employeeNumber, std::string NIF, std::string name){
   this->setNIF(NIF);
   this->addTimestamp();
   this->adminPermission = false;
+  UserConfig config;
+  this->setConfig( config);
+}
+
+User::User(UserConfig config, std::string employeeNumber, std::string NIF, std::string name){
+  this->setName(name);
+  this->setEmployeeNumber(employeeNumber);
+  this->setNIF(NIF);
+  this->addTimestamp();
+  this->adminPermission = false;
+  this->setConfig(config);
 }
 
 bool User::operator<(const User& user) const {

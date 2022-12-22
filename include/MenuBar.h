@@ -10,6 +10,7 @@
  */
 
 #include <string>
+#include "Admin.h"
 
 #ifndef MENUBAR_H
 #define	MENUBAR_H
@@ -26,12 +27,7 @@ class MenuBar{
     MenuBar(); /* basic constructor */
     virtual ~MenuBar();
     virtual void show() = 0;
-    /**
-    * @brief Sets the user name 
-    * 
-    * @param userName 
-    */
-    void setUserName(std::string userName);
+    void setUser(User user);
     /**
     * @brief Sets the current menu
     * 
@@ -39,7 +35,7 @@ class MenuBar{
     */
     void setCurrentMenu(std::string currentMenu);
   protected:
-    std::string userName;
+    User user;
     std::string currentMenu;
 };
 

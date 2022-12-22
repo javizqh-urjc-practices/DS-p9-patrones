@@ -58,7 +58,7 @@ int getTerminalHeight(){
   return terminalHeight;
 }
 
-void printCenterFromFile(std::string fileName, std::string color){
+void printCenterFromFile(std::string fileName, std::array<int,3> frontColor, std::array<int,3> backColor){
   std::ifstream configFile;
   configFile.open(fileName);
   std::string line;
@@ -66,7 +66,7 @@ void printCenterFromFile(std::string fileName, std::string color){
     while ( configFile ) { // equivalent to myfile.good()
     std::getline (configFile, line);
     std::cout << std::setw((terminalWidth-line.size())/2);
-    printColor(line,color);
+    printColor(line,frontColor,backColor);
     std::cout << "\n";
     }
   }
@@ -75,58 +75,30 @@ void printCenterFromFile(std::string fileName, std::string color){
   }
 };
 
-void printCenter(const std::string toPrint, const int padding){
+
+void printCenter(const std::string toPrint, std::array<int,3> frontColor, std::array<int,3> backColor, const int padding){
   std::cout << "\u001b[" <<terminalWidth <<"D";
   std::cout << "\u001b[" << (terminalWidth-toPrint.size()-padding)/2 << "C";
-  std::cout << toPrint;
+  printColor(toPrint,frontColor,backColor);
 }
 
-void printCenter(const std::string toPrint, const std::string color, const int padding){
-  std::cout << "\u001b[" <<terminalWidth <<"D";
-  std::cout << "\u001b[" << (terminalWidth-toPrint.size()-padding)/2 << "C";
-  printColor(toPrint,color);
-}
 
-void printRight(const std::string toPrint, const int padding){
+void printRight(const std::string toPrint, std::array<int,3> frontColor, std::array<int,3> backColor, const int padding){
   std::cout << "\u001b[" << terminalWidth <<"D";
   std::cout << "\u001b[" << terminalWidth - toPrint.size() - padding <<"C";
-  std::cout << toPrint;
+  printColor(toPrint,frontColor,backColor);
 }
 
-void printRight(const std::string toPrint, const std::string color, const int padding){
-  std::cout << "\u001b[" << terminalWidth <<"D";
-  std::cout << "\u001b[" << terminalWidth - toPrint.size() - padding <<"C";
-  printColor(toPrint,color);
-}
 
-void printLeft(const std::string toPrint, const int padding){
+void printLeft(const std::string toPrint, std::array<int,3> frontColor, std::array<int,3> backColor, const int padding){
   std::cout << "\u001b[" << terminalWidth << "D";
   std::cout << "\u001b[" << padding <<"C";
-  std::cout << toPrint;
+  printColor(toPrint,frontColor,backColor);
 }
 
-void printLeft(const std::string toPrint, const std::string color, const int padding){
-  std::cout << "\u001b[" << terminalWidth << "D";
-  std::cout << "\u001b[" << padding <<"C";
-  printColor(toPrint,color);
-}
-
-void printColor(std::string toPrint, std::string color){
-  std::string colorCode = setColor(color);
-  std::string noColor = "\u001b[0m";
-  std::cout << colorCode << toPrint << noColor;
-}
-
-std::string setColor(std::string color){
-  if (color.compare("grey") == 0) return "\u001b[1;30m";
-  if (color.compare("red") == 0) return "\u001b[1;31m";
-  if (color.compare("green") == 0) return "\u001b[1;32m";
-  if (color.compare("yellow") == 0) return "\u001b[1;33m";
-  if (color.compare("blue") == 0) return "\u001b[1;34m";
-  if (color.compare("purple") == 0) return "\u001b[1;35m";
-  if (color.compare("cyan") == 0) return "\u001b[1;36m";
-  if (color.compare("white") == 0) return "\u001b[1;37m";
-  return "\u001b[0m";
+void printColor(std::string toPrint, std::array<int,3> frontColor, std::array<int,3> backColor){
+  //std::cout << '\u001b[38;2;'<< color[0] <<';'<< color[1] <<';'<< color[2] <<'m' << toPrint << "\u001b[0m";
+  std::cout << "\u001b[38;2;"<< frontColor[0] <<';'<< frontColor[1] <<';'<< frontColor[2] <<"m\u001b[48;2;"<< backColor[0] <<';'<< backColor[1] <<';'<< backColor[2] <<'m' << toPrint;
 }
 
 void startCustomTerminal(int terminalSize){
@@ -164,7 +136,7 @@ std::vector<std::string> newCommand(User & user, std::string currentSensor){
   return separatedInput;
 }
 
-void printGraphic(const std::vector <int> &data, int valPerY, int posX, int posY, int scale){
+void printGraphic(const std::vector <int> &data, std::array<int,3> frontColor, std::array<int,3> backColor, std::array<int,3> pointColor, int valPerY, int posX, int posY, int scale){
   const int spacing = 3;
   // Graphic standard size 60 * 30
   const int maxRangeX = 60;
@@ -195,34 +167,33 @@ void printGraphic(const std::vector <int> &data, int valPerY, int posX, int posY
   for (int lineY = 0; lineY <= rangeY; lineY++) {
     moveCursor(posX, posY + lineY);
     if (lineY % stepY == 0) {
-      std::cout << maxY - (axisYvalue * (lineY / stepY) );
+      printColor(std::to_string(maxY - (axisYvalue * (lineY / stepY) )),frontColor,backColor);
       moveCursor(posX + spacing, posY + lineY);
-      std::cout << "+";
+      printColor("+",frontColor,backColor);
     }
     else {
-      std::cout << "   |";
+      printColor("   |",frontColor,backColor);
     }
   }
 
   // Bottom line
   moveCursor(posX - 2 + spacing + 1, posY + rangeY + 1);
-  std::cout << - maxX;
+  printColor(std::to_string(- maxX),frontColor,backColor);
   moveCursor(posX + spacing + 1, posY + rangeY);
 
   for ( int lineX = 1; lineX <= rangeX; lineX++) {
     if (lineX % stepX == 0){
-      std::cout << "+";
+      printColor("+",frontColor,backColor);
       moveCursor(posX + lineX - 2 + spacing + 1, posY + rangeY + 1);
-      std::cout << (lineX * scale) - maxX;
+      printColor(std::to_string((lineX * scale) - maxX),frontColor,backColor);
       moveCursor(posX + lineX + spacing + 1, posY + rangeY);
     }
     else {
-      std::cout << "-";
+      printColor("-",frontColor,backColor);
     }
   }
 
-  // Set points on the plot with red color
-  std::cout << "\u001b[1;31m";
+  // Set points on the plot with user color
   int endX = posX + 1 + spacing + rangeX;
   int pointY = 0;
 
@@ -232,8 +203,8 @@ void printGraphic(const std::vector <int> &data, int valPerY, int posX, int posY
       pointY += posY + (maxY - data[point + value]) / (axisYvalue / stepY);
     }
     moveCursor(endX - point / (scale * valPerY), pointY / (scale * valPerY));
-    std::cout << "·" ;
+    printColor("·",pointColor,backColor) ;
   }
   
-  std::cout << "\u001b[0m"; // Turn of color
+  printColor("",frontColor,backColor); // Turn of color
 }

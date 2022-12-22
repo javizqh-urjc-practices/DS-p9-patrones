@@ -18,7 +18,7 @@ CLDashboard::CLDashboard(const User &user):Dashboard(user){
 }
 
 void CLDashboard::showMainMenu(){
-  this->menuBar->setUserName(this->user.getName());
+  this->menuBar->setUser(this->user);
   this->currentInterface = "..";
   changeInterface(this->currentInterface);
   startCustomTerminal(10);
@@ -28,6 +28,7 @@ void CLDashboard::showMainMenu(){
 void CLDashboard::readCommand(){
   std::vector<std::string> command;
   int lineNumber = 0;
+  clearCustomTerminal(10);
   while (true){
     lineNumber++;
     if (lineNumber >= 9){ lineNumber=0; clearCustomTerminal(10);}
@@ -43,7 +44,7 @@ void CLDashboard::readCommand(){
       else if (command[0].compare("log") == 0) std::cout << this->user.getTimestamp();
       else if (command[0].compare("clear") == 0) clearCustomTerminal(10);
       else if (command[0].compare("logout") == 0){ logout(); break;}
-      else if (command[0].compare("exit") == 0){system("clear"); exit(); break;}
+      else if (command[0].compare("exit") == 0){ exit(); break;}
       else if (command[0].compare("update") == 0) {
         changeInterface(this->currentInterface);
         std::cout << "\u001b[u"; // Reload cursor pos
@@ -123,4 +124,7 @@ void CLDashboard::permissionError(){
   std::cout << this->user.getName() << " does not have the permissions required. Make sure to contact an administrator.\n";
 }
 
-CLDashboard::~CLDashboard(){}
+CLDashboard::~CLDashboard(){
+  std::cout << "\u001b[0m"; 
+  system("clear");
+}

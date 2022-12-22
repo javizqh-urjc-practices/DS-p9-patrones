@@ -12,7 +12,7 @@
 
 CLMenu::CLMenu(){}
 
-void CLMenu::show(std::vector <Sensor *> sensors){
+void CLMenu::show(std::vector <Sensor *> sensors, UserConfig config){
   std::cout << "\u001b[s"; // Save cursor pos
   if (sensors.size() == 0) return;
   int graphicsInX = 3;
@@ -27,7 +27,7 @@ void CLMenu::show(std::vector <Sensor *> sensors){
       moveCursor(positionsX * (index % graphicsInX) + 10 + 8 , positionsY * (index / graphicsInX) + 5 + 7);
       std::cout << "No image available";
     } else {
-      printGraphic(sensorToDisplay->requestData(),sensorToDisplay->getValPerMin(),positionsX * (index % graphicsInX) + 10, positionsY * (index / graphicsInX) + 5,2);
+      printGraphic(sensorToDisplay->requestData(),config.getFontColor(),config.getBackgroundColor(),config.getGraphicColor(),sensorToDisplay->getValPerMin(),positionsX * (index % graphicsInX) + 10, positionsY * (index / graphicsInX) + 5,2);
     }
     // Prin id below
 
@@ -37,7 +37,7 @@ void CLMenu::show(std::vector <Sensor *> sensors){
   std::cout << "\u001b[u"; // Reload cursor pos
 }
 
-void CLMenu::show(Sensor *sensorToDisplay){
+void CLMenu::show(Sensor * sensorToDisplay, UserConfig config){
   std::cout << "\u001b[s"; // Save cursor pos
   // Graphic size 60 * 30
   clearMenu();
@@ -46,7 +46,7 @@ void CLMenu::show(Sensor *sensorToDisplay){
     std::cout << "No image available";
   }
   else {
-    printGraphic(sensorToDisplay->requestData(),sensorToDisplay->getValPerMin(),10,10,1);
+    printGraphic(sensorToDisplay->requestData(),config.getFontColor(),config.getBackgroundColor(),config.getGraphicColor(),sensorToDisplay->getValPerMin(),10,10,1);
   }
   // Prin id below
   moveCursor(10 + 30 , 10 + 35);
@@ -65,11 +65,11 @@ void CLMenu::show(Sensor *sensorToDisplay){
   std::cout << "Values per minute: "<<sensorToDisplay->getValPerMin();
   moveCursor(100 , 25 + 10);
   std::cout << "Current state: ";
-  if (sensorToDisplay->isActive()) printColor("On","green");
-  else printColor("Off","red");
+  if (sensorToDisplay->isActive()) printColor("On",{0,255,0},{0,0,0});
+  else printColor("Off",{255,0,0},{0,0,0});
   std::cout << "\u001b[u"; // Reload cursor pos
 }
 
 void CLMenu::clearMenu(){
-  std::cout << "\u001b[" << getTerminalHeight() - 12 << ";0H" << "\u001b[1J";
+  std::cout << "\u001b[" << getTerminalHeight() - 11 << ";0H" << "\u001b[1J";
 }

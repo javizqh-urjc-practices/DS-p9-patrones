@@ -18,17 +18,19 @@ class CLMenu : public Menu{
   public:
     CLMenu(); /* basic constructor */
     /**
-    * @brief Shows the menu with six or less smaller sensors displayed in the command line
-    * 
-    * @param sensors Array of sensor to display <= 7
-    */
-    void show(std::vector <Sensor *> );
+     * @brief Shows the menu with six or less smaller sensors displayed in the command line
+     * 
+     * @param sensors Array of sensor to display <= 7
+     * @param config User configuration
+     */
+    void show(std::vector <Sensor *> sensors, UserConfig config);
     /**
-    * @brief Shows the menu for the sensor selected in a detailed format in the command line
-    * 
-    * @param sensorToDisplay Sensor to display
-    */
-    void show(Sensor *sensor);
+     * @brief Shows the menu for the sensor selected in a detailed format in the command line
+     * 
+     * @param sensorToDisplay Sensor to display
+     * @param config User configuration
+     */
+    void show(Sensor * sensorToDisplay, UserConfig config);
 
   protected:
     /**

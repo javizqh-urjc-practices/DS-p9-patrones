@@ -49,7 +49,7 @@ bool Dashboard::changeInterface(std::string newInterface){
   if (newInterface.compare("..") == 0){
     if (this->mainMenuIndex + 1 > this->mainMenu.size()) moveWindowMainMenu(-1) ;
     this->currentSensor = nullptr;
-    this->menu->show(this->mainMenu[this->mainMenuIndex]);
+    this->menu->show(this->mainMenu[this->mainMenuIndex],this->user.getConfiguration());
     std::string menuName = std::to_string(this->mainMenuIndex + 1)  + "/" + std::to_string(this->mainMenu.size());
     this->menuBar->setCurrentMenu(menuName);
     this->menuBar->show();
@@ -58,7 +58,7 @@ bool Dashboard::changeInterface(std::string newInterface){
     return true;
   }
   else if (this->currentInterface.compare(newInterface) == 0){
-        this->menu->show(this->currentSensor);
+        this->menu->show(this->currentSensor,this->user.getConfiguration());
         this->menuBar->setCurrentMenu(this->currentInterface);
         return true;
   }
@@ -66,7 +66,7 @@ bool Dashboard::changeInterface(std::string newInterface){
     for (Sensor *sensor: this->sensor){
       if (newInterface.compare(sensor->getId())== 0){
         this->currentSensor = sensor;
-        this->menu->show(this->currentSensor);
+        this->menu->show(this->currentSensor,this->user.getConfiguration());
         this->menuBar->setCurrentMenu(newInterface);
         this->menuBar->show();
         this->lastInterface = this->currentInterface;

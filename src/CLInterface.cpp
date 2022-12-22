@@ -27,14 +27,15 @@ void CLInterface::login(int tries){
   usleep(2 * 1000000);
   try {
     this->user = this->loginInterface->checkUser();
-    printCenter("Login successful" );
+    printCenter("Login successful",{255,255,255},{0,0,0});
     std::cout << "\n";
     usleep(1 * 1000000);
+    printColor("",this->user.getConfiguration().getFontColor(),this->user.getConfiguration().getBackgroundColor());
     system("clear");
     tries = 0;
     delete this->loginInterface;
   } catch (std::exception &e) {
-    printCenter("Failed login\n", "red");
+    printCenter("Failed login\n", {255,0,0},{0,0,0});
     usleep(1 * 1000000);
     tries++;
     login(tries);
