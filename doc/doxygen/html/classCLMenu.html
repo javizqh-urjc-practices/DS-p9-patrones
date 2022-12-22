@@ -90,12 +90,12 @@ Collaboration diagram for CLMenu:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a93d42073f5fba5d741fd645fb84d8328"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCLMenu.html#a93d42073f5fba5d741fd645fb84d8328">show</a> (std::vector&lt; <a class="el" href="classSensor.html">Sensor</a> * &gt;)</td></tr>
-<tr class="memdesc:a93d42073f5fba5d741fd645fb84d8328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the menu with six or less smaller sensors displayed in the command line.  <a href="classCLMenu.html#a93d42073f5fba5d741fd645fb84d8328">More...</a><br /></td></tr>
-<tr class="separator:a93d42073f5fba5d741fd645fb84d8328"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f4074dd42e1b6371f2d16e33da83e6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCLMenu.html#a0f4074dd42e1b6371f2d16e33da83e6c">show</a> (<a class="el" href="classSensor.html">Sensor</a> *sensor)</td></tr>
-<tr class="memdesc:a0f4074dd42e1b6371f2d16e33da83e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the menu for the sensor selected in a detailed format in the command line.  <a href="classCLMenu.html#a0f4074dd42e1b6371f2d16e33da83e6c">More...</a><br /></td></tr>
-<tr class="separator:a0f4074dd42e1b6371f2d16e33da83e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6409eeb27ed34214026663323aaa69e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCLMenu.html#a6409eeb27ed34214026663323aaa69e0">show</a> (std::vector&lt; <a class="el" href="classSensor.html">Sensor</a> * &gt; sensors, <a class="el" href="classUserConfig.html">UserConfig</a> config)</td></tr>
+<tr class="memdesc:a6409eeb27ed34214026663323aaa69e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the menu with six or less smaller sensors displayed in the command line.  <a href="classCLMenu.html#a6409eeb27ed34214026663323aaa69e0">More...</a><br /></td></tr>
+<tr class="separator:a6409eeb27ed34214026663323aaa69e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ffe01452744a7da0c2e55de0aaa7f1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCLMenu.html#a2ffe01452744a7da0c2e55de0aaa7f1b">show</a> (<a class="el" href="classSensor.html">Sensor</a> *sensorToDisplay, <a class="el" href="classUserConfig.html">UserConfig</a> config)</td></tr>
+<tr class="memdesc:a2ffe01452744a7da0c2e55de0aaa7f1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the menu for the sensor selected in a detailed format in the command line.  <a href="classCLMenu.html#a2ffe01452744a7da0c2e55de0aaa7f1b">More...</a><br /></td></tr>
+<tr class="separator:a2ffe01452744a7da0c2e55de0aaa7f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -138,8 +138,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a0f4074dd42e1b6371f2d16e33da83e6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f4074dd42e1b6371f2d16e33da83e6c">&#9670;&nbsp;</a></span>show() <span class="overload">[1/2]</span></h2>
+<a id="a2ffe01452744a7da0c2e55de0aaa7f1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ffe01452744a7da0c2e55de0aaa7f1b">&#9670;&nbsp;</a></span>show() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -151,8 +151,18 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void CLMenu::show </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classSensor.html">Sensor</a> *&#160;</td>
-          <td class="paramname"><em>sensor</em></td><td>)</td>
+          <td class="paramname"><em>sensorToDisplay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classUserConfig.html">UserConfig</a>&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -166,6 +176,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sensorToDisplay</td><td><a class="el" href="classSensor.html">Sensor</a> to display </td></tr>
+    <tr><td class="paramname">config</td><td><a class="el" href="classUser.html">User</a> configuration </td></tr>
   </table>
   </dd>
 </dl>
@@ -174,8 +185,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a93d42073f5fba5d741fd645fb84d8328"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93d42073f5fba5d741fd645fb84d8328">&#9670;&nbsp;</a></span>show() <span class="overload">[2/2]</span></h2>
+<a id="a6409eeb27ed34214026663323aaa69e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6409eeb27ed34214026663323aaa69e0">&#9670;&nbsp;</a></span>show() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,8 +198,18 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void CLMenu::show </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; <a class="el" href="classSensor.html">Sensor</a> * &gt;&#160;</td>
-          <td class="paramname"><em>sensors</em></td><td>)</td>
+          <td class="paramname"><em>sensors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classUserConfig.html">UserConfig</a>&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -202,6 +223,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sensors</td><td>Array of sensor to display &lt;= 7 </td></tr>
+    <tr><td class="paramname">config</td><td><a class="el" href="classUser.html">User</a> configuration </td></tr>
   </table>
   </dd>
 </dl>

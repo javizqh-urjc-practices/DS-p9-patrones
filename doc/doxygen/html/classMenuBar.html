@@ -79,15 +79,25 @@ Inheritance diagram for MenuBar:</div>
 <area shape="rect" href="classCLMenuBar.html" title=" " alt="" coords="5,80,101,107"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for MenuBar:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMenuBar__coll__graph.png" border="0" usemap="#MenuBar_coll__map" alt="Collaboration graph"/></div>
+<map name="MenuBar_coll__map" id="MenuBar_coll__map">
+<area shape="rect" title=" " alt="" coords="13,184,93,211"/>
+<area shape="rect" href="classUser.html" title=" " alt="" coords="27,95,79,121"/>
+<area shape="rect" href="classUserConfig.html" title=" " alt="" coords="5,5,100,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a56732871dd9b124bfbad2d40c82741b8"><td class="memItemLeft" align="right" valign="top"><a id="a56732871dd9b124bfbad2d40c82741b8"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>show</b> ()=0</td></tr>
 <tr class="separator:a56732871dd9b124bfbad2d40c82741b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee9cdce9548f6a654cd2bc94b9bf9708"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuBar.html#aee9cdce9548f6a654cd2bc94b9bf9708">setUserName</a> (std::string userName)</td></tr>
-<tr class="memdesc:aee9cdce9548f6a654cd2bc94b9bf9708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the user name.  <a href="classMenuBar.html#aee9cdce9548f6a654cd2bc94b9bf9708">More...</a><br /></td></tr>
-<tr class="separator:aee9cdce9548f6a654cd2bc94b9bf9708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b48590c5dd837b0c819135a504d203"><td class="memItemLeft" align="right" valign="top"><a id="ac9b48590c5dd837b0c819135a504d203"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setUser</b> (<a class="el" href="classUser.html">User</a> user)</td></tr>
+<tr class="separator:ac9b48590c5dd837b0c819135a504d203"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade90727acc5c6b5bcb2dc732c26787d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuBar.html#ade90727acc5c6b5bcb2dc732c26787d9">setCurrentMenu</a> (std::string currentMenu)</td></tr>
 <tr class="memdesc:ade90727acc5c6b5bcb2dc732c26787d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current menu.  <a href="classMenuBar.html#ade90727acc5c6b5bcb2dc732c26787d9">More...</a><br /></td></tr>
 <tr class="separator:ade90727acc5c6b5bcb2dc732c26787d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,9 +110,9 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a8f8ac29910995aabd4c4672dbd9ebc30"><td class="memItemLeft" align="right" valign="top"><a id="a8f8ac29910995aabd4c4672dbd9ebc30"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>userName</b></td></tr>
-<tr class="separator:a8f8ac29910995aabd4c4672dbd9ebc30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ff5bf1558b1006aa377386be5c902d7"><td class="memItemLeft" align="right" valign="top"><a id="a5ff5bf1558b1006aa377386be5c902d7"></a>
+<a class="el" href="classUser.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><b>user</b></td></tr>
+<tr class="separator:a5ff5bf1558b1006aa377386be5c902d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3046a045e667878f9592359fbc91f2b5"><td class="memItemLeft" align="right" valign="top"><a id="a3046a045e667878f9592359fbc91f2b5"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>currentMenu</b></td></tr>
 <tr class="separator:a3046a045e667878f9592359fbc91f2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,32 +173,6 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>currentMenu</b
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">currentMenu</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aee9cdce9548f6a654cd2bc94b9bf9708"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee9cdce9548f6a654cd2bc94b9bf9708">&#9670;&nbsp;</a></span>setUserName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MenuBar::setUserName </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>userName</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets the user name. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">userName</td><td></td></tr>
   </table>
   </dd>
 </dl>

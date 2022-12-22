@@ -9,11 +9,24 @@ Inheritance diagram for User\+:\nopagebreak
 \includegraphics[width=128pt]{classUser__inherit__graph}
 \end{center}
 \end{figure}
+
+
+Collaboration diagram for User\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classUser__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classUser_a54794305b09de5dddd9fae6d3ba38b6f}{User}} (std\+::string number=\char`\"{}00000\char`\"{}, std\+::string nif=\char`\"{}00000000\char`\"{}, std\+::string name=\char`\"{}default\char`\"{})
 \begin{DoxyCompactList}\small\item\em Create a new \mbox{\hyperlink{classUser}{User}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUser_a4f0cfc222526de7f6a56da4948340bed}\label{classUser_a4f0cfc222526de7f6a56da4948340bed}} 
+{\bfseries User} (\mbox{\hyperlink{classUserConfig}{User\+Config}} \mbox{\hyperlink{classUserConfig}{User\+Config}}, std\+::string number=\char`\"{}00000\char`\"{}, std\+::string nif=\char`\"{}00000000\char`\"{}, std\+::string name=\char`\"{}default\char`\"{})
+\item 
 \mbox{\Hypertarget{classUser_a270311fbb4351c5ca8bbc3eeeb96a8cb}\label{classUser_a270311fbb4351c5ca8bbc3eeeb96a8cb}} 
 bool {\bfseries is\+Same\+N\+IF} (std\+::string N\+IF)
 \item 
@@ -40,7 +53,13 @@ bool {\bfseries operator==} (const \mbox{\hyperlink{classUser}{User}} \&) const
 void \mbox{\hyperlink{classUser_a46ab8fe4ca46beed7de6735085ab77dc}{set\+N\+IF}} (std\+::string)
 \begin{DoxyCompactList}\small\item\em Set the user N\+IF. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classUser_a4e454cafcaf339c671a8127b28de84d5}{set\+Employee\+Number}} (std\+::string)
-\begin{DoxyCompactList}\small\item\em Set the user employee number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Set the user employee number. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUser_aabb5b319ef1639ed7cdaf32f98c83006}\label{classUser_aabb5b319ef1639ed7cdaf32f98c83006}} 
+void {\bfseries set\+Config} (\mbox{\hyperlink{classUserConfig}{User\+Config}} new\+Config)
+\item 
+\mbox{\Hypertarget{classUser_a56b93df61178185561ed6133b32c712b}\label{classUser_a56b93df61178185561ed6133b32c712b}} 
+\mbox{\hyperlink{classUserConfig}{User\+Config}} {\bfseries get\+Configuration} ()
+\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -58,6 +77,9 @@ char {\bfseries last\+Log\+Time} \mbox{[}25\mbox{]}
 \item 
 \mbox{\Hypertarget{classUser_abf90474182e8afa96fbd1da2c9e65b7b}\label{classUser_abf90474182e8afa96fbd1da2c9e65b7b}} 
 bool {\bfseries admin\+Permission}
+\item 
+\mbox{\Hypertarget{classUser_aac92c601e67c6ca2ca109d997fe1dd7a}\label{classUser_aac92c601e67c6ca2ca109d997fe1dd7a}} 
+\mbox{\hyperlink{classUserConfig}{User\+Config}} {\bfseries user\+Configuration}
 \end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}

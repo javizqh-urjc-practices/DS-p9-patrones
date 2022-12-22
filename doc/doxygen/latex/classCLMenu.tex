@@ -21,9 +21,9 @@ Collaboration diagram for C\+L\+Menu\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classCLMenu_a93d42073f5fba5d741fd645fb84d8328}{show}} (std\+::vector$<$ \mbox{\hyperlink{classSensor}{Sensor}} $\ast$ $>$)
+void \mbox{\hyperlink{classCLMenu_a6409eeb27ed34214026663323aaa69e0}{show}} (std\+::vector$<$ \mbox{\hyperlink{classSensor}{Sensor}} $\ast$ $>$ sensors, \mbox{\hyperlink{classUserConfig}{User\+Config}} config)
 \begin{DoxyCompactList}\small\item\em Shows the menu with six or less smaller sensors displayed in the command line. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classCLMenu_a0f4074dd42e1b6371f2d16e33da83e6c}{show}} (\mbox{\hyperlink{classSensor}{Sensor}} $\ast$sensor)
+void \mbox{\hyperlink{classCLMenu_a2ffe01452744a7da0c2e55de0aaa7f1b}{show}} (\mbox{\hyperlink{classSensor}{Sensor}} $\ast$sensor\+To\+Display, \mbox{\hyperlink{classUserConfig}{User\+Config}} config)
 \begin{DoxyCompactList}\small\item\em Shows the menu for the sensor selected in a detailed format in the command line. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -44,11 +44,11 @@ void \mbox{\hyperlink{classCLMenu_ab378e2b03ee4903bebda2efced9ea8f2}{clear\+Menu
 
 Clear the menu in the command line. 
 
-\mbox{\Hypertarget{classCLMenu_a0f4074dd42e1b6371f2d16e33da83e6c}\label{classCLMenu_a0f4074dd42e1b6371f2d16e33da83e6c}} 
+\mbox{\Hypertarget{classCLMenu_a2ffe01452744a7da0c2e55de0aaa7f1b}\label{classCLMenu_a2ffe01452744a7da0c2e55de0aaa7f1b}} 
 \index{CLMenu@{CLMenu}!show@{show}}
 \index{show@{show}!CLMenu@{CLMenu}}
 \doxysubsubsection{\texorpdfstring{show()}{show()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void C\+L\+Menu\+::show (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSensor}{Sensor}} $\ast$}]{sensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void C\+L\+Menu\+::show (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSensor}{Sensor}} $\ast$}]{sensor\+To\+Display,  }\item[{\mbox{\hyperlink{classUserConfig}{User\+Config}}}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -58,16 +58,18 @@ Shows the menu for the sensor selected in a detailed format in the command line.
 \begin{DoxyParams}{Parameters}
 {\em sensor\+To\+Display} & \mbox{\hyperlink{classSensor}{Sensor}} to display \\
 \hline
+{\em config} & \mbox{\hyperlink{classUser}{User}} configuration \\
+\hline
 \end{DoxyParams}
 
 
 Implements \mbox{\hyperlink{classMenu}{Menu}}.
 
-\mbox{\Hypertarget{classCLMenu_a93d42073f5fba5d741fd645fb84d8328}\label{classCLMenu_a93d42073f5fba5d741fd645fb84d8328}} 
+\mbox{\Hypertarget{classCLMenu_a6409eeb27ed34214026663323aaa69e0}\label{classCLMenu_a6409eeb27ed34214026663323aaa69e0}} 
 \index{CLMenu@{CLMenu}!show@{show}}
 \index{show@{show}!CLMenu@{CLMenu}}
 \doxysubsubsection{\texorpdfstring{show()}{show()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void C\+L\+Menu\+::show (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classSensor}{Sensor}} $\ast$ $>$}]{sensors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void C\+L\+Menu\+::show (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classSensor}{Sensor}} $\ast$ $>$}]{sensors,  }\item[{\mbox{\hyperlink{classUserConfig}{User\+Config}}}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -76,6 +78,8 @@ Shows the menu with six or less smaller sensors displayed in the command line.
 
 \begin{DoxyParams}{Parameters}
 {\em sensors} & Array of sensor to display $<$= 7 \\
+\hline
+{\em config} & \mbox{\hyperlink{classUser}{User}} configuration \\
 \hline
 \end{DoxyParams}
 

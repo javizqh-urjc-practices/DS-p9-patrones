@@ -79,12 +79,24 @@ Inheritance diagram for User:</div>
 <area shape="rect" href="classAdmin.html" title=" " alt="" coords="5,80,69,107"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for User:</div>
+<div class="dyncontent">
+<div class="center"><img src="classUser__coll__graph.png" border="0" usemap="#User_coll__map" alt="Collaboration graph"/></div>
+<map name="User_coll__map" id="User_coll__map">
+<area shape="rect" title=" " alt="" coords="27,95,79,121"/>
+<area shape="rect" href="classUserConfig.html" title=" " alt="" coords="5,5,100,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a54794305b09de5dddd9fae6d3ba38b6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUser.html#a54794305b09de5dddd9fae6d3ba38b6f">User</a> (std::string number=&quot;00000&quot;, std::string nif=&quot;00000000&quot;, std::string name=&quot;default&quot;)</td></tr>
 <tr class="memdesc:a54794305b09de5dddd9fae6d3ba38b6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="classUser.html">User</a>.  <a href="classUser.html#a54794305b09de5dddd9fae6d3ba38b6f">More...</a><br /></td></tr>
 <tr class="separator:a54794305b09de5dddd9fae6d3ba38b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f0cfc222526de7f6a56da4948340bed"><td class="memItemLeft" align="right" valign="top"><a id="a4f0cfc222526de7f6a56da4948340bed"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>User</b> (<a class="el" href="classUserConfig.html">UserConfig</a> <a class="el" href="classUserConfig.html">UserConfig</a>, std::string number=&quot;00000&quot;, std::string nif=&quot;00000000&quot;, std::string name=&quot;default&quot;)</td></tr>
+<tr class="separator:a4f0cfc222526de7f6a56da4948340bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a270311fbb4351c5ca8bbc3eeeb96a8cb"><td class="memItemLeft" align="right" valign="top"><a id="a270311fbb4351c5ca8bbc3eeeb96a8cb"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isSameNIF</b> (std::string NIF)</td></tr>
 <tr class="separator:a270311fbb4351c5ca8bbc3eeeb96a8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,6 +130,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const
 <tr class="memitem:a4e454cafcaf339c671a8127b28de84d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUser.html#a4e454cafcaf339c671a8127b28de84d5">setEmployeeNumber</a> (std::string)</td></tr>
 <tr class="memdesc:a4e454cafcaf339c671a8127b28de84d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the user employee number.  <a href="classUser.html#a4e454cafcaf339c671a8127b28de84d5">More...</a><br /></td></tr>
 <tr class="separator:a4e454cafcaf339c671a8127b28de84d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabb5b319ef1639ed7cdaf32f98c83006"><td class="memItemLeft" align="right" valign="top"><a id="aabb5b319ef1639ed7cdaf32f98c83006"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setConfig</b> (<a class="el" href="classUserConfig.html">UserConfig</a> newConfig)</td></tr>
+<tr class="separator:aabb5b319ef1639ed7cdaf32f98c83006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56b93df61178185561ed6133b32c712b"><td class="memItemLeft" align="right" valign="top"><a id="a56b93df61178185561ed6133b32c712b"></a>
+<a class="el" href="classUserConfig.html">UserConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getConfiguration</b> ()</td></tr>
+<tr class="separator:a56b93df61178185561ed6133b32c712b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -136,6 +154,9 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>lastLogTime</b> [25]<
 <tr class="memitem:abf90474182e8afa96fbd1da2c9e65b7b"><td class="memItemLeft" align="right" valign="top"><a id="abf90474182e8afa96fbd1da2c9e65b7b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>adminPermission</b></td></tr>
 <tr class="separator:abf90474182e8afa96fbd1da2c9e65b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac92c601e67c6ca2ca109d997fe1dd7a"><td class="memItemLeft" align="right" valign="top"><a id="aac92c601e67c6ca2ca109d997fe1dd7a"></a>
+<a class="el" href="classUserConfig.html">UserConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><b>userConfiguration</b></td></tr>
+<tr class="separator:aac92c601e67c6ca2ca109d997fe1dd7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>

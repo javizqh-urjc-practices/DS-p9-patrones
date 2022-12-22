@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['admin_121',['Admin',['../classAdmin.html',1,'']]],
-  ['airquality_122',['AirQuality',['../classAirQuality.html',1,'']]]
+  ['admin_122',['Admin',['../classAdmin.html',1,'']]],
+  ['airquality_123',['AirQuality',['../classAirQuality.html',1,'']]]
 ];
