@@ -1,0 +1,156 @@
+\hypertarget{classCLDashboard}{}\doxysection{C\+L\+Dashboard Class Reference}
+\label{classCLDashboard}\index{CLDashboard@{CLDashboard}}
+
+
+Inheritance diagram for C\+L\+Dashboard\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{classCLDashboard__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+L\+Dashboard\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCLDashboard__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCLDashboard_ae0e38a6544e1103a6268f01bd6b1ddff}{C\+L\+Dashboard}} (const \mbox{\hyperlink{classUser}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Create a new \mbox{\hyperlink{classDashboard}{Dashboard}} for the command line. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCLDashboard_a63fb00e871678d1ff66e86b3d2da4da3}{show\+Main\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Shows the default menu and starts the custom terminal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classCLDashboard_af0ef79eb8ec999ee8487fb11784ee32e}{change\+Main\+Menu}} (int n)
+\begin{DoxyCompactList}\small\item\em Change the page of the menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCLDashboard_a545f2058373b09180fc8690bb11e0439}{read\+Command}} ()
+\begin{DoxyCompactList}\small\item\em Reads and executes a command from the terminal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCLDashboard_aaf8f41673fe6af9973e699022581459c}{list\+Sensor}} ()
+\begin{DoxyCompactList}\small\item\em Command that lists the sensors in the current menu page. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCLDashboard_affb9cdde7d7b7f6bc3c72db3c941e80b}{help\+Command}} (std\+::string command=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Displays the use of the command. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCLDashboard_a60e24b6a5f5c0f944f87459900c2c911}{error\+Command}} (std\+::string command=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Shows error message because the command not being found. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCLDashboard_ac858ce5c07768f02f96779507ecb92f2}{permission\+Error}} ()
+\begin{DoxyCompactList}\small\item\em Shows error message because the permission being denied to execute it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCLDashboard_ae0e38a6544e1103a6268f01bd6b1ddff}\label{classCLDashboard_ae0e38a6544e1103a6268f01bd6b1ddff}} 
+\index{CLDashboard@{CLDashboard}!CLDashboard@{CLDashboard}}
+\index{CLDashboard@{CLDashboard}!CLDashboard@{CLDashboard}}
+\doxysubsubsection{\texorpdfstring{CLDashboard()}{CLDashboard()}}
+{\footnotesize\ttfamily C\+L\+Dashboard\+::\+C\+L\+Dashboard (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classUser}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Create a new \mbox{\hyperlink{classDashboard}{Dashboard}} for the command line. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCLDashboard_af0ef79eb8ec999ee8487fb11784ee32e}\label{classCLDashboard_af0ef79eb8ec999ee8487fb11784ee32e}} 
+\index{CLDashboard@{CLDashboard}!changeMainMenu@{changeMainMenu}}
+\index{changeMainMenu@{changeMainMenu}!CLDashboard@{CLDashboard}}
+\doxysubsubsection{\texorpdfstring{changeMainMenu()}{changeMainMenu()}}
+{\footnotesize\ttfamily void C\+L\+Dashboard\+::change\+Main\+Menu (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Change the page of the menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of pages to shift ( positive to the right ) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCLDashboard_a60e24b6a5f5c0f944f87459900c2c911}\label{classCLDashboard_a60e24b6a5f5c0f944f87459900c2c911}} 
+\index{CLDashboard@{CLDashboard}!errorCommand@{errorCommand}}
+\index{errorCommand@{errorCommand}!CLDashboard@{CLDashboard}}
+\doxysubsubsection{\texorpdfstring{errorCommand()}{errorCommand()}}
+{\footnotesize\ttfamily void C\+L\+Dashboard\+::error\+Command (\begin{DoxyParamCaption}\item[{std\+::string}]{command = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Shows error message because the command not being found. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & Command input \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCLDashboard_affb9cdde7d7b7f6bc3c72db3c941e80b}\label{classCLDashboard_affb9cdde7d7b7f6bc3c72db3c941e80b}} 
+\index{CLDashboard@{CLDashboard}!helpCommand@{helpCommand}}
+\index{helpCommand@{helpCommand}!CLDashboard@{CLDashboard}}
+\doxysubsubsection{\texorpdfstring{helpCommand()}{helpCommand()}}
+{\footnotesize\ttfamily void C\+L\+Dashboard\+::help\+Command (\begin{DoxyParamCaption}\item[{std\+::string}]{command = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Displays the use of the command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & Command to display info about \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCLDashboard_aaf8f41673fe6af9973e699022581459c}\label{classCLDashboard_aaf8f41673fe6af9973e699022581459c}} 
+\index{CLDashboard@{CLDashboard}!listSensor@{listSensor}}
+\index{listSensor@{listSensor}!CLDashboard@{CLDashboard}}
+\doxysubsubsection{\texorpdfstring{listSensor()}{listSensor()}}
+{\footnotesize\ttfamily void C\+L\+Dashboard\+::list\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Command that lists the sensors in the current menu page. 
+
+\mbox{\Hypertarget{classCLDashboard_ac858ce5c07768f02f96779507ecb92f2}\label{classCLDashboard_ac858ce5c07768f02f96779507ecb92f2}} 
+\index{CLDashboard@{CLDashboard}!permissionError@{permissionError}}
+\index{permissionError@{permissionError}!CLDashboard@{CLDashboard}}
+\doxysubsubsection{\texorpdfstring{permissionError()}{permissionError()}}
+{\footnotesize\ttfamily void C\+L\+Dashboard\+::permission\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Shows error message because the permission being denied to execute it. 
+
+\mbox{\Hypertarget{classCLDashboard_a545f2058373b09180fc8690bb11e0439}\label{classCLDashboard_a545f2058373b09180fc8690bb11e0439}} 
+\index{CLDashboard@{CLDashboard}!readCommand@{readCommand}}
+\index{readCommand@{readCommand}!CLDashboard@{CLDashboard}}
+\doxysubsubsection{\texorpdfstring{readCommand()}{readCommand()}}
+{\footnotesize\ttfamily void C\+L\+Dashboard\+::read\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reads and executes a command from the terminal. 
+
+\mbox{\Hypertarget{classCLDashboard_a63fb00e871678d1ff66e86b3d2da4da3}\label{classCLDashboard_a63fb00e871678d1ff66e86b3d2da4da3}} 
+\index{CLDashboard@{CLDashboard}!showMainMenu@{showMainMenu}}
+\index{showMainMenu@{showMainMenu}!CLDashboard@{CLDashboard}}
+\doxysubsubsection{\texorpdfstring{showMainMenu()}{showMainMenu()}}
+{\footnotesize\ttfamily void C\+L\+Dashboard\+::show\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Shows the default menu and starts the custom terminal. 
+
+
+
+Implements \mbox{\hyperlink{classDashboard}{Dashboard}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{CLDashboard_8h}{C\+L\+Dashboard.\+h}}\item 
+src/\mbox{\hyperlink{CLDashboard_8cpp}{C\+L\+Dashboard.\+cpp}}\end{DoxyCompactItemize}

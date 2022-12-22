@@ -1,0 +1,12 @@
+<map id="include/Dashboard.h" name="include/Dashboard.h">
+<area shape="rect" id="node1" title="Header file of Dashboard.cpp." alt="" coords="161,5,315,32"/>
+<area shape="rect" id="node2" href="$Dashboard_8cpp.html" title=" " alt="" coords="5,155,148,181"/>
+<area shape="rect" id="node3" href="$CLDashboard_8h.html" title="Header file of CLDashboard.cpp." alt="" coords="153,80,323,107"/>
+<area shape="rect" id="node5" href="$Interface_8h.html" title="Header file of Interface.cpp." alt="" coords="381,80,524,107"/>
+<area shape="rect" id="node4" href="$CLDashboard_8cpp.html" title=" " alt="" coords="172,155,331,181"/>
+<area shape="rect" id="node6" href="$Interface_8cpp.html" title=" " alt="" coords="294,229,425,256"/>
+<area shape="rect" id="node7" href="$CLInterface_8h.html" title="Header file of CLInterface.cpp." alt="" coords="407,155,565,181"/>
+<area shape="rect" id="node9" href="$main_8h.html" title="Header file of main.cpp." alt="" coords="605,155,724,181"/>
+<area shape="rect" id="node8" href="$CLInterface_8cpp.html" title=" " alt="" coords="449,229,595,256"/>
+<area shape="rect" id="node10" href="$main_8cpp.html" title=" " alt="" coords="620,229,725,256"/>
+</map>

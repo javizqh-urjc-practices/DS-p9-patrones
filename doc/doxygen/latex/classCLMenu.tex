@@ -1,0 +1,92 @@
+\hypertarget{classCLMenu}{}\doxysection{C\+L\+Menu Class Reference}
+\label{classCLMenu}\index{CLMenu@{CLMenu}}
+
+
+Inheritance diagram for C\+L\+Menu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{classCLMenu__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+L\+Menu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{classCLMenu__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classCLMenu_a93d42073f5fba5d741fd645fb84d8328}{show}} (std\+::vector$<$ \mbox{\hyperlink{classSensor}{Sensor}} $\ast$ $>$)
+\begin{DoxyCompactList}\small\item\em Shows the menu with six or less smaller sensors displayed in the command line. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCLMenu_a0f4074dd42e1b6371f2d16e33da83e6c}{show}} (\mbox{\hyperlink{classSensor}{Sensor}} $\ast$sensor)
+\begin{DoxyCompactList}\small\item\em Shows the menu for the sensor selected in a detailed format in the command line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classCLMenu_ab378e2b03ee4903bebda2efced9ea8f2}{clear\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Clear the menu in the command line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCLMenu_ab378e2b03ee4903bebda2efced9ea8f2}\label{classCLMenu_ab378e2b03ee4903bebda2efced9ea8f2}} 
+\index{CLMenu@{CLMenu}!clearMenu@{clearMenu}}
+\index{clearMenu@{clearMenu}!CLMenu@{CLMenu}}
+\doxysubsubsection{\texorpdfstring{clearMenu()}{clearMenu()}}
+{\footnotesize\ttfamily void C\+L\+Menu\+::clear\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Clear the menu in the command line. 
+
+\mbox{\Hypertarget{classCLMenu_a0f4074dd42e1b6371f2d16e33da83e6c}\label{classCLMenu_a0f4074dd42e1b6371f2d16e33da83e6c}} 
+\index{CLMenu@{CLMenu}!show@{show}}
+\index{show@{show}!CLMenu@{CLMenu}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+L\+Menu\+::show (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSensor}{Sensor}} $\ast$}]{sensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Shows the menu for the sensor selected in a detailed format in the command line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor\+To\+Display} & \mbox{\hyperlink{classSensor}{Sensor}} to display \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMenu}{Menu}}.
+
+\mbox{\Hypertarget{classCLMenu_a93d42073f5fba5d741fd645fb84d8328}\label{classCLMenu_a93d42073f5fba5d741fd645fb84d8328}} 
+\index{CLMenu@{CLMenu}!show@{show}}
+\index{show@{show}!CLMenu@{CLMenu}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+L\+Menu\+::show (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classSensor}{Sensor}} $\ast$ $>$}]{sensors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Shows the menu with six or less smaller sensors displayed in the command line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensors} & Array of sensor to display $<$= 7 \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMenu}{Menu}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{CLMenu_8h}{C\+L\+Menu.\+h}}\item 
+src/\mbox{\hyperlink{CLMenu_8cpp}{C\+L\+Menu.\+cpp}}\end{DoxyCompactItemize}

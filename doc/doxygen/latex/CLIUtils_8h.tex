@@ -1,0 +1,185 @@
+\hypertarget{CLIUtils_8h}{}\doxysection{include/\+C\+L\+I\+Utils.h File Reference}
+\label{CLIUtils_8h}\index{include/CLIUtils.h@{include/CLIUtils.h}}
+
+
+Header file of \mbox{\hyperlink{CLIUtils_8cpp}{C\+L\+I\+Utils.\+cpp}}.  
+
+
+{\ttfamily \#include \char`\"{}User.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+Include dependency graph for C\+L\+I\+Utils.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{CLIUtils_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{CLIUtils_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{CLIUtils_8h_a9cbc9839f41a999f2d9c3dd8fa7a8a95}\label{CLIUtils_8h_a9cbc9839f41a999f2d9c3dd8fa7a8a95}} 
+void {\bfseries set\+Terminal\+Size} ()
+\item 
+\mbox{\Hypertarget{CLIUtils_8h_a5405373ba77baabd6e3eadae35452324}\label{CLIUtils_8h_a5405373ba77baabd6e3eadae35452324}} 
+int {\bfseries get\+Terminal\+Width} ()
+\item 
+\mbox{\Hypertarget{CLIUtils_8h_a5501eb77221bd7401ce720fc4166a708}\label{CLIUtils_8h_a5501eb77221bd7401ce720fc4166a708}} 
+int {\bfseries get\+Terminal\+Height} ()
+\item 
+void \mbox{\hyperlink{CLIUtils_8h_a18ea3a79df1a4a9b5e04de8f24720f05}{print\+Center\+From\+File}} (const std\+::string file\+Name, const std\+::string color=\char`\"{}none\char`\"{})
+\begin{DoxyCompactList}\small\item\em Print the contents of the file in the center. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{CLIUtils_8h_abd614c919fa7ab778ac1c34776c3354d}{print\+Center}} (const std\+::string to\+Print, const int padding=0)
+\begin{DoxyCompactList}\small\item\em Print the string in the center. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{CLIUtils_8h_a838e6e9e452e16a2475b77621b34ce06}{print\+Center}} (const std\+::string to\+Print, const std\+::string color, const int padding=0)
+\begin{DoxyCompactList}\small\item\em Print the string in the center. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{CLIUtils_8h_a09286d74da65758fe425e7f1b1cd493f}\label{CLIUtils_8h_a09286d74da65758fe425e7f1b1cd493f}} 
+void {\bfseries print\+Right} (const std\+::string to\+Print, const int padding=0)
+\item 
+\mbox{\Hypertarget{CLIUtils_8h_a72508c84698c3c6c890b8f5b3d683b06}\label{CLIUtils_8h_a72508c84698c3c6c890b8f5b3d683b06}} 
+void {\bfseries print\+Right} (const std\+::string to\+Print, const std\+::string color, const int padding=0)
+\item 
+\mbox{\Hypertarget{CLIUtils_8h_a9c6570e397a6a60a94e824ab989945c2}\label{CLIUtils_8h_a9c6570e397a6a60a94e824ab989945c2}} 
+void {\bfseries print\+Left} (const std\+::string to\+Print, const int padding=0)
+\item 
+\mbox{\Hypertarget{CLIUtils_8h_a62995df446bb3fd86f55c29f68afef1f}\label{CLIUtils_8h_a62995df446bb3fd86f55c29f68afef1f}} 
+void {\bfseries print\+Left} (const std\+::string to\+Print, const std\+::string color, const int padding=0)
+\item 
+void \mbox{\hyperlink{CLIUtils_8h_ae9e207e6eec6596d5869492b3f6152da}{print\+Color}} (std\+::string, std\+::string=\char`\"{}none\char`\"{})
+\begin{DoxyCompactList}\small\item\em Print the string to the terminal in the given color. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{CLIUtils_8h_a6ee064c14cc6f347ba06a1a762400439}{set\+Color}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Set the Color to print. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{CLIUtils_8h_a550754dd5cdd61a14169227bcd76e346}\label{CLIUtils_8h_a550754dd5cdd61a14169227bcd76e346}} 
+void {\bfseries start\+Custom\+Terminal} (int)
+\item 
+\mbox{\Hypertarget{CLIUtils_8h_ae2a494e60e1a35bd3350bd65c9ce2b6e}\label{CLIUtils_8h_ae2a494e60e1a35bd3350bd65c9ce2b6e}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries new\+Command} (\mbox{\hyperlink{classUser}{User}} \&user, std\+::string=\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{CLIUtils_8h_a046cf6317d4ae7856f3f7a7e7508d851}\label{CLIUtils_8h_a046cf6317d4ae7856f3f7a7e7508d851}} 
+void {\bfseries clear\+Custom\+Terminal} (int)
+\item 
+\mbox{\Hypertarget{CLIUtils_8h_ad6f5bf84271fcfbeda2cebed35e548bb}\label{CLIUtils_8h_ad6f5bf84271fcfbeda2cebed35e548bb}} 
+void {\bfseries move\+Cursor} (int posX, int posY)
+\item 
+\mbox{\Hypertarget{CLIUtils_8h_ae7cc85cf06631852b048eb11ffea468f}\label{CLIUtils_8h_ae7cc85cf06631852b048eb11ffea468f}} 
+void {\bfseries print\+Graphic} (const std\+::vector$<$ int $>$ \&data, int val\+PerY=1, int posX=10, int posY=10, int scale=1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file of \mbox{\hyperlink{CLIUtils_8cpp}{C\+L\+I\+Utils.\+cpp}}. 
+
+\begin{DoxyAuthor}{Author}
+Javier Izquierdo (\href{mailto:j.izquierdoh.2021@alumnos.urjc.es}{\texttt{ j.\+izquierdoh.\+2021@alumnos.\+urjc.\+es}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/11-\/23
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{CLIUtils_8h_abd614c919fa7ab778ac1c34776c3354d}\label{CLIUtils_8h_abd614c919fa7ab778ac1c34776c3354d}} 
+\index{CLIUtils.h@{CLIUtils.h}!printCenter@{printCenter}}
+\index{printCenter@{printCenter}!CLIUtils.h@{CLIUtils.h}}
+\doxysubsubsection{\texorpdfstring{printCenter()}{printCenter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void print\+Center (\begin{DoxyParamCaption}\item[{const std\+::string}]{to\+Print,  }\item[{const int}]{padding = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Print the string in the center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Print} & \\
+\hline
+{\em padding} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{CLIUtils_8h_a838e6e9e452e16a2475b77621b34ce06}\label{CLIUtils_8h_a838e6e9e452e16a2475b77621b34ce06}} 
+\index{CLIUtils.h@{CLIUtils.h}!printCenter@{printCenter}}
+\index{printCenter@{printCenter}!CLIUtils.h@{CLIUtils.h}}
+\doxysubsubsection{\texorpdfstring{printCenter()}{printCenter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void print\+Center (\begin{DoxyParamCaption}\item[{const std\+::string}]{to\+Print,  }\item[{const std\+::string}]{color,  }\item[{const int}]{padding = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Print the string in the center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Print} & \\
+\hline
+{\em padding} & \\
+\hline
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{CLIUtils_8h_a18ea3a79df1a4a9b5e04de8f24720f05}\label{CLIUtils_8h_a18ea3a79df1a4a9b5e04de8f24720f05}} 
+\index{CLIUtils.h@{CLIUtils.h}!printCenterFromFile@{printCenterFromFile}}
+\index{printCenterFromFile@{printCenterFromFile}!CLIUtils.h@{CLIUtils.h}}
+\doxysubsubsection{\texorpdfstring{printCenterFromFile()}{printCenterFromFile()}}
+{\footnotesize\ttfamily void print\+Center\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string}]{file\+Name,  }\item[{const std\+::string}]{color = {\ttfamily \char`\"{}none\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Print the contents of the file in the center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & \\
+\hline
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{CLIUtils_8h_ae9e207e6eec6596d5869492b3f6152da}\label{CLIUtils_8h_ae9e207e6eec6596d5869492b3f6152da}} 
+\index{CLIUtils.h@{CLIUtils.h}!printColor@{printColor}}
+\index{printColor@{printColor}!CLIUtils.h@{CLIUtils.h}}
+\doxysubsubsection{\texorpdfstring{printColor()}{printColor()}}
+{\footnotesize\ttfamily void print\+Color (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::string}]{ = {\ttfamily \char`\"{}none\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Print the string to the terminal in the given color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Print} & \\
+\hline
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{CLIUtils_8h_a6ee064c14cc6f347ba06a1a762400439}\label{CLIUtils_8h_a6ee064c14cc6f347ba06a1a762400439}} 
+\index{CLIUtils.h@{CLIUtils.h}!setColor@{setColor}}
+\index{setColor@{setColor}!CLIUtils.h@{CLIUtils.h}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily std\+::string set\+Color (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+Set the Color to print. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}

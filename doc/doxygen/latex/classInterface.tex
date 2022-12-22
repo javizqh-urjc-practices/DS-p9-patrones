@@ -1,0 +1,129 @@
+\hypertarget{classInterface}{}\doxysection{Interface Class Reference}
+\label{classInterface}\index{Interface@{Interface}}
+
+
+Inheritance diagram for Interface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classInterface__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Interface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInterface__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classInterface_ac9975b2282ec4ece7ae12a4b32cb8b02}{login}} (int tries)=0
+\begin{DoxyCompactList}\small\item\em Virtual interface for the login method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInterface_a41081dc72fac71c3e19621303dff5385}{login}} (std\+::string user\+Number, std\+::string nif)
+\begin{DoxyCompactList}\small\item\em Default login method withouth any interface. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classInterface_a3240c6067edc35cfff4bac43160996f4}{load\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Creates and loads the dashboard. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classInterface}{Interface}} $\ast$ \mbox{\hyperlink{classInterface_af255dbfbcb0865b690d5d9b06359c5b8}{Create}} (const std\+::string type=\char`\"{}C\+LI\char`\"{})
+\begin{DoxyCompactList}\small\item\em Create a new \mbox{\hyperlink{classInterface}{Interface}} instance of the type specified. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classInterface_afa5b421eb82d48c57b6bd5ba487c1867}\label{classInterface_afa5b421eb82d48c57b6bd5ba487c1867}} 
+\mbox{\hyperlink{classLoginInterface}{Login\+Interface}} $\ast$ {\bfseries login\+Interface}
+\item 
+\mbox{\Hypertarget{classInterface_ac573da004f9730e755b576c325d36ca7}\label{classInterface_ac573da004f9730e755b576c325d36ca7}} 
+\mbox{\hyperlink{classDashboard}{Dashboard}} $\ast$ {\bfseries dashboard}
+\item 
+\mbox{\Hypertarget{classInterface_abc3929071c96dc47642ee390d79d91fb}\label{classInterface_abc3929071c96dc47642ee390d79d91fb}} 
+\mbox{\hyperlink{classUser}{User}} {\bfseries user}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInterface_af255dbfbcb0865b690d5d9b06359c5b8}\label{classInterface_af255dbfbcb0865b690d5d9b06359c5b8}} 
+\index{Interface@{Interface}!Create@{Create}}
+\index{Create@{Create}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classInterface}{Interface}} $\ast$ Interface\+::\+Create (\begin{DoxyParamCaption}\item[{const std\+::string}]{type = {\ttfamily \char`\"{}CLI\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a new \mbox{\hyperlink{classInterface}{Interface}} instance of the type specified. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Type of interface \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Interface$\ast$ New \mbox{\hyperlink{classInterface}{Interface}} instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInterface_a3240c6067edc35cfff4bac43160996f4}\label{classInterface_a3240c6067edc35cfff4bac43160996f4}} 
+\index{Interface@{Interface}!loadMenu@{loadMenu}}
+\index{loadMenu@{loadMenu}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{loadMenu()}{loadMenu()}}
+{\footnotesize\ttfamily bool Interface\+::load\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates and loads the dashboard. 
+
+\begin{DoxyReturn}{Returns}
+true = exit 
+
+false = login again 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInterface_ac9975b2282ec4ece7ae12a4b32cb8b02}\label{classInterface_ac9975b2282ec4ece7ae12a4b32cb8b02}} 
+\index{Interface@{Interface}!login@{login}}
+\index{login@{login}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{login()}{login()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Interface\+::login (\begin{DoxyParamCaption}\item[{int}]{tries }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Virtual interface for the login method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tries} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classCLInterface_a68c5bbb7a484a2a45e806b15b5c558bf}{C\+L\+Interface}}.
+
+\mbox{\Hypertarget{classInterface_a41081dc72fac71c3e19621303dff5385}\label{classInterface_a41081dc72fac71c3e19621303dff5385}} 
+\index{Interface@{Interface}!login@{login}}
+\index{login@{login}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{login()}{login()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Interface\+::login (\begin{DoxyParamCaption}\item[{std\+::string}]{user\+Number,  }\item[{std\+::string}]{nif }\end{DoxyParamCaption})}
+
+
+
+Default login method withouth any interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Number} & \\
+\hline
+{\em nif} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This method is used when the user executes the main with the N\+IF and employee number 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Interface_8h}{Interface.\+h}}\item 
+src/\mbox{\hyperlink{Interface_8cpp}{Interface.\+cpp}}\end{DoxyCompactItemize}

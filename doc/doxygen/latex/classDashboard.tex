@@ -1,0 +1,289 @@
+\hypertarget{classDashboard}{}\doxysection{Dashboard Class Reference}
+\label{classDashboard}\index{Dashboard@{Dashboard}}
+
+
+Inheritance diagram for Dashboard\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{classDashboard__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Dashboard\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDashboard__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDashboard_a19bd79be9b4102d735cb880f07306611}\label{classDashboard_a19bd79be9b4102d735cb880f07306611}} 
+{\bfseries Dashboard} (const \mbox{\hyperlink{classUser}{User}} \&user)
+\item 
+\mbox{\Hypertarget{classDashboard_a0e97ee0346c95dab5ac42fc2c917d69b}\label{classDashboard_a0e97ee0346c95dab5ac42fc2c917d69b}} 
+virtual void {\bfseries show\+Main\+Menu} ()=0
+\item 
+bool \mbox{\hyperlink{classDashboard_aef27a85e48af95a081c21aaec82b366c}{change\+Interface}} (std\+::string new\+Interface=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Changes the current interface to the input one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDashboard_a2ca43807bdee5a145328ef9062cb623c}{add\+To\+Main\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Adds all the current sensors to the dashboard. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDashboard_a0cbf6d8ef182d1cdc8ef11b941338245}{add\+To\+Main\+Menu}} (\mbox{\hyperlink{classSensor}{Sensor}} $\ast$\mbox{\hyperlink{classDashboard_af375fed50c85669633ae7d49b32ecdb7}{sensor}})
+\begin{DoxyCompactList}\small\item\em Adds a sensor to the dashboard. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDashboard_ab7578ed5e35b71f48521d22b0bab8a43}{move\+Window\+Main\+Menu}} (int n=1)
+\begin{DoxyCompactList}\small\item\em Shifts the main menu n pages. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDashboard_a5905517ba8249b567e0e4b980e57a97b}{change\+Current\+Sensor\+Info}} (std\+::string to\+Change, std\+::string new\+Value)
+\begin{DoxyCompactList}\small\item\em Changes the current sensor values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDashboard_a00115991c39a1793e1fb0dd01a09ea97}{add\+New\+Sensor}} (std\+::string type)
+\begin{DoxyCompactList}\small\item\em Creates the new sensor and calls add\+To\+Main\+Menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDashboard_a596f0db2b83abf050e08aff47c92f47d}{delete\+Sensor}} (std\+::string id)
+\begin{DoxyCompactList}\small\item\em Deletes the desired sensor from the dashboard. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDashboard_a301f7ae20fbf4d749b9f650f08dcee7c}{clean\+Sensor}} ()
+\begin{DoxyCompactList}\small\item\em Deletes all the sensors from the dashboard. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDashboard_a783ee7cdf51ebbce302d50d2d38dd3eb}{exit}} ()
+\begin{DoxyCompactList}\small\item\em Exits the dashboard and finishes the program. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDashboard_ae5dae4e3e9ba3b051ddbb700e7ef1dae}{logout}} ()
+\begin{DoxyCompactList}\small\item\em Exits the dashboard and goes back to the login screen. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDashboard_a688480d92b185dc2ec359ea241feddbc}{can\+Exit}} ()
+\begin{DoxyCompactList}\small\item\em Called from main, checks if the program is allowed to exit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classDashboard}{Dashboard}} $\ast$ \mbox{\hyperlink{classDashboard_a21a6e0173431db0ff0d4e24d40c02371}{Create}} (const \mbox{\hyperlink{classUser}{User}} \&user, const std\+::string type=\char`\"{}C\+LI\char`\"{})
+\begin{DoxyCompactList}\small\item\em Create a new instance of the desired \mbox{\hyperlink{classDashboard}{Dashboard}} interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDashboard_af375fed50c85669633ae7d49b32ecdb7}\label{classDashboard_af375fed50c85669633ae7d49b32ecdb7}} 
+std\+::vector$<$ \mbox{\hyperlink{classSensor}{Sensor}} $\ast$ $>$ \mbox{\hyperlink{classDashboard_af375fed50c85669633ae7d49b32ecdb7}{sensor}}
+\begin{DoxyCompactList}\small\item\em Vector of all the vectors in the dashboard. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDashboard_aecf308d2c8dc61e3eb4bb27071df5f20}\label{classDashboard_aecf308d2c8dc61e3eb4bb27071df5f20}} 
+std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{classSensor}{Sensor}} $\ast$ $>$ $>$ \mbox{\hyperlink{classDashboard_aecf308d2c8dc61e3eb4bb27071df5f20}{main\+Menu}}
+\begin{DoxyCompactList}\small\item\em Vetor that contains the pages of the main \mbox{\hyperlink{classMenu}{Menu}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDashboard_ae9f1936fbef035dc1382e0fe8edf9e05}\label{classDashboard_ae9f1936fbef035dc1382e0fe8edf9e05}} 
+int \mbox{\hyperlink{classDashboard_ae9f1936fbef035dc1382e0fe8edf9e05}{main\+Menu\+Index}}
+\begin{DoxyCompactList}\small\item\em Current page of the main \mbox{\hyperlink{classMenu}{Menu}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDashboard_aeb53cb61c15d85d56a0883950dfa6b58}\label{classDashboard_aeb53cb61c15d85d56a0883950dfa6b58}} 
+\mbox{\hyperlink{classMenuBar}{Menu\+Bar}} $\ast$ {\bfseries menu\+Bar}
+\item 
+\mbox{\Hypertarget{classDashboard_a6c192f5a596591abc6dc61006c4175bb}\label{classDashboard_a6c192f5a596591abc6dc61006c4175bb}} 
+\mbox{\hyperlink{classMenu}{Menu}} $\ast$ {\bfseries menu}
+\item 
+\mbox{\Hypertarget{classDashboard_a1c8430d1550ed0f8dcfd18001399b609}\label{classDashboard_a1c8430d1550ed0f8dcfd18001399b609}} 
+\mbox{\hyperlink{classUser}{User}} {\bfseries user}
+\item 
+\mbox{\Hypertarget{classDashboard_a6a2c74734733a39eb0ee8bfe464bd1cd}\label{classDashboard_a6a2c74734733a39eb0ee8bfe464bd1cd}} 
+std\+::string \mbox{\hyperlink{classDashboard_a6a2c74734733a39eb0ee8bfe464bd1cd}{current\+Interface}}
+\begin{DoxyCompactList}\small\item\em Current interface, can be a sensor ID or the main menu (..) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDashboard_ac372f35f9eca5781c45ce0cf57d590a7}\label{classDashboard_ac372f35f9eca5781c45ce0cf57d590a7}} 
+std\+::string \mbox{\hyperlink{classDashboard_ac372f35f9eca5781c45ce0cf57d590a7}{last\+Interface}}
+\begin{DoxyCompactList}\small\item\em Last interface, can be a sensor ID or the main menu (..) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDashboard_a17a15dd4e91111f87826c508bdc12916}\label{classDashboard_a17a15dd4e91111f87826c508bdc12916}} 
+\mbox{\hyperlink{classSensor}{Sensor}} $\ast$ \mbox{\hyperlink{classDashboard_a17a15dd4e91111f87826c508bdc12916}{current\+Sensor}}
+\begin{DoxyCompactList}\small\item\em If the current\+Interface is a sensor then the value would be that sensor, if not the value is nullptr. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDashboard_a8312587c200243648871fccbf0e87709}\label{classDashboard_a8312587c200243648871fccbf0e87709}} 
+bool {\bfseries allowed\+To\+Exit}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDashboard_a00115991c39a1793e1fb0dd01a09ea97}\label{classDashboard_a00115991c39a1793e1fb0dd01a09ea97}} 
+\index{Dashboard@{Dashboard}!addNewSensor@{addNewSensor}}
+\index{addNewSensor@{addNewSensor}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{addNewSensor()}{addNewSensor()}}
+{\footnotesize\ttfamily void Dashboard\+::add\+New\+Sensor (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+
+
+Creates the new sensor and calls add\+To\+Main\+Menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & New sensor type \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classDashboard_a2ca43807bdee5a145328ef9062cb623c}{add\+To\+Main\+Menu}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classDashboard_a2ca43807bdee5a145328ef9062cb623c}\label{classDashboard_a2ca43807bdee5a145328ef9062cb623c}} 
+\index{Dashboard@{Dashboard}!addToMainMenu@{addToMainMenu}}
+\index{addToMainMenu@{addToMainMenu}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{addToMainMenu()}{addToMainMenu()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Dashboard\+::add\+To\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds all the current sensors to the dashboard. 
+
+\begin{DoxyNote}{Note}
+Only called at the start of the program 
+\end{DoxyNote}
+\mbox{\Hypertarget{classDashboard_a0cbf6d8ef182d1cdc8ef11b941338245}\label{classDashboard_a0cbf6d8ef182d1cdc8ef11b941338245}} 
+\index{Dashboard@{Dashboard}!addToMainMenu@{addToMainMenu}}
+\index{addToMainMenu@{addToMainMenu}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{addToMainMenu()}{addToMainMenu()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Dashboard\+::add\+To\+Main\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSensor}{Sensor}} $\ast$}]{sensor }\end{DoxyParamCaption})}
+
+
+
+Adds a sensor to the dashboard. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor} & \mbox{\hyperlink{classSensor}{Sensor}} to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDashboard_a688480d92b185dc2ec359ea241feddbc}\label{classDashboard_a688480d92b185dc2ec359ea241feddbc}} 
+\index{Dashboard@{Dashboard}!canExit@{canExit}}
+\index{canExit@{canExit}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{canExit()}{canExit()}}
+{\footnotesize\ttfamily bool Dashboard\+::can\+Exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called from main, checks if the program is allowed to exit. 
+
+\begin{DoxyReturn}{Returns}
+true End the program 
+
+false Cannot exit, goes to login screen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDashboard_a5905517ba8249b567e0e4b980e57a97b}\label{classDashboard_a5905517ba8249b567e0e4b980e57a97b}} 
+\index{Dashboard@{Dashboard}!changeCurrentSensorInfo@{changeCurrentSensorInfo}}
+\index{changeCurrentSensorInfo@{changeCurrentSensorInfo}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{changeCurrentSensorInfo()}{changeCurrentSensorInfo()}}
+{\footnotesize\ttfamily void Dashboard\+::change\+Current\+Sensor\+Info (\begin{DoxyParamCaption}\item[{std\+::string}]{to\+Change,  }\item[{std\+::string}]{new\+Value }\end{DoxyParamCaption})}
+
+
+
+Changes the current sensor values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Change} & Desired value to change \\
+\hline
+{\em new\+Value} & New value to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDashboard_aef27a85e48af95a081c21aaec82b366c}\label{classDashboard_aef27a85e48af95a081c21aaec82b366c}} 
+\index{Dashboard@{Dashboard}!changeInterface@{changeInterface}}
+\index{changeInterface@{changeInterface}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{changeInterface()}{changeInterface()}}
+{\footnotesize\ttfamily bool Dashboard\+::change\+Interface (\begin{DoxyParamCaption}\item[{std\+::string}]{new\+Interface = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Changes the current interface to the input one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Interface} & Desired interface to change ( .. = main \mbox{\hyperlink{classMenu}{Menu}}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true = can change interface 
+
+false = cannot change interface 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDashboard_a301f7ae20fbf4d749b9f650f08dcee7c}\label{classDashboard_a301f7ae20fbf4d749b9f650f08dcee7c}} 
+\index{Dashboard@{Dashboard}!cleanSensor@{cleanSensor}}
+\index{cleanSensor@{cleanSensor}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{cleanSensor()}{cleanSensor()}}
+{\footnotesize\ttfamily void Dashboard\+::clean\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deletes all the sensors from the dashboard. 
+
+\begin{DoxyNote}{Note}
+Only called when exiting the dashboard 
+\end{DoxyNote}
+\mbox{\Hypertarget{classDashboard_a21a6e0173431db0ff0d4e24d40c02371}\label{classDashboard_a21a6e0173431db0ff0d4e24d40c02371}} 
+\index{Dashboard@{Dashboard}!Create@{Create}}
+\index{Create@{Create}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDashboard}{Dashboard}} $\ast$ Dashboard\+::\+Create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classUser}{User}} \&}]{user,  }\item[{const std\+::string}]{type = {\ttfamily \char`\"{}CLI\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a new instance of the desired \mbox{\hyperlink{classDashboard}{Dashboard}} interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Type of \mbox{\hyperlink{classDashboard}{Dashboard}} interface \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Dashboard$\ast$ ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDashboard_a596f0db2b83abf050e08aff47c92f47d}\label{classDashboard_a596f0db2b83abf050e08aff47c92f47d}} 
+\index{Dashboard@{Dashboard}!deleteSensor@{deleteSensor}}
+\index{deleteSensor@{deleteSensor}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{deleteSensor()}{deleteSensor()}}
+{\footnotesize\ttfamily void Dashboard\+::delete\+Sensor (\begin{DoxyParamCaption}\item[{std\+::string}]{id }\end{DoxyParamCaption})}
+
+
+
+Deletes the desired sensor from the dashboard. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & ID of the sensor to delete \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classDashboard_a2ca43807bdee5a145328ef9062cb623c}{add\+To\+Main\+Menu}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classDashboard_a783ee7cdf51ebbce302d50d2d38dd3eb}\label{classDashboard_a783ee7cdf51ebbce302d50d2d38dd3eb}} 
+\index{Dashboard@{Dashboard}!exit@{exit}}
+\index{exit@{exit}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{exit()}{exit()}}
+{\footnotesize\ttfamily void Dashboard\+::exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exits the dashboard and finishes the program. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classDashboard_a301f7ae20fbf4d749b9f650f08dcee7c}{clean\+Sensor}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classDashboard_ae5dae4e3e9ba3b051ddbb700e7ef1dae}\label{classDashboard_ae5dae4e3e9ba3b051ddbb700e7ef1dae}} 
+\index{Dashboard@{Dashboard}!logout@{logout}}
+\index{logout@{logout}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{logout()}{logout()}}
+{\footnotesize\ttfamily void Dashboard\+::logout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exits the dashboard and goes back to the login screen. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classDashboard_a301f7ae20fbf4d749b9f650f08dcee7c}{clean\+Sensor}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classDashboard_ab7578ed5e35b71f48521d22b0bab8a43}\label{classDashboard_ab7578ed5e35b71f48521d22b0bab8a43}} 
+\index{Dashboard@{Dashboard}!moveWindowMainMenu@{moveWindowMainMenu}}
+\index{moveWindowMainMenu@{moveWindowMainMenu}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{moveWindowMainMenu()}{moveWindowMainMenu()}}
+{\footnotesize\ttfamily void Dashboard\+::move\+Window\+Main\+Menu (\begin{DoxyParamCaption}\item[{int}]{n = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Shifts the main menu n pages. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of pages to shift ( positive to the right ) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Dashboard_8h}{Dashboard.\+h}}\item 
+src/\mbox{\hyperlink{Dashboard_8cpp}{Dashboard.\+cpp}}\end{DoxyCompactItemize}

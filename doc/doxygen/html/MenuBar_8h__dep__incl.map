@@ -1,0 +1,16 @@
+<map id="include/MenuBar.h" name="include/MenuBar.h">
+<area shape="rect" id="node1" title="Header file of MenuBar.cpp." alt="" coords="455,5,597,32"/>
+<area shape="rect" id="node2" href="$MenuBar_8cpp.html" title=" " alt="" coords="519,155,650,181"/>
+<area shape="rect" id="node3" href="$Dashboard_8h.html" title="Header file of Dashboard.cpp." alt="" coords="279,80,434,107"/>
+<area shape="rect" id="node13" href="$CLMenuBar_8h.html" title="Header file of CLMenuBar.cpp." alt="" coords="564,80,723,107"/>
+<area shape="rect" id="node4" href="$Dashboard_8cpp.html" title=" " alt="" coords="5,229,148,256"/>
+<area shape="rect" id="node5" href="$CLDashboard_8h.html" title="Header file of CLDashboard.cpp." alt="" coords="157,155,327,181"/>
+<area shape="rect" id="node7" href="$Interface_8h.html" title="Header file of Interface.cpp." alt="" coords="352,155,495,181"/>
+<area shape="rect" id="node6" href="$CLDashboard_8cpp.html" title=" " alt="" coords="172,229,331,256"/>
+<area shape="rect" id="node8" href="$Interface_8cpp.html" title=" " alt="" coords="467,304,598,331"/>
+<area shape="rect" id="node9" href="$CLInterface_8h.html" title="Header file of CLInterface.cpp." alt="" coords="549,229,708,256"/>
+<area shape="rect" id="node11" href="$main_8h.html" title="Header file of main.cpp." alt="" coords="355,229,473,256"/>
+<area shape="rect" id="node10" href="$CLInterface_8cpp.html" title=" " alt="" coords="622,304,769,331"/>
+<area shape="rect" id="node12" href="$main_8cpp.html" title=" " alt="" coords="339,304,444,331"/>
+<area shape="rect" id="node14" href="$CLMenuBar_8cpp.html" title=" " alt="" coords="674,155,821,181"/>
+</map>
