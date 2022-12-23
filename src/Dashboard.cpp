@@ -207,6 +207,7 @@ void Dashboard::logout(){
 }
 
 bool Dashboard::canExit(){
+  this->user=nullptr;
   return this->allowedToExit;
 }
 

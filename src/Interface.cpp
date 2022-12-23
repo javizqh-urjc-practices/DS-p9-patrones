@@ -50,6 +50,7 @@ void Interface::login(const std::string userNumber, const std::string nif){
 bool Interface::loadMenu(){
   dashboard = Dashboard::Create(*user);
   this->dashboard = dashboard;
+  this->dashboard->setUser(*user);
   this->dashboard->showMainMenu();
   try {
     this->loginInterface->database->resetUser(*user);
@@ -64,5 +65,4 @@ bool Interface::loadMenu(){
 
 Interface::~Interface(){
   delete this->loginInterface;
-  delete this->dashboard;
 };
