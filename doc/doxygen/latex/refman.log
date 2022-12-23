@@ -1,0 +1,3018 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.12.23)  23 DEC 2022 15:38
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**refman
+(./refman.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Rollback for package 'array' requested -> date 2016-10-06.
+         Best approximation is the release introduced on 2016-10-06.
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array-2016-10-06.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen135
+\extrarowheight=\dimen136
+\NC@list=\toks14
+\extratabsurround=\skip49
+\backup@length=\skip50
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count176
+\calc@Bcount=\count177
+\calc@Adimen=\dimen137
+\calc@Bdimen=\dimen138
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count178
+\calc@Cskip=\skip53
+) (./doxygen.sty
+Package: doxygen 
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count179
+\float@exts=\toks15
+\float@box=\box45
+\@float@everytoks=\toks16
+\@floatcapt=\box46
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks17
+\verbatim@line=\toks18
+\verbatim@in@stream=\read2
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks19
+\minrowclearance=\skip54
+)
+\rownum=\count180
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(./longtable_doxygen.sty
+Package: longtable_doxygen 2014/10/28 v4.11 Multi-page Table package (DPC) - fr
+ozen version for doxygen
+\LTleft=\skip55
+\LTright=\skip56
+\LTpre=\skip57
+\LTpost=\skip58
+\LTchunksize=\count181
+\LTcapwidth=\dimen139
+\LT@head=\box47
+\LT@firsthead=\box48
+\LT@foot=\box49
+\LT@lastfoot=\box50
+\LT@cols=\count182
+\LT@rows=\count183
+\c@LT@tables=\count184
+\c@LT@chunks=\count185
+\LT@p@ftn=\toks20
+) (./tabu_doxygen.sty
+Package: tabu_doxygen 2011/02/26 v2.8 - flexible LaTeX tabulars (FC), frozen ve
+rsion for doxygen
+
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box51
+\sift@deathcycles=\count186
+\@vwid@loff=\dimen140
+\@vwid@roff=\dimen141
+)
+\c@taburow=\count187
+\tabu@nbcols=\count188
+\tabu@cnt=\count189
+\tabu@Xcol=\count190
+\tabu@alloc=\count191
+\tabu@nested=\count192
+\tabu@target=\dimen142
+\tabu@spreadtarget=\dimen143
+\tabu@naturalX=\dimen144
+\tabucolX=\dimen145
+\tabu@Xsum=\dimen146
+\extrarowdepth=\dimen147
+\abovetabulinesep=\dimen148
+\belowtabulinesep=\dimen149
+\tabustrutrule=\dimen150
+\tabu@thebody=\toks21
+\tabu@footnotes=\toks22
+\tabu@box=\box52
+\tabu@arstrutbox=\box53
+\tabu@hleads=\box54
+\tabu@vleads=\box55
+\tabu@cellskip=\skip59
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2020/01/13 v3.5 verbatim text (tvz,hv)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+)
+\FV@CodeLineNo=\count193
+\FV@InFile=\read3
+\FV@TabBox=\box56
+\c@FancyVerbLine=\count194
+\FV@StepNumber=\count195
+\FV@OutFile=\write3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen151
+\TX@old@table=\dimen152
+\TX@old@col=\dimen153
+\TX@target=\dimen154
+\TX@delta=\dimen155
+\TX@cols=\count196
+\TX@ftn=\toks24
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip60
+\multirow@cntb=\count197
+\multirow@dima=\skip61
+\bigstrutjot=\dimen156
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hanging/hanging.sty
+Package: hanging 2009/09/02 v1.2b hanging paragraphs and punctuation
+\h@ngcommawd=\skip62
+\h@ngfstopwd=\skip63
+\h@ngquotewd=\skip64
+\h@ngdquotewd=\skip65
+\h@ngquerywd=\skip66
+\h@ngexclwd=\skip67
+\h@ngcolonwd=\skip68
+\h@ngscolonwd=\skip69
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
+)
+\XKV@depth=\count198
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen157
+\Gin@req@width=\dimen158
+)
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box57
+)
+\tc@llx=\dimen159
+\tc@lly=\dimen160
+\tc@urx=\dimen161
+\tc@ury=\dimen162
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen163
+\adjbox@Height=\dimen164
+\adjbox@Depth=\dimen165
+\adjbox@Totalheight=\dimen166
+\adjbox@pwidth=\dimen167
+\adjbox@pheight=\dimen168
+\adjbox@pdepth=\dimen169
+\adjbox@ptotalheight=\dimen170
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count199
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks27
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/stackengine/stackengine.sty
+Package: stackengine 2017/02/13 v4.01\ Stacking text and objects in convenient 
+ways
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count266
+)
+(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.sty
+(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.tex
+\loi_cnt_foreach_nest=\count267
+\loi_nestcnt=\count268
+)
+Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified 
+sep char (CT)
+)
+\c@@stackindex=\count269
+\@boxshift=\skip70
+\stack@tmplength=\skip71
+\temp@stkl=\skip72
+\@stackedboxwidth=\skip73
+\@addedbox=\box58
+\@anchorbox=\box59
+\stackedbox=\box60
+\@centerbox=\box61
+\c@ROWcellindex@=\count270
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box62
+\UL@hyphenbox=\box63
+\UL@skip=\skip74
+\UL@hook=\toks28
+\UL@height=\dimen171
+\UL@pe=\count271
+\UL@pixel=\dimen172
+\ULC@box=\box64
+Package: ulem 2019/11/18
+\ULdepth=\dimen173
+)
+\xrefbox=\box65
+\xreflength=\skip75
+\CodeWidthChar=\skip76
+\CodeHeightChar=\skip77
+\DoxyCodeWidth=\skip78
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks29
+\inpenc@posthook=\toks30
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count272
+\mult@box=\box66
+\multicol@leftmargin=\dimen174
+\c@unbalance=\count273
+\c@collectmore=\count274
+\doublecol@number=\count275
+\multicoltolerance=\count276
+\multicolpretolerance=\count277
+\full@width=\dimen175
+\page@free=\dimen176
+\premulticols=\dimen177
+\postmulticols=\dimen178
+\multicolsep=\skip79
+\multicolbaselineskip=\skip80
+\partial@page=\box67
+\last@line=\box68
+\maxbalancingoverflow=\dimen179
+\mult@rightbox=\box69
+\mult@grightbox=\box70
+\mult@gfirstbox=\box71
+\mult@firstbox=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\c@minrows=\count278
+\c@columnbadness=\count279
+\c@finalcolumnbadness=\count280
+\last@try=\dimen180
+\multicolovershoot=\dimen181
+\multicolundershoot=\dimen182
+\mult@nat@firstbox=\box110
+\colbreak@box=\box111
+\mc@col@check@num=\count281
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count282
+\Gm@cntv=\count283
+\c@Gm@tempcnt=\count284
+\Gm@bindingoffset=\dimen183
+\Gm@wd@mp=\dimen184
+\Gm@odd@mp=\dimen185
+\Gm@even@mp=\dimen186
+\Gm@layoutwidth=\dimen187
+\Gm@layoutheight=\dimen188
+\Gm@layouthoffset=\dimen189
+\Gm@layoutvoffset=\dimen190
+\Gm@dimlist=\toks31
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip81
+\f@nch@O@elh=\skip82
+\f@nch@O@erh=\skip83
+\f@nch@O@olh=\skip84
+\f@nch@O@orh=\skip85
+\f@nch@O@elf=\skip86
+\f@nch@O@erf=\skip87
+\f@nch@O@olf=\skip88
+\f@nch@O@orf=\skip89
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip90
+\bibsep=\skip91
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count285
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip92
+\cftbeforetoctitleskip=\skip93
+\cftaftertoctitleskip=\skip94
+\cftbeforepartskip=\skip95
+\cftpartnumwidth=\skip96
+\cftpartindent=\skip97
+\cftbeforechapskip=\skip98
+\cftchapindent=\skip99
+\cftchapnumwidth=\skip100
+\cftbeforesecskip=\skip101
+\cftsecindent=\skip102
+\cftsecnumwidth=\skip103
+\cftbeforesubsecskip=\skip104
+\cftsubsecindent=\skip105
+\cftsubsecnumwidth=\skip106
+\cftbeforesubsubsecskip=\skip107
+\cftsubsubsecindent=\skip108
+\cftsubsubsecnumwidth=\skip109
+\cftbeforeparaskip=\skip110
+\cftparaindent=\skip111
+\cftparanumwidth=\skip112
+\cftbeforesubparaskip=\skip113
+\cftsubparaindent=\skip114
+\cftsubparanumwidth=\skip115
+\cftbeforeloftitleskip=\skip116
+\cftafterloftitleskip=\skip117
+\cftbeforefigskip=\skip118
+\cftfigindent=\skip119
+\cftfignumwidth=\skip120
+\c@lofdepth=\count286
+\c@lotdepth=\count287
+\cftbeforelottitleskip=\skip121
+\cftafterlottitleskip=\skip122
+\cftbeforetabskip=\skip123
+\cfttabindent=\skip124
+\cfttabnumwidth=\skip125
+)
+\@indexfile=\write4
+\openout4 = `refman.idx'.
+
+
+Writing index file refman.idx
+(/usr/share/texlive/texmf-dist/tex/latex/newunicodechar/newunicodechar.sty
+Package: newunicodechar 2018/04/08 v1.2 Defining Unicode characters
+)
+
+Package newunicodechar Warning: Redefining Unicode character on input line 116.
+
+
+
+Package newunicodechar Warning: Redefining Unicode character on input line 117.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen191
+\Hy@linkcounter=\count288
+\Hy@pagecounter=\count289
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count290
+\pdfmajorversion=\count291
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing ON on input line 4565.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4800.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
+Package: backref 2020/01/14 v1.40 Bibliographical back referencing
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+))
+\c@Hy@tempcnt=\count292
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen192
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+)
+\Fld@menulength=\count293
+\Field@Width=\dimen193
+\Fld@charsize=\dimen194
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing ON on input line 6443.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+
+(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count294
+\c@Item=\count295
+\c@Hfootnote=\count296
+)
+Package hyperref Info: Driver: hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+\Fld@listcount=\count297
+\c@bookmark@seq@number=\count298
+\Hy@SectionHShift=\skip126
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 135.
+Package hyperref Info: Option `unicode' set `true' on input line 135.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2020/01/14 v7.00d Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen195
+\captionmargin@=\dimen196
+\captionwidth=\dimen197
+\caption@tempdima=\dimen198
+\caption@indent=\dimen199
+\caption@parindent=\dimen256
+\caption@hangindent=\dimen257
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count299
+\c@continuedfloat=\count300
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/etoc/etoc.sty
+Package: etoc 2019/11/17 v1.09b Completely customisable TOCs (JFB)
+\Etoc@toctoks=\toks32
+\c@etoc@tocid=\count301
+\c@etoc@tocdepth=\count302
+\etoc@framed@titlebox=\box112
+\etoc@framed@contentsbox=\box113
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count303
+\l__pdf_internal_box=\box114
+)
+(./refman.aux)
+\openout1 = `refman.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 15
+0.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 150.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count304
+\scratchdimen=\dimen258
+\scratchbox=\box115
+\nofMPsegments=\count305
+\nofMParguments=\count306
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count307
+\MPscratchDim=\dimen259
+\MPnumerator=\count308
+\makeMPintoPDFobject=\count309
+\everyMPtoPDFconversion=\toks34
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-31.2056pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package backref Info: ** backref set up for natbib ** on input line 150.
+\AtBeginShipoutBox=\box116
+Package hyperref Info: Link coloring ON on input line 150.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count310
+)
+LaTeX Info: Redefining \ref on input line 150.
+LaTeX Info: Redefining \pageref on input line 150.
+LaTeX Info: Redefining \nameref on input line 150.
+
+(./refman.out) (./refman.out)
+\@outlinefile=\write5
+\openout5 = `refman.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+\Etoc@tf=\read4
+Package hyperref Info: Option `pageanchor' set `false' on input line 156.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 156.
+
+Package hyperref Info: Option `unicode' set `true' on input line 156.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 161.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 163.
+ [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+]
+\tf@toc=\write6
+\openout6 = `refman.toc'.
+
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 169.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 169
+.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 169
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 16
+9.
+
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 169.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 169.
+ [1]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 169.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 16
+9.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [2] [3] [4] [5]
+[6]
+Package hyperref Info: Option `pageanchor' set `true' on input line 171.
+
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 18.66588pt on input line 174.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 18.66588pt on input line 174.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 18.66588pt on input line 174.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 22.39185pt on input line 174.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 22.39185pt on input line 174.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 22.39185pt on input line 174.
+(./hierarchy.tex
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 1.
+) [1
+
+
+] [2
+
+]
+Chapter 2.
+(./annotated.tex) [3] [4
+
+]
+Chapter 3.
+(./files.tex [5]) [6]
+Chapter 4.
+(./classAdmin.tex <./classAdmin__inherit__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classAdmin__inherit__graph.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
+>
+<classAdmin__inherit__graph.pdf, id=1501, 128.48pt x 156.585pt>
+File: classAdmin__inherit__graph.pdf Graphic file (type pdf)
+<use classAdmin__inherit__graph.pdf>
+Package pdftex.def Info: classAdmin__inherit__graph.pdf  used on input line 9.
+(pdftex.def)             Requested size: 128.0pt x 156.01117pt.
+ <./classAdmin__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classAdmin__coll__graph.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+>
+<classAdmin__coll__graph.pdf, id=1509, 207.77625pt x 224.84pt>
+File: classAdmin__coll__graph.pdf Graphic file (type pdf)
+<use classAdmin__coll__graph.pdf>
+Package pdftex.def Info: classAdmin__coll__graph.pdf  used on input line 18.
+(pdftex.def)             Requested size: 207.0pt x 224.00919pt.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 21.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 2
+4.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 24.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 25.
+ [7
+
+]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 25.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 25.
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 34.
+)
+(./classAirQuality.tex <./classAirQuality__inherit__graph.pdf>
+<classAirQuality__inherit__graph.pdf, id=1529, 145.54375pt x 156.585pt>
+File: classAirQuality__inherit__graph.pdf Graphic file (type pdf)
+<use classAirQuality__inherit__graph.pdf>
+Package pdftex.def Info: classAirQuality__inherit__graph.pdf  used on input lin
+e 9.
+(pdftex.def)             Requested size: 145.0pt x 156.01117pt.
+ <./classAirQuality__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classAirQuality__coll__graph.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+>
+<classAirQuality__coll__graph.pdf, id=1537, 145.54375pt x 156.585pt>
+File: classAirQuality__coll__graph.pdf Graphic file (type pdf)
+<use classAirQuality__coll__graph.pdf>
+Package pdftex.def Info: classAirQuality__coll__graph.pdf  used on input line 1
+8.
+(pdftex.def)             Requested size: 145.0pt x 156.01117pt.
+ [8]
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 36.
+ [9]
+Underfull \hbox (badness 10000) detected at line 62
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 65
+[][][]
+ []
+
+) (./classCameraBW.tex <./classCameraBW__inherit__graph.pdf>
+<classCameraBW__inherit__graph.pdf, id=1574, 151.56625pt x 156.585pt>
+File: classCameraBW__inherit__graph.pdf Graphic file (type pdf)
+<use classCameraBW__inherit__graph.pdf>
+Package pdftex.def Info: classCameraBW__inherit__graph.pdf  used on input line 
+9.
+(pdftex.def)             Requested size: 151.0pt x 156.00162pt.
+ <./classCameraBW__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classCameraBW__coll__graph.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
+>
+<classCameraBW__coll__graph.pdf, id=1582, 151.56625pt x 156.585pt>
+File: classCameraBW__coll__graph.pdf Graphic file (type pdf)
+<use classCameraBW__coll__graph.pdf>
+Package pdftex.def Info: classCameraBW__coll__graph.pdf  used on input line 18.
+
+(pdftex.def)             Requested size: 151.0pt x 156.00162pt.
+ [10]
+Underfull \hbox (badness 10000) detected at line 62
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 65
+[][][]
+ []
+
+) (./classCameraRGB.tex <./classCameraRGB__inherit__graph.pdf>
+<classCameraRGB__inherit__graph.pdf, id=1604, 156.585pt x 156.585pt>
+File: classCameraRGB__inherit__graph.pdf Graphic file (type pdf)
+<use classCameraRGB__inherit__graph.pdf>
+Package pdftex.def Info: classCameraRGB__inherit__graph.pdf  used on input line
+ 9.
+(pdftex.def)             Requested size: 156.0pt x 156.0064pt.
+ [11] <./classCameraRGB__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classCameraRGB__coll__graph.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>
+<classCameraRGB__coll__graph.pdf, id=1622, 156.585pt x 156.585pt>
+File: classCameraRGB__coll__graph.pdf Graphic file (type pdf)
+<use classCameraRGB__coll__graph.pdf>
+Package pdftex.def Info: classCameraRGB__coll__graph.pdf  used on input line 18
+.
+(pdftex.def)             Requested size: 156.0pt x 156.0064pt.
+ [12]
+Underfull \hbox (badness 10000) detected at line 62
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 65
+[][][]
+ []
+
+) (./classCLDashboard.tex <./classCLDashboard__inherit__graph.pdf>
+<classCLDashboard__inherit__graph.pdf, id=1646, 161.60374pt x 156.585pt>
+File: classCLDashboard__inherit__graph.pdf Graphic file (type pdf)
+<use classCLDashboard__inherit__graph.pdf>
+Package pdftex.def Info: classCLDashboard__inherit__graph.pdf  used on input li
+ne 9.
+(pdftex.def)             Requested size: 161.0pt x 156.00879pt.
+ <./classCLDashboard__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classCLDashboard__coll__graph.pdf): PDF inclus
+ion: multiple pdfs with page group included in a single page
+>
+<classCLDashboard__coll__graph.pdf, id=1654, 362.35374pt x 359.3425pt>
+File: classCLDashboard__coll__graph.pdf Graphic file (type pdf)
+<use classCLDashboard__coll__graph.pdf>
+Package pdftex.def Info: classCLDashboard__coll__graph.pdf  used on input line 
+18.
+(pdftex.def)             Requested size: 350.0pt x 347.09781pt.
+ [13] [14] [15]) (./classCLInterface.tex <./classCLInterface__inherit__graph.pd
+f
+
+pdfTeX warning: pdflatex (file ./classCLInterface__inherit__graph.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+>
+<classCLInterface__inherit__graph.pdf, id=1708, 152.57pt x 156.585pt>
+File: classCLInterface__inherit__graph.pdf Graphic file (type pdf)
+<use classCLInterface__inherit__graph.pdf>
+Package pdftex.def Info: classCLInterface__inherit__graph.pdf  used on input li
+ne 9.
+(pdftex.def)             Requested size: 152.0pt x 156.0064pt.
+ [16] <./classCLInterface__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classCLInterface__coll__graph.pdf): PDF inclus
+ion: multiple pdfs with page group included in a single page
+>
+<classCLInterface__coll__graph.pdf, id=1721, 460.72125pt x 426.59375pt>
+File: classCLInterface__coll__graph.pdf Graphic file (type pdf)
+<use classCLInterface__coll__graph.pdf>
+Package pdftex.def Info: classCLInterface__coll__graph.pdf  used on input line 
+18.
+(pdftex.def)             Requested size: 350.0pt x 324.07141pt.
+ [17]
+Underfull \hbox (badness 10000) detected at line 42
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 63
+[][][]
+ []
+
+) (./classCLLoginInterface.tex <./classCLLoginInterface__inherit__graph.pdf>
+<classCLLoginInterface__inherit__graph.pdf, id=1747, 178.6675pt x 156.585pt>
+File: classCLLoginInterface__inherit__graph.pdf Graphic file (type pdf)
+<use classCLLoginInterface__inherit__graph.pdf>
+Package pdftex.def Info: classCLLoginInterface__inherit__graph.pdf  used on inp
+ut line 9.
+(pdftex.def)             Requested size: 178.0pt x 156.00879pt.
+
+[18] <./classCLLoginInterface__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classCLLoginInterface__coll__graph.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
+>
+<classCLLoginInterface__coll__graph.pdf, id=1762, 178.6675pt x 224.84pt>
+File: classCLLoginInterface__coll__graph.pdf Graphic file (type pdf)
+<use classCLLoginInterface__coll__graph.pdf>
+Package pdftex.def Info: classCLLoginInterface__coll__graph.pdf  used on input 
+line 18.
+(pdftex.def)             Requested size: 178.0pt x 224.01262pt.
+ [19]
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 7.19995pt on input line 41.
+
+Underfull \hbox (badness 10000) detected at line 62
+[][][]
+ []
+
+[20]
+Underfull \hbox (badness 10000) detected at line 98
+[][][]
+ []
+
+) (./classCLMenu.tex <./classCLMenu__inherit__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classCLMenu__inherit__graph.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>
+<classCLMenu__inherit__graph.pdf, id=1803, 136.51pt x 156.585pt>
+File: classCLMenu__inherit__graph.pdf Graphic file (type pdf)
+<use classCLMenu__inherit__graph.pdf>
+Package pdftex.def Info: classCLMenu__inherit__graph.pdf  used on input line 9.
+
+(pdftex.def)             Requested size: 136.0pt x 156.00879pt.
+ <./classCLMenu__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classCLMenu__coll__graph.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+>
+<classCLMenu__coll__graph.pdf, id=1811, 136.51pt x 156.585pt>
+File: classCLMenu__coll__graph.pdf Graphic file (type pdf)
+<use classCLMenu__coll__graph.pdf>
+Package pdftex.def Info: classCLMenu__coll__graph.pdf  used on input line 18.
+(pdftex.def)             Requested size: 136.0pt x 156.00879pt.
+ [21] [22]) (./classCLMenuBar.tex <./classCLMenuBar__inherit__graph.pdf>
+<classCLMenuBar__inherit__graph.pdf, id=1864, 152.57pt x 156.585pt>
+File: classCLMenuBar__inherit__graph.pdf Graphic file (type pdf)
+<use classCLMenuBar__inherit__graph.pdf>
+Package pdftex.def Info: classCLMenuBar__inherit__graph.pdf  used on input line
+ 9.
+(pdftex.def)             Requested size: 152.0pt x 156.0064pt.
+ <./classCLMenuBar__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classCLMenuBar__coll__graph.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>
+<classCLMenuBar__coll__graph.pdf, id=1872, 207.77625pt x 292.09125pt>
+File: classCLMenuBar__coll__graph.pdf Graphic file (type pdf)
+<use classCLMenuBar__coll__graph.pdf>
+Package pdftex.def Info: classCLMenuBar__coll__graph.pdf  used on input line 18
+.
+(pdftex.def)             Requested size: 207.0pt x 291.01193pt.
+ [23]) (./classDashboard.tex <./classDashboard__inherit__graph.pdf>
+<classDashboard__inherit__graph.pdf, id=1893, 161.60374pt x 156.585pt>
+File: classDashboard__inherit__graph.pdf Graphic file (type pdf)
+<use classDashboard__inherit__graph.pdf>
+Package pdftex.def Info: classDashboard__inherit__graph.pdf  used on input line
+ 9.
+(pdftex.def)             Requested size: 161.0pt x 156.00879pt.
+ [24] <./classDashboard__coll__graph.pdf>
+<classDashboard__coll__graph.pdf, id=1911, 362.35374pt x 302.12875pt>
+File: classDashboard__coll__graph.pdf Graphic file (type pdf)
+<use classDashboard__coll__graph.pdf>
+Package pdftex.def Info: classDashboard__coll__graph.pdf  used on input line 18
+.
+(pdftex.def)             Requested size: 350.0pt x 291.83363pt.
+ [25] [26]
+Underfull \hbox (badness 10000) detected at line 108
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 121
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 149
+[][][]
+ []
+
+[27]
+Underfull \hbox (badness 10000) detected at line 186
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 201
+[][][]
+ []
+
+[28]
+Underfull \hbox (badness 10000) detected at line 219
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 238
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 251
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 264
+[][][]
+ []
+
+[29]) (./classDatabase.tex) (./classHumidity.tex <./classHumidity__inherit__gra
+ph.pdf
+
+pdfTeX warning: pdflatex (file ./classHumidity__inherit__graph.pdf): PDF inclus
+ion: multiple pdfs with page group included in a single page
+>
+<classHumidity__inherit__graph.pdf, id=2036, 142.5325pt x 156.585pt>
+File: classHumidity__inherit__graph.pdf Graphic file (type pdf)
+<use classHumidity__inherit__graph.pdf>
+Package pdftex.def Info: classHumidity__inherit__graph.pdf  used on input line 
+9.
+(pdftex.def)             Requested size: 142.0pt x 155.99922pt.
+ [30] <./classHumidity__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classHumidity__coll__graph.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
+>
+<classHumidity__coll__graph.pdf, id=2053, 142.5325pt x 156.585pt>
+File: classHumidity__coll__graph.pdf Graphic file (type pdf)
+<use classHumidity__coll__graph.pdf>
+Package pdftex.def Info: classHumidity__coll__graph.pdf  used on input line 18.
+
+(pdftex.def)             Requested size: 142.0pt x 155.99922pt.
+ [31]
+Underfull \hbox (badness 10000) detected at line 62
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 65
+[][][]
+ []
+
+) (./classInterface.tex <./classInterface__inherit__graph.pdf>
+<classInterface__inherit__graph.pdf, id=2079, 152.57pt x 156.585pt>
+File: classInterface__inherit__graph.pdf Graphic file (type pdf)
+<use classInterface__inherit__graph.pdf>
+Package pdftex.def Info: classInterface__inherit__graph.pdf  used on input line
+ 9.
+(pdftex.def)             Requested size: 152.0pt x 156.0064pt.
+ <./classInterface__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classInterface__coll__graph.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>
+<classInterface__coll__graph.pdf, id=2087, 460.72125pt x 369.38pt>
+File: classInterface__coll__graph.pdf Graphic file (type pdf)
+<use classInterface__coll__graph.pdf>
+Package pdftex.def Info: classInterface__coll__graph.pdf  used on input line 18
+.
+(pdftex.def)             Requested size: 350.0pt x 280.60771pt.
+ [32] [33]
+Underfull \hbox (badness 10000) detected at line 65
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 78
+[][][]
+ []
+
+[34]
+Underfull \hbox (badness 10000) detected at line 119
+[][][]
+ []
+
+) (./classLoginInterface.tex <./classLoginInterface__inherit__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classLoginInterface__inherit__graph.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+>
+<classLoginInterface__inherit__graph.pdf, id=2139, 178.6675pt x 156.585pt>
+File: classLoginInterface__inherit__graph.pdf Graphic file (type pdf)
+<use classLoginInterface__inherit__graph.pdf>
+Package pdftex.def Info: classLoginInterface__inherit__graph.pdf  used on input
+ line 9.
+(pdftex.def)             Requested size: 178.0pt x 156.00879pt.
+ <./classLoginInterface__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classLoginInterface__coll__graph.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+>
+<classLoginInterface__coll__graph.pdf, id=2147, 172.645pt x 167.62625pt>
+File: classLoginInterface__coll__graph.pdf Graphic file (type pdf)
+<use classLoginInterface__coll__graph.pdf>
+Package pdftex.def Info: classLoginInterface__coll__graph.pdf  used on input li
+ne 18.
+(pdftex.def)             Requested size: 172.0pt x 167.00172pt.
+ [35] [36]
+Underfull \hbox (badness 10000) detected at line 100
+[][][]
+ []
+
+) (./classMenu.tex <./classMenu__inherit__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classMenu__inherit__graph.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+>
+<classMenu__inherit__graph.pdf, id=2196, 136.51pt x 156.585pt>
+File: classMenu__inherit__graph.pdf Graphic file (type pdf)
+<use classMenu__inherit__graph.pdf>
+Package pdftex.def Info: classMenu__inherit__graph.pdf  used on input line 9.
+(pdftex.def)             Requested size: 136.0pt x 156.00879pt.
+ [37]
+Underfull \hbox (badness 10000) detected at line 44
+[][][]
+ []
+
+) (./classMenuBar.tex <./classMenuBar__inherit__graph.pdf>
+<classMenuBar__inherit__graph.pdf, id=2228, 152.57pt x 156.585pt>
+File: classMenuBar__inherit__graph.pdf Graphic file (type pdf)
+<use classMenuBar__inherit__graph.pdf>
+Package pdftex.def Info: classMenuBar__inherit__graph.pdf  used on input line 9
+.
+(pdftex.def)             Requested size: 152.0pt x 156.0064pt.
+ <./classMenuBar__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classMenuBar__coll__graph.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+>
+<classMenuBar__coll__graph.pdf, id=2236, 207.77625pt x 234.8775pt>
+File: classMenuBar__coll__graph.pdf Graphic file (type pdf)
+<use classMenuBar__coll__graph.pdf>
+Package pdftex.def Info: classMenuBar__coll__graph.pdf  used on input line 18.
+(pdftex.def)             Requested size: 207.0pt x 234.0096pt.
+ [38]
+Underfull \hbox (badness 10000) detected at line 64
+[][][]
+ []
+
+[39]) (./classMoisture.tex <./classMoisture__inherit__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classMoisture__inherit__graph.pdf): PDF inclus
+ion: multiple pdfs with page group included in a single page
+>
+<classMoisture__inherit__graph.pdf, id=2276, 139.52126pt x 156.585pt>
+File: classMoisture__inherit__graph.pdf Graphic file (type pdf)
+<use classMoisture__inherit__graph.pdf>
+Package pdftex.def Info: classMoisture__inherit__graph.pdf  used on input line 
+9.
+(pdftex.def)             Requested size: 139.0pt x 156.004pt.
+ <./classMoisture__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classMoisture__coll__graph.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
+>
+<classMoisture__coll__graph.pdf, id=2284, 139.52126pt x 156.585pt>
+File: classMoisture__coll__graph.pdf Graphic file (type pdf)
+<use classMoisture__coll__graph.pdf>
+Package pdftex.def Info: classMoisture__coll__graph.pdf  used on input line 18.
+
+(pdftex.def)             Requested size: 139.0pt x 156.004pt.
+ [40]
+Underfull \hbox (badness 10000) detected at line 62
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 65
+[][][]
+ []
+
+) (./classNotFoundUserException.tex <./classNotFoundUserException__inherit__gra
+ph.pdf>
+<classNotFoundUserException__inherit__graph.pdf, id=2310, 214.8025pt x 156.585p
+t>
+File: classNotFoundUserException__inherit__graph.pdf Graphic file (type pdf)
+<use classNotFoundUserException__inherit__graph.pdf>
+Package pdftex.def Info: classNotFoundUserException__inherit__graph.pdf  used o
+n input line 9.
+(pdftex.def)             Requested size: 214.0pt x 156.00162pt.
+ [41] <./classNotFoundUserException__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classNotFoundUserException__coll__graph.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>
+<classNotFoundUserException__coll__graph.pdf, id=2325, 214.8025pt x 156.585pt>
+File: classNotFoundUserException__coll__graph.pdf Graphic file (type pdf)
+<use classNotFoundUserException__coll__graph.pdf>
+Package pdftex.def Info: classNotFoundUserException__coll__graph.pdf  used on i
+nput line 18.
+(pdftex.def)             Requested size: 214.0pt x 156.00162pt.
+) (./classSensor.tex <./classSensor__inherit__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classSensor__inherit__graph.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>
+<classSensor__inherit__graph.pdf, id=2335, 589.20125pt x 156.585pt>
+File: classSensor__inherit__graph.pdf Graphic file (type pdf)
+<use classSensor__inherit__graph.pdf>
+Package pdftex.def Info: classSensor__inherit__graph.pdf  used on input line 9.
+
+(pdftex.def)             Requested size: 350.0pt x 93.0151pt.
+ [42] [43]
+Underfull \hbox (badness 10000) detected at line 122
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 135
+[][][]
+ []
+
+[44]
+Underfull \hbox (badness 10000) detected at line 148
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 161
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 174
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 187
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 200
+[][][]
+ []
+
+[45]
+Overfull \vbox (9.0295pt too high) has occurred while \output is active []
+
+
+[46]) (./classThermometer.tex <./classThermometer__inherit__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classThermometer__inherit__graph.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+>
+<classThermometer__inherit__graph.pdf, id=2424, 163.61125pt x 156.585pt>
+File: classThermometer__inherit__graph.pdf Graphic file (type pdf)
+<use classThermometer__inherit__graph.pdf>
+Package pdftex.def Info: classThermometer__inherit__graph.pdf  used on input li
+ne 9.
+(pdftex.def)             Requested size: 163.0pt x 155.99922pt.
+ <./classThermometer__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classThermometer__coll__graph.pdf): PDF inclus
+ion: multiple pdfs with page group included in a single page
+>
+<classThermometer__coll__graph.pdf, id=2432, 163.61125pt x 156.585pt>
+File: classThermometer__coll__graph.pdf Graphic file (type pdf)
+<use classThermometer__coll__graph.pdf>
+Package pdftex.def Info: classThermometer__coll__graph.pdf  used on input line 
+18.
+(pdftex.def)             Requested size: 163.0pt x 155.99922pt.
+ [47]
+Underfull \hbox (badness 10000) detected at line 62
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 65
+[][][]
+ []
+
+) (./classUser.tex <./classUser__inherit__graph.pdf>
+<classUser__inherit__graph.pdf, id=2457, 128.48pt x 156.585pt>
+File: classUser__inherit__graph.pdf Graphic file (type pdf)
+<use classUser__inherit__graph.pdf>
+Package pdftex.def Info: classUser__inherit__graph.pdf  used on input line 9.
+(pdftex.def)             Requested size: 128.0pt x 156.01117pt.
+ [48] <./classUser__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classUser__coll__graph.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>
+<classUser__coll__graph.pdf, id=2474, 207.77625pt x 167.62625pt>
+File: classUser__coll__graph.pdf Graphic file (type pdf)
+<use classUser__coll__graph.pdf>
+Package pdftex.def Info: classUser__coll__graph.pdf  used on input line 18.
+(pdftex.def)             Requested size: 207.0pt x 167.00684pt.
+
+Underfull \hbox (badness 3803) in paragraph at lines 26--29
+[][] \T1/phv/b/n/10 User \T1/phv/m/n/10 ([] [], std[]::string num-ber="00000", 
+std[]::string nif="00000000", std[]::string
+ []
+
+[49] [50]
+Underfull \hbox (badness 10000) detected at line 140
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 153
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 166
+[][][]
+ []
+
+[51]
+Overfull \hbox (0.98067pt too wide) in paragraph at lines 1--1
+[]\T1/phv/m/sl/10 N[] 
+ []
+
+) (./classUserConfig.tex) [52]
+Chapter 5.
+(./Admin_8h.tex <./Admin_8h__incl.pdf
+
+pdfTeX warning: pdflatex (file ./Admin_8h__incl.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+>
+<Admin_8h__incl.pdf, id=2565, 448.67625pt x 269.005pt>
+File: Admin_8h__incl.pdf Graphic file (type pdf)
+<use Admin_8h__incl.pdf>
+Package pdftex.def Info: Admin_8h__incl.pdf  used on input line 13.
+(pdftex.def)             Requested size: 350.0pt x 209.85178pt.
+ <./Admin_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./Admin_8h__dep__incl.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>
+<Admin_8h__dep__incl.pdf, id=2573, 1032.85875pt x 381.425pt>
+File: Admin_8h__dep__incl.pdf Graphic file (type pdf)
+<use Admin_8h__dep__incl.pdf>
+Package pdftex.def Info: Admin_8h__dep__incl.pdf  used on input line 20.
+(pdftex.def)             Requested size: 350.0pt x 129.25209pt.
+ [53
+
+]
+Underfull \hbox (badness 10000) detected at line 33
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 42
+[][][]
+ []
+
+) (./AirQuality_8h.tex <./AirQuality_8h__incl.pdf>
+<AirQuality_8h__incl.pdf, id=2593, 274.02374pt x 212.795pt>
+File: AirQuality_8h__incl.pdf Graphic file (type pdf)
+<use AirQuality_8h__incl.pdf>
+Package pdftex.def Info: AirQuality_8h__incl.pdf  used on input line 13.
+(pdftex.def)             Requested size: 273.0pt x 212.01518pt.
+ <./AirQuality_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./AirQuality_8h__dep__incl.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+>
+<AirQuality_8h__dep__incl.pdf, id=2601, 287.0725pt x 156.585pt>
+File: AirQuality_8h__dep__incl.pdf Graphic file (type pdf)
+<use AirQuality_8h__dep__incl.pdf>
+Package pdftex.def Info: AirQuality_8h__dep__incl.pdf  used on input line 20.
+(pdftex.def)             Requested size: 286.0pt x 156.004pt.
+ [54]
+Underfull \hbox (badness 10000) detected at line 33
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 42
+[][][]
+ []
+
+) (./CameraBW_8h.tex <./CameraBW_8h__incl.pdf>
+<CameraBW_8h__incl.pdf, id=2620, 274.02374pt x 212.795pt>
+File: CameraBW_8h__incl.pdf Graphic file (type pdf)
+<use CameraBW_8h__incl.pdf>
+Package pdftex.def Info: CameraBW_8h__incl.pdf  used on input line 13.
+(pdftex.def)             Requested size: 273.0pt x 212.01518pt.
+ [55] <./CameraBW_8h__dep__incl.pdf>
+<CameraBW_8h__dep__incl.pdf, id=2635, 293.095pt x 156.585pt>
+File: CameraBW_8h__dep__incl.pdf Graphic file (type pdf)
+<use CameraBW_8h__dep__incl.pdf>
+Package pdftex.def Info: CameraBW_8h__dep__incl.pdf  used on input line 20.
+(pdftex.def)             Requested size: 292.0pt x 155.99922pt.
+
+Underfull \hbox (badness 10000) detected at line 33
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][][]
+ []
+
+[56]
+Underfull \hbox (badness 10000) detected at line 39
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 42
+[][][]
+ []
+
+) (./CameraRGB_8h.tex <./CameraRGB_8h__incl.pdf>
+<CameraRGB_8h__incl.pdf, id=2656, 274.02374pt x 212.795pt>
+File: CameraRGB_8h__incl.pdf Graphic file (type pdf)
+<use CameraRGB_8h__incl.pdf>
+Package pdftex.def Info: CameraRGB_8h__incl.pdf  used on input line 13.
+(pdftex.def)             Requested size: 273.0pt x 212.01518pt.
+ <./CameraRGB_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./CameraRGB_8h__dep__incl.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+>
+<CameraRGB_8h__dep__incl.pdf, id=2664, 299.1175pt x 156.585pt>
+File: CameraRGB_8h__dep__incl.pdf Graphic file (type pdf)
+<use CameraRGB_8h__dep__incl.pdf>
+Package pdftex.def Info: CameraRGB_8h__dep__incl.pdf  used on input line 20.
+(pdftex.def)             Requested size: 298.0pt x 156.01117pt.
+ [57]
+Underfull \hbox (badness 10000) detected at line 33
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 42
+[][][]
+ []
+
+) (./CLDashboard_8h.tex <./CLDashboard_8h__incl.pdf>
+<CLDashboard_8h__incl.pdf, id=2683, 953.5625pt x 437.635pt>
+File: CLDashboard_8h__incl.pdf Graphic file (type pdf)
+<use CLDashboard_8h__incl.pdf>
+Package pdftex.def Info: CLDashboard_8h__incl.pdf  used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 160.6336pt.
+ <./CLDashboard_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./CLDashboard_8h__dep__incl.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+>
+<CLDashboard_8h__dep__incl.pdf, id=2691, 325.215pt x 156.585pt>
+File: CLDashboard_8h__dep__incl.pdf Graphic file (type pdf)
+<use CLDashboard_8h__dep__incl.pdf>
+Package pdftex.def Info: CLDashboard_8h__dep__incl.pdf  used on input line 21.
+(pdftex.def)             Requested size: 324.0pt x 156.01117pt.
+ [58]
+Underfull \hbox (badness 10000) detected at line 34
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 43
+[][][]
+ []
+
+) (./CLInterface_8h.tex <./CLInterface_8h__incl.pdf>
+<CLInterface_8h__incl.pdf, id=2710, 735.74875pt x 493.845pt>
+File: CLInterface_8h__incl.pdf Graphic file (type pdf)
+<use CLInterface_8h__incl.pdf>
+Package pdftex.def Info: CLInterface_8h__incl.pdf  used on input line 15.
+(pdftex.def)             Requested size: 350.0pt x 234.93297pt.
+ [59] <./CLInterface_8h__dep__incl.pdf>
+<CLInterface_8h__dep__incl.pdf, id=2726, 307.1475pt x 156.585pt>
+File: CLInterface_8h__dep__incl.pdf Graphic file (type pdf)
+<use CLInterface_8h__dep__incl.pdf>
+Package pdftex.def Info: CLInterface_8h__dep__incl.pdf  used on input line 22.
+(pdftex.def)             Requested size: 306.0pt x 156.00879pt.
+ [60]
+Underfull \hbox (badness 10000) detected at line 35
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 38
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 41
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 44
+[][][]
+ []
+
+) (./CLIUtils_8h.tex <./CLIUtils_8h__incl.pdf>
+<CLIUtils_8h__incl.pdf, id=2746, 795.97375pt x 269.005pt>
+File: CLIUtils_8h__incl.pdf Graphic file (type pdf)
+<use CLIUtils_8h__incl.pdf>
+Package pdftex.def Info: CLIUtils_8h__incl.pdf  used on input line 18.
+(pdftex.def)             Requested size: 350.0pt x 118.28456pt.
+ <./CLIUtils_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./CLIUtils_8h__dep__incl.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>
+<CLIUtils_8h__dep__incl.pdf, id=2754, 1324.95pt x 212.795pt>
+File: CLIUtils_8h__dep__incl.pdf Graphic file (type pdf)
+<use CLIUtils_8h__dep__incl.pdf>
+Package pdftex.def Info: CLIUtils_8h__dep__incl.pdf  used on input line 25.
+(pdftex.def)             Requested size: 350.0pt x 56.2118pt.
+ [61]
+Underfull \hbox (badness 10000) detected at line 72
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 75
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 78
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 81
+[][][]
+ []
+
+[62]) (./CLLoginInterface_8h.tex <./CLLoginInterface_8h__incl.pdf
+
+pdfTeX warning: pdflatex (file ./CLLoginInterface_8h__incl.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+>
+<CLLoginInterface_8h__incl.pdf, id=2795, 796.9775pt x 437.635pt>
+File: CLLoginInterface_8h__incl.pdf Graphic file (type pdf)
+<use CLLoginInterface_8h__incl.pdf>
+Package pdftex.def Info: CLLoginInterface_8h__incl.pdf  used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 192.19272pt.
+ [63] <./CLLoginInterface_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./CLLoginInterface_8h__dep__incl.pdf): PDF inclu
+sion: multiple pdfs with page group included in a single page
+>
+<CLLoginInterface_8h__dep__incl.pdf, id=2810, 359.3425pt x 156.585pt>
+File: CLLoginInterface_8h__dep__incl.pdf Graphic file (type pdf)
+<use CLLoginInterface_8h__dep__incl.pdf>
+Package pdftex.def Info: CLLoginInterface_8h__dep__incl.pdf  used on input line
+ 21.
+(pdftex.def)             Requested size: 350.0pt x 152.52519pt.
+
+Underfull \hbox (badness 10000) detected at line 34
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][][]
+ []
+
+[64]
+Underfull \hbox (badness 10000) detected at line 43
+[][][]
+ []
+
+) (./CLMenu_8h.tex <./CLMenu_8h__incl.pdf>
+<CLMenu_8h__incl.pdf, id=2830, 767.86874pt x 325.215pt>
+File: CLMenu_8h__incl.pdf Graphic file (type pdf)
+<use CLMenu_8h__incl.pdf>
+Package pdftex.def Info: CLMenu_8h__incl.pdf  used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 148.23605pt.
+ <./CLMenu_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./CLMenu_8h__dep__incl.pdf): PDF inclusion: mult
+iple pdfs with page group included in a single page
+>
+<CLMenu_8h__dep__incl.pdf, id=2838, 273.02pt x 156.585pt>
+File: CLMenu_8h__dep__incl.pdf Graphic file (type pdf)
+<use CLMenu_8h__dep__incl.pdf>
+Package pdftex.def Info: CLMenu_8h__dep__incl.pdf  used on input line 21.
+(pdftex.def)             Requested size: 272.0pt x 156.00879pt.
+ [65]
+Underfull \hbox (badness 10000) detected at line 34
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 43
+[][][]
+ []
+
+) (./CLMenuBar_8h.tex <./CLMenuBar_8h__incl.pdf>
+<CLMenuBar_8h__incl.pdf, id=2859, 831.105pt x 381.425pt>
+File: CLMenuBar_8h__incl.pdf Graphic file (type pdf)
+<use CLMenuBar_8h__incl.pdf>
+Package pdftex.def Info: CLMenuBar_8h__incl.pdf  used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 160.62808pt.
+ <./CLMenuBar_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./CLMenuBar_8h__dep__incl.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+>
+<CLMenuBar_8h__dep__incl.pdf, id=2867, 307.1475pt x 156.585pt>
+File: CLMenuBar_8h__dep__incl.pdf Graphic file (type pdf)
+<use CLMenuBar_8h__dep__incl.pdf>
+Package pdftex.def Info: CLMenuBar_8h__dep__incl.pdf  used on input line 21.
+(pdftex.def)             Requested size: 306.0pt x 156.00879pt.
+ [66]
+Underfull \hbox (badness 10000) detected at line 34
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 43
+[][][]
+ []
+
+) (./Dashboard_8h.tex <./Dashboard_8h__incl.pdf>
+<Dashboard_8h__incl.pdf, id=2887, 590.205pt x 381.425pt>
+File: Dashboard_8h__incl.pdf Graphic file (type pdf)
+<use Dashboard_8h__incl.pdf>
+Package pdftex.def Info: Dashboard_8h__incl.pdf  used on input line 15.
+(pdftex.def)             Requested size: 350.0pt x 226.19116pt.
+ <./Dashboard_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./Dashboard_8h__dep__incl.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+>
+<Dashboard_8h__dep__incl.pdf, id=2895, 622.325pt x 269.005pt>
+File: Dashboard_8h__dep__incl.pdf Graphic file (type pdf)
+<use Dashboard_8h__dep__incl.pdf>
+Package pdftex.def Info: Dashboard_8h__dep__incl.pdf  used on input line 22.
+(pdftex.def)             Requested size: 350.0pt x 151.2903pt.
+ [67]
+Underfull \hbox (badness 10000) detected at line 35
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 38
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 41
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 44
+[][][]
+ []
+
+) (./Database_8h.tex <./Database_8h__incl.pdf>
+<Database_8h__incl.pdf, id=2914, 448.67625pt x 325.215pt>
+File: Database_8h__incl.pdf Graphic file (type pdf)
+<use Database_8h__incl.pdf>
+Package pdftex.def Info: Database_8h__incl.pdf  used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 253.70142pt.
+ [68] <./Database_8h__dep__incl.pdf>
+<Database_8h__dep__incl.pdf, id=2929, 699.61375pt x 325.215pt>
+File: Database_8h__dep__incl.pdf Graphic file (type pdf)
+<use Database_8h__dep__incl.pdf>
+Package pdftex.def Info: Database_8h__dep__incl.pdf  used on input line 21.
+(pdftex.def)             Requested size: 350.0pt x 162.70139pt.
+ [69]
+Underfull \hbox (badness 10000) detected at line 34
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 43
+[][][]
+ []
+
+) (./Humidity_8h.tex <./Humidity_8h__incl.pdf>
+<Humidity_8h__incl.pdf, id=2949, 274.02374pt x 212.795pt>
+File: Humidity_8h__incl.pdf Graphic file (type pdf)
+<use Humidity_8h__incl.pdf>
+Package pdftex.def Info: Humidity_8h__incl.pdf  used on input line 13.
+(pdftex.def)             Requested size: 273.0pt x 212.01518pt.
+ <./Humidity_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./Humidity_8h__dep__incl.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>
+<Humidity_8h__dep__incl.pdf, id=2957, 285.065pt x 156.585pt>
+File: Humidity_8h__dep__incl.pdf Graphic file (type pdf)
+<use Humidity_8h__dep__incl.pdf>
+Package pdftex.def Info: Humidity_8h__dep__incl.pdf  used on input line 20.
+(pdftex.def)             Requested size: 284.0pt x 155.99922pt.
+ [70]
+Underfull \hbox (badness 10000) detected at line 33
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 42
+[][][]
+ []
+
+) (./Interface_8h.tex <./Interface_8h__incl.pdf>
+<Interface_8h__incl.pdf, id=2975, 611.28375pt x 437.635pt>
+File: Interface_8h__incl.pdf Graphic file (type pdf)
+<use Interface_8h__incl.pdf>
+Package pdftex.def Info: Interface_8h__incl.pdf  used on input line 15.
+(pdftex.def)             Requested size: 350.0pt x 250.56972pt.
+ [71] <./Interface_8h__dep__incl.pdf>
+<Interface_8h__dep__incl.pdf, id=2991, 406.51875pt x 212.795pt>
+File: Interface_8h__dep__incl.pdf Graphic file (type pdf)
+<use Interface_8h__dep__incl.pdf>
+Package pdftex.def Info: Interface_8h__dep__incl.pdf  used on input line 22.
+(pdftex.def)             Requested size: 350.0pt x 183.21767pt.
+ [72]
+Underfull \hbox (badness 10000) detected at line 35
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 38
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 41
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 44
+[][][]
+ []
+
+) (./LoginInterface_8h.tex <./LoginInterface_8h__incl.pdf>
+<LoginInterface_8h__incl.pdf, id=3012, 448.67625pt x 381.425pt>
+File: LoginInterface_8h__incl.pdf Graphic file (type pdf)
+<use LoginInterface_8h__incl.pdf>
+Package pdftex.def Info: LoginInterface_8h__incl.pdf  used on input line 13.
+(pdftex.def)             Requested size: 350.0pt x 297.55103pt.
+ <./LoginInterface_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./LoginInterface_8h__dep__incl.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+>
+<LoginInterface_8h__dep__incl.pdf, id=3020, 699.61375pt x 269.005pt>
+File: LoginInterface_8h__dep__incl.pdf Graphic file (type pdf)
+<use LoginInterface_8h__dep__incl.pdf>
+Package pdftex.def Info: LoginInterface_8h__dep__incl.pdf  used on input line 2
+0.
+(pdftex.def)             Requested size: 350.0pt x 134.58015pt.
+ [73]
+Underfull \hbox (badness 10000) detected at line 33
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 42
+[][][]
+ []
+
+) (./main_8h.tex <./main_8h__incl.pdf>
+<main_8h__incl.pdf, id=3038, 611.28375pt x 493.845pt>
+File: main_8h__incl.pdf Graphic file (type pdf)
+<use main_8h__incl.pdf>
+Package pdftex.def Info: main_8h__incl.pdf  used on input line 13.
+(pdftex.def)             Requested size: 350.0pt x 282.75299pt.
+ [74] <./main_8h__dep__incl.pdf>
+<main_8h__dep__incl.pdf, id=3053, 169.63374pt x 156.585pt>
+File: main_8h__dep__incl.pdf Graphic file (type pdf)
+<use main_8h__dep__incl.pdf>
+Package pdftex.def Info: main_8h__dep__incl.pdf  used on input line 20.
+(pdftex.def)             Requested size: 169.0pt x 156.0064pt.
+
+Underfull \hbox (badness 10000) detected at line 34
+[][][]
+ []
+
+[75]
+Underfull \hbox (badness 10000) detected at line 37
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 43
+[][][]
+ []
+
+) (./Menu_8h.tex <./Menu_8h__incl.pdf>
+<Menu_8h__incl.pdf, id=3073, 334.24875pt x 212.795pt>
+File: Menu_8h__incl.pdf Graphic file (type pdf)
+<use Menu_8h__incl.pdf>
+Package pdftex.def Info: Menu_8h__incl.pdf  used on input line 14.
+(pdftex.def)             Requested size: 333.0pt x 212.01843pt.
+ <./Menu_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./Menu_8h__dep__incl.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>
+<Menu_8h__dep__incl.pdf, id=3081, 659.46375pt x 325.215pt>
+File: Menu_8h__dep__incl.pdf Graphic file (type pdf)
+<use Menu_8h__dep__incl.pdf>
+Package pdftex.def Info: Menu_8h__dep__incl.pdf  used on input line 21.
+(pdftex.def)             Requested size: 350.0pt x 172.60628pt.
+ [76]
+Underfull \hbox (badness 10000) detected at line 34
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 43
+[][][]
+ []
+
+) (./MenuBar_8h.tex <./MenuBar_8h__incl.pdf>
+<MenuBar_8h__incl.pdf, id=3099, 483.8075pt x 325.215pt>
+File: MenuBar_8h__incl.pdf Graphic file (type pdf)
+<use MenuBar_8h__incl.pdf>
+Package pdftex.def Info: MenuBar_8h__incl.pdf  used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 235.28108pt.
+ [77] <./MenuBar_8h__dep__incl.pdf>
+<MenuBar_8h__dep__incl.pdf, id=3115, 694.595pt x 325.215pt>
+File: MenuBar_8h__dep__incl.pdf Graphic file (type pdf)
+<use MenuBar_8h__dep__incl.pdf>
+Package pdftex.def Info: MenuBar_8h__dep__incl.pdf  used on input line 21.
+(pdftex.def)             Requested size: 350.0pt x 163.87746pt.
+[78]
+Underfull \hbox (badness 10000) detected at line 34
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 43
+[][][]
+ []
+
+) (./Moisture_8h.tex <./Moisture_8h__incl.pdf>
+<Moisture_8h__incl.pdf, id=3136, 274.02374pt x 212.795pt>
+File: Moisture_8h__incl.pdf Graphic file (type pdf)
+<use Moisture_8h__incl.pdf>
+Package pdftex.def Info: Moisture_8h__incl.pdf  used on input line 13.
+(pdftex.def)             Requested size: 273.0pt x 212.01518pt.
+ <./Moisture_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./Moisture_8h__dep__incl.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>
+<Moisture_8h__dep__incl.pdf, id=3144, 283.0575pt x 156.585pt>
+File: Moisture_8h__dep__incl.pdf Graphic file (type pdf)
+<use Moisture_8h__dep__incl.pdf>
+Package pdftex.def Info: Moisture_8h__dep__incl.pdf  used on input line 20.
+(pdftex.def)             Requested size: 282.0pt x 156.01357pt.
+ [79]
+Underfull \hbox (badness 10000) detected at line 33
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 42
+[][][]
+ []
+
+) (./NotFoundUserException_8h.tex <./NotFoundUserException_8h__incl.pdf>
+<NotFoundUserException_8h__incl.pdf, id=3161, 261.97874pt x 156.585pt>
+File: NotFoundUserException_8h__incl.pdf Graphic file (type pdf)
+<use NotFoundUserException_8h__incl.pdf>
+Package pdftex.def Info: NotFoundUserException_8h__incl.pdf  used on input line
+ 13.
+(pdftex.def)             Requested size: 261.0pt x 156.004pt.
+
+[80] <./NotFoundUserException_8h__dep__incl.pdf>
+<NotFoundUserException_8h__dep__incl.pdf, id=3176, 261.97874pt x 156.585pt>
+File: NotFoundUserException_8h__dep__incl.pdf Graphic file (type pdf)
+<use NotFoundUserException_8h__dep__incl.pdf>
+Package pdftex.def Info: NotFoundUserException_8h__dep__incl.pdf  used on input
+ line 20.
+(pdftex.def)             Requested size: 261.0pt x 156.004pt.
+
+Underfull \hbox (badness 10000) detected at line 33
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][][]
+ []
+
+[81]
+Underfull \hbox (badness 10000) detected at line 42
+[][][]
+ []
+
+) (./Sensor_8h.tex <./Sensor_8h__incl.pdf>
+<Sensor_8h__incl.pdf, id=3195, 274.02374pt x 156.585pt>
+File: Sensor_8h__incl.pdf Graphic file (type pdf)
+<use Sensor_8h__incl.pdf>
+Package pdftex.def Info: Sensor_8h__incl.pdf  used on input line 15.
+(pdftex.def)             Requested size: 273.0pt x 156.01117pt.
+ <./Sensor_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./Sensor_8h__dep__incl.pdf): PDF inclusion: mult
+iple pdfs with page group included in a single page
+>
+<Sensor_8h__dep__incl.pdf, id=3203, 1492.57625pt x 381.425pt>
+File: Sensor_8h__dep__incl.pdf Graphic file (type pdf)
+<use Sensor_8h__dep__incl.pdf>
+Package pdftex.def Info: Sensor_8h__dep__incl.pdf  used on input line 22.
+(pdftex.def)             Requested size: 350.0pt x 89.437pt.
+
+Underfull \hbox (badness 10000) detected at line 35
+[][][]
+ []
+
+[82]
+Underfull \hbox (badness 10000) detected at line 38
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 41
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 44
+[][][]
+ []
+
+) (./Thermometer_8h.tex <./Thermometer_8h__incl.pdf>
+<Thermometer_8h__incl.pdf, id=3223, 274.02374pt x 212.795pt>
+File: Thermometer_8h__incl.pdf Graphic file (type pdf)
+<use Thermometer_8h__incl.pdf>
+Package pdftex.def Info: Thermometer_8h__incl.pdf  used on input line 13.
+(pdftex.def)             Requested size: 273.0pt x 212.01518pt.
+ <./Thermometer_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./Thermometer_8h__dep__incl.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+>
+<Thermometer_8h__dep__incl.pdf, id=3231, 307.1475pt x 156.585pt>
+File: Thermometer_8h__dep__incl.pdf Graphic file (type pdf)
+<use Thermometer_8h__dep__incl.pdf>
+Package pdftex.def Info: Thermometer_8h__dep__incl.pdf  used on input line 20.
+(pdftex.def)             Requested size: 306.0pt x 156.00879pt.
+ [83]
+Underfull \hbox (badness 10000) detected at line 33
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 42
+[][][]
+ []
+
+) (./User_8h.tex <./User_8h__incl.pdf>
+<User_8h__incl.pdf, id=3251, 448.67625pt x 212.795pt>
+File: User_8h__incl.pdf Graphic file (type pdf)
+<use User_8h__incl.pdf>
+Package pdftex.def Info: User_8h__incl.pdf  used on input line 18.
+(pdftex.def)             Requested size: 350.0pt x 166.00214pt.
+ [84] <./User_8h__dep__incl.pdf>
+<User_8h__dep__incl.pdf, id=3266, 1162.3425pt x 437.635pt>
+File: User_8h__dep__incl.pdf Graphic file (type pdf)
+<use User_8h__dep__incl.pdf>
+Package pdftex.def Info: User_8h__dep__incl.pdf  used on input line 25.
+(pdftex.def)             Requested size: 350.0pt x 131.77898pt.
+
+Underfull \hbox (badness 10000) detected at line 38
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 41
+[][][]
+ []
+
+[85]
+Underfull \hbox (badness 10000) detected at line 44
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 47
+[][][]
+ []
+
+) (./UserConfig_8h.tex <./UserConfig_8h__incl.pdf>
+<UserConfig_8h__incl.pdf, id=3286, 198.7425pt x 156.585pt>
+File: UserConfig_8h__incl.pdf Graphic file (type pdf)
+<use UserConfig_8h__incl.pdf>
+Package pdftex.def Info: UserConfig_8h__incl.pdf  used on input line 14.
+(pdftex.def)             Requested size: 198.0pt x 156.004pt.
+ <./UserConfig_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./UserConfig_8h__dep__incl.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+>
+<UserConfig_8h__dep__incl.pdf, id=3294, 1181.41376pt x 493.845pt>
+File: UserConfig_8h__dep__incl.pdf Graphic file (type pdf)
+<use UserConfig_8h__dep__incl.pdf>
+Package pdftex.def Info: UserConfig_8h__dep__incl.pdf  used on input line 21.
+(pdftex.def)             Requested size: 350.0pt x 146.3009pt.
+ [86]
+Underfull \hbox (badness 10000) detected at line 34
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 43
+[][][]
+ []
+
+) (./Admin_8cpp.tex <./Admin_8cpp__incl.pdf>
+<Admin_8cpp__incl.pdf, id=3312, 448.67625pt x 325.215pt>
+File: Admin_8cpp__incl.pdf Graphic file (type pdf)
+<use Admin_8cpp__incl.pdf>
+Package pdftex.def Info: Admin_8cpp__incl.pdf  used on input line 8.
+(pdftex.def)             Requested size: 350.0pt x 253.70142pt.
+
+Underfull \hbox (badness 10000) detected at line 14
+[][][]
+ []
+
+[87]
+Underfull \hbox (badness 10000) detected at line 17
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 23
+[][][]
+ []
+
+) (./AirQuality_8cpp.tex <./AirQuality_8cpp__incl.pdf>
+<AirQuality_8cpp__incl.pdf, id=3328, 274.02374pt x 269.005pt>
+File: AirQuality_8cpp__incl.pdf Graphic file (type pdf)
+<use AirQuality_8cpp__incl.pdf>
+Package pdftex.def Info: AirQuality_8cpp__incl.pdf  used on input line 8.
+(pdftex.def)             Requested size: 273.0pt x 268.0192pt.
+
+Underfull \hbox (badness 10000) detected at line 14
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 17
+[][][]
+ []
+
+[88]
+Underfull \hbox (badness 10000) detected at line 20
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 23
+[][][]
+ []
+
+) (./CameraBW_8cpp.tex <./CameraBW_8cpp__incl.pdf>
+<CameraBW_8cpp__incl.pdf, id=3343, 274.02374pt x 269.005pt>
+File: CameraBW_8cpp__incl.pdf Graphic file (type pdf)
+<use CameraBW_8cpp__incl.pdf>
+Package pdftex.def Info: CameraBW_8cpp__incl.pdf  used on input line 8.
+(pdftex.def)             Requested size: 273.0pt x 268.0192pt.
+
+Underfull \hbox (badness 10000) detected at line 14
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 17
+[][][]
+ []
+
+[89]
+Underfull \hbox (badness 10000) detected at line 20
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 23
+[][][]
+ []
+
+) (./CameraRGB_8cpp.tex <./CameraRGB_8cpp__incl.pdf>
+<CameraRGB_8cpp__incl.pdf, id=3360, 274.02374pt x 269.005pt>
+File: CameraRGB_8cpp__incl.pdf Graphic file (type pdf)
+<use CameraRGB_8cpp__incl.pdf>
+Package pdftex.def Info: CameraRGB_8cpp__incl.pdf  used on input line 8.
+(pdftex.def)             Requested size: 273.0pt x 268.0192pt.
+
+Underfull \hbox (badness 10000) detected at line 14
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 17
+[][][]
+ []
+
+[90]
+Underfull \hbox (badness 10000) detected at line 20
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 23
+[][][]
+ []
+
+) (./CLDashboard_8cpp.tex <./CLDashboard_8cpp__incl.pdf>
+<CLDashboard_8cpp__incl.pdf, id=3375, 953.5625pt x 493.845pt>
+File: CLDashboard_8cpp__incl.pdf Graphic file (type pdf)
+<use CLDashboard_8cpp__incl.pdf>
+Package pdftex.def Info: CLDashboard_8cpp__incl.pdf  used on input line 8.
+(pdftex.def)             Requested size: 350.0pt x 181.26544pt.
+
+Underfull \hbox (badness 10000) detected at line 14
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 17
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 23
+[][][]
+ []
+
+) (./CLInterface_8cpp.tex <./CLInterface_8cpp__incl.pdf
+
+pdfTeX warning: pdflatex (file ./CLInterface_8cpp__incl.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>
+<CLInterface_8cpp__incl.pdf, id=3384, 735.74875pt x 550.055pt>
+File: CLInterface_8cpp__incl.pdf Graphic file (type pdf)
+<use CLInterface_8cpp__incl.pdf>
+Package pdftex.def Info: CLInterface_8cpp__incl.pdf  used on input line 8.
+(pdftex.def)             Requested size: 350.0pt x 261.67331pt.
+ [91]
+Underfull \hbox (badness 10000) detected at line 14
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 17
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 23
+[][][]
+ []
+
+) (./CLIUtils_8cpp.tex <./CLIUtils_8cpp__incl.pdf>
+<CLIUtils_8cpp__incl.pdf, id=3399, 795.97375pt x 325.215pt>
+File: CLIUtils_8cpp__incl.pdf Graphic file (type pdf)
+<use CLIUtils_8cpp__incl.pdf>
+Package pdftex.def Info: CLIUtils_8cpp__incl.pdf  used on input line 8.
+(pdftex.def)             Requested size: 350.0pt x 143.00075pt.
+ [92]
+Underfull \hbox (badness 10000) detected at line 62
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 65
+[][][]
+ []
+
+[93]
+Underfull \hbox (badness 10000) detected at line 68
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 71
+[][][]
+ []
+
+[94]) (./CLLoginInterface_8cpp.tex <./CLLoginInterface_8cpp__incl.pdf
+
+pdfTeX warning: pdflatex (file ./CLLoginInterface_8cpp__incl.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>
+<CLLoginInterface_8cpp__incl.pdf, id=3446, 796.9775pt x 493.845pt>
+File: CLLoginInterface_8cpp__incl.pdf Graphic file (type pdf)
+<use CLLoginInterface_8cpp__incl.pdf>
+Package pdftex.def Info: CLLoginInterface_8cpp__incl.pdf  used on input line 8.
+
+(pdftex.def)             Requested size: 350.0pt x 216.878pt.
+ [95]
+Underfull \hbox (badness 10000) detected at line 14
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 17
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 23
+[][][]
+ []
+
+) (./CLMenu_8cpp.tex <./CLMenu_8cpp__incl.pdf>
+<CLMenu_8cpp__incl.pdf, id=3465, 767.86874pt x 381.425pt>
+File: CLMenu_8cpp__incl.pdf Graphic file (type pdf)
+<use CLMenu_8cpp__incl.pdf>
+Package pdftex.def Info: CLMenu_8cpp__incl.pdf  used on input line 8.
+(pdftex.def)             Requested size: 350.0pt x 173.8571pt.
+
+Underfull \hbox (badness 10000) detected at line 14
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 17
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 23
+[][][]
+ []
+
+) (./CLMenuBar_8cpp.tex <./CLMenuBar_8cpp__incl.pdf
+
+pdfTeX warning: pdflatex (file ./CLMenuBar_8cpp__incl.pdf): PDF inclusion: mult
+iple pdfs with page group included in a single page
+>
+<CLMenuBar_8cpp__incl.pdf, id=3474, 831.105pt x 437.635pt>
+File: CLMenuBar_8cpp__incl.pdf Graphic file (type pdf)
+<use CLMenuBar_8cpp__incl.pdf>
+Package pdftex.def Info: CLMenuBar_8cpp__incl.pdf  used on input line 8.
+(pdftex.def)             Requested size: 350.0pt x 184.29959pt.
+ [96]
+Underfull \hbox (badness 10000) detected at line 14
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 17
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 23
+[][][]
+ []
+
+) (./Dashboard_8cpp.tex <./Dashboard_8cpp__incl.pdf>
+<Dashboard_8cpp__incl.pdf, id=3489, 953.5625pt x 493.845pt>
+File: Dashboard_8cpp__incl.pdf Graphic file (type pdf)
+<use Dashboard_8cpp__incl.pdf>
+Package pdftex.def Info: Dashboard_8cpp__incl.pdf  used on input line 9.
+(pdftex.def)             Requested size: 350.0pt x 181.26544pt.
+ [97]
+Underfull \hbox (badness 10000) detected at line 15
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 18
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 21
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][][]
+ []
+
+) (./Database_8cpp.tex <./Database_8cpp__incl.pdf>
+<Database_8cpp__incl.pdf, id=3504, 673.51625pt x 381.425pt>
+File: Database_8cpp__incl.pdf Graphic file (type pdf)
+<use Database_8cpp__incl.pdf>
+Package pdftex.def Info: Database_8cpp__incl.pdf  used on input line 12.
+(pdftex.def)             Requested size: 350.0pt x 198.2141pt.
+ [98]
+Underfull \hbox (badness 10000) detected at line 18
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 21
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 27
+[][][]
+ []
+
+) (./Humidity_8cpp.tex <./Humidity_8cpp__incl.pdf>
+<Humidity_8cpp__incl.pdf, id=3519, 274.02374pt x 269.005pt>
+File: Humidity_8cpp__incl.pdf Graphic file (type pdf)
+<use Humidity_8cpp__incl.pdf>
+Package pdftex.def Info: Humidity_8cpp__incl.pdf  used on input line 8.
+(pdftex.def)             Requested size: 273.0pt x 268.0192pt.
+ [99]
+Underfull \hbox (badness 10000) detected at line 14
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 17
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 23
+[][][]
+ []
+
+) (./Interface_8cpp.tex <./Interface_8cpp__incl.pdf>
+<Interface_8cpp__incl.pdf, id=3534, 735.74875pt x 550.055pt>
+File: Interface_8cpp__incl.pdf Graphic file (type pdf)
+<use Interface_8cpp__incl.pdf>
+Package pdftex.def Info: Interface_8cpp__incl.pdf  used on input line 9.
+(pdftex.def)             Requested size: 350.0pt x 261.67331pt.
+ [100]
+Underfull \hbox (badness 10000) detected at line 15
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 18
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 21
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][][]
+ []
+
+) (./LoginInterface_8cpp.tex <./LoginInterface_8cpp__incl.pdf>
+<LoginInterface_8cpp__incl.pdf, id=3549, 796.9775pt x 493.845pt>
+File: LoginInterface_8cpp__incl.pdf Graphic file (type pdf)
+<use LoginInterface_8cpp__incl.pdf>
+Package pdftex.def Info: LoginInterface_8cpp__incl.pdf  used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 216.878pt.
+ [101]
+Underfull \hbox (badness 10000) detected at line 16
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 19
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 22
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 25
+[][][]
+ []
+
+) (./main_8cpp.tex <./main_8cpp__incl.pdf>
+<main_8cpp__incl.pdf, id=3565, 611.28375pt x 550.055pt>
+File: main_8cpp__incl.pdf Graphic file (type pdf)
+<use main_8cpp__incl.pdf>
+Package pdftex.def Info: main_8cpp__incl.pdf  used on input line 8.
+(pdftex.def)             Requested size: 350.0pt x 314.93626pt.
+ [102]
+Underfull \hbox (badness 10000) detected at line 20
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 23
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 26
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 29
+[][][]
+ []
+
+) (./Menu_8cpp.tex <./Menu_8cpp__incl.pdf>
+<Menu_8cpp__incl.pdf, id=3581, 767.86874pt x 381.425pt>
+File: Menu_8cpp__incl.pdf Graphic file (type pdf)
+<use Menu_8cpp__incl.pdf>
+Package pdftex.def Info: Menu_8cpp__incl.pdf  used on input line 9.
+(pdftex.def)             Requested size: 350.0pt x 173.8571pt.
+ [103]
+Underfull \hbox (badness 10000) detected at line 15
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 18
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 21
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][][]
+ []
+
+) (./MenuBar_8cpp.tex <./MenuBar_8cpp__incl.pdf>
+<MenuBar_8cpp__incl.pdf, id=3598, 831.105pt x 437.635pt>
+File: MenuBar_8cpp__incl.pdf Graphic file (type pdf)
+<use MenuBar_8cpp__incl.pdf>
+Package pdftex.def Info: MenuBar_8cpp__incl.pdf  used on input line 9.
+(pdftex.def)             Requested size: 350.0pt x 184.29959pt.
+ [104]
+Underfull \hbox (badness 10000) detected at line 15
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 18
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 21
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][][]
+ []
+
+) (./Moisture_8cpp.tex <./Moisture_8cpp__incl.pdf>
+<Moisture_8cpp__incl.pdf, id=3613, 274.02374pt x 269.005pt>
+File: Moisture_8cpp__incl.pdf Graphic file (type pdf)
+<use Moisture_8cpp__incl.pdf>
+Package pdftex.def Info: Moisture_8cpp__incl.pdf  used on input line 8.
+(pdftex.def)             Requested size: 273.0pt x 268.0192pt.
+ [105]
+Underfull \hbox (badness 10000) detected at line 14
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 17
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 23
+[][][]
+ []
+
+) (./Sensor_8cpp.tex <./Sensor_8cpp__incl.pdf>
+<Sensor_8cpp__incl.pdf, id=3628, 653.44125pt x 269.005pt>
+File: Sensor_8cpp__incl.pdf Graphic file (type pdf)
+<use Sensor_8cpp__incl.pdf>
+Package pdftex.def Info: Sensor_8cpp__incl.pdf  used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 144.08249pt.
+ [106]
+Underfull \hbox (badness 10000) detected at line 20
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 23
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 26
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 29
+[][][]
+ []
+
+) (./Thermometer_8cpp.tex <./Thermometer_8cpp__incl.pdf>
+<Thermometer_8cpp__incl.pdf, id=3643, 274.02374pt x 269.005pt>
+File: Thermometer_8cpp__incl.pdf Graphic file (type pdf)
+<use Thermometer_8cpp__incl.pdf>
+Package pdftex.def Info: Thermometer_8cpp__incl.pdf  used on input line 8.
+(pdftex.def)             Requested size: 273.0pt x 268.0192pt.
+ [107]
+Underfull \hbox (badness 10000) detected at line 14
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 17
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 23
+[][][]
+ []
+
+) (./User_8cpp.tex <./User_8cpp__incl.pdf>
+<User_8cpp__incl.pdf, id=3659, 448.67625pt x 269.005pt>
+File: User_8cpp__incl.pdf Graphic file (type pdf)
+<use User_8cpp__incl.pdf>
+Package pdftex.def Info: User_8cpp__incl.pdf  used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 209.85178pt.
+ [108]
+Underfull \hbox (badness 10000) detected at line 22
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 25
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 28
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 31
+[][][]
+ []
+
+) (./UserConfig_8cpp.tex <./UserConfig_8cpp__incl.pdf>
+<UserConfig_8cpp__incl.pdf, id=3675, 188.705pt x 212.795pt>
+File: UserConfig_8cpp__incl.pdf Graphic file (type pdf)
+<use UserConfig_8cpp__incl.pdf>
+Package pdftex.def Info: UserConfig_8cpp__incl.pdf  used on input line 8.
+(pdftex.def)             Requested size: 188.0pt x 211.99895pt.
+ [109]
+Underfull \hbox (badness 10000) detected at line 14
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 17
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 23
+[][][]
+ []
+
+) [110] (./refman.ind [111
+
+
+
+] [112] [113
+
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
+ (./refman.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 261.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 261.
+Package rerunfilecheck Info: File `refman.out' has not changed.
+(rerunfilecheck)             Checksum: A0748BDE00D0B636D7875BA06D2E93CF;50947.
+ ) 
+Here is how much of TeX's memory you used:
+ 18653 strings out of 481239
+ 294858 string characters out of 5920376
+ 581266 words of memory out of 5000000
+ 32636 multiletter control sequences out of 15000+600000
+ 591905 words of font info for 95 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,16n,96p,938b,627s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucr
+b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helve
+tic/uhvro8a.pfb>
+Output written on refman.pdf (121 pages, 1052241 bytes).
+PDF statistics:
+ 4142 PDF objects out of 4296 (max. 8388607)
+ 3611 compressed objects within 37 object streams
+ 825 named destinations out of 1000 (max. 500000)
+ 2434 words of extra memory for PDF output out of 10000 (max. 10000000)
+
