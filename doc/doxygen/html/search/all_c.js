@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['sensor_100',['Sensor',['../classSensor.html',1,'Sensor'],['../classSensor.html#ab1648e2bbbb81171c307b1c03c792d0d',1,'Sensor::Sensor()'],['../classDashboard.html#af375fed50c85669633ae7d49b32ecdb7',1,'Dashboard::sensor()']]],
+  ['sensor_100',['Sensor',['../classSensor.html',1,'Sensor'],['../classDashboard.html#af375fed50c85669633ae7d49b32ecdb7',1,'Dashboard::sensor()'],['../classSensor.html#ab1648e2bbbb81171c307b1c03c792d0d',1,'Sensor::Sensor()']]],
   ['sensor_2ecpp_101',['Sensor.cpp',['../Sensor_8cpp.html',1,'']]],
   ['sensor_2eh_102',['Sensor.h',['../Sensor_8h.html',1,'']]],
   ['setactive_103',['setActive',['../classSensor.html#a54feb4ac7731acbe92c33f84f2a41ac2',1,'Sensor']]],
