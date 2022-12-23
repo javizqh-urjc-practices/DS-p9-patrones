@@ -28,6 +28,8 @@ Database::Database(){
     inUsersFile.read (reinterpret_cast <char *>(&user), 
       sizeof (User));
   }
+
+  system("cp data/users.dat data/users.dat~");
   //User *user1 = new User("10000","1234567A","paco");
   //UserConfig *user2Config = new UserConfig("ENT",{255,255,255},{0,0,150},{200,200,0});
   //User *user2 = new User(*user2Config,"20000","1234527J", "juan");
@@ -61,7 +63,6 @@ Database::~Database(){
     exit (1);
   }
 
-  User user;
   int counter = 0;
 
   for (auto it = this->user.begin(); it != this->user.end(); it++){

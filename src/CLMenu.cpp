@@ -27,7 +27,9 @@ void CLMenu::show(std::vector <Sensor *> sensors, UserConfig &config){
       moveCursor(positionsX * (index % graphicsInX) + 10 + 8 , positionsY * (index / graphicsInX) + 5 + 7);
       std::cout << "No image available";
     } else {
-      printGraphic(sensorToDisplay->requestData(),*config.getFontColor(),*config.getBackgroundColor(),*config.getGraphicColor(),sensorToDisplay->getValPerMin(),positionsX * (index % graphicsInX) + 10, positionsY * (index / graphicsInX) + 5,2);
+      //TODO: placeholder 
+      //printGraphic(sensorToDisplay->requestData(),*config.getFontColor(),*config.getBackgroundColor(),*config.getGraphicColor(),sensorToDisplay->getValPerMin(),positionsX * (index % graphicsInX) + 10, positionsY * (index / graphicsInX) + 5,2);
+      printGraphic({1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10},*config.getFontColor(),*config.getBackgroundColor(),*config.getGraphicColor(),sensorToDisplay->getValPerMin(),positionsX * (index % graphicsInX) + 10, positionsY * (index / graphicsInX) + 5,2);
     }
     // Prin id below
 
@@ -46,7 +48,9 @@ void CLMenu::show(Sensor * sensorToDisplay, UserConfig &config){
     std::cout << "No image available";
   }
   else {
-    printGraphic(sensorToDisplay->requestData(),*config.getFontColor(),*config.getBackgroundColor(),*config.getGraphicColor(),sensorToDisplay->getValPerMin(),10,10,1);
+    //TODO: placeholder 
+    //printGraphic(sensorToDisplay->requestData(),*config.getFontColor(),*config.getBackgroundColor(),*config.getGraphicColor(),sensorToDisplay->getValPerMin(),10,10,1);
+    printGraphic({1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10},*config.getFontColor(),*config.getBackgroundColor(),*config.getGraphicColor(),sensorToDisplay->getValPerMin(),10,10,1);
   }
   // Prin id below
   moveCursor(10 + 30 , 10 + 35);

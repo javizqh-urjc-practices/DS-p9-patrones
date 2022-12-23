@@ -28,7 +28,7 @@ class CameraRGB : public Sensor{
     * @return std::vector<int>  Data values
     * @note This function is a placeholder, returns random values 
     */
-    std::vector<int> requestData();
+    std::array<int,60> requestData();
     ~CameraRGB();
   private:
     /**

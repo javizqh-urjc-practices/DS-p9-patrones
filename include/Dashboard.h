@@ -11,6 +11,7 @@
 #include "Admin.h" // Also includes User
 #include "MenuBar.h"
 #include "Menu.h"
+#include <filesystem>
 
 
 #ifndef DASHBOARD_H
@@ -73,12 +74,6 @@ class Dashboard{
     * @see addToMainMenu
     */
     void deleteSensor(std::string id);
-    /**
-    * @brief Deletes all the sensors from the dashboard
-    * @note Only called when exiting the dashboard
-    * 
-    */
-    void cleanSensor();
     /**
     * @brief Exits the dashboard and finishes the program
     * @see cleanSensor

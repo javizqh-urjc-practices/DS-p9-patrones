@@ -136,7 +136,7 @@ std::vector<std::string> newCommand(User & user, std::string currentSensor){
   return separatedInput;
 }
 
-void printGraphic(const std::vector <int> &data, std::array<int,3> frontColor, std::array<int,3> backColor, std::array<int,3> pointColor, int valPerY, int posX, int posY, int scale){
+void printGraphic(const std::array<int,60>  data, std::array<int,3> frontColor, std::array<int,3> backColor, std::array<int,3> pointColor, int valPerY, int posX, int posY, int scale){
   const int spacing = 3;
   // Graphic standard size 60 * 30
   const int maxRangeX = 60;
@@ -150,10 +150,12 @@ void printGraphic(const std::vector <int> &data, std::array<int,3> frontColor, s
   const int rangeX = maxRangeX / scale;
   const int rangeY = maxRangeY / scale;
 
-  int maxY = * max_element(data.begin(), data.end());
+  //int maxY = * max_element(data.begin(), data.end());
+  int maxY = 10;
   if (maxY != 0) maxY = ((maxY / 10) + 1) * 10;
 
-  int minY = * min_element(data.begin(), data.end());
+  //int minY = * min_element(data.begin(), data.end());
+  int minY = 1;
   if (minY != 0) minY = ((minY / 10) - 1) * 10;
   
   if ((maxY - minY) / (rangeY / stepY) % stepY == 2) maxY += 10; 

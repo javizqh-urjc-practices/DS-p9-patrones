@@ -10,12 +10,15 @@
  */
 #include <string>
 #include <vector>
+#include <array>
 #include <stdexcept>
 
 #ifndef SENSOR_H 
 #define	SENSOR_H
 class Sensor{
 public:
+  static std::array<std::string,6> availableTypesId;
+  static std::array<std::string,6> availableTypes;
   /**
   * @brief Creates an instance of the sensor type
   * 
@@ -23,6 +26,7 @@ public:
   * @return Sensor* 
   */
   static Sensor *Create(const std::string type);
+
   /**
   * @brief Construct a new Sensor:: Sensor object
   * 
@@ -32,80 +36,43 @@ public:
   * @param active Sensor is On/Off
   * @param valPerMin Number of values per min
   */
-  Sensor( std::string id = "0000", std::string type = "none", std::string magnitude = "-", bool active = true, int valPerMin = 1); /* default constructor */
-  /**
-  * @brief Returns the sensor id
-  * 
-  * @return std::string ID
-  */
-  std::string getId();
-  /**
-  * @brief Returns the sensor type
-  * 
-  * @return std::string Sensor type 
-  */
-  std::string getType();
-  /**
-  * @brief Turns the sensor On/Off
-  * 
-  * @param active 
-  */
-  void setActive(bool);
-  /**
-  * @brief Returns if the sensor is On/Off
-  * 
-  * @return true = ON
-  * @return false = OFF
-  */
-  bool isActive();
-  /**
-  * @brief Set the area of the sensor
-  * 
-  * @param area 
-  */
+  Sensor( std::string id = "", std::string type = "none", std::string magnitude = "-", bool active = true, int valPerMin = 1); /* default constructor */
+
+  void setId(std::string newId);
+  std::string getId(){return id; };
+
+  void setType(std::string newType);
+  std::string getType(){return type;};
+
   void setArea(std::string);
-  /**
-  * @brief Returns the area of the sensor
-  * 
-  * @return std::string Area
-  */
-  std::string getArea();
-  /**
-  * @brief Set the sensor data values magnitude
-  * 
-  * @param magnitude 
-  */
+  std::string getArea(){return area;};
+
   void setMagnitude(std::string magnitude);
-  /**
-  * @brief Returns the sensor magnitude
-  * 
-  * @return std::string Magnitude
-  */
-  std::string getMagnitude();
-  /**
-  * @brief Set the number of values per min
-  * 
-  * @param valPerMin 
-  */
+  std::string getMagnitude(){return magnitude;};
+
+  void setActive(bool);
+  bool isActive(){return active;};
+
   void setValPerMin(int valPerMin);
+  int getValPerMin(){return valPerMin;};
+
   /**
-  * @brief Return the number of values per min
-  * 
-  * @return int Values per minute
-  */
-  int getValPerMin();
-  virtual std::vector<int> requestData() = 0;
+   * @brief Request data from sensor
+   * 
+   * @return std::vector<int> 
+   */
+  virtual std::array<int,60> requestData() = 0;
   virtual ~Sensor();
 
 protected:
-  std::string id;
+  char id [11];
+  char type [21];
+  char area [21];
+  char magnitude [11];
   bool active;
-  std::string type;
-  std::string area;
-  std::vector <int> data;
-  std::string magnitude;
   int valPerMin;
-
+  //std::array<int,60> data = {1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10}; // TODO: placeholder
+  // TODO: placeholder
   void addNewData(int);
   void removeOldData(int);
 };

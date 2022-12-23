@@ -16,21 +16,50 @@ Dashboard::Dashboard(User &user){
   this->user = &user;
   this->allowedToExit = true;
   this->currentSensor = nullptr;
-  Sensor *sensor1 = Sensor::Create("thermometer");
-  Sensor *sensor2 = Sensor::Create("humidity");
-  Sensor *sensor3 = Sensor::Create("humidity");
-  Sensor *sensor4 = Sensor::Create("airquality");
-  Sensor *sensor5 = Sensor::Create("moisture");
-  Sensor *sensor6 = Sensor::Create("rgbcamera");
-  Sensor *sensor7 = Sensor::Create("bwcamera");
-  this->sensor.push_back(sensor1);
-  this->sensor.push_back(sensor2);
-  this->sensor.push_back(sensor3);
-  this->sensor.push_back(sensor4);
-  this->sensor.push_back(sensor5);
-  this->sensor.push_back(sensor6);
-  this->sensor.push_back(sensor7);
+
+  // Start loading from file
+
+  for (const auto & entry : std::filesystem::directory_iterator("data/sensor/")){
+    // 1º get all data/sensors/ filenames
+    std::string pathString{entry.path().u8string()};
+
+    std::ifstream inUsersFile (entry.path(), std::ios::in | std::ios::binary);
+    if (!inUsersFile) { // fstream could not open file
+      std::cerr << "File "<< entry.path()<< " could not be opened." << std::endl;
+      std::exit (1);
+    }
+    // 2º create the corresponding type of sensor
+    for (int index = 0; index < Sensor::availableTypesId.size(); index++){
+      if (pathString.find(Sensor::availableTypesId[index]) != std::string::npos){
+        std::string type = Sensor::availableTypes[index];
+
+        Sensor *sensor = Sensor::Create(type);
+        // 3º add it to the list
+        std::filesystem::copy(pathString, "data/sensor~/"+sensor->getId()+".dat~",std::filesystem::copy_options::update_existing);
+        inUsersFile.read (reinterpret_cast <char *>(&*sensor), sizeof (Sensor));
+        this->sensor.push_back(sensor);
+      }
+    }
+  }
+
   addToMainMenu(); 
+  // End loading from file
+  
+  //Sensor *sensor1 = Sensor::Create("thermometer");
+  //Sensor *sensor2 = Sensor::Create("humidity");
+  //Sensor *sensor3 = Sensor::Create("humidity");
+  //Sensor *sensor4 = Sensor::Create("airquality");
+  //Sensor *sensor5 = Sensor::Create("moisture");
+  //Sensor *sensor6 = Sensor::Create("rgbcamera");
+  //Sensor *sensor7 = Sensor::Create("bwcamera");
+  //this->sensor.push_back(sensor1);
+  //this->sensor.push_back(sensor2);
+  //this->sensor.push_back(sensor3);
+  //this->sensor.push_back(sensor4);
+  //this->sensor.push_back(sensor5);
+  //this->sensor.push_back(sensor6);
+  //this->sensor.push_back(sensor7);
+  //addToMainMenu();
 }
 
 Dashboard* Dashboard::singleDashboard = nullptr;
@@ -169,21 +198,11 @@ void Dashboard::changeCurrentSensorInfo(std::string toChange, std::string newVal
   this->changeInterface(this->currentInterface);
 }
 
-
-void Dashboard::cleanSensor(){
-  for (Sensor * sensor : this->sensor){
-    delete sensor;
-  }
-}
-
-
 void Dashboard::exit(){
-  cleanSensor();
   this->allowedToExit = true;
 }
 
 void Dashboard::logout(){
-  cleanSensor();
   this->allowedToExit = false;
 }
 
@@ -191,4 +210,22 @@ bool Dashboard::canExit(){
   return this->allowedToExit;
 }
 
-Dashboard::~Dashboard(){}
+Dashboard::~Dashboard(){
+  for (Sensor * sensor : this->sensor){
+    // 1º Create files for every sensor with the id as the name
+    std::ofstream { "data/sensor/"+sensor->getId()+".dat" };
+
+    // 2º Open file and write in it
+    std::fstream outUsersFile ("data/sensor/"+sensor->getId()+".dat", std::ios::in | std::ios::out | std::ios::binary); // ios::in will require an existing file
+
+    if (!outUsersFile) { // fstream could not open file
+      std::cerr << "File could not be opened." << std::endl;
+      std::exit(1);
+    }
+
+    outUsersFile.seekp (0);
+    outUsersFile.write (reinterpret_cast <const char *> (&*sensor), sizeof (Sensor)); 
+  }
+
+
+}
