@@ -33,15 +33,19 @@ Dashboard::Dashboard(User &user){
   addToMainMenu(); 
 }
 
+Dashboard* Dashboard::singleDashboard = nullptr;
 
 Dashboard *Dashboard::Create(User &user, const std::string type){
-  if (type == "CLI"){
-    return new CLDashboard(user);
+  if (singleDashboard == nullptr){
+    if (type == "CLI"){
+      singleDashboard = new CLDashboard(user);
+    }
+    else {
+      throw std::runtime_error(type + " is not a defined Dashboard type");
+      std::exit(1);
+    }
   }
-  else {
-    throw std::runtime_error(type + " is not a defined Dashboard type");
-    std::exit(1);
-  }
+  return singleDashboard;
 };
 
 bool Dashboard::changeInterface(std::string newInterface){

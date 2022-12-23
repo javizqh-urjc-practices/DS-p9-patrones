@@ -25,7 +25,6 @@ class Dashboard{
     * @return Dashboard*  
     */
     static Dashboard *Create(User &user, const std::string type = "CLI");
-    Dashboard(User &user); /* basic constructor */
     virtual ~Dashboard();
     virtual void showMainMenu() = 0;
     /**
@@ -99,6 +98,7 @@ class Dashboard{
     bool canExit();
 
   protected:
+    Dashboard(User &user); /* basic constructor */
     /**
      * @brief Vector of all the vectors in the dashboard
      */
@@ -127,6 +127,9 @@ class Dashboard{
      */
     Sensor * currentSensor;
     bool allowedToExit;
+
+private:
+  static Dashboard* singleDashboard;
 };
 
 #endif

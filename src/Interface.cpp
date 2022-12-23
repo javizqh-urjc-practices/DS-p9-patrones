@@ -59,11 +59,10 @@ bool Interface::loadMenu(){
     exit(1);
   }
   bool canExit = this->dashboard->canExit();
-  delete this->dashboard; // TODO: placeholder singleton
   return canExit;
 };
 
 Interface::~Interface(){
   delete this->loginInterface;
-  //delete this->dashboard;
+  delete this->dashboard;
 };
