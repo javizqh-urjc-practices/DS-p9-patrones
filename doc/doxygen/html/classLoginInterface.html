@@ -64,6 +64,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classLoginInterface-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -106,15 +107,27 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>askNIF</b> ()
 <tr class="memitem:a3be6f71661654e06f1ed18f033a384e6"><td class="memItemLeft" align="right" valign="top"><a id="a3be6f71661654e06f1ed18f033a384e6"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>askNIF</b> (const std::string &amp;userNumber)=0</td></tr>
 <tr class="separator:a3be6f71661654e06f1ed18f033a384e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32a1f865510b2f2241df081c06bf3eb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUser.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoginInterface.html#a32a1f865510b2f2241df081c06bf3eb9">checkUser</a> ()</td></tr>
-<tr class="memdesc:a32a1f865510b2f2241df081c06bf3eb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the user in the database with the corresponding employee number and NIF.  <a href="classLoginInterface.html#a32a1f865510b2f2241df081c06bf3eb9">More...</a><br /></td></tr>
-<tr class="separator:a32a1f865510b2f2241df081c06bf3eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade94f5e4d8c3792c6d2ca86385e9c7e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoginInterface.html#ade94f5e4d8c3792c6d2ca86385e9c7e3">checkUser</a> (<a class="el" href="classUser.html">User</a> &amp;currentUser)</td></tr>
+<tr class="memdesc:ade94f5e4d8c3792c6d2ca86385e9c7e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the user pass to the corresponding employee number and NIF in the database.  <a href="classLoginInterface.html#ade94f5e4d8c3792c6d2ca86385e9c7e3">More...</a><br /></td></tr>
+<tr class="separator:ade94f5e4d8c3792c6d2ca86385e9c7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a541e6fc733c119a7d01af50d32ac1340"><td class="memItemLeft" align="right" valign="top"><a id="a541e6fc733c119a7d01af50d32ac1340"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>LoginInterface</b> (<a class="el" href="classLoginInterface.html">LoginInterface</a> &amp;otherLoginInterface)=delete</td></tr>
+<tr class="separator:a541e6fc733c119a7d01af50d32ac1340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b07b8b1ee3fa4515309d17c33a838d"><td class="memItemLeft" align="right" valign="top"><a id="af5b07b8b1ee3fa4515309d17c33a838d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classLoginInterface.html">LoginInterface</a> &amp;)=delete</td></tr>
+<tr class="separator:af5b07b8b1ee3fa4515309d17c33a838d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8684c10e4fff3b3313ad72b9ea88b5a3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classLoginInterface.html">LoginInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoginInterface.html#a8684c10e4fff3b3313ad72b9ea88b5a3">Create</a> (const std::string=&quot;CLI&quot;)</td></tr>
 <tr class="memdesc:a8684c10e4fff3b3313ad72b9ea88b5a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new Login interface instance of the type specified.  <a href="classLoginInterface.html#a8684c10e4fff3b3313ad72b9ea88b5a3">More...</a><br /></td></tr>
 <tr class="separator:a8684c10e4fff3b3313ad72b9ea88b5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a42d66ae46c43d765411694286efb7fe2"><td class="memItemLeft" align="right" valign="top"><a id="a42d66ae46c43d765411694286efb7fe2"></a>
+<a class="el" href="classDatabase.html">Database</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>database</b></td></tr>
+<tr class="separator:a42d66ae46c43d765411694286efb7fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -124,28 +137,31 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>inputNIF</b></
 <tr class="memitem:a105c8de5747f01cd14b9457902e1ae58"><td class="memItemLeft" align="right" valign="top"><a id="a105c8de5747f01cd14b9457902e1ae58"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>inputEmployeeNumber</b></td></tr>
 <tr class="separator:a105c8de5747f01cd14b9457902e1ae58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8124e4cc4344142ab9251178c4797d0"><td class="memItemLeft" align="right" valign="top"><a id="aa8124e4cc4344142ab9251178c4797d0"></a>
-<a class="el" href="classDatabase.html">Database</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dastabase</b></td></tr>
-<tr class="separator:aa8124e4cc4344142ab9251178c4797d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a32a1f865510b2f2241df081c06bf3eb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32a1f865510b2f2241df081c06bf3eb9">&#9670;&nbsp;</a></span>checkUser()</h2>
+<a id="ade94f5e4d8c3792c6d2ca86385e9c7e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade94f5e4d8c3792c6d2ca86385e9c7e3">&#9670;&nbsp;</a></span>checkUser()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classUser.html">User</a> LoginInterface::checkUser </td>
+          <td class="memname">void LoginInterface::checkUser </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classUser.html">User</a> &amp;&#160;</td>
+          <td class="paramname"><em>currentUser</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the user in the database with the corresponding employee number and NIF. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classUser.html">User</a> </dd></dl>
+<p>Sets the user pass to the corresponding employee number and NIF in the database. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">currentUser</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

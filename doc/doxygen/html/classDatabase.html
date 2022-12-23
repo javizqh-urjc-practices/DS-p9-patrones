@@ -71,19 +71,22 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6ae29d29e453ba718b0efded09c41c7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUser.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabase.html#a6ae29d29e453ba718b0efded09c41c7f">getUser</a> (std::string employeeNumber, std::string NIF)</td></tr>
-<tr class="memdesc:a6ae29d29e453ba718b0efded09c41c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classUser.html">User</a> object in the database, if not throws an exception.  <a href="classDatabase.html#a6ae29d29e453ba718b0efded09c41c7f">More...</a><br /></td></tr>
-<tr class="separator:a6ae29d29e453ba718b0efded09c41c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6dfd586ae756c04b1df0517f5cfbb4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabase.html#ac6dfd586ae756c04b1df0517f5cfbb4b">getUser</a> (std::string employeeNumber, std::string NIF, <a class="el" href="classUser.html">User</a> &amp;currentUser)</td></tr>
+<tr class="memdesc:ac6dfd586ae756c04b1df0517f5cfbb4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classUser.html">User</a> object in the database, if not throws an exception.  <a href="classDatabase.html#ac6dfd586ae756c04b1df0517f5cfbb4b">More...</a><br /></td></tr>
+<tr class="separator:ac6dfd586ae756c04b1df0517f5cfbb4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c02f9e85d396db6cfd27a20fbe0407a"><td class="memItemLeft" align="right" valign="top"><a id="a6c02f9e85d396db6cfd27a20fbe0407a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resetUser</b> (<a class="el" href="classUser.html">User</a> &amp;currentUser)</td></tr>
+<tr class="separator:a6c02f9e85d396db6cfd27a20fbe0407a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6ae29d29e453ba718b0efded09c41c7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ae29d29e453ba718b0efded09c41c7f">&#9670;&nbsp;</a></span>getUser()</h2>
+<a id="ac6dfd586ae756c04b1df0517f5cfbb4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6dfd586ae756c04b1df0517f5cfbb4b">&#9670;&nbsp;</a></span>getUser()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classUser.html">User</a> Database::getUser </td>
+          <td class="memname">void Database::getUser </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>employeeNumber</em>, </td>
@@ -92,7 +95,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>NIF</em>&#160;</td>
+          <td class="paramname"><em>NIF</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classUser.html">User</a> &amp;&#160;</td>
+          <td class="paramname"><em>currentUser</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -107,10 +116,10 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">employeeNumber</td><td></td></tr>
     <tr><td class="paramname">NIF</td><td></td></tr>
+    <tr><td class="paramname">currentUser</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classUser.html">User</a> </dd></dl>
 
 </div>
 </div>

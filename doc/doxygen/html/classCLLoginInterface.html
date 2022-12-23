@@ -106,9 +106,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a0b46e1c04c83dfbdb26bc562e17903b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default setter of employee nif.  <a href="classCLLoginInterface.html#a0b46e1c04c83dfbdb26bc562e17903b9">More...</a><br /></td></tr>
 <tr class="separator:a0b46e1c04c83dfbdb26bc562e17903b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classLoginInterface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classLoginInterface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classLoginInterface.html">LoginInterface</a></td></tr>
-<tr class="memitem:a32a1f865510b2f2241df081c06bf3eb9 inherit pub_methods_classLoginInterface"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUser.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoginInterface.html#a32a1f865510b2f2241df081c06bf3eb9">checkUser</a> ()</td></tr>
-<tr class="memdesc:a32a1f865510b2f2241df081c06bf3eb9 inherit pub_methods_classLoginInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the user in the database with the corresponding employee number and NIF.  <a href="classLoginInterface.html#a32a1f865510b2f2241df081c06bf3eb9">More...</a><br /></td></tr>
-<tr class="separator:a32a1f865510b2f2241df081c06bf3eb9 inherit pub_methods_classLoginInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade94f5e4d8c3792c6d2ca86385e9c7e3 inherit pub_methods_classLoginInterface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoginInterface.html#ade94f5e4d8c3792c6d2ca86385e9c7e3">checkUser</a> (<a class="el" href="classUser.html">User</a> &amp;currentUser)</td></tr>
+<tr class="memdesc:ade94f5e4d8c3792c6d2ca86385e9c7e3 inherit pub_methods_classLoginInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the user pass to the corresponding employee number and NIF in the database.  <a href="classLoginInterface.html#ade94f5e4d8c3792c6d2ca86385e9c7e3">More...</a><br /></td></tr>
+<tr class="separator:ade94f5e4d8c3792c6d2ca86385e9c7e3 inherit pub_methods_classLoginInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a541e6fc733c119a7d01af50d32ac1340 inherit pub_methods_classLoginInterface"><td class="memItemLeft" align="right" valign="top"><a id="a541e6fc733c119a7d01af50d32ac1340"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>LoginInterface</b> (<a class="el" href="classLoginInterface.html">LoginInterface</a> &amp;otherLoginInterface)=delete</td></tr>
+<tr class="separator:a541e6fc733c119a7d01af50d32ac1340 inherit pub_methods_classLoginInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b07b8b1ee3fa4515309d17c33a838d inherit pub_methods_classLoginInterface"><td class="memItemLeft" align="right" valign="top"><a id="af5b07b8b1ee3fa4515309d17c33a838d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classLoginInterface.html">LoginInterface</a> &amp;)=delete</td></tr>
+<tr class="separator:af5b07b8b1ee3fa4515309d17c33a838d inherit pub_methods_classLoginInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -116,6 +122,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a8684c10e4fff3b3313ad72b9ea88b5a3 inherit pub_static_methods_classLoginInterface"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classLoginInterface.html">LoginInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLoginInterface.html#a8684c10e4fff3b3313ad72b9ea88b5a3">Create</a> (const std::string=&quot;CLI&quot;)</td></tr>
 <tr class="memdesc:a8684c10e4fff3b3313ad72b9ea88b5a3 inherit pub_static_methods_classLoginInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new Login interface instance of the type specified.  <a href="classLoginInterface.html#a8684c10e4fff3b3313ad72b9ea88b5a3">More...</a><br /></td></tr>
 <tr class="separator:a8684c10e4fff3b3313ad72b9ea88b5a3 inherit pub_static_methods_classLoginInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classLoginInterface"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classLoginInterface')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classLoginInterface.html">LoginInterface</a></td></tr>
+<tr class="memitem:a42d66ae46c43d765411694286efb7fe2 inherit pub_attribs_classLoginInterface"><td class="memItemLeft" align="right" valign="top"><a id="a42d66ae46c43d765411694286efb7fe2"></a>
+<a class="el" href="classDatabase.html">Database</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>database</b></td></tr>
+<tr class="separator:a42d66ae46c43d765411694286efb7fe2 inherit pub_attribs_classLoginInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classLoginInterface"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classLoginInterface')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classLoginInterface.html">LoginInterface</a></td></tr>
 <tr class="memitem:a81fb323b58e44187a63e7b201c531d04 inherit pro_attribs_classLoginInterface"><td class="memItemLeft" align="right" valign="top"><a id="a81fb323b58e44187a63e7b201c531d04"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>inputNIF</b></td></tr>
@@ -123,9 +133,6 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>inputNIF</b></
 <tr class="memitem:a105c8de5747f01cd14b9457902e1ae58 inherit pro_attribs_classLoginInterface"><td class="memItemLeft" align="right" valign="top"><a id="a105c8de5747f01cd14b9457902e1ae58"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>inputEmployeeNumber</b></td></tr>
 <tr class="separator:a105c8de5747f01cd14b9457902e1ae58 inherit pro_attribs_classLoginInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8124e4cc4344142ab9251178c4797d0 inherit pro_attribs_classLoginInterface"><td class="memItemLeft" align="right" valign="top"><a id="aa8124e4cc4344142ab9251178c4797d0"></a>
-<a class="el" href="classDatabase.html">Database</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dastabase</b></td></tr>
-<tr class="separator:aa8124e4cc4344142ab9251178c4797d0 inherit pro_attribs_classLoginInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a307f0dd0746dfa0f95190e0f1da0d4e3"></a>

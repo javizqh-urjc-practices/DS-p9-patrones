@@ -3,16 +3,19 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classUser}{User}} \mbox{\hyperlink{classDatabase_a6ae29d29e453ba718b0efded09c41c7f}{get\+User}} (std\+::string employee\+Number, std\+::string N\+IF)
-\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classUser}{User}} object in the database, if not throws an exception. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classDatabase_ac6dfd586ae756c04b1df0517f5cfbb4b}{get\+User}} (std\+::string employee\+Number, std\+::string N\+IF, \mbox{\hyperlink{classUser}{User}} \&current\+User)
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classUser}{User}} object in the database, if not throws an exception. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDatabase_a6c02f9e85d396db6cfd27a20fbe0407a}\label{classDatabase_a6c02f9e85d396db6cfd27a20fbe0407a}} 
+void {\bfseries reset\+User} (\mbox{\hyperlink{classUser}{User}} \&current\+User)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classDatabase_a6ae29d29e453ba718b0efded09c41c7f}\label{classDatabase_a6ae29d29e453ba718b0efded09c41c7f}} 
+\mbox{\Hypertarget{classDatabase_ac6dfd586ae756c04b1df0517f5cfbb4b}\label{classDatabase_ac6dfd586ae756c04b1df0517f5cfbb4b}} 
 \index{Database@{Database}!getUser@{getUser}}
 \index{getUser@{getUser}!Database@{Database}}
 \doxysubsubsection{\texorpdfstring{getUser()}{getUser()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classUser}{User}} Database\+::get\+User (\begin{DoxyParamCaption}\item[{std\+::string}]{employee\+Number,  }\item[{std\+::string}]{N\+IF }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Database\+::get\+User (\begin{DoxyParamCaption}\item[{std\+::string}]{employee\+Number,  }\item[{std\+::string}]{N\+IF,  }\item[{\mbox{\hyperlink{classUser}{User}} \&}]{current\+User }\end{DoxyParamCaption})}
 
 
 
@@ -24,10 +27,9 @@ Get the \mbox{\hyperlink{classUser}{User}} object in the database, if not throws
 \hline
 {\em N\+IF} & \\
 \hline
+{\em current\+User} & \\
+\hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{classUser}{User}} 
-\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

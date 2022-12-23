@@ -78,25 +78,31 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classLoginInterface.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classLoginInterface.html">LoginInterface</a>{</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">static</span> <a class="code" href="classLoginInterface.html">LoginInterface</a> *<a class="code" href="classLoginInterface.html#a8684c10e4fff3b3313ad72b9ea88b5a3">Create</a>(<span class="keyword">const</span> std::string = <span class="stringliteral">&quot;CLI&quot;</span>);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="classLoginInterface.html">LoginInterface</a>(); <span class="comment">/* basic constructor */</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classLoginInterface.html">LoginInterface</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> showWelcomeMessage() = 0;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> askEmployeeNumber() = 0;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> askEmployeeNumber(<span class="keyword">const</span> std::string &amp; userNumber) = 0;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> askNIF() = 0;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> askNIF(<span class="keyword">const</span> std::string &amp; userNumber) = 0;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="classUser.html">User</a> <a class="code" href="classLoginInterface.html#a32a1f865510b2f2241df081c06bf3eb9">checkUser</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  std::string inputNIF; <span class="comment">/* 8 digits */</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  std::string inputEmployeeNumber; <span class="comment">/* 5 digits */</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classDatabase.html">Database</a> dastabase;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classLoginInterface.html">LoginInterface</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> showWelcomeMessage() = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> askEmployeeNumber() = 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> askEmployeeNumber(<span class="keyword">const</span> std::string &amp; userNumber) = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> askNIF() = 0;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> askNIF(<span class="keyword">const</span> std::string &amp; userNumber) = 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classLoginInterface.html#ade94f5e4d8c3792c6d2ca86385e9c7e3">checkUser</a>(<a class="code" href="classUser.html">User</a> &amp; currentUser);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">// singletons shoul not be cloneable or assignable:</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="classLoginInterface.html">LoginInterface</a> (<a class="code" href="classLoginInterface.html">LoginInterface</a> &amp;otherLoginInterface) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> operator= (<span class="keyword">const</span> <a class="code" href="classLoginInterface.html">LoginInterface</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classDatabase.html">Database</a> * database;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="classLoginInterface.html">LoginInterface</a>(); <span class="comment">/* basic constructor */</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  std::string inputNIF; <span class="comment">/* 8 digits */</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  std::string inputEmployeeNumber; <span class="comment">/* 5 digits */</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">static</span> <a class="code" href="classLoginInterface.html">LoginInterface</a>* singleLoginInterface;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassLoginInterface_html_a8684c10e4fff3b3313ad72b9ea88b5a3"><div class="ttname"><a href="classLoginInterface.html#a8684c10e4fff3b3313ad72b9ea88b5a3">LoginInterface::Create</a></div><div class="ttdeci">static LoginInterface * Create(const std::string=&quot;CLI&quot;)</div><div class="ttdoc">Create a new Login interface instance of the type specified.</div><div class="ttdef"><b>Definition:</b> LoginInterface.cpp:17</div></div>
-<div class="ttc" id="aclassLoginInterface_html_a32a1f865510b2f2241df081c06bf3eb9"><div class="ttname"><a href="classLoginInterface.html#a32a1f865510b2f2241df081c06bf3eb9">LoginInterface::checkUser</a></div><div class="ttdeci">User checkUser()</div><div class="ttdoc">Returns the user in the database with the corresponding employee number and NIF.</div><div class="ttdef"><b>Definition:</b> LoginInterface.cpp:27</div></div>
+<div class="ttc" id="aclassLoginInterface_html_a8684c10e4fff3b3313ad72b9ea88b5a3"><div class="ttname"><a href="classLoginInterface.html#a8684c10e4fff3b3313ad72b9ea88b5a3">LoginInterface::Create</a></div><div class="ttdeci">static LoginInterface * Create(const std::string=&quot;CLI&quot;)</div><div class="ttdoc">Create a new Login interface instance of the type specified.</div><div class="ttdef"><b>Definition:</b> LoginInterface.cpp:22</div></div>
+<div class="ttc" id="aclassLoginInterface_html_ade94f5e4d8c3792c6d2ca86385e9c7e3"><div class="ttname"><a href="classLoginInterface.html#ade94f5e4d8c3792c6d2ca86385e9c7e3">LoginInterface::checkUser</a></div><div class="ttdeci">void checkUser(User &amp;currentUser)</div><div class="ttdoc">Sets the user pass to the corresponding employee number and NIF in the database.</div><div class="ttdef"><b>Definition:</b> LoginInterface.cpp:35</div></div>
 <div class="ttc" id="aclassDatabase_html"><div class="ttname"><a href="classDatabase.html">Database</a></div><div class="ttdef"><b>Definition:</b> Database.h:17</div></div>
 <div class="ttc" id="aDatabase_8h_html"><div class="ttname"><a href="Database_8h.html">Database.h</a></div><div class="ttdoc">Header file of Database.cpp.</div></div>
 <div class="ttc" id="aclassLoginInterface_html"><div class="ttname"><a href="classLoginInterface.html">LoginInterface</a></div><div class="ttdef"><b>Definition:</b> LoginInterface.h:16</div></div>
