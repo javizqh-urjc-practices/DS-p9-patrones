@@ -27,7 +27,7 @@ class MenuBar{
     MenuBar(); /* basic constructor */
     virtual ~MenuBar();
     virtual void show() = 0;
-    void setUser(User user);
+    void setUser(User &user);
     /**
     * @brief Sets the current menu
     * 

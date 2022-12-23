@@ -11,14 +11,14 @@
 #include "CLDashboard.h"
 
 
-CLDashboard::CLDashboard(const User &user):Dashboard(user){
+CLDashboard::CLDashboard(User &user):Dashboard(user){
   this->mainMenuIndex = 0;
   this->menuBar = MenuBar::Create();
   this->menu = Menu::Create();
 }
 
 void CLDashboard::showMainMenu(){
-  this->menuBar->setUser(this->user);
+  this->menuBar->setUser(*this->user);
   this->currentInterface = "..";
   changeInterface(this->currentInterface);
   startCustomTerminal(10);
@@ -32,7 +32,7 @@ void CLDashboard::readCommand(){
   while (true){
     lineNumber++;
     if (lineNumber >= 9){ lineNumber=0; clearCustomTerminal(10);}
-    command = newCommand(this->user,this->currentInterface);
+    command = newCommand(*this->user,this->currentInterface);
     /* Check if the command is empty */
     if (command.size() == 0);
 
@@ -41,8 +41,9 @@ void CLDashboard::readCommand(){
       if (command[0].compare("ls") == 0){ lineNumber++; listSensor();}
       else if (command[0].compare("left") == 0) changeMainMenu(-1);
       else if (command[0].compare("right") == 0) changeMainMenu(1);
-      else if (command[0].compare("log") == 0) std::cout << this->user.getTimestamp();
+      else if (command[0].compare("log") == 0) std::cout << this->user->getTimestamp();
       else if (command[0].compare("clear") == 0) clearCustomTerminal(10);
+      else if (command[0].compare("themes") == 0) this->user->getConfiguration()->setBackgroundColor({200,50,150});
       else if (command[0].compare("logout") == 0){ logout(); break;}
       else if (command[0].compare("exit") == 0){ exit(); break;}
       else if (command[0].compare("update") == 0) {
@@ -66,14 +67,14 @@ void CLDashboard::readCommand(){
         else {std::cout << "\u001b[u"; }// Reload cursor pos
       }
       else if (command[0].compare("add") == 0){
-        if (! this->user.hasAdminPermission()){permissionError();continue;}
+        if (! this->user->hasAdminPermission()){permissionError();continue;}
         addNewSensor(command[1]);
         changeInterface(this->currentInterface);
         std::cout << "\u001b[u"; // Reload cursor pos
         lineNumber++;
       }
       else if (command[0].compare("rm") == 0){
-        if (! this->user.hasAdminPermission()){permissionError();continue;}
+        if (! this->user->hasAdminPermission()){permissionError();continue;}
         deleteSensor(command[1]);
         changeInterface(this->currentInterface);
         std::cout << "\u001b[u"; // Reload cursor pos
@@ -121,7 +122,7 @@ void CLDashboard::errorCommand(std::string command){
 }
 
 void CLDashboard::permissionError(){
-  std::cout << this->user.getName() << " does not have the permissions required. Make sure to contact an administrator.\n";
+  std::cout << this->user->getName() << " does not have the permissions required. Make sure to contact an administrator.\n";
 }
 
 CLDashboard::~CLDashboard(){

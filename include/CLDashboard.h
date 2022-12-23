@@ -20,7 +20,7 @@ class CLDashboard : public Dashboard{
     * @brief Create a new Dashboard for the command line
     * 
     */
-    CLDashboard(const User &user); /* basic constructor */
+    CLDashboard(User &user); /* basic constructor */
     /**
     * @brief Shows the default menu and starts the custom terminal
     * 

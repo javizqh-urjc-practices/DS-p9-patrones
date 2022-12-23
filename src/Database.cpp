@@ -12,6 +12,7 @@
 #include "NotFoundUserException.h"
 #include <fstream>
 #include <iostream>
+#include <iterator>
 
 Database::Database(){
   std::ifstream inUsersFile ("data/users.dat", std::ios::in | std::ios::binary);
@@ -28,7 +29,7 @@ Database::Database(){
       sizeof (User));
   }
   //User *user1 = new User("10000","1234567A","paco");
-  //UserConfig *user2Config = new UserConfig("ENT",{255,255,255},{0,0,150},{0,0,0});
+  //UserConfig *user2Config = new UserConfig("ENT",{255,255,255},{0,0,150},{200,200,0});
   //User *user2 = new User(*user2Config,"20000","1234527J", "juan");
   //Admin *admin1 = new Admin("30000","1234567C", "ELBOSS");
   //this->user.insert(*user1);
@@ -36,15 +37,20 @@ Database::Database(){
   //this->user.insert(*admin1);
 }
 
-User Database::getUser(std::string employeeNumber, std::string NIF){
-  
+void Database::getUser(std::string employeeNumber, std::string NIF, User &user){
   for (User i: this->user){
     if (i.isSameEmployeeNumber(employeeNumber) && i.isSameNIF(NIF)){
       i.addTimestamp();
-      return i;
+      user = i;
+      return;
     }
   }
   throw NotFoundUserException();
+}
+
+void Database::resetUser(User &newUser){
+  this->user.erase(newUser);
+  this->user.insert(newUser);
 }
 
 Database::~Database(){

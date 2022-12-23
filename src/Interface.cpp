@@ -34,12 +34,13 @@ Interface *Interface::Create(const std::string type){
 void Interface::login(const std::string userNumber, const std::string nif){
   loginInterface = LoginInterface::Create();
   this->loginInterface = loginInterface;
+  User *currentUser = new User();
+  this->user = currentUser;
   this->loginInterface->askEmployeeNumber(userNumber);
   this->loginInterface->askNIF(nif);
   try {
-    this->user = this->loginInterface->checkUser();
+    this->loginInterface->checkUser(*user);
     system("clear");
-    delete this->loginInterface;
   } catch (std::exception &e) {
     throw; // exception raised again
     exit(1);
@@ -47,12 +48,22 @@ void Interface::login(const std::string userNumber, const std::string nif){
 };
 
 bool Interface::loadMenu(){
-  dashboard = Dashboard::Create(this->user);
+  dashboard = Dashboard::Create(*user);
   this->dashboard = dashboard;
   this->dashboard->showMainMenu();
+  try {
+    this->loginInterface->database->resetUser(*user);
+    system("clear");
+  } catch (std::exception &e) {
+    throw; // exception raised again
+    exit(1);
+  }
   bool canExit = this->dashboard->canExit();
-  delete this->dashboard;
+  delete this->dashboard; // TODO: placeholder singleton
   return canExit;
 };
 
-Interface::~Interface(){};
+Interface::~Interface(){
+  delete this->loginInterface;
+  //delete this->dashboard;
+};

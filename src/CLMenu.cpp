@@ -12,7 +12,7 @@
 
 CLMenu::CLMenu(){}
 
-void CLMenu::show(std::vector <Sensor *> sensors, UserConfig config){
+void CLMenu::show(std::vector <Sensor *> sensors, UserConfig &config){
   std::cout << "\u001b[s"; // Save cursor pos
   if (sensors.size() == 0) return;
   int graphicsInX = 3;
@@ -27,7 +27,7 @@ void CLMenu::show(std::vector <Sensor *> sensors, UserConfig config){
       moveCursor(positionsX * (index % graphicsInX) + 10 + 8 , positionsY * (index / graphicsInX) + 5 + 7);
       std::cout << "No image available";
     } else {
-      printGraphic(sensorToDisplay->requestData(),config.getFontColor(),config.getBackgroundColor(),config.getGraphicColor(),sensorToDisplay->getValPerMin(),positionsX * (index % graphicsInX) + 10, positionsY * (index / graphicsInX) + 5,2);
+      printGraphic(sensorToDisplay->requestData(),*config.getFontColor(),*config.getBackgroundColor(),*config.getGraphicColor(),sensorToDisplay->getValPerMin(),positionsX * (index % graphicsInX) + 10, positionsY * (index / graphicsInX) + 5,2);
     }
     // Prin id below
 
@@ -37,7 +37,7 @@ void CLMenu::show(std::vector <Sensor *> sensors, UserConfig config){
   std::cout << "\u001b[u"; // Reload cursor pos
 }
 
-void CLMenu::show(Sensor * sensorToDisplay, UserConfig config){
+void CLMenu::show(Sensor * sensorToDisplay, UserConfig &config){
   std::cout << "\u001b[s"; // Save cursor pos
   // Graphic size 60 * 30
   clearMenu();
@@ -46,7 +46,7 @@ void CLMenu::show(Sensor * sensorToDisplay, UserConfig config){
     std::cout << "No image available";
   }
   else {
-    printGraphic(sensorToDisplay->requestData(),config.getFontColor(),config.getBackgroundColor(),config.getGraphicColor(),sensorToDisplay->getValPerMin(),10,10,1);
+    printGraphic(sensorToDisplay->requestData(),*config.getFontColor(),*config.getBackgroundColor(),*config.getGraphicColor(),sensorToDisplay->getValPerMin(),10,10,1);
   }
   // Prin id below
   moveCursor(10 + 30 , 10 + 35);
@@ -65,8 +65,8 @@ void CLMenu::show(Sensor * sensorToDisplay, UserConfig config){
   std::cout << "Values per minute: "<<sensorToDisplay->getValPerMin();
   moveCursor(100 , 25 + 10);
   std::cout << "Current state: ";
-  if (sensorToDisplay->isActive()) printColor("On",{0,255,0},{0,0,0});
-  else printColor("Off",{255,0,0},{0,0,0});
+  if (sensorToDisplay->isActive()) printColor("On",{0,255,0},*config.getBackgroundColor());
+  else printColor("Off",{255,0,0},*config.getBackgroundColor());
   std::cout << "\u001b[u"; // Reload cursor pos
 }
 

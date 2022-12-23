@@ -30,14 +30,17 @@ public:
   User(std::string number = "00000",std::string nif = "00000000",std::string name = "default");
   User(UserConfig UserConfig, std::string number = "00000",std::string nif = "00000000",std::string name = "default");
   ~User();
+  std::string getNIF() const {return NIF;};
   bool isSameNIF(std::string NIF);
-  bool isSameEmployeeNumber(std::string NIF);
+
+  std::string getEmployeeNumber() const {return employeeNumber;};
+  bool isSameEmployeeNumber(std::string employeeNumber);
   /**
   * @brief Returns the user name
   * 
   * @return std::string User name
   */
-  std::string getName() const;
+  std::string getName() const {return name;};
   void setName(std::string newName);
   /**
   * @brief Set the timestamp 
@@ -74,7 +77,7 @@ public:
   void setEmployeeNumber(std::string);
 
   void setConfig(UserConfig newConfig) {userConfiguration = newConfig;};
-  UserConfig getConfiguration(){ return userConfiguration;};
+  UserConfig* getConfiguration(){ return &userConfiguration;};
   
 protected:
   char name [21];

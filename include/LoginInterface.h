@@ -22,7 +22,6 @@ public:
   * @return LoginInterface* New login interface instance
   */
   static LoginInterface *Create(const std::string = "CLI");
-  LoginInterface(); /* basic constructor */
   virtual ~LoginInterface();
   virtual void showWelcomeMessage() = 0;
   virtual void askEmployeeNumber() = 0;
@@ -30,16 +29,23 @@ public:
   virtual void askNIF() = 0;
   virtual void askNIF(const std::string & userNumber) = 0;
   /**
-   * @brief Returns the user in the database with the corresponding employee number and NIF
+   * @brief Sets the user pass to the corresponding employee number and NIF in the database
    * 
-   * @return User 
+   * @param currentUser 
    */
-  User checkUser();
+  void checkUser(User & currentUser);
+  // singletons shoul not be cloneable or assignable:
+  LoginInterface (LoginInterface &otherLoginInterface) = delete;
+  void operator= (const LoginInterface&) = delete;
+  Database * database;
 
 protected:
+  LoginInterface(); /* basic constructor */
   std::string inputNIF; /* 8 digits */
   std::string inputEmployeeNumber; /* 5 digits */
-  Database dastabase;
+
+private:
+  static LoginInterface* singleLoginInterface;
 };
 
 #endif

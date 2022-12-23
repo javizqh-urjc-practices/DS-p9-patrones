@@ -51,7 +51,7 @@ public:
 protected:
   LoginInterface * loginInterface;
   Dashboard * dashboard;
-  User user;
+  User * user;
 };
 
 #endif

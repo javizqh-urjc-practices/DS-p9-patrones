@@ -15,25 +15,26 @@ CLInterface::CLInterface(){
 };
 
 void CLInterface::login(int tries){
-  if (tries == 0){
-    loginInterface = LoginInterface::Create();
-    this->loginInterface = loginInterface;
-  }
   if (tries == 5) std::exit(0);
+
+  loginInterface = LoginInterface::Create();
+  this->loginInterface = loginInterface;
+
+  User *currentUser = new User();
+  this->user = currentUser;
 
   this->loginInterface->showWelcomeMessage();
   this->loginInterface->askEmployeeNumber();
   this->loginInterface->askNIF();
   usleep(2 * 1000000);
   try {
-    this->user = this->loginInterface->checkUser();
+    loginInterface->checkUser(*user);
     printCenter("Login successful",{255,255,255},{0,0,0});
     std::cout << "\n";
     usleep(1 * 1000000);
-    printColor("",this->user.getConfiguration().getFontColor(),this->user.getConfiguration().getBackgroundColor());
+    printColor("",*user->getConfiguration()->getFontColor(),*user->getConfiguration()->getBackgroundColor());
     system("clear");
     tries = 0;
-    delete this->loginInterface;
   } catch (std::exception &e) {
     printCenter("Failed login\n", {255,0,0},{0,0,0});
     usleep(1 * 1000000);

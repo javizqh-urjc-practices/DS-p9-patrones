@@ -23,14 +23,14 @@ class CLMenu : public Menu{
      * @param sensors Array of sensor to display <= 7
      * @param config User configuration
      */
-    void show(std::vector <Sensor *> sensors, UserConfig config);
+    void show(std::vector <Sensor *> sensors, UserConfig &config);
     /**
      * @brief Shows the menu for the sensor selected in a detailed format in the command line
      * 
      * @param sensorToDisplay Sensor to display
      * @param config User configuration
      */
-    void show(Sensor * sensorToDisplay, UserConfig config);
+    void show(Sensor * sensorToDisplay, UserConfig &config);
 
   protected:
     /**

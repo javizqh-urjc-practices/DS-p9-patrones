@@ -24,8 +24,8 @@ class Dashboard{
     * @param type Type of Dashboard interface
     * @return Dashboard*  
     */
-    static Dashboard *Create(const User &user, const std::string type = "CLI");
-    Dashboard(const User &user); /* basic constructor */
+    static Dashboard *Create(User &user, const std::string type = "CLI");
+    Dashboard(User &user); /* basic constructor */
     virtual ~Dashboard();
     virtual void showMainMenu() = 0;
     /**
@@ -113,7 +113,7 @@ class Dashboard{
     int mainMenuIndex;
     MenuBar * menuBar;
     Menu * menu;
-    User user;
+    User * user;
     /**
      * @brief Current interface, can be a sensor ID or the main menu (..)
      */

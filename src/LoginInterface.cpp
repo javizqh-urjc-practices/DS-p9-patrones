@@ -12,26 +12,34 @@
 #include "CLLoginInterface.h"
 #include <stdexcept> 
 
-LoginInterface::LoginInterface(){}
+LoginInterface::LoginInterface(){
+  Database* db = new Database();
+  this->database = db;
+}
+
+LoginInterface* LoginInterface::singleLoginInterface = nullptr;
 
 LoginInterface *LoginInterface::Create(const std::string type){
-  if (type == "CLI"){
-    return new CLLoginInterface;
+  if (singleLoginInterface == nullptr){
+    if (type == "CLI"){
+      singleLoginInterface = new CLLoginInterface();
+    }
+    else {
+      throw std::runtime_error(type + " is not a defined LoginInterface type");
+      std::exit(1);
+    }
   }
-  else {
-    throw std::runtime_error(type + " is not a defined LoginInterface type");
-    std::exit(1);
-  }
+  return singleLoginInterface;
 };
 
-User LoginInterface::checkUser(){
+void LoginInterface::checkUser(User &currentUser){
   try {
-    User *user = new User();
-    *user = this->dastabase.getUser(this->inputEmployeeNumber,this->inputNIF);
-    return *user;
+    database->getUser(this->inputEmployeeNumber,this->inputNIF, currentUser);
   } catch (std::exception &e) {
     throw; // exception raised again
   }
 }
 
-LoginInterface::~LoginInterface(){}
+LoginInterface::~LoginInterface(){
+  delete database;
+}

@@ -37,11 +37,11 @@ User::User(UserConfig config, std::string employeeNumber, std::string NIF, std::
 }
 
 bool User::operator<(const User& user) const {
-   return NIF > user.NIF || employeeNumber < user.employeeNumber;  //assume that you compare the record based on a
+   return (std::string(NIF) > user.getNIF()) || (std::string(employeeNumber) > user.getEmployeeNumber());  //assume that you compare the record based on a
 }
 
 bool User::operator==(const User& user) const {
-   return NIF == user.NIF && employeeNumber == user.employeeNumber;  //assume that you compare the record based on a
+   return NIF == user.NIF && employeeNumber==user.employeeNumber && name == user.name;  //assume that you compare the record based on a
 }
 
 void User::setNIF(std::string newNIF){
@@ -71,12 +71,6 @@ bool User::isSameNIF(std::string compareNIF){
 
 bool User::isSameEmployeeNumber(std::string compareEmployeeNumber){
   return employeeNumber == compareEmployeeNumber;
-};
-
-
-
-std::string User::getName() const{
-  return this->name;
 };
 
 void User::addTimestamp(){

@@ -23,9 +23,10 @@ class Database{
      * 
      * @param employeeNumber 
      * @param NIF 
-     * @return User 
+     * @param currentUser 
      */
-    User getUser(std::string employeeNumber,std::string NIF);
+    void getUser(std::string employeeNumber,std::string NIF, User &currentUser);
+    void resetUser(User &currentUser);
   private:
     std::set<User> user;
 };
