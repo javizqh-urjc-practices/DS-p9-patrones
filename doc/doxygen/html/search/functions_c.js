@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['thermometer_248',['Thermometer',['../classThermometer.html#aab1aa3e3411f8789ba954a98ab921681',1,'Thermometer']]]
+  ['user_227',['User',['../classUser.html#a54794305b09de5dddd9fae6d3ba38b6f',1,'User']]]
 ];

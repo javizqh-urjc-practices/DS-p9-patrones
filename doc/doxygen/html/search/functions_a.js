@@ -1,5 +1,10 @@
 var searchData=
 [
-  ['readcommand_235',['readCommand',['../classCLDashboard.html#a545f2058373b09180fc8690bb11e0439',1,'CLDashboard']]],
-  ['requestdata_236',['requestData',['../classAirQuality.html#a15aad0091a66f136af0e20fc1053781b',1,'AirQuality::requestData()'],['../classCameraBW.html#ad7ef60b36c91f8e96299109388ca82cf',1,'CameraBW::requestData()'],['../classCameraRGB.html#a46ec0c1da5d8fba7c8ab6f0ab67901df',1,'CameraRGB::requestData()'],['../classHumidity.html#ae75fd7f5c5b25e6f3d11540e63a9f306',1,'Humidity::requestData()'],['../classMoisture.html#a68e1582f505506fd12cd853c1952a491',1,'Moisture::requestData()'],['../classThermometer.html#a73356bb68d19814f8c8ab18ed9a5c422',1,'Thermometer::requestData()']]]
+  ['sensor_219',['Sensor',['../classSensor.html#ad635c3c34b181dbaff1ad80698260af4',1,'Sensor']]],
+  ['setcurrentmenu_220',['setCurrentMenu',['../classMenuBar.html#ade90727acc5c6b5bcb2dc732c26787d9',1,'MenuBar']]],
+  ['setemployeenumber_221',['setEmployeeNumber',['../classUser.html#a4e454cafcaf339c671a8127b28de84d5',1,'User']]],
+  ['setnif_222',['setNIF',['../classUser.html#a46ab8fe4ca46beed7de6735085ab77dc',1,'User']]],
+  ['show_223',['show',['../classCLMenu.html#aa76ae9790f6cb0fe0c1ecd878c7a94b2',1,'CLMenu::show(std::vector&lt; Sensor * &gt; sensors, UserConfig &amp;config)'],['../classCLMenu.html#a9bf100cdf2913cc44224e870e24f530b',1,'CLMenu::show(Sensor *sensorToDisplay, UserConfig &amp;config)'],['../classCLMenuBar.html#a91f9260cac81995027c3da5773137fc5',1,'CLMenuBar::show()']]],
+  ['showmainmenu_224',['showMainMenu',['../classCLDashboard.html#a63fb00e871678d1ff66e86b3d2da4da3',1,'CLDashboard']]],
+  ['showwelcomemessage_225',['showWelcomeMessage',['../classCLLoginInterface.html#a5c1f2f4ff1f06fc98600d63177ca4513',1,'CLLoginInterface']]]
 ];

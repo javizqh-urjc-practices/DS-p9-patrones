@@ -78,7 +78,7 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classMoisture.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMoisture.html">Moisture</a> : <span class="keyword">public</span> <a class="code" href="classSensor.html">Sensor</a>{</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classMoisture.html#a3d66f8ad174ce11103d734cafba06b85">Moisture</a>(<span class="keywordtype">bool</span> active = <span class="keyword">false</span>, <span class="keywordtype">int</span> valPerMin = 1);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::vector&lt;int&gt; <a class="code" href="classMoisture.html#a68e1582f505506fd12cd853c1952a491">requestData</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::array&lt;int,60&gt; <a class="code" href="classMoisture.html#a35091ee07ed3712ae6b96fa38c1c483d">requestData</a>();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    ~<a class="code" href="classMoisture.html">Moisture</a>();</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> idNumber ;</div>
@@ -86,9 +86,9 @@ $(function() {
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassSensor_html"><div class="ttname"><a href="classSensor.html">Sensor</a></div><div class="ttdef"><b>Definition:</b> Sensor.h:17</div></div>
+<div class="ttc" id="aclassSensor_html"><div class="ttname"><a href="classSensor.html">Sensor</a></div><div class="ttdef"><b>Definition:</b> Sensor.h:18</div></div>
+<div class="ttc" id="aclassMoisture_html_a35091ee07ed3712ae6b96fa38c1c483d"><div class="ttname"><a href="classMoisture.html#a35091ee07ed3712ae6b96fa38c1c483d">Moisture::requestData</a></div><div class="ttdeci">std::array&lt; int, 60 &gt; requestData()</div><div class="ttdoc">Request data from the moisture sensor.</div><div class="ttdef"><b>Definition:</b> Moisture.cpp:17</div></div>
 <div class="ttc" id="aclassMoisture_html_a3d66f8ad174ce11103d734cafba06b85"><div class="ttname"><a href="classMoisture.html#a3d66f8ad174ce11103d734cafba06b85">Moisture::Moisture</a></div><div class="ttdeci">Moisture(bool active=false, int valPerMin=1)</div><div class="ttdoc">Create a new Moisture object.</div><div class="ttdef"><b>Definition:</b> Moisture.cpp:15</div></div>
-<div class="ttc" id="aclassMoisture_html_a68e1582f505506fd12cd853c1952a491"><div class="ttname"><a href="classMoisture.html#a68e1582f505506fd12cd853c1952a491">Moisture::requestData</a></div><div class="ttdeci">std::vector&lt; int &gt; requestData()</div><div class="ttdoc">Request data from the moisture sensor.</div><div class="ttdef"><b>Definition:</b> Moisture.cpp:17</div></div>
 <div class="ttc" id="aSensor_8h_html"><div class="ttname"><a href="Sensor_8h.html">Sensor.h</a></div><div class="ttdoc">Header file of Sensor.cpp.</div></div>
 <div class="ttc" id="aclassMoisture_html"><div class="ttname"><a href="classMoisture.html">Moisture</a></div><div class="ttdef"><b>Definition:</b> Moisture.h:16</div></div>
 <!-- start footer part -->

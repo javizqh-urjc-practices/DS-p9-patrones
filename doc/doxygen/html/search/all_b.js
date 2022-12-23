@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['readcommand_98',['readCommand',['../classCLDashboard.html#a545f2058373b09180fc8690bb11e0439',1,'CLDashboard']]],
-  ['requestdata_99',['requestData',['../classAirQuality.html#a15aad0091a66f136af0e20fc1053781b',1,'AirQuality::requestData()'],['../classCameraBW.html#ad7ef60b36c91f8e96299109388ca82cf',1,'CameraBW::requestData()'],['../classCameraRGB.html#a46ec0c1da5d8fba7c8ab6f0ab67901df',1,'CameraRGB::requestData()'],['../classHumidity.html#ae75fd7f5c5b25e6f3d11540e63a9f306',1,'Humidity::requestData()'],['../classMoisture.html#a68e1582f505506fd12cd853c1952a491',1,'Moisture::requestData()'],['../classThermometer.html#a73356bb68d19814f8c8ab18ed9a5c422',1,'Thermometer::requestData()']]]
+  ['readcommand_91',['readCommand',['../classCLDashboard.html#a545f2058373b09180fc8690bb11e0439',1,'CLDashboard']]],
+  ['requestdata_92',['requestData',['../classAirQuality.html#a7ffa69e4861195b12d3c76654e7dfe2c',1,'AirQuality::requestData()'],['../classCameraBW.html#ac7d4280d3d944fe9febccf04b1bad304',1,'CameraBW::requestData()'],['../classCameraRGB.html#a2747f4d2d18679cf2357e96795002da4',1,'CameraRGB::requestData()'],['../classHumidity.html#a829cf56ea94aa4b196b25bfe27a6fdfb',1,'Humidity::requestData()'],['../classMoisture.html#a35091ee07ed3712ae6b96fa38c1c483d',1,'Moisture::requestData()'],['../classSensor.html#ae981892f41a7097aee2aaa3b63c97959',1,'Sensor::requestData()'],['../classThermometer.html#a49eb454838ec83d46bf6543babe094c8',1,'Thermometer::requestData()']]]
 ];

@@ -12,36 +12,60 @@ Inheritance diagram for Sensor\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classSensor_ab1648e2bbbb81171c307b1c03c792d0d}{Sensor}} (std\+::string id=\char`\"{}0000\char`\"{}, std\+::string type=\char`\"{}none\char`\"{}, std\+::string magnitude=\char`\"{}-\/\char`\"{}, bool active=true, int val\+Per\+Min=1)
+\mbox{\hyperlink{classSensor_ad635c3c34b181dbaff1ad80698260af4}{Sensor}} (std\+::string id=\char`\"{}\char`\"{}, std\+::string type=\char`\"{}none\char`\"{}, std\+::string magnitude=\char`\"{}-\/\char`\"{}, bool active=true, int val\+Per\+Min=1)
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classSensor}{Sensor}}\+:\+: \mbox{\hyperlink{classSensor}{Sensor}} object. \end{DoxyCompactList}\item 
-std\+::string \mbox{\hyperlink{classSensor_a2ede485aa0cc86c44ceec6fabe77ca00}{get\+Id}} ()
-\begin{DoxyCompactList}\small\item\em Returns the sensor id. \end{DoxyCompactList}\item 
-std\+::string \mbox{\hyperlink{classSensor_a1e72d3e0e8c5c85004321639562dbbf9}{get\+Type}} ()
-\begin{DoxyCompactList}\small\item\em Returns the sensor type. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classSensor_a54feb4ac7731acbe92c33f84f2a41ac2}{set\+Active}} (bool)
-\begin{DoxyCompactList}\small\item\em Turns the sensor On/\+Off. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classSensor_aeb95c3006f7155be956658f0b951b9db}{is\+Active}} ()
-\begin{DoxyCompactList}\small\item\em Returns if the sensor is On/\+Off. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classSensor_aec80c62a0a8fba3286e45e6c0f067ab8}{set\+Area}} (std\+::string)
-\begin{DoxyCompactList}\small\item\em Set the area of the sensor. \end{DoxyCompactList}\item 
-std\+::string \mbox{\hyperlink{classSensor_af59e8f9872b1a9ed22c372f4358ba427}{get\+Area}} ()
-\begin{DoxyCompactList}\small\item\em Returns the area of the sensor. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classSensor_a5c0a33fae2355f8b1de3f1543600dce6}{set\+Magnitude}} (std\+::string magnitude)
-\begin{DoxyCompactList}\small\item\em Set the sensor data values magnitude. \end{DoxyCompactList}\item 
-std\+::string \mbox{\hyperlink{classSensor_abe13a4dae9b9ce659a75c2e0ee3774e3}{get\+Magnitude}} ()
-\begin{DoxyCompactList}\small\item\em Returns the sensor magnitude. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classSensor_a91cbe46e58ef6526e7f8e68b0d2aa98a}{set\+Val\+Per\+Min}} (int val\+Per\+Min)
-\begin{DoxyCompactList}\small\item\em Set the number of values per min. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classSensor_a9be23eee7cbf4f7ed68869012ab7fb4e}{get\+Val\+Per\+Min}} ()
-\begin{DoxyCompactList}\small\item\em Return the number of values per min. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classSensor_a1d6e7963038a06e68cf416e4c112d89a}\label{classSensor_a1d6e7963038a06e68cf416e4c112d89a}} 
-virtual std\+::vector$<$ int $>$ {\bfseries request\+Data} ()=0
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{classSensor_a0a35dab427ffd83daacd9db048b08ce8}\label{classSensor_a0a35dab427ffd83daacd9db048b08ce8}} 
+void {\bfseries set\+Id} (std\+::string new\+Id)
+\item 
+\mbox{\Hypertarget{classSensor_a2ede485aa0cc86c44ceec6fabe77ca00}\label{classSensor_a2ede485aa0cc86c44ceec6fabe77ca00}} 
+std\+::string {\bfseries get\+Id} ()
+\item 
+\mbox{\Hypertarget{classSensor_ae32928b43ef201ae113552715fe14b62}\label{classSensor_ae32928b43ef201ae113552715fe14b62}} 
+void {\bfseries set\+Type} (std\+::string new\+Type)
+\item 
+\mbox{\Hypertarget{classSensor_a1e72d3e0e8c5c85004321639562dbbf9}\label{classSensor_a1e72d3e0e8c5c85004321639562dbbf9}} 
+std\+::string {\bfseries get\+Type} ()
+\item 
+\mbox{\Hypertarget{classSensor_aec80c62a0a8fba3286e45e6c0f067ab8}\label{classSensor_aec80c62a0a8fba3286e45e6c0f067ab8}} 
+void {\bfseries set\+Area} (std\+::string)
+\item 
+\mbox{\Hypertarget{classSensor_af59e8f9872b1a9ed22c372f4358ba427}\label{classSensor_af59e8f9872b1a9ed22c372f4358ba427}} 
+std\+::string {\bfseries get\+Area} ()
+\item 
+\mbox{\Hypertarget{classSensor_a5c0a33fae2355f8b1de3f1543600dce6}\label{classSensor_a5c0a33fae2355f8b1de3f1543600dce6}} 
+void {\bfseries set\+Magnitude} (std\+::string magnitude)
+\item 
+\mbox{\Hypertarget{classSensor_abe13a4dae9b9ce659a75c2e0ee3774e3}\label{classSensor_abe13a4dae9b9ce659a75c2e0ee3774e3}} 
+std\+::string {\bfseries get\+Magnitude} ()
+\item 
+\mbox{\Hypertarget{classSensor_a54feb4ac7731acbe92c33f84f2a41ac2}\label{classSensor_a54feb4ac7731acbe92c33f84f2a41ac2}} 
+void {\bfseries set\+Active} (bool)
+\item 
+\mbox{\Hypertarget{classSensor_aeb95c3006f7155be956658f0b951b9db}\label{classSensor_aeb95c3006f7155be956658f0b951b9db}} 
+bool {\bfseries is\+Active} ()
+\item 
+\mbox{\Hypertarget{classSensor_a91cbe46e58ef6526e7f8e68b0d2aa98a}\label{classSensor_a91cbe46e58ef6526e7f8e68b0d2aa98a}} 
+void {\bfseries set\+Val\+Per\+Min} (int val\+Per\+Min)
+\item 
+\mbox{\Hypertarget{classSensor_a9be23eee7cbf4f7ed68869012ab7fb4e}\label{classSensor_a9be23eee7cbf4f7ed68869012ab7fb4e}} 
+int {\bfseries get\+Val\+Per\+Min} ()
+\item 
+virtual std\+::array$<$ int, 60 $>$ \mbox{\hyperlink{classSensor_ae981892f41a7097aee2aaa3b63c97959}{request\+Data}} ()=0
+\begin{DoxyCompactList}\small\item\em Request data from sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static \mbox{\hyperlink{classSensor}{Sensor}} $\ast$ \mbox{\hyperlink{classSensor_a580b1877b7ba5fa04ac7be229a695fc7}{Create}} (const std\+::string type)
 \begin{DoxyCompactList}\small\item\em Creates an instance of the sensor type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSensor_a78d0e8cee29cadca27a2ad50904665f3}\label{classSensor_a78d0e8cee29cadca27a2ad50904665f3}} 
+static std\+::array$<$ std\+::string, 6 $>$ {\bfseries available\+Types\+Id} = \{\char`\"{}therm\char`\"{},\char`\"{}hum\char`\"{},\char`\"{}airqual\char`\"{},\char`\"{}bwcam\char`\"{},\char`\"{}rgbcam\char`\"{},\char`\"{}moist\char`\"{}\}
+\item 
+\mbox{\Hypertarget{classSensor_a47b69146351c337996fc4773480e0464}\label{classSensor_a47b69146351c337996fc4773480e0464}} 
+static std\+::array$<$ std\+::string, 6 $>$ {\bfseries available\+Types} = \{\char`\"{}thermometer\char`\"{},\char`\"{}humidity\char`\"{},\char`\"{}airquality\char`\"{},\char`\"{}bwcamera\char`\"{},\char`\"{}rgbcamera\char`\"{},\char`\"{}moisture\char`\"{}\}
+\end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -54,23 +78,20 @@ void {\bfseries remove\+Old\+Data} (int)
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classSensor_a453091529ca37c9fac76bb39fcbac286}\label{classSensor_a453091529ca37c9fac76bb39fcbac286}} 
-std\+::string {\bfseries id}
+\mbox{\Hypertarget{classSensor_a5e3f0105622eaf9c6a2cfc8023e2ea0e}\label{classSensor_a5e3f0105622eaf9c6a2cfc8023e2ea0e}} 
+char {\bfseries id} \mbox{[}11\mbox{]}
+\item 
+\mbox{\Hypertarget{classSensor_a3695d2f673a07e9b5fbeae67aecb83ae}\label{classSensor_a3695d2f673a07e9b5fbeae67aecb83ae}} 
+char {\bfseries type} \mbox{[}21\mbox{]}
+\item 
+\mbox{\Hypertarget{classSensor_a0d6a4016180413fb9f6afa388efcbe60}\label{classSensor_a0d6a4016180413fb9f6afa388efcbe60}} 
+char {\bfseries area} \mbox{[}21\mbox{]}
+\item 
+\mbox{\Hypertarget{classSensor_ac398416f576db138b291cf04e8ae58c4}\label{classSensor_ac398416f576db138b291cf04e8ae58c4}} 
+char {\bfseries magnitude} \mbox{[}11\mbox{]}
 \item 
 \mbox{\Hypertarget{classSensor_a24fd0c86c714edf603aac94428e96a01}\label{classSensor_a24fd0c86c714edf603aac94428e96a01}} 
 bool {\bfseries active}
-\item 
-\mbox{\Hypertarget{classSensor_a6fe1dbe1e72b79e52eb42afe07c976b7}\label{classSensor_a6fe1dbe1e72b79e52eb42afe07c976b7}} 
-std\+::string {\bfseries type}
-\item 
-\mbox{\Hypertarget{classSensor_a63e3af10c95613e103e36b9ff3885aa9}\label{classSensor_a63e3af10c95613e103e36b9ff3885aa9}} 
-std\+::string {\bfseries area}
-\item 
-\mbox{\Hypertarget{classSensor_a36f675745f9e61e47b9cf7f7c3159c2f}\label{classSensor_a36f675745f9e61e47b9cf7f7c3159c2f}} 
-std\+::vector$<$ int $>$ {\bfseries data}
-\item 
-\mbox{\Hypertarget{classSensor_af7a8d1245e8537178ebe2db328677387}\label{classSensor_af7a8d1245e8537178ebe2db328677387}} 
-std\+::string {\bfseries magnitude}
 \item 
 \mbox{\Hypertarget{classSensor_a77058368462c76d88398e85c8fe81086}\label{classSensor_a77058368462c76d88398e85c8fe81086}} 
 int {\bfseries val\+Per\+Min}
@@ -78,11 +99,11 @@ int {\bfseries val\+Per\+Min}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classSensor_ab1648e2bbbb81171c307b1c03c792d0d}\label{classSensor_ab1648e2bbbb81171c307b1c03c792d0d}} 
+\mbox{\Hypertarget{classSensor_ad635c3c34b181dbaff1ad80698260af4}\label{classSensor_ad635c3c34b181dbaff1ad80698260af4}} 
 \index{Sensor@{Sensor}!Sensor@{Sensor}}
 \index{Sensor@{Sensor}!Sensor@{Sensor}}
 \doxysubsubsection{\texorpdfstring{Sensor()}{Sensor()}}
-{\footnotesize\ttfamily Sensor\+::\+Sensor (\begin{DoxyParamCaption}\item[{std\+::string}]{id = {\ttfamily \char`\"{}0000\char`\"{}},  }\item[{std\+::string}]{type = {\ttfamily \char`\"{}none\char`\"{}},  }\item[{std\+::string}]{magnitude = {\ttfamily \char`\"{}-\/\char`\"{}},  }\item[{bool}]{active = {\ttfamily true},  }\item[{int}]{val\+Per\+Min = {\ttfamily 1} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Sensor\+::\+Sensor (\begin{DoxyParamCaption}\item[{std\+::string}]{id = {\ttfamily \char`\"{}\char`\"{}},  }\item[{std\+::string}]{type = {\ttfamily \char`\"{}none\char`\"{}},  }\item[{std\+::string}]{magnitude = {\ttfamily \char`\"{}-\/\char`\"{}},  }\item[{bool}]{active = {\ttfamily true},  }\item[{int}]{val\+Per\+Min = {\ttfamily 1} }\end{DoxyParamCaption})}
 
 
 
@@ -122,146 +143,23 @@ Creates an instance of the sensor type.
 \begin{DoxyReturn}{Returns}
 Sensor$\ast$ 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classSensor_af59e8f9872b1a9ed22c372f4358ba427}\label{classSensor_af59e8f9872b1a9ed22c372f4358ba427}} 
-\index{Sensor@{Sensor}!getArea@{getArea}}
-\index{getArea@{getArea}!Sensor@{Sensor}}
-\doxysubsubsection{\texorpdfstring{getArea()}{getArea()}}
-{\footnotesize\ttfamily std\+::string Sensor\+::get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classSensor_ae981892f41a7097aee2aaa3b63c97959}\label{classSensor_ae981892f41a7097aee2aaa3b63c97959}} 
+\index{Sensor@{Sensor}!requestData@{requestData}}
+\index{requestData@{requestData}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{requestData()}{requestData()}}
+{\footnotesize\ttfamily virtual std\+::array$<$int,60$>$ Sensor\+::request\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Returns the area of the sensor. 
-
-\begin{DoxyReturn}{Returns}
-std\+::string Area 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classSensor_a2ede485aa0cc86c44ceec6fabe77ca00}\label{classSensor_a2ede485aa0cc86c44ceec6fabe77ca00}} 
-\index{Sensor@{Sensor}!getId@{getId}}
-\index{getId@{getId}!Sensor@{Sensor}}
-\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
-{\footnotesize\ttfamily std\+::string Sensor\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Returns the sensor id. 
+Request data from sensor. 
 
 \begin{DoxyReturn}{Returns}
-std\+::string ID 
+std\+::vector$<$int$>$ 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classSensor_abe13a4dae9b9ce659a75c2e0ee3774e3}\label{classSensor_abe13a4dae9b9ce659a75c2e0ee3774e3}} 
-\index{Sensor@{Sensor}!getMagnitude@{getMagnitude}}
-\index{getMagnitude@{getMagnitude}!Sensor@{Sensor}}
-\doxysubsubsection{\texorpdfstring{getMagnitude()}{getMagnitude()}}
-{\footnotesize\ttfamily std\+::string Sensor\+::get\+Magnitude (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
+Implemented in \mbox{\hyperlink{classAirQuality_a7ffa69e4861195b12d3c76654e7dfe2c}{Air\+Quality}}, \mbox{\hyperlink{classCameraBW_ac7d4280d3d944fe9febccf04b1bad304}{Camera\+BW}}, \mbox{\hyperlink{classCameraRGB_a2747f4d2d18679cf2357e96795002da4}{Camera\+R\+GB}}, \mbox{\hyperlink{classHumidity_a829cf56ea94aa4b196b25bfe27a6fdfb}{Humidity}}, \mbox{\hyperlink{classMoisture_a35091ee07ed3712ae6b96fa38c1c483d}{Moisture}}, and \mbox{\hyperlink{classThermometer_a49eb454838ec83d46bf6543babe094c8}{Thermometer}}.
 
-Returns the sensor magnitude. 
-
-\begin{DoxyReturn}{Returns}
-std\+::string Magnitude 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classSensor_a1e72d3e0e8c5c85004321639562dbbf9}\label{classSensor_a1e72d3e0e8c5c85004321639562dbbf9}} 
-\index{Sensor@{Sensor}!getType@{getType}}
-\index{getType@{getType}!Sensor@{Sensor}}
-\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
-{\footnotesize\ttfamily std\+::string Sensor\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Returns the sensor type. 
-
-\begin{DoxyReturn}{Returns}
-std\+::string \mbox{\hyperlink{classSensor}{Sensor}} type 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classSensor_a9be23eee7cbf4f7ed68869012ab7fb4e}\label{classSensor_a9be23eee7cbf4f7ed68869012ab7fb4e}} 
-\index{Sensor@{Sensor}!getValPerMin@{getValPerMin}}
-\index{getValPerMin@{getValPerMin}!Sensor@{Sensor}}
-\doxysubsubsection{\texorpdfstring{getValPerMin()}{getValPerMin()}}
-{\footnotesize\ttfamily int Sensor\+::get\+Val\+Per\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Return the number of values per min. 
-
-\begin{DoxyReturn}{Returns}
-int Values per minute 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classSensor_aeb95c3006f7155be956658f0b951b9db}\label{classSensor_aeb95c3006f7155be956658f0b951b9db}} 
-\index{Sensor@{Sensor}!isActive@{isActive}}
-\index{isActive@{isActive}!Sensor@{Sensor}}
-\doxysubsubsection{\texorpdfstring{isActive()}{isActive()}}
-{\footnotesize\ttfamily bool Sensor\+::is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Returns if the sensor is On/\+Off. 
-
-\begin{DoxyReturn}{Returns}
-true = ON 
-
-false = O\+FF 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classSensor_a54feb4ac7731acbe92c33f84f2a41ac2}\label{classSensor_a54feb4ac7731acbe92c33f84f2a41ac2}} 
-\index{Sensor@{Sensor}!setActive@{setActive}}
-\index{setActive@{setActive}!Sensor@{Sensor}}
-\doxysubsubsection{\texorpdfstring{setActive()}{setActive()}}
-{\footnotesize\ttfamily void Sensor\+::set\+Active (\begin{DoxyParamCaption}\item[{bool}]{active }\end{DoxyParamCaption})}
-
-
-
-Turns the sensor On/\+Off. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em active} & \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classSensor_aec80c62a0a8fba3286e45e6c0f067ab8}\label{classSensor_aec80c62a0a8fba3286e45e6c0f067ab8}} 
-\index{Sensor@{Sensor}!setArea@{setArea}}
-\index{setArea@{setArea}!Sensor@{Sensor}}
-\doxysubsubsection{\texorpdfstring{setArea()}{setArea()}}
-{\footnotesize\ttfamily void Sensor\+::set\+Area (\begin{DoxyParamCaption}\item[{std\+::string}]{area }\end{DoxyParamCaption})}
-
-
-
-Set the area of the sensor. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em area} & \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classSensor_a5c0a33fae2355f8b1de3f1543600dce6}\label{classSensor_a5c0a33fae2355f8b1de3f1543600dce6}} 
-\index{Sensor@{Sensor}!setMagnitude@{setMagnitude}}
-\index{setMagnitude@{setMagnitude}!Sensor@{Sensor}}
-\doxysubsubsection{\texorpdfstring{setMagnitude()}{setMagnitude()}}
-{\footnotesize\ttfamily void Sensor\+::set\+Magnitude (\begin{DoxyParamCaption}\item[{std\+::string}]{magnitude }\end{DoxyParamCaption})}
-
-
-
-Set the sensor data values magnitude. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em magnitude} & \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classSensor_a91cbe46e58ef6526e7f8e68b0d2aa98a}\label{classSensor_a91cbe46e58ef6526e7f8e68b0d2aa98a}} 
-\index{Sensor@{Sensor}!setValPerMin@{setValPerMin}}
-\index{setValPerMin@{setValPerMin}!Sensor@{Sensor}}
-\doxysubsubsection{\texorpdfstring{setValPerMin()}{setValPerMin()}}
-{\footnotesize\ttfamily void Sensor\+::set\+Val\+Per\+Min (\begin{DoxyParamCaption}\item[{int}]{val\+Per\+Min }\end{DoxyParamCaption})}
-
-
-
-Set the number of values per min. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em val\+Per\+Min} & \\
-\hline
-\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
