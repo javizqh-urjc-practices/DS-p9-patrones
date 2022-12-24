@@ -131,7 +131,7 @@
   \item {include/Interface.h}, \hyperpage{66}
   \item {include/LoginInterface.h}, \hyperpage{68}
   \item {include/main.h}, \hyperpage{69}
-  \item {include/Menu.h}, \hyperpage{71}
+  \item {include/Menu.h}, \hyperpage{70}
   \item {include/MenuBar.h}, \hyperpage{72}
   \item {include/Moisture.h}, \hyperpage{73}
   \item {include/NotFoundUserException.h}, \hyperpage{74}
@@ -232,11 +232,11 @@
   \item {src/LoginInterface.cpp}, \hyperpage{93}
   \item {src/main.cpp}, \hyperpage{94}
   \item {src/Menu.cpp}, \hyperpage{95}
-  \item {src/MenuBar.cpp}, \hyperpage{95}
+  \item {src/MenuBar.cpp}, \hyperpage{96}
   \item {src/Moisture.cpp}, \hyperpage{96}
   \item {src/Sensor.cpp}, \hyperpage{97}
   \item {src/Thermometer.cpp}, \hyperpage{98}
-  \item {src/User.cpp}, \hyperpage{98}
+  \item {src/User.cpp}, \hyperpage{99}
   \item {src/UserConfig.cpp}, \hyperpage{100}
 
   \indexspace

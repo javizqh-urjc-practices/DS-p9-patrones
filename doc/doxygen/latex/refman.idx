@@ -156,7 +156,7 @@
 \indexentry{include/Interface.h@{include/Interface.h}|hyperpage}{66}
 \indexentry{include/LoginInterface.h@{include/LoginInterface.h}|hyperpage}{68}
 \indexentry{include/main.h@{include/main.h}|hyperpage}{69}
-\indexentry{include/Menu.h@{include/Menu.h}|hyperpage}{71}
+\indexentry{include/Menu.h@{include/Menu.h}|hyperpage}{70}
 \indexentry{include/MenuBar.h@{include/MenuBar.h}|hyperpage}{72}
 \indexentry{include/Moisture.h@{include/Moisture.h}|hyperpage}{73}
 \indexentry{include/NotFoundUserException.h@{include/NotFoundUserException.h}|hyperpage}{74}
@@ -187,9 +187,9 @@
 \indexentry{src/LoginInterface.cpp@{src/LoginInterface.cpp}|hyperpage}{93}
 \indexentry{src/main.cpp@{src/main.cpp}|hyperpage}{94}
 \indexentry{src/Menu.cpp@{src/Menu.cpp}|hyperpage}{95}
-\indexentry{src/MenuBar.cpp@{src/MenuBar.cpp}|hyperpage}{95}
+\indexentry{src/MenuBar.cpp@{src/MenuBar.cpp}|hyperpage}{96}
 \indexentry{src/Moisture.cpp@{src/Moisture.cpp}|hyperpage}{96}
 \indexentry{src/Sensor.cpp@{src/Sensor.cpp}|hyperpage}{97}
 \indexentry{src/Thermometer.cpp@{src/Thermometer.cpp}|hyperpage}{98}
-\indexentry{src/User.cpp@{src/User.cpp}|hyperpage}{98}
+\indexentry{src/User.cpp@{src/User.cpp}|hyperpage}{99}
 \indexentry{src/UserConfig.cpp@{src/UserConfig.cpp}|hyperpage}{100}
