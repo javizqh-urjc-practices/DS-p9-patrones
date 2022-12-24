@@ -10,6 +10,10 @@
  */
 #include "Admin.h"
 #include <set>
+#include <fstream>
+#include <iostream>
+#include <iterator>
+#include <filesystem>
 
 #ifndef DATABASE_H 
 #define	DATABASE_H 

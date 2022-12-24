@@ -10,12 +10,9 @@
  */
 #include "Database.h"
 #include "NotFoundUserException.h"
-#include <fstream>
-#include <iostream>
-#include <iterator>
 
 Database::Database(){
-  std::ifstream inUsersFile ("data/users.dat", std::ios::in | std::ios::binary);
+  std::ifstream inUsersFile ("server/database/users.dat", std::ios::in | std::ios::binary);
   if (!inUsersFile) { // fstream could not open file
     std::cerr << "File could not be opened." << std::endl;
     exit (1);
@@ -29,7 +26,7 @@ Database::Database(){
       sizeof (User));
   }
 
-  system("cp data/users.dat data/users.dat~");
+  std::filesystem::copy("server/database/users.dat", "server/database/users.dat~",std::filesystem::copy_options::update_existing);
   //User *user1 = new User("10000","1234567A","paco");
   //UserConfig *user2Config = new UserConfig("ENT",{255,255,255},{0,0,150},{200,200,0});
   //User *user2 = new User(*user2Config,"20000","1234527J", "juan");
@@ -56,7 +53,12 @@ void Database::resetUser(User &newUser){
 }
 
 Database::~Database(){
-  std::fstream outUsersFile ("data/users.dat", std::ios::in | std::ios::out | std::ios::binary); // ios::in will require an existing file
+  std::fstream outUsersFile ("server/database/users.dat", std::ios::in | std::ios::out | std::ios::binary); // ios::in will require an existing file
+  if (!outUsersFile){
+    // Create file if it doesn't exist
+    std::ofstream {"server/database/users.dat" };
+    outUsersFile.open("server/database/users.dat");
+  }
 
   if (!outUsersFile) { // fstream could not open file
     std::cerr << "File could not be opened." << std::endl;
