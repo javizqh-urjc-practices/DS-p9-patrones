@@ -52,6 +52,12 @@ void Database::resetUser(User &newUser){
   this->user.insert(newUser);
 }
 
+void Database::addUsers(std::vector<User> newUsers){
+  for (User newUser : newUsers){
+    this->user.insert(newUser);
+  }
+};
+
 Database::~Database(){
   std::fstream outUsersFile ("server/database/users.dat", std::ios::in | std::ios::out | std::ios::binary); // ios::in will require an existing file
   if (!outUsersFile){

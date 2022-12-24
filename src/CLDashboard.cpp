@@ -78,6 +78,7 @@ void CLDashboard::readCommand(){
         changeInterface(this->currentInterface);
         std::cout << "\u001b[u"; // Reload cursor pos
       }
+      else if (command[0].compare("name") == 0) this->user->setName(command[1]);
       else errorCommand(command[0]);
     }
 
@@ -85,6 +86,18 @@ void CLDashboard::readCommand(){
     /* Check if the command has three words */
     else if (command.size() == 3){
       if (command[0].compare("set") == 0) changeCurrentSensorInfo(command[1], command[2]);
+      else if (command[0].compare("user") == 0){
+        if (! this->user->hasAdminPermission()){permissionError();continue;}
+        if (command[1].size() != 5 && command[2].size() != 8) errorCommand(command[0]);
+        User *user = new User(command[1], command[2]);
+        this->newUsers.push_back(*user);
+      }
+      else if (command[0].compare("admin") == 0){
+        if (! this->user->hasAdminPermission()){permissionError();continue;}
+        if (command[1].size() != 5 && command[2].size() != 8) errorCommand(command[0]);
+        Admin *admin = new Admin(command[1], command[2]);
+        this->newUsers.push_back(*admin);
+      }
       else errorCommand(command[0]);
     }
     

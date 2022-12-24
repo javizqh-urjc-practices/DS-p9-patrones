@@ -53,6 +53,7 @@ bool Interface::loadMenu(){
   this->dashboard->setUser(*user);
   this->dashboard->showMainMenu();
   try {
+    this->loginInterface->database->addUsers(this->dashboard->getNewUsers());
     this->loginInterface->database->resetUser(*user);
     system("clear");
   } catch (std::exception &e) {

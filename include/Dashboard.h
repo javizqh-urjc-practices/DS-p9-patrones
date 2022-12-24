@@ -76,6 +76,12 @@ class Dashboard{
     */
     void deleteSensor(std::string id);
     /**
+     * @brief Get the New Users vector
+     * 
+     * @return std::vector<User> 
+     */
+    std::vector<User> getNewUsers(){return this->newUsers;};
+    /**
     * @brief Exits the dashboard and finishes the program
     * @see cleanSensor
     */
@@ -123,6 +129,7 @@ class Dashboard{
      */
     Sensor * currentSensor;
     bool allowedToExit;
+    std::vector<User> newUsers;
 
 private:
   static Dashboard* singleDashboard;

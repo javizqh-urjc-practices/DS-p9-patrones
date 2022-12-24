@@ -31,6 +31,7 @@ class Database{
      */
     void getUser(std::string employeeNumber,std::string NIF, User &currentUser);
     void resetUser(User &currentUser);
+    void addUsers(std::vector<User> newUsers);
   private:
     std::set<User> user;
 };

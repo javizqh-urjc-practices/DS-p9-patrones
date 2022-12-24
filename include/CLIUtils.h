@@ -15,6 +15,9 @@
 #include <fstream>
 #include <array>
 
+#ifndef CLIUTILS_H 
+#define	CLIUTILS_H 
+
 void setTerminalSize();
 int getTerminalWidth();
 int getTerminalHeight();
@@ -57,3 +60,5 @@ void clearCustomTerminal(int);
 void moveCursor(int posX, int posY);
 void printGraphic(const std::vector<int> data, std::array<int,3> frontColor, std::array<int,3> backColor, std::array<int,3> pointColor
   , int valPerY = 1, int posX = 10, int posY = 10, int scale = 1);
+
+  #endif
