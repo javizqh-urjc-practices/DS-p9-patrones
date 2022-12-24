@@ -101,7 +101,6 @@ void Sensor::setValPerMin(int valPerMin){
 }
 
 std::vector<int> Sensor::requestData(){
-  //TODO: remove part 0
 
   // 1º load data from server file
   std::ifstream dataFile;

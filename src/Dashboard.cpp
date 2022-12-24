@@ -18,7 +18,6 @@ Dashboard::Dashboard(User &user){
   this->currentSensor = nullptr;
 
   // Start loading from file
-  // TODO: load files from server instead
 
   for (const auto & entry : std::filesystem::directory_iterator("server/sensor/")){
     // 1º get all server/sensor/ folderNames
