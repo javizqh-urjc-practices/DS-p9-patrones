@@ -86,16 +86,22 @@ void CLDashboard::readCommand(){
     /* Check if the command has three words */
     else if (command.size() == 3){
       if (command[0].compare("set") == 0) changeCurrentSensorInfo(command[1], command[2]);
-      else if (command[0].compare("user") == 0){
+      else errorCommand(command[0]);
+    }
+
+    /* Command with four words */
+    /* Check if the command has four words */
+    else if (command.size() == 4){
+      if (command[0].compare("user") == 0){
         if (! this->user->hasAdminPermission()){permissionError();continue;}
         if (command[1].size() != 5 && command[2].size() != 8) errorCommand(command[0]);
-        User *user = new User(command[1], command[2]);
+        User *user = new User(command[1], command[2], command[3]);
         this->newUsers.push_back(*user);
       }
       else if (command[0].compare("admin") == 0){
         if (! this->user->hasAdminPermission()){permissionError();continue;}
         if (command[1].size() != 5 && command[2].size() != 8) errorCommand(command[0]);
-        Admin *admin = new Admin(command[1], command[2]);
+        Admin *admin = new Admin(command[1], command[2], command[3]);
         this->newUsers.push_back(*admin);
       }
       else errorCommand(command[0]);
