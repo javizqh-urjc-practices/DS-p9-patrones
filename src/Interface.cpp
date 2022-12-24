@@ -65,4 +65,5 @@ bool Interface::loadMenu(){
 
 Interface::~Interface(){
   delete this->loginInterface;
+  delete this->dashboard;
 };

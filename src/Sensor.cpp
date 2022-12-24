@@ -57,6 +57,10 @@ Sensor::Sensor(std::string id, std::string type, std::string magnitude, bool act
   setMagnitude(magnitude);
   setActive(active);
   setValPerMin(valPerMin);
+  // Create the sensor data server folder for each sensor
+  if (!std::filesystem::is_directory("server/sensor/"+getId()) || !std::filesystem::exists("server/sensor/"+getId())) { // Check if folder exists
+    std::filesystem::create_directory("server/sensor/"+getId()); // create folder
+  } 
 }
 
 void Sensor::setId(std::string newId){
@@ -98,10 +102,7 @@ void Sensor::setValPerMin(int valPerMin){
 
 std::vector<int> Sensor::requestData(){
   //TODO: remove part 0
-  // 0º Create the sensor data server folder for each sensor
-  if (!std::filesystem::is_directory("server/sensor/"+getId()) || !std::filesystem::exists("server/sensor/"+getId())) { // Check if folder exists
-    std::filesystem::create_directory("server/sensor/"+getId()); // create folder
-  } 
+
   // 1º load data from server file
   std::ifstream dataFile;
   dataFile.open("server/sensor/"+getId()+"/data.csv");

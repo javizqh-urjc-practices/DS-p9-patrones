@@ -20,13 +20,13 @@ Dashboard::Dashboard(User &user){
   // Start loading from file
   // TODO: load files from server instead
 
-  for (const auto & entry : std::filesystem::directory_iterator("data/sensor/")){
-    // 1º get all data/sensors/ filenames
+  for (const auto & entry : std::filesystem::directory_iterator("server/sensor/")){
+    // 1º get all server/sensor/ folderNames
     std::string pathString{entry.path().u8string()};
 
-    std::ifstream inUsersFile (entry.path(), std::ios::in | std::ios::binary);
+    std::ifstream inUsersFile (pathString + "/sensor.dat", std::ios::in | std::ios::binary);
     if (!inUsersFile) { // fstream could not open file
-      std::cerr << "File "<< entry.path()<< " could not be opened." << std::endl;
+      std::cerr << "File "<< entry.path()<< "/sensor.dat could not be opened." << std::endl;
       std::exit (1);
     }
     // 2º create the corresponding type of sensor
@@ -36,14 +36,10 @@ Dashboard::Dashboard(User &user){
 
         Sensor *sensor = Sensor::Create(type);
         // 3º add it to the list
-        std::filesystem::copy(pathString, "data/sensor~/"+sensor->getId()+".dat~",std::filesystem::copy_options::update_existing);
+        std::filesystem::copy(pathString + "/sensor.dat", "server/sensor/"+sensor->getId()+"/sensor.dat~",std::filesystem::copy_options::update_existing);
         inUsersFile.read (reinterpret_cast <char *>(&*sensor), sizeof (Sensor));
         this->sensor.push_back(sensor);
 
-        // 4º Create the sensor data server folder for each sensor
-        if (!std::filesystem::is_directory("server/sensor/"+sensor->getId()) || !std::filesystem::exists("server/sensor/"+sensor->getId())) { // Check if folder exists
-          std::filesystem::create_directory("server/sensor/"+sensor->getId()); // create folder
-        } 
       }
     }
   }
@@ -220,18 +216,18 @@ bool Dashboard::canExit(){
 Dashboard::~Dashboard(){
   for (Sensor * sensor : this->sensor){
     // 1º Create files for every sensor with the id as the name
-    std::ofstream { "data/sensor/"+sensor->getId()+".dat" };
+    std::ofstream { "server/sensor/"+sensor->getId()+"/sensor.dat" };
 
     // 2º Open file and write in it
-    std::fstream outUsersFile ("data/sensor/"+sensor->getId()+".dat", std::ios::in | std::ios::out | std::ios::binary); // ios::in will require an existing file
+    std::fstream outSensorFile ("server/sensor/"+sensor->getId()+"/sensor.dat", std::ios::in | std::ios::out | std::ios::binary); // ios::in will require an existing file
 
-    if (!outUsersFile) { // fstream could not open file
+    if (!outSensorFile) { // fstream could not open file
       std::cerr << "File could not be opened." << std::endl;
       std::exit(1);
     }
 
-    outUsersFile.seekp (0);
-    outUsersFile.write (reinterpret_cast <const char *> (&*sensor), sizeof (Sensor)); 
+    outSensorFile.seekp (0);
+    outSensorFile.write (reinterpret_cast <const char *> (&*sensor), sizeof (Sensor)); 
   }
 
 

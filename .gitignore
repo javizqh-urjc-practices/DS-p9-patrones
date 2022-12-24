@@ -43,6 +43,7 @@ TODO
 
 # Sensor cache
 *.csv
+*~
 
 # Residual files
 terminalSize.txt
