@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['dashboard_120',['Dashboard',['../classDashboard.html',1,'']]],
-  ['database_121',['Database',['../classDatabase.html',1,'']]]
+  ['dashboard_121',['Dashboard',['../classDashboard.html',1,'']]],
+  ['database_122',['Database',['../classDatabase.html',1,'']]]
 ];
