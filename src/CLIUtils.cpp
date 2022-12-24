@@ -136,7 +136,7 @@ std::vector<std::string> newCommand(User & user, std::string currentSensor){
   return separatedInput;
 }
 
-void printGraphic(const std::array<int,60>  data, std::array<int,3> frontColor, std::array<int,3> backColor, std::array<int,3> pointColor, int valPerY, int posX, int posY, int scale){
+void printGraphic(const std::vector<int> data, std::array<int,3> frontColor, std::array<int,3> backColor, std::array<int,3> pointColor, int valPerY, int posX, int posY, int scale){
   const int spacing = 3;
   // Graphic standard size 60 * 30
   const int maxRangeX = 60;
@@ -150,12 +150,10 @@ void printGraphic(const std::array<int,60>  data, std::array<int,3> frontColor, 
   const int rangeX = maxRangeX / scale;
   const int rangeY = maxRangeY / scale;
 
-  //int maxY = * max_element(data.begin(), data.end());
-  int maxY = 10;
+  int maxY = * max_element(data.begin(), data.end());
   if (maxY != 0) maxY = ((maxY / 10) + 1) * 10;
 
-  //int minY = * min_element(data.begin(), data.end());
-  int minY = 1;
+  int minY = * min_element(data.begin(), data.end());
   if (minY != 0) minY = ((minY / 10) - 1) * 10;
   
   if ((maxY - minY) / (rangeY / stepY) % stepY == 2) maxY += 10; 
@@ -180,7 +178,7 @@ void printGraphic(const std::array<int,60>  data, std::array<int,3> frontColor, 
 
   // Bottom line
   moveCursor(posX - 2 + spacing + 1, posY + rangeY + 1);
-  printColor(std::to_string(- maxX),frontColor,backColor);
+  printColor(std::to_string(- maxX ),frontColor,backColor);
   moveCursor(posX + spacing + 1, posY + rangeY);
 
   for ( int lineX = 1; lineX <= rangeX; lineX++) {
@@ -196,7 +194,7 @@ void printGraphic(const std::array<int,60>  data, std::array<int,3> frontColor, 
   }
 
   // Set points on the plot with user color
-  int endX = posX + 1 + spacing + rangeX;
+  int startX = posX + 1 + spacing;
   int pointY = 0;
 
   for (int point = 0; point < data.size(); point+=scale * valPerY){
@@ -204,7 +202,7 @@ void printGraphic(const std::array<int,60>  data, std::array<int,3> frontColor, 
     for (int value = 0; value < scale * valPerY; value++) {
       pointY += posY + (maxY - data[point + value]) / (axisYvalue / stepY);
     }
-    moveCursor(endX - point / (scale * valPerY), pointY / (scale * valPerY));
+    moveCursor(startX + (rangeX - (data.size()/scale)) + point / (scale * valPerY), pointY / (scale * valPerY));
     printColor("·",pointColor,backColor) ;
   }
   

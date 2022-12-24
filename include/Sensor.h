@@ -8,10 +8,13 @@
  * @copyright Copyright (c) 2022
  * 
  */
-#include <string>
 #include <vector>
 #include <array>
-#include <stdexcept>
+#include <iostream>
+#include <fstream>
+#include <algorithm>
+#include <iomanip>
+#include <filesystem>
 
 #ifndef SENSOR_H 
 #define	SENSOR_H
@@ -61,8 +64,8 @@ public:
    * 
    * @return std::vector<int> 
    */
-  virtual std::array<int,60> requestData() = 0;
-  virtual ~Sensor();
+  std::vector<int> requestData();
+  virtual ~Sensor() = 0;
 
 protected:
   char id [11];
@@ -71,8 +74,6 @@ protected:
   char magnitude [11];
   bool active;
   int valPerMin;
-  //std::array<int,60> data = {1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10}; // TODO: placeholder
-  // TODO: placeholder
   void addNewData(int);
   void removeOldData(int);
 };

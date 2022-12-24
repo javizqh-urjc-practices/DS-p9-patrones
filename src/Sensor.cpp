@@ -89,11 +89,82 @@ void Sensor::setMagnitude(std::string newMagnitude){
 
 void Sensor::setActive(bool active){
   this->active = active;
-};
+}
 
 void Sensor::setValPerMin(int valPerMin){
   valPerMin = (valPerMin > 0 ? valPerMin : 1); 
   this->valPerMin = valPerMin;
+}
+
+std::vector<int> Sensor::requestData(){
+  //TODO: remove part 0
+  // 0º Create the sensor data server folder for each sensor
+  if (!std::filesystem::is_directory("server/sensor/"+getId()) || !std::filesystem::exists("server/sensor/"+getId())) { // Check if folder exists
+    std::filesystem::create_directory("server/sensor/"+getId()); // create folder
+  } 
+  // 1º load data from server file
+  std::ifstream dataFile;
+  dataFile.open("server/sensor/"+getId()+"/data.csv");
+
+  if (!dataFile){
+    // 0º Create file if it doesn't exist
+    std::ofstream {"server/sensor/"+getId()+"/data.csv" };
+    dataFile.open("server/sensor/"+getId()+"/data.csv");
+  }
+
+  std::vector<int> data;
+  std::string line;
+  
+  if ( dataFile.is_open() ) {
+    while ( dataFile ) {
+      std::getline (dataFile, line);
+      std::stringstream ss(line);
+      std::string val;
+      while(getline(ss, val, ',')){
+        // 2º store data in temporary vector
+        data.push_back(std::stoi(val));
+      }
+      break;
+    }
+  }
+  else {
+    std::cout << "Couldn't open file\n";
+  }
+  dataFile.close();
+  // 3º remove old excess data and add new data
+  // 3.1 Create new data
+  int valueRange;
+  if (data.size() > 0){
+    int maxVal = * max_element(data.begin(), data.end());
+    if (maxVal == 0) maxVal = 10;
+    int minVal = * min_element(data.begin(), data.end());
+    if (minVal == 0) minVal = -10;
+    valueRange = maxVal - minVal;
+    if (valueRange == 0) valueRange = maxVal;
+  } else {
+    valueRange = 100;
+  }
+  int newVal = rand() % valueRange;
+  data.push_back(newVal);
+  // 3.2 Remove excess data
+  int length = data.size();
+  int dataToRemove = length - 60 * valPerMin;
+  if (dataToRemove > 0){
+    data.erase (data.begin(),data.begin()+dataToRemove);
+  } 
+  // 4º store data again in server file
+  std::ofstream outDataFile ("server/sensor/"+getId()+"/data.csv", std::ios::out); // open file
+
+  if (!outDataFile) { // file couldn't be opened
+    std::cerr << "File could not be opened" << std::endl;
+    exit (1);
+  }
+
+  for (int &value : data){
+    outDataFile << value << ",";
+  }
+  
+  return data;
 }
 
 Sensor::~Sensor(){};

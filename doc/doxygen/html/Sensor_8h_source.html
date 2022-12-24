@@ -70,60 +70,61 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="Sensor_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifndef SENSOR_H </span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define SENSOR_H</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classSensor.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSensor.html">Sensor</a>{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">static</span> std::array&lt;std::string,6&gt; availableTypesId;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">static</span> std::array&lt;std::string,6&gt; availableTypes;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">static</span> <a class="code" href="classSensor.html">Sensor</a> *<a class="code" href="classSensor.html#a580b1877b7ba5fa04ac7be229a695fc7">Create</a>(<span class="keyword">const</span> std::string type);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="classSensor.html#ad635c3c34b181dbaff1ad80698260af4">Sensor</a>( std::string <span class="keywordtype">id</span> = <span class="stringliteral">&quot;&quot;</span>, std::string type = <span class="stringliteral">&quot;none&quot;</span>, std::string magnitude = <span class="stringliteral">&quot;-&quot;</span>, <span class="keywordtype">bool</span> active = <span class="keyword">true</span>, <span class="keywordtype">int</span> valPerMin = 1); <span class="comment">/* default constructor */</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> setId(std::string newId);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  std::string getId(){<span class="keywordflow">return</span> id; };</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;filesystem&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef SENSOR_H </span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define SENSOR_H</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classSensor.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSensor.html">Sensor</a>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">static</span> std::array&lt;std::string,6&gt; availableTypesId;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">static</span> std::array&lt;std::string,6&gt; availableTypes;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">static</span> <a class="code" href="classSensor.html">Sensor</a> *<a class="code" href="classSensor.html#a580b1877b7ba5fa04ac7be229a695fc7">Create</a>(<span class="keyword">const</span> std::string type);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classSensor.html#ad635c3c34b181dbaff1ad80698260af4">Sensor</a>( std::string <span class="keywordtype">id</span> = <span class="stringliteral">&quot;&quot;</span>, std::string type = <span class="stringliteral">&quot;none&quot;</span>, std::string magnitude = <span class="stringliteral">&quot;-&quot;</span>, <span class="keywordtype">bool</span> active = <span class="keyword">true</span>, <span class="keywordtype">int</span> valPerMin = 1); <span class="comment">/* default constructor */</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> setType(std::string newType);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  std::string getType(){<span class="keywordflow">return</span> type;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> setId(std::string newId);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  std::string getId(){<span class="keywordflow">return</span> id; };</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> setArea(std::string);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  std::string getArea(){<span class="keywordflow">return</span> area;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> setType(std::string newType);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  std::string getType(){<span class="keywordflow">return</span> type;};</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> setMagnitude(std::string magnitude);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  std::string getMagnitude(){<span class="keywordflow">return</span> magnitude;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> setArea(std::string);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  std::string getArea(){<span class="keywordflow">return</span> area;};</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> setActive(<span class="keywordtype">bool</span>);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">bool</span> isActive(){<span class="keywordflow">return</span> active;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> setMagnitude(std::string magnitude);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  std::string getMagnitude(){<span class="keywordflow">return</span> magnitude;};</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> setValPerMin(<span class="keywordtype">int</span> valPerMin);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">int</span> getValPerMin(){<span class="keywordflow">return</span> valPerMin;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> setActive(<span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">bool</span> isActive(){<span class="keywordflow">return</span> active;};</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">virtual</span> std::array&lt;int,60&gt; <a class="code" href="classSensor.html#ae981892f41a7097aee2aaa3b63c97959">requestData</a>() = 0;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classSensor.html">Sensor</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">char</span> <span class="keywordtype">id</span> [11];</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">char</span> type [21];</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">char</span> area [21];</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">char</span> magnitude [11];</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">bool</span> active;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">int</span> valPerMin;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="comment">//std::array&lt;int,60&gt; data = {1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10}; // TODO: placeholder</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="comment">// TODO: placeholder</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span> addNewData(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> removeOldData(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> setValPerMin(<span class="keywordtype">int</span> valPerMin);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">int</span> getValPerMin(){<span class="keywordflow">return</span> valPerMin;};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  std::vector&lt;int&gt; <a class="code" href="classSensor.html#a0884687c6670842bffc0f11b12984623">requestData</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classSensor.html">Sensor</a>() = 0;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">char</span> <span class="keywordtype">id</span> [11];</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">char</span> type [21];</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">char</span> area [21];</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">char</span> magnitude [11];</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">bool</span> active;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">int</span> valPerMin;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> addNewData(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span> removeOldData(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassSensor_html_a580b1877b7ba5fa04ac7be229a695fc7"><div class="ttname"><a href="classSensor.html#a580b1877b7ba5fa04ac7be229a695fc7">Sensor::Create</a></div><div class="ttdeci">static Sensor * Create(const std::string type)</div><div class="ttdoc">Creates an instance of the sensor type.</div><div class="ttdef"><b>Definition:</b> Sensor.cpp:28</div></div>
-<div class="ttc" id="aclassSensor_html"><div class="ttname"><a href="classSensor.html">Sensor</a></div><div class="ttdef"><b>Definition:</b> Sensor.h:18</div></div>
-<div class="ttc" id="aclassSensor_html_ae981892f41a7097aee2aaa3b63c97959"><div class="ttname"><a href="classSensor.html#ae981892f41a7097aee2aaa3b63c97959">Sensor::requestData</a></div><div class="ttdeci">virtual std::array&lt; int, 60 &gt; requestData()=0</div><div class="ttdoc">Request data from sensor.</div></div>
+<div class="ttc" id="aclassSensor_html_a0884687c6670842bffc0f11b12984623"><div class="ttname"><a href="classSensor.html#a0884687c6670842bffc0f11b12984623">Sensor::requestData</a></div><div class="ttdeci">std::vector&lt; int &gt; requestData()</div><div class="ttdoc">Request data from sensor.</div><div class="ttdef"><b>Definition:</b> Sensor.cpp:99</div></div>
+<div class="ttc" id="aclassSensor_html"><div class="ttname"><a href="classSensor.html">Sensor</a></div><div class="ttdef"><b>Definition:</b> Sensor.h:21</div></div>
 <div class="ttc" id="aclassSensor_html_ad635c3c34b181dbaff1ad80698260af4"><div class="ttname"><a href="classSensor.html#ad635c3c34b181dbaff1ad80698260af4">Sensor::Sensor</a></div><div class="ttdeci">Sensor(std::string id=&quot;&quot;, std::string type=&quot;none&quot;, std::string magnitude=&quot;-&quot;, bool active=true, int valPerMin=1)</div><div class="ttdoc">Construct a new Sensor:: Sensor object.</div><div class="ttdef"><b>Definition:</b> Sensor.cpp:53</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

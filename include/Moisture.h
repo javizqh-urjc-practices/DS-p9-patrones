@@ -22,13 +22,7 @@ class Moisture : public Sensor{
     * @param valPerMin By default 1 val/min
     */
     Moisture(bool active = false, int valPerMin = 1);
-    /**
-    * @brief Request data from the moisture sensor
-    * 
-    * @return std::vector<int>  Data values
-    * @note This function is a placeholder, returns random values 
-    */
-    std::array<int,60> requestData();
+
     ~Moisture();
   private:
     /**

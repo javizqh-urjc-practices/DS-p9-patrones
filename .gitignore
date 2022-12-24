@@ -41,5 +41,8 @@ build/*
 .vscode/*
 TODO
 
+# Sensor cache
+*.csv
+
 # Residual files
 terminalSize.txt

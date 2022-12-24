@@ -50,7 +50,7 @@ void {\bfseries set\+Val\+Per\+Min} (int val\+Per\+Min)
 \mbox{\Hypertarget{classSensor_a9be23eee7cbf4f7ed68869012ab7fb4e}\label{classSensor_a9be23eee7cbf4f7ed68869012ab7fb4e}} 
 int {\bfseries get\+Val\+Per\+Min} ()
 \item 
-virtual std\+::array$<$ int, 60 $>$ \mbox{\hyperlink{classSensor_ae981892f41a7097aee2aaa3b63c97959}{request\+Data}} ()=0
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classSensor_a0884687c6670842bffc0f11b12984623}{request\+Data}} ()
 \begin{DoxyCompactList}\small\item\em Request data from sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -143,11 +143,11 @@ Creates an instance of the sensor type.
 \begin{DoxyReturn}{Returns}
 Sensor$\ast$ 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classSensor_ae981892f41a7097aee2aaa3b63c97959}\label{classSensor_ae981892f41a7097aee2aaa3b63c97959}} 
+\mbox{\Hypertarget{classSensor_a0884687c6670842bffc0f11b12984623}\label{classSensor_a0884687c6670842bffc0f11b12984623}} 
 \index{Sensor@{Sensor}!requestData@{requestData}}
 \index{requestData@{requestData}!Sensor@{Sensor}}
 \doxysubsubsection{\texorpdfstring{requestData()}{requestData()}}
-{\footnotesize\ttfamily virtual std\+::array$<$int,60$>$ Sensor\+::request\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Sensor\+::request\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -156,10 +156,6 @@ Request data from sensor.
 \begin{DoxyReturn}{Returns}
 std\+::vector$<$int$>$ 
 \end{DoxyReturn}
-
-
-Implemented in \mbox{\hyperlink{classAirQuality_a7ffa69e4861195b12d3c76654e7dfe2c}{Air\+Quality}}, \mbox{\hyperlink{classCameraBW_ac7d4280d3d944fe9febccf04b1bad304}{Camera\+BW}}, \mbox{\hyperlink{classCameraRGB_a2747f4d2d18679cf2357e96795002da4}{Camera\+R\+GB}}, \mbox{\hyperlink{classHumidity_a829cf56ea94aa4b196b25bfe27a6fdfb}{Humidity}}, \mbox{\hyperlink{classMoisture_a35091ee07ed3712ae6b96fa38c1c483d}{Moisture}}, and \mbox{\hyperlink{classThermometer_a49eb454838ec83d46bf6543babe094c8}{Thermometer}}.
-
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

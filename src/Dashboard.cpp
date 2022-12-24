@@ -18,6 +18,7 @@ Dashboard::Dashboard(User &user){
   this->currentSensor = nullptr;
 
   // Start loading from file
+  // TODO: load files from server instead
 
   for (const auto & entry : std::filesystem::directory_iterator("data/sensor/")){
     // 1º get all data/sensors/ filenames
@@ -38,6 +39,11 @@ Dashboard::Dashboard(User &user){
         std::filesystem::copy(pathString, "data/sensor~/"+sensor->getId()+".dat~",std::filesystem::copy_options::update_existing);
         inUsersFile.read (reinterpret_cast <char *>(&*sensor), sizeof (Sensor));
         this->sensor.push_back(sensor);
+
+        // 4º Create the sensor data server folder for each sensor
+        if (!std::filesystem::is_directory("server/sensor/"+sensor->getId()) || !std::filesystem::exists("server/sensor/"+sensor->getId())) { // Check if folder exists
+          std::filesystem::create_directory("server/sensor/"+sensor->getId()); // create folder
+        } 
       }
     }
   }

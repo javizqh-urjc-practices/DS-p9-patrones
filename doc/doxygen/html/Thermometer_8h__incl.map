@@ -1,8 +1,11 @@
 <map id="include/Thermometer.h" name="include/Thermometer.h">
-<area shape="rect" id="node1" title="Header file of Thermometer.cpp." alt="" coords="74,5,249,32"/>
-<area shape="rect" id="node2" href="$Sensor_8h.html" title="Header file of Sensor.cpp." alt="" coords="122,80,201,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,155,64,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="89,155,151,181"/>
-<area shape="rect" id="node5" title=" " alt="" coords="176,155,232,181"/>
-<area shape="rect" id="node6" title=" " alt="" coords="257,155,343,181"/>
+<area shape="rect" id="node1" title="Header file of Thermometer.cpp." alt="" coords="227,5,401,32"/>
+<area shape="rect" id="node2" href="$Sensor_8h.html" title="Header file of Sensor.cpp." alt="" coords="275,80,353,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,68,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="93,155,149,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="173,155,253,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="277,155,351,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="375,155,461,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="485,155,559,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="583,155,674,181"/>
 </map>

@@ -14,20 +14,4 @@ int CameraRGB::idNumber = 0;
 
 CameraRGB::CameraRGB (bool active, int valPerMin):Sensor("rgbcam" + std::to_string(CameraRGB::idNumber ++),"camera","-",active,valPerMin){}
 
-std::array<int,60> CameraRGB::requestData(){
-  //int valueRange = 1;
-  //this->data.clear();
-  //int newVal = rand() % valueRange;;
-  //int med = newVal;
-  //this->data.push_back(med);
-  //for (int i = 0; i < 60 * this->valPerMin - 1; i++){
-  //  newVal = rand() % valueRange;
-  //  med = ( med + newVal ) / 2;
-  //  this->data.push_back(med);
-  //}
-  //
-  //return this->data;
-  return {1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,};
-}
-
 CameraRGB::~CameraRGB(){}

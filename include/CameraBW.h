@@ -22,13 +22,7 @@ class CameraBW : public Sensor{
     * @param valPerMin By default 1 val/min
     */
     CameraBW(bool active = false, int valPerMin = 1);
-    /**
-    * @brief Request data from the bw camera
-    * 
-    * @return std::vector<int>  Data values
-    * @note This function is a placeholder, returns random values 
-    */
-    std::array<int,60> requestData();
+
     ~CameraBW();
   private:
     /**

@@ -1,271 +1,259 @@
 \begin{theindex}
 
   \item {addNewSensor}
-    \subitem {Dashboard}, \hyperpage{26}
+    \subitem {Dashboard}, \hyperpage{25}
   \item {addTimestamp}
-    \subitem {User}, \hyperpage{48}
+    \subitem {User}, \hyperpage{46}
   \item {addToMainMenu}
-    \subitem {Dashboard}, \hyperpage{27}
+    \subitem {Dashboard}, \hyperpage{26}
   \item {Admin}, \hyperpage{7}
     \subitem {Admin}, \hyperpage{8}
   \item {AirQuality}, \hyperpage{8}
     \subitem {AirQuality}, \hyperpage{9}
-    \subitem {requestData}, \hyperpage{9}
   \item {askEmployeeNumber}
-    \subitem {CLLoginInterface}, \hyperpage{20}
+    \subitem {CLLoginInterface}, \hyperpage{19}
   \item {askNIF}
-    \subitem {CLLoginInterface}, \hyperpage{20}
+    \subitem {CLLoginInterface}, \hyperpage{19}
 
   \indexspace
 
   \item {CameraBW}, \hyperpage{10}
-    \subitem {CameraBW}, \hyperpage{11}
-    \subitem {requestData}, \hyperpage{11}
-  \item {CameraRGB}, \hyperpage{12}
+    \subitem {CameraBW}, \hyperpage{10}
+  \item {CameraRGB}, \hyperpage{11}
     \subitem {CameraRGB}, \hyperpage{12}
-    \subitem {requestData}, \hyperpage{13}
   \item {canExit}
-    \subitem {Dashboard}, \hyperpage{27}
+    \subitem {Dashboard}, \hyperpage{26}
   \item {changeCurrentSensorInfo}
-    \subitem {Dashboard}, \hyperpage{28}
+    \subitem {Dashboard}, \hyperpage{27}
   \item {changeInterface}
-    \subitem {Dashboard}, \hyperpage{28}
+    \subitem {Dashboard}, \hyperpage{27}
   \item {changeMainMenu}
-    \subitem {CLDashboard}, \hyperpage{15}
+    \subitem {CLDashboard}, \hyperpage{14}
   \item {checkUser}
-    \subitem {LoginInterface}, \hyperpage{36}
-  \item {CLDashboard}, \hyperpage{13}
-    \subitem {changeMainMenu}, \hyperpage{15}
-    \subitem {CLDashboard}, \hyperpage{15}
-    \subitem {errorCommand}, \hyperpage{15}
-    \subitem {helpCommand}, \hyperpage{15}
-    \subitem {listSensor}, \hyperpage{16}
-    \subitem {permissionError}, \hyperpage{16}
-    \subitem {readCommand}, \hyperpage{16}
-    \subitem {showMainMenu}, \hyperpage{16}
+    \subitem {LoginInterface}, \hyperpage{35}
+  \item {CLDashboard}, \hyperpage{12}
+    \subitem {changeMainMenu}, \hyperpage{14}
+    \subitem {CLDashboard}, \hyperpage{14}
+    \subitem {errorCommand}, \hyperpage{14}
+    \subitem {helpCommand}, \hyperpage{14}
+    \subitem {listSensor}, \hyperpage{15}
+    \subitem {permissionError}, \hyperpage{15}
+    \subitem {readCommand}, \hyperpage{15}
+    \subitem {showMainMenu}, \hyperpage{15}
   \item {clearMenu}
-    \subitem {CLMenu}, \hyperpage{22}
-  \item {CLInterface}, \hyperpage{17}
-    \subitem {CLInterface}, \hyperpage{18}
-    \subitem {login}, \hyperpage{18}
+    \subitem {CLMenu}, \hyperpage{21}
+  \item {CLInterface}, \hyperpage{16}
+    \subitem {CLInterface}, \hyperpage{17}
+    \subitem {login}, \hyperpage{17}
   \item {CLIUtils.cpp}
-    \subitem {printCenter}, \hyperpage{92}
-    \subitem {printCenterFromFile}, \hyperpage{92}
-    \subitem {printColor}, \hyperpage{93}
+    \subitem {printCenter}, \hyperpage{86}
+    \subitem {printCenterFromFile}, \hyperpage{86}
+    \subitem {printColor}, \hyperpage{87}
   \item {CLIUtils.h}
-    \subitem {printCenter}, \hyperpage{60}
-    \subitem {printCenterFromFile}, \hyperpage{61}
-    \subitem {printColor}, \hyperpage{61}
-  \item {CLLoginInterface}, \hyperpage{19}
-    \subitem {askEmployeeNumber}, \hyperpage{20}
-    \subitem {askNIF}, \hyperpage{20}
-    \subitem {showWelcomeMessage}, \hyperpage{21}
-  \item {CLMenu}, \hyperpage{21}
-    \subitem {clearMenu}, \hyperpage{22}
-    \subitem {show}, \hyperpage{22, 23}
-  \item {CLMenuBar}, \hyperpage{23}
-    \subitem {show}, \hyperpage{24}
+    \subitem {printCenter}, \hyperpage{57}
+    \subitem {printCenterFromFile}, \hyperpage{58}
+    \subitem {printColor}, \hyperpage{58}
+  \item {CLLoginInterface}, \hyperpage{18}
+    \subitem {askEmployeeNumber}, \hyperpage{19}
+    \subitem {askNIF}, \hyperpage{19}
+    \subitem {showWelcomeMessage}, \hyperpage{20}
+  \item {CLMenu}, \hyperpage{20}
+    \subitem {clearMenu}, \hyperpage{21}
+    \subitem {show}, \hyperpage{21, 22}
+  \item {CLMenuBar}, \hyperpage{22}
+    \subitem {show}, \hyperpage{23}
   \item {Create}
-    \subitem {Dashboard}, \hyperpage{28}
-    \subitem {Interface}, \hyperpage{33}
-    \subitem {LoginInterface}, \hyperpage{36}
-    \subitem {Menu}, \hyperpage{37}
-    \subitem {MenuBar}, \hyperpage{39}
-    \subitem {Sensor}, \hyperpage{44}
+    \subitem {Dashboard}, \hyperpage{27}
+    \subitem {Interface}, \hyperpage{32}
+    \subitem {LoginInterface}, \hyperpage{35}
+    \subitem {Menu}, \hyperpage{36}
+    \subitem {MenuBar}, \hyperpage{38}
+    \subitem {Sensor}, \hyperpage{42}
 
   \indexspace
 
-  \item {Dashboard}, \hyperpage{25}
-    \subitem {addNewSensor}, \hyperpage{26}
-    \subitem {addToMainMenu}, \hyperpage{27}
-    \subitem {canExit}, \hyperpage{27}
-    \subitem {changeCurrentSensorInfo}, \hyperpage{28}
-    \subitem {changeInterface}, \hyperpage{28}
-    \subitem {Create}, \hyperpage{28}
-    \subitem {deleteSensor}, \hyperpage{29}
-    \subitem {exit}, \hyperpage{29}
-    \subitem {logout}, \hyperpage{29}
-    \subitem {moveWindowMainMenu}, \hyperpage{29}
-  \item {Database}, \hyperpage{30}
-    \subitem {getUser}, \hyperpage{30}
+  \item {Dashboard}, \hyperpage{24}
+    \subitem {addNewSensor}, \hyperpage{25}
+    \subitem {addToMainMenu}, \hyperpage{26}
+    \subitem {canExit}, \hyperpage{26}
+    \subitem {changeCurrentSensorInfo}, \hyperpage{27}
+    \subitem {changeInterface}, \hyperpage{27}
+    \subitem {Create}, \hyperpage{27}
+    \subitem {deleteSensor}, \hyperpage{28}
+    \subitem {exit}, \hyperpage{28}
+    \subitem {logout}, \hyperpage{28}
+    \subitem {moveWindowMainMenu}, \hyperpage{28}
+  \item {Database}, \hyperpage{29}
+    \subitem {getUser}, \hyperpage{29}
   \item {deleteSensor}
-    \subitem {Dashboard}, \hyperpage{29}
+    \subitem {Dashboard}, \hyperpage{28}
 
   \indexspace
 
   \item {errorCommand}
-    \subitem {CLDashboard}, \hyperpage{15}
+    \subitem {CLDashboard}, \hyperpage{14}
   \item {exit}
-    \subitem {Dashboard}, \hyperpage{29}
+    \subitem {Dashboard}, \hyperpage{28}
 
   \indexspace
 
   \item {getName}
-    \subitem {User}, \hyperpage{48}
+    \subitem {User}, \hyperpage{46}
   \item {getTimestamp}
-    \subitem {User}, \hyperpage{48}
+    \subitem {User}, \hyperpage{46}
   \item {getUser}
-    \subitem {Database}, \hyperpage{30}
+    \subitem {Database}, \hyperpage{29}
 
   \indexspace
 
   \item {hasAdminPermission}
-    \subitem {User}, \hyperpage{49}
+    \subitem {User}, \hyperpage{47}
   \item {helpCommand}
-    \subitem {CLDashboard}, \hyperpage{15}
-  \item {Humidity}, \hyperpage{31}
-    \subitem {Humidity}, \hyperpage{31}
-    \subitem {requestData}, \hyperpage{32}
+    \subitem {CLDashboard}, \hyperpage{14}
+  \item {Humidity}, \hyperpage{30}
+    \subitem {Humidity}, \hyperpage{30}
 
   \indexspace
 
-  \item {include/Admin.h}, \hyperpage{51}
-  \item {include/AirQuality.h}, \hyperpage{52}
-  \item {include/CameraBW.h}, \hyperpage{54}
-  \item {include/CameraRGB.h}, \hyperpage{55}
-  \item {include/CLDashboard.h}, \hyperpage{56}
-  \item {include/CLInterface.h}, \hyperpage{58}
-  \item {include/CLIUtils.h}, \hyperpage{59}
-  \item {include/CLLoginInterface.h}, \hyperpage{61}
-  \item {include/CLMenu.h}, \hyperpage{63}
-  \item {include/CLMenuBar.h}, \hyperpage{64}
-  \item {include/Dashboard.h}, \hyperpage{65}
-  \item {include/Database.h}, \hyperpage{67}
-  \item {include/Humidity.h}, \hyperpage{68}
-  \item {include/Interface.h}, \hyperpage{70}
-  \item {include/LoginInterface.h}, \hyperpage{71}
-  \item {include/main.h}, \hyperpage{72}
-  \item {include/Menu.h}, \hyperpage{74}
-  \item {include/MenuBar.h}, \hyperpage{76}
-  \item {include/Moisture.h}, \hyperpage{77}
-  \item {include/NotFoundUserException.h}, \hyperpage{79}
-  \item {include/Sensor.h}, \hyperpage{80}
-  \item {include/Thermometer.h}, \hyperpage{81}
-  \item {include/User.h}, \hyperpage{83}
-  \item {include/UserConfig.h}, \hyperpage{84}
-  \item {Interface}, \hyperpage{32}
-    \subitem {Create}, \hyperpage{33}
-    \subitem {loadMenu}, \hyperpage{34}
-    \subitem {login}, \hyperpage{34}
+  \item {include/Admin.h}, \hyperpage{49}
+  \item {include/AirQuality.h}, \hyperpage{50}
+  \item {include/CameraBW.h}, \hyperpage{51}
+  \item {include/CameraRGB.h}, \hyperpage{52}
+  \item {include/CLDashboard.h}, \hyperpage{53}
+  \item {include/CLInterface.h}, \hyperpage{55}
+  \item {include/CLIUtils.h}, \hyperpage{56}
+  \item {include/CLLoginInterface.h}, \hyperpage{58}
+  \item {include/CLMenu.h}, \hyperpage{60}
+  \item {include/CLMenuBar.h}, \hyperpage{61}
+  \item {include/Dashboard.h}, \hyperpage{62}
+  \item {include/Database.h}, \hyperpage{64}
+  \item {include/Humidity.h}, \hyperpage{65}
+  \item {include/Interface.h}, \hyperpage{66}
+  \item {include/LoginInterface.h}, \hyperpage{68}
+  \item {include/main.h}, \hyperpage{69}
+  \item {include/Menu.h}, \hyperpage{71}
+  \item {include/MenuBar.h}, \hyperpage{72}
+  \item {include/Moisture.h}, \hyperpage{73}
+  \item {include/NotFoundUserException.h}, \hyperpage{74}
+  \item {include/Sensor.h}, \hyperpage{76}
+  \item {include/Thermometer.h}, \hyperpage{77}
+  \item {include/User.h}, \hyperpage{78}
+  \item {include/UserConfig.h}, \hyperpage{79}
+  \item {Interface}, \hyperpage{31}
+    \subitem {Create}, \hyperpage{32}
+    \subitem {loadMenu}, \hyperpage{32}
+    \subitem {login}, \hyperpage{33}
 
   \indexspace
 
   \item {listSensor}
-    \subitem {CLDashboard}, \hyperpage{16}
+    \subitem {CLDashboard}, \hyperpage{15}
   \item {loadMenu}
-    \subitem {Interface}, \hyperpage{34}
+    \subitem {Interface}, \hyperpage{32}
   \item {login}
-    \subitem {CLInterface}, \hyperpage{18}
-    \subitem {Interface}, \hyperpage{34}
-  \item {LoginInterface}, \hyperpage{35}
-    \subitem {checkUser}, \hyperpage{36}
-    \subitem {Create}, \hyperpage{36}
+    \subitem {CLInterface}, \hyperpage{17}
+    \subitem {Interface}, \hyperpage{33}
+  \item {LoginInterface}, \hyperpage{34}
+    \subitem {checkUser}, \hyperpage{35}
+    \subitem {Create}, \hyperpage{35}
   \item {logout}
-    \subitem {Dashboard}, \hyperpage{29}
+    \subitem {Dashboard}, \hyperpage{28}
 
   \indexspace
 
-  \item {Menu}, \hyperpage{37}
-    \subitem {Create}, \hyperpage{37}
-  \item {MenuBar}, \hyperpage{38}
-    \subitem {Create}, \hyperpage{39}
-    \subitem {setCurrentMenu}, \hyperpage{39}
-  \item {Moisture}, \hyperpage{40}
-    \subitem {Moisture}, \hyperpage{41}
-    \subitem {requestData}, \hyperpage{41}
+  \item {Menu}, \hyperpage{36}
+    \subitem {Create}, \hyperpage{36}
+  \item {MenuBar}, \hyperpage{37}
+    \subitem {Create}, \hyperpage{38}
+    \subitem {setCurrentMenu}, \hyperpage{38}
+  \item {Moisture}, \hyperpage{39}
+    \subitem {Moisture}, \hyperpage{39}
   \item {moveWindowMainMenu}
-    \subitem {Dashboard}, \hyperpage{29}
+    \subitem {Dashboard}, \hyperpage{28}
 
   \indexspace
 
-  \item {NotFoundUserException}, \hyperpage{42}
+  \item {NotFoundUserException}, \hyperpage{40}
 
   \indexspace
 
   \item {permissionError}
-    \subitem {CLDashboard}, \hyperpage{16}
+    \subitem {CLDashboard}, \hyperpage{15}
   \item {printCenter}
-    \subitem {CLIUtils.cpp}, \hyperpage{92}
-    \subitem {CLIUtils.h}, \hyperpage{60}
+    \subitem {CLIUtils.cpp}, \hyperpage{86}
+    \subitem {CLIUtils.h}, \hyperpage{57}
   \item {printCenterFromFile}
-    \subitem {CLIUtils.cpp}, \hyperpage{92}
-    \subitem {CLIUtils.h}, \hyperpage{61}
+    \subitem {CLIUtils.cpp}, \hyperpage{86}
+    \subitem {CLIUtils.h}, \hyperpage{58}
   \item {printColor}
-    \subitem {CLIUtils.cpp}, \hyperpage{93}
-    \subitem {CLIUtils.h}, \hyperpage{61}
+    \subitem {CLIUtils.cpp}, \hyperpage{87}
+    \subitem {CLIUtils.h}, \hyperpage{58}
 
   \indexspace
 
   \item {readCommand}
-    \subitem {CLDashboard}, \hyperpage{16}
+    \subitem {CLDashboard}, \hyperpage{15}
   \item {requestData}
-    \subitem {AirQuality}, \hyperpage{9}
-    \subitem {CameraBW}, \hyperpage{11}
-    \subitem {CameraRGB}, \hyperpage{13}
-    \subitem {Humidity}, \hyperpage{32}
-    \subitem {Moisture}, \hyperpage{41}
-    \subitem {Sensor}, \hyperpage{44}
-    \subitem {Thermometer}, \hyperpage{46}
-
-  \indexspace
-
-  \item {Sensor}, \hyperpage{42}
-    \subitem {Create}, \hyperpage{44}
-    \subitem {requestData}, \hyperpage{44}
     \subitem {Sensor}, \hyperpage{43}
+
+  \indexspace
+
+  \item {Sensor}, \hyperpage{41}
+    \subitem {Create}, \hyperpage{42}
+    \subitem {requestData}, \hyperpage{43}
+    \subitem {Sensor}, \hyperpage{42}
   \item {setCurrentMenu}
-    \subitem {MenuBar}, \hyperpage{39}
+    \subitem {MenuBar}, \hyperpage{38}
   \item {setEmployeeNumber}
-    \subitem {User}, \hyperpage{49}
+    \subitem {User}, \hyperpage{47}
   \item {setNIF}
-    \subitem {User}, \hyperpage{49}
+    \subitem {User}, \hyperpage{47}
   \item {show}
-    \subitem {CLMenu}, \hyperpage{22, 23}
-    \subitem {CLMenuBar}, \hyperpage{24}
+    \subitem {CLMenu}, \hyperpage{21, 22}
+    \subitem {CLMenuBar}, \hyperpage{23}
   \item {showMainMenu}
-    \subitem {CLDashboard}, \hyperpage{16}
+    \subitem {CLDashboard}, \hyperpage{15}
   \item {showWelcomeMessage}
-    \subitem {CLLoginInterface}, \hyperpage{21}
-  \item {src/Admin.cpp}, \hyperpage{85}
-  \item {src/AirQuality.cpp}, \hyperpage{86}
-  \item {src/CameraBW.cpp}, \hyperpage{87}
-  \item {src/CameraRGB.cpp}, \hyperpage{88}
-  \item {src/CLDashboard.cpp}, \hyperpage{89}
-  \item {src/CLInterface.cpp}, \hyperpage{90}
-  \item {src/CLIUtils.cpp}, \hyperpage{91}
-  \item {src/CLLoginInterface.cpp}, \hyperpage{93}
-  \item {src/CLMenu.cpp}, \hyperpage{94}
-  \item {src/CLMenuBar.cpp}, \hyperpage{95}
-  \item {src/Dashboard.cpp}, \hyperpage{95}
-  \item {src/Database.cpp}, \hyperpage{96}
-  \item {src/Humidity.cpp}, \hyperpage{97}
-  \item {src/Interface.cpp}, \hyperpage{98}
-  \item {src/LoginInterface.cpp}, \hyperpage{99}
-  \item {src/main.cpp}, \hyperpage{100}
-  \item {src/Menu.cpp}, \hyperpage{102}
-  \item {src/MenuBar.cpp}, \hyperpage{102}
-  \item {src/Moisture.cpp}, \hyperpage{103}
-  \item {src/Sensor.cpp}, \hyperpage{104}
-  \item {src/Thermometer.cpp}, \hyperpage{105}
-  \item {src/User.cpp}, \hyperpage{106}
-  \item {src/UserConfig.cpp}, \hyperpage{108}
+    \subitem {CLLoginInterface}, \hyperpage{20}
+  \item {src/Admin.cpp}, \hyperpage{80}
+  \item {src/AirQuality.cpp}, \hyperpage{81}
+  \item {src/CameraBW.cpp}, \hyperpage{82}
+  \item {src/CameraRGB.cpp}, \hyperpage{82}
+  \item {src/CLDashboard.cpp}, \hyperpage{83}
+  \item {src/CLInterface.cpp}, \hyperpage{84}
+  \item {src/CLIUtils.cpp}, \hyperpage{85}
+  \item {src/CLLoginInterface.cpp}, \hyperpage{87}
+  \item {src/CLMenu.cpp}, \hyperpage{88}
+  \item {src/CLMenuBar.cpp}, \hyperpage{89}
+  \item {src/Dashboard.cpp}, \hyperpage{89}
+  \item {src/Database.cpp}, \hyperpage{90}
+  \item {src/Humidity.cpp}, \hyperpage{91}
+  \item {src/Interface.cpp}, \hyperpage{92}
+  \item {src/LoginInterface.cpp}, \hyperpage{93}
+  \item {src/main.cpp}, \hyperpage{94}
+  \item {src/Menu.cpp}, \hyperpage{95}
+  \item {src/MenuBar.cpp}, \hyperpage{95}
+  \item {src/Moisture.cpp}, \hyperpage{96}
+  \item {src/Sensor.cpp}, \hyperpage{97}
+  \item {src/Thermometer.cpp}, \hyperpage{98}
+  \item {src/User.cpp}, \hyperpage{98}
+  \item {src/UserConfig.cpp}, \hyperpage{100}
 
   \indexspace
 
-  \item {Thermometer}, \hyperpage{45}
-    \subitem {requestData}, \hyperpage{46}
-    \subitem {Thermometer}, \hyperpage{45}
+  \item {Thermometer}, \hyperpage{43}
+    \subitem {Thermometer}, \hyperpage{44}
 
   \indexspace
 
-  \item {User}, \hyperpage{46}
-    \subitem {addTimestamp}, \hyperpage{48}
-    \subitem {getName}, \hyperpage{48}
-    \subitem {getTimestamp}, \hyperpage{48}
-    \subitem {hasAdminPermission}, \hyperpage{49}
-    \subitem {setEmployeeNumber}, \hyperpage{49}
-    \subitem {setNIF}, \hyperpage{49}
-    \subitem {User}, \hyperpage{48}
-  \item {UserConfig}, \hyperpage{50}
+  \item {User}, \hyperpage{44}
+    \subitem {addTimestamp}, \hyperpage{46}
+    \subitem {getName}, \hyperpage{46}
+    \subitem {getTimestamp}, \hyperpage{46}
+    \subitem {hasAdminPermission}, \hyperpage{47}
+    \subitem {setEmployeeNumber}, \hyperpage{47}
+    \subitem {setNIF}, \hyperpage{47}
+    \subitem {User}, \hyperpage{46}
+  \item {UserConfig}, \hyperpage{48}
 
 \end{theindex}
