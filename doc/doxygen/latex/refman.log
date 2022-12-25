@@ -1457,25 +1457,25 @@ ple pdfs with page group included in a single page
 <Admin_8h__dep__incl.pdf, id=2456, 1062.97125pt x 381.425pt>
 File: Admin_8h__dep__incl.pdf Graphic file (type pdf)
 <use Admin_8h__dep__incl.pdf>
-Package pdftex.def Info: Admin_8h__dep__incl.pdf  used on input line 21.
+Package pdftex.def Info: Admin_8h__dep__incl.pdf  used on input line 20.
 (pdftex.def)             Requested size: 350.0pt x 125.59126pt.
  [51]
-Underfull \hbox (badness 10000) detected at line 34
+Underfull \hbox (badness 10000) detected at line 33
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 37
+Underfull \hbox (badness 10000) detected at line 36
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 40
+Underfull \hbox (badness 10000) detected at line 39
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 43
+Underfull \hbox (badness 10000) detected at line 42
 [][][]
  []
 
@@ -1591,7 +1591,7 @@ Underfull \hbox (badness 10000) detected at line 42
 <CLDashboard_8h__incl.pdf, id=2561, 712.6625pt x 437.635pt>
 File: CLDashboard_8h__incl.pdf Graphic file (type pdf)
 <use CLDashboard_8h__incl.pdf>
-Package pdftex.def Info: CLDashboard_8h__incl.pdf  used on input line 15.
+Package pdftex.def Info: CLDashboard_8h__incl.pdf  used on input line 14.
 (pdftex.def)             Requested size: 350.0pt x 214.9305pt.
  <./CLDashboard_8h__dep__incl.pdf
 
@@ -1601,9 +1601,41 @@ pdfTeX warning: pdflatex (file ./CLDashboard_8h__dep__incl.pdf): PDF inclusion:
 <CLDashboard_8h__dep__incl.pdf, id=2569, 325.215pt x 156.585pt>
 File: CLDashboard_8h__dep__incl.pdf Graphic file (type pdf)
 <use CLDashboard_8h__dep__incl.pdf>
-Package pdftex.def Info: CLDashboard_8h__dep__incl.pdf  used on input line 22.
+Package pdftex.def Info: CLDashboard_8h__dep__incl.pdf  used on input line 21.
 (pdftex.def)             Requested size: 324.0pt x 156.01117pt.
  [55]
+Underfull \hbox (badness 10000) detected at line 34
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 43
+[][][]
+ []
+
+) (./CLInterface_8h.tex <./CLInterface_8h__incl.pdf>
+<CLInterface_8h__incl.pdf, id=2588, 723.70375pt x 493.845pt>
+File: CLInterface_8h__incl.pdf Graphic file (type pdf)
+<use CLInterface_8h__incl.pdf>
+Package pdftex.def Info: CLInterface_8h__incl.pdf  used on input line 15.
+(pdftex.def)             Requested size: 350.0pt x 238.83633pt.
+ [56] <./CLInterface_8h__dep__incl.pdf>
+<CLInterface_8h__dep__incl.pdf, id=2603, 307.1475pt x 156.585pt>
+File: CLInterface_8h__dep__incl.pdf Graphic file (type pdf)
+<use CLInterface_8h__dep__incl.pdf>
+Package pdftex.def Info: CLInterface_8h__dep__incl.pdf  used on input line 22.
+(pdftex.def)             Requested size: 306.0pt x 156.00879pt.
+ [57]
 Underfull \hbox (badness 10000) detected at line 35
 [][][]
  []
@@ -1620,38 +1652,6 @@ Underfull \hbox (badness 10000) detected at line 41
 
 
 Underfull \hbox (badness 10000) detected at line 44
-[][][]
- []
-
-) (./CLInterface_8h.tex <./CLInterface_8h__incl.pdf>
-<CLInterface_8h__incl.pdf, id=2588, 723.70375pt x 493.845pt>
-File: CLInterface_8h__incl.pdf Graphic file (type pdf)
-<use CLInterface_8h__incl.pdf>
-Package pdftex.def Info: CLInterface_8h__incl.pdf  used on input line 16.
-(pdftex.def)             Requested size: 350.0pt x 238.83633pt.
- [56] <./CLInterface_8h__dep__incl.pdf>
-<CLInterface_8h__dep__incl.pdf, id=2603, 307.1475pt x 156.585pt>
-File: CLInterface_8h__dep__incl.pdf Graphic file (type pdf)
-<use CLInterface_8h__dep__incl.pdf>
-Package pdftex.def Info: CLInterface_8h__dep__incl.pdf  used on input line 23.
-(pdftex.def)             Requested size: 306.0pt x 156.00879pt.
- [57]
-Underfull \hbox (badness 10000) detected at line 36
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 39
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 42
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 45
 [][][]
  []
 
@@ -1736,7 +1736,7 @@ Underfull \hbox (badness 10000) detected at line 43
 <CLMenu_8h__incl.pdf, id=2712, 875.27pt x 381.425pt>
 File: CLMenu_8h__incl.pdf Graphic file (type pdf)
 <use CLMenu_8h__incl.pdf>
-Package pdftex.def Info: CLMenu_8h__incl.pdf  used on input line 15.
+Package pdftex.def Info: CLMenu_8h__incl.pdf  used on input line 14.
 (pdftex.def)             Requested size: 350.0pt x 152.52072pt.
  <./CLMenu_8h__dep__incl.pdf
 
@@ -1746,25 +1746,25 @@ iple pdfs with page group included in a single page
 <CLMenu_8h__dep__incl.pdf, id=2720, 273.02pt x 156.585pt>
 File: CLMenu_8h__dep__incl.pdf Graphic file (type pdf)
 <use CLMenu_8h__dep__incl.pdf>
-Package pdftex.def Info: CLMenu_8h__dep__incl.pdf  used on input line 22.
+Package pdftex.def Info: CLMenu_8h__dep__incl.pdf  used on input line 21.
 (pdftex.def)             Requested size: 272.0pt x 156.00879pt.
  [62]
-Underfull \hbox (badness 10000) detected at line 35
+Underfull \hbox (badness 10000) detected at line 34
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 38
+Underfull \hbox (badness 10000) detected at line 37
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 41
+Underfull \hbox (badness 10000) detected at line 40
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 44
+Underfull \hbox (badness 10000) detected at line 43
 [][][]
  []
 
@@ -1808,7 +1808,7 @@ Underfull \hbox (badness 10000) detected at line 43
 <Dashboard_8h__incl.pdf, id=2768, 686.565pt x 381.425pt>
 File: Dashboard_8h__incl.pdf Graphic file (type pdf)
 <use Dashboard_8h__incl.pdf>
-Package pdftex.def Info: Dashboard_8h__incl.pdf  used on input line 17.
+Package pdftex.def Info: Dashboard_8h__incl.pdf  used on input line 16.
 (pdftex.def)             Requested size: 350.0pt x 194.44269pt.
  <./Dashboard_8h__dep__incl.pdf
 
@@ -1818,25 +1818,25 @@ ultiple pdfs with page group included in a single page
 <Dashboard_8h__dep__incl.pdf, id=2776, 622.325pt x 269.005pt>
 File: Dashboard_8h__dep__incl.pdf Graphic file (type pdf)
 <use Dashboard_8h__dep__incl.pdf>
-Package pdftex.def Info: Dashboard_8h__dep__incl.pdf  used on input line 24.
+Package pdftex.def Info: Dashboard_8h__dep__incl.pdf  used on input line 23.
 (pdftex.def)             Requested size: 350.0pt x 151.2903pt.
  [64]
-Underfull \hbox (badness 10000) detected at line 37
+Underfull \hbox (badness 10000) detected at line 36
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 40
+Underfull \hbox (badness 10000) detected at line 39
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 43
+Underfull \hbox (badness 10000) detected at line 42
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 46
+Underfull \hbox (badness 10000) detected at line 45
 [][][]
  []
 
@@ -1912,7 +1912,7 @@ Underfull \hbox (badness 10000) detected at line 42
 <Interface_8h__incl.pdf, id=2858, 688.5725pt x 437.635pt>
 File: Interface_8h__incl.pdf Graphic file (type pdf)
 <use Interface_8h__incl.pdf>
-Package pdftex.def Info: Interface_8h__incl.pdf  used on input line 16.
+Package pdftex.def Info: Interface_8h__incl.pdf  used on input line 15.
 (pdftex.def)             Requested size: 350.0pt x 222.44966pt.
  <./Interface_8h__dep__incl.pdf
 
@@ -1922,25 +1922,25 @@ ultiple pdfs with page group included in a single page
 <Interface_8h__dep__incl.pdf, id=2866, 406.51875pt x 212.795pt>
 File: Interface_8h__dep__incl.pdf Graphic file (type pdf)
 <use Interface_8h__dep__incl.pdf>
-Package pdftex.def Info: Interface_8h__dep__incl.pdf  used on input line 23.
+Package pdftex.def Info: Interface_8h__dep__incl.pdf  used on input line 22.
 (pdftex.def)             Requested size: 350.0pt x 183.21767pt.
  [68]
-Underfull \hbox (badness 10000) detected at line 36
+Underfull \hbox (badness 10000) detected at line 35
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 39
+Underfull \hbox (badness 10000) detected at line 38
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 42
+Underfull \hbox (badness 10000) detected at line 41
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 45
+Underfull \hbox (badness 10000) detected at line 44
 [][][]
  []
 
@@ -1981,7 +1981,7 @@ Underfull \hbox (badness 10000) detected at line 42
 <main_8h__incl.pdf, id=2921, 688.5725pt x 493.845pt>
 File: main_8h__incl.pdf Graphic file (type pdf)
 <use main_8h__incl.pdf>
-Package pdftex.def Info: main_8h__incl.pdf  used on input line 14.
+Package pdftex.def Info: main_8h__incl.pdf  used on input line 13.
 (pdftex.def)             Requested size: 350.0pt x 251.02118pt.
  <./main_8h__dep__incl.pdf
 
@@ -1991,25 +1991,25 @@ le pdfs with page group included in a single page
 <main_8h__dep__incl.pdf, id=2929, 169.63374pt x 156.585pt>
 File: main_8h__dep__incl.pdf Graphic file (type pdf)
 <use main_8h__dep__incl.pdf>
-Package pdftex.def Info: main_8h__dep__incl.pdf  used on input line 21.
+Package pdftex.def Info: main_8h__dep__incl.pdf  used on input line 20.
 (pdftex.def)             Requested size: 169.0pt x 156.0064pt.
  [71]
-Underfull \hbox (badness 10000) detected at line 35
+Underfull \hbox (badness 10000) detected at line 34
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 38
+Underfull \hbox (badness 10000) detected at line 37
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 41
+Underfull \hbox (badness 10000) detected at line 40
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 44
+Underfull \hbox (badness 10000) detected at line 43
 [][][]
  []
 
@@ -2017,7 +2017,7 @@ Underfull \hbox (badness 10000) detected at line 44
 <Menu_8h__incl.pdf, id=2948, 880.28876pt x 325.215pt>
 File: Menu_8h__incl.pdf Graphic file (type pdf)
 <use Menu_8h__incl.pdf>
-Package pdftex.def Info: Menu_8h__incl.pdf  used on input line 15.
+Package pdftex.def Info: Menu_8h__incl.pdf  used on input line 14.
 (pdftex.def)             Requested size: 350.0pt x 129.3046pt.
  <./Menu_8h__dep__incl.pdf
 
@@ -2027,25 +2027,25 @@ le pdfs with page group included in a single page
 <Menu_8h__dep__incl.pdf, id=2956, 659.46375pt x 325.215pt>
 File: Menu_8h__dep__incl.pdf Graphic file (type pdf)
 <use Menu_8h__dep__incl.pdf>
-Package pdftex.def Info: Menu_8h__dep__incl.pdf  used on input line 22.
+Package pdftex.def Info: Menu_8h__dep__incl.pdf  used on input line 21.
 (pdftex.def)             Requested size: 350.0pt x 172.60628pt.
  [72]
-Underfull \hbox (badness 10000) detected at line 35
+Underfull \hbox (badness 10000) detected at line 34
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 38
+Underfull \hbox (badness 10000) detected at line 37
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 41
+Underfull \hbox (badness 10000) detected at line 40
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 44
+Underfull \hbox (badness 10000) detected at line 43
 [][][]
  []
 
@@ -2237,25 +2237,25 @@ le pdfs with page group included in a single page
 <User_8h__dep__incl.pdf, id=3137, 1274.7625pt x 437.635pt>
 File: User_8h__dep__incl.pdf Graphic file (type pdf)
 <use User_8h__dep__incl.pdf>
-Package pdftex.def Info: User_8h__dep__incl.pdf  used on input line 26.
+Package pdftex.def Info: User_8h__dep__incl.pdf  used on input line 25.
 (pdftex.def)             Requested size: 350.0pt x 120.153pt.
 
-Underfull \hbox (badness 10000) detected at line 39
+Underfull \hbox (badness 10000) detected at line 38
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 42
+Underfull \hbox (badness 10000) detected at line 41
 [][][]
  []
 
 [80]
-Underfull \hbox (badness 10000) detected at line 45
+Underfull \hbox (badness 10000) detected at line 44
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 48
+Underfull \hbox (badness 10000) detected at line 47
 [][][]
  []
 
@@ -2273,25 +2273,25 @@ multiple pdfs with page group included in a single page
 <UserConfig_8h__dep__incl.pdf, id=3165, 1274.7625pt x 493.845pt>
 File: UserConfig_8h__dep__incl.pdf Graphic file (type pdf)
 <use UserConfig_8h__dep__incl.pdf>
-Package pdftex.def Info: UserConfig_8h__dep__incl.pdf  used on input line 22.
+Package pdftex.def Info: UserConfig_8h__dep__incl.pdf  used on input line 21.
 (pdftex.def)             Requested size: 350.0pt x 135.5855pt.
  [81]
-Underfull \hbox (badness 10000) detected at line 35
+Underfull \hbox (badness 10000) detected at line 34
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 38
+Underfull \hbox (badness 10000) detected at line 37
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 41
+Underfull \hbox (badness 10000) detected at line 40
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 44
+Underfull \hbox (badness 10000) detected at line 43
 [][][]
  []
 
@@ -2407,25 +2407,25 @@ Underfull \hbox (badness 10000) detected at line 23
 <CLDashboard_8cpp__incl.pdf, id=3241, 712.6625pt x 493.845pt>
 File: CLDashboard_8cpp__incl.pdf Graphic file (type pdf)
 <use CLDashboard_8cpp__incl.pdf>
-Package pdftex.def Info: CLDashboard_8cpp__incl.pdf  used on input line 9.
+Package pdftex.def Info: CLDashboard_8cpp__incl.pdf  used on input line 8.
 (pdftex.def)             Requested size: 350.0pt x 242.53624pt.
 
-Underfull \hbox (badness 10000) detected at line 15
+Underfull \hbox (badness 10000) detected at line 14
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 18
+Underfull \hbox (badness 10000) detected at line 17
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 21
+Underfull \hbox (badness 10000) detected at line 20
 [][][]
  []
 
 [85]
-Underfull \hbox (badness 10000) detected at line 24
+Underfull \hbox (badness 10000) detected at line 23
 [][][]
  []
 
@@ -2433,25 +2433,25 @@ Underfull \hbox (badness 10000) detected at line 24
 <CLInterface_8cpp__incl.pdf, id=3256, 723.70375pt x 550.055pt>
 File: CLInterface_8cpp__incl.pdf Graphic file (type pdf)
 <use CLInterface_8cpp__incl.pdf>
-Package pdftex.def Info: CLInterface_8cpp__incl.pdf  used on input line 9.
+Package pdftex.def Info: CLInterface_8cpp__incl.pdf  used on input line 8.
 (pdftex.def)             Requested size: 350.0pt x 266.02097pt.
 
-Underfull \hbox (badness 10000) detected at line 15
+Underfull \hbox (badness 10000) detected at line 14
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 18
+Underfull \hbox (badness 10000) detected at line 17
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 21
+Underfull \hbox (badness 10000) detected at line 20
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 24
+Underfull \hbox (badness 10000) detected at line 23
 [][][]
  []
 
@@ -2520,25 +2520,25 @@ Underfull \hbox (badness 10000) detected at line 23
 <CLMenu_8cpp__incl.pdf, id=3335, 875.27pt x 437.635pt>
 File: CLMenu_8cpp__incl.pdf Graphic file (type pdf)
 <use CLMenu_8cpp__incl.pdf>
-Package pdftex.def Info: CLMenu_8cpp__incl.pdf  used on input line 9.
+Package pdftex.def Info: CLMenu_8cpp__incl.pdf  used on input line 8.
 (pdftex.def)             Requested size: 350.0pt x 174.99747pt.
 
-Underfull \hbox (badness 10000) detected at line 15
+Underfull \hbox (badness 10000) detected at line 14
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 18
+Underfull \hbox (badness 10000) detected at line 17
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 21
+Underfull \hbox (badness 10000) detected at line 20
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 24
+Underfull \hbox (badness 10000) detected at line 23
 [][][]
  []
 
@@ -2576,25 +2576,25 @@ Underfull \hbox (badness 10000) detected at line 23
 <Dashboard_8cpp__incl.pdf, id=3359, 712.6625pt x 493.845pt>
 File: Dashboard_8cpp__incl.pdf Graphic file (type pdf)
 <use Dashboard_8cpp__incl.pdf>
-Package pdftex.def Info: Dashboard_8cpp__incl.pdf  used on input line 10.
+Package pdftex.def Info: Dashboard_8cpp__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 242.53624pt.
  [91]
-Underfull \hbox (badness 10000) detected at line 16
+Underfull \hbox (badness 10000) detected at line 15
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 19
+Underfull \hbox (badness 10000) detected at line 18
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 22
+Underfull \hbox (badness 10000) detected at line 21
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 25
+Underfull \hbox (badness 10000) detected at line 24
 [][][]
  []
 
@@ -2654,25 +2654,25 @@ Underfull \hbox (badness 10000) detected at line 23
 <Interface_8cpp__incl.pdf, id=3405, 692.5875pt x 550.055pt>
 File: Interface_8cpp__incl.pdf Graphic file (type pdf)
 <use Interface_8cpp__incl.pdf>
-Package pdftex.def Info: Interface_8cpp__incl.pdf  used on input line 10.
+Package pdftex.def Info: Interface_8cpp__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 277.97281pt.
 
-Underfull \hbox (badness 10000) detected at line 16
+Underfull \hbox (badness 10000) detected at line 15
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 19
+Underfull \hbox (badness 10000) detected at line 18
 [][][]
  []
 
 [94]
-Underfull \hbox (badness 10000) detected at line 22
+Underfull \hbox (badness 10000) detected at line 21
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 25
+Underfull \hbox (badness 10000) detected at line 24
 [][][]
  []
 
@@ -2706,25 +2706,25 @@ Underfull \hbox (badness 10000) detected at line 25
 <main_8cpp__incl.pdf, id=3436, 688.5725pt x 550.055pt>
 File: main_8cpp__incl.pdf Graphic file (type pdf)
 <use main_8cpp__incl.pdf>
-Package pdftex.def Info: main_8cpp__incl.pdf  used on input line 9.
+Package pdftex.def Info: main_8cpp__incl.pdf  used on input line 8.
 (pdftex.def)             Requested size: 350.0pt x 279.5927pt.
 
-Underfull \hbox (badness 10000) detected at line 21
+Underfull \hbox (badness 10000) detected at line 20
 [][][]
  []
 
 [96]
-Underfull \hbox (badness 10000) detected at line 24
+Underfull \hbox (badness 10000) detected at line 23
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 27
+Underfull \hbox (badness 10000) detected at line 26
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 30
+Underfull \hbox (badness 10000) detected at line 29
 [][][]
  []
 
@@ -2732,25 +2732,25 @@ Underfull \hbox (badness 10000) detected at line 30
 <Menu_8cpp__incl.pdf, id=3454, 878.28125pt x 437.635pt>
 File: Menu_8cpp__incl.pdf Graphic file (type pdf)
 <use Menu_8cpp__incl.pdf>
-Package pdftex.def Info: Menu_8cpp__incl.pdf  used on input line 10.
+Package pdftex.def Info: Menu_8cpp__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 174.40315pt.
 
-Underfull \hbox (badness 10000) detected at line 16
+Underfull \hbox (badness 10000) detected at line 15
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 19
+Underfull \hbox (badness 10000) detected at line 18
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 22
+Underfull \hbox (badness 10000) detected at line 21
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 25
+Underfull \hbox (badness 10000) detected at line 24
 [][][]
  []
 
