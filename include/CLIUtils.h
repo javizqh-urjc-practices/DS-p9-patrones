@@ -53,9 +53,12 @@ void printLeft(const std::string toPrint, std::array<int,3> frontColor, std::arr
  */
 void printColor(std::string toPrint, std::array<int,3> frontColor, std::array<int,3> backColor);
 
-void startCustomTerminal(int);
+void startCustomTerminal(User & user,int );
 std::vector<std::string> newCommand(User & user,std::string = "");
-void clearCustomTerminal(int);
+void clearCustomTerminal(User & user,int);
+
+void cleanScreen(std::array<int,3> backColor);
+void cleanScreen();
 
 void moveCursor(int posX, int posY);
 void printGraphic(const std::vector<int> data, std::array<int,3> frontColor, std::array<int,3> backColor, std::array<int,3> pointColor

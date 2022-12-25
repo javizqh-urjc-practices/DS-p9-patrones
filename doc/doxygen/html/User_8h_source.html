@@ -102,19 +102,23 @@ $(function() {
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classUser.html#a4e454cafcaf339c671a8127b28de84d5">setEmployeeNumber</a>(std::string);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> setConfig(<a class="code" href="classUserConfig.html">UserConfig</a> newConfig) {userConfiguration = newConfig;};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="classUserConfig.html">UserConfig</a>* getConfiguration(){ <span class="keywordflow">return</span> &amp;userConfiguration;};</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">char</span> name [21];</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">char</span> NIF [9]; <span class="comment">/* 8 digits */</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">char</span> employeeNumber [6]; <span class="comment">/* 5 digits */</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">char</span> lastLogTime [25];</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">bool</span> adminPermission;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="classUserConfig.html">UserConfig</a> userConfiguration;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">void</span> setLanguage(std::string newLanguage){ userConfiguration.setLanguage(newLanguage);};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> setFontColor(std::array&lt;int,3&gt; newFontColor){ userConfiguration.setFontColor(newFontColor);};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">void</span> setBackgroundColor(std::array&lt;int,3&gt; newBackgroundColor){ userConfiguration.setBackgroundColor(newBackgroundColor);};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">void</span> setGraphicColor(std::array&lt;int,3&gt; newGraphicColor){ userConfiguration.setGraphicColor(newGraphicColor);};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="classUserConfig.html">UserConfig</a>* getConfiguration(){ <span class="keywordflow">return</span> &amp;userConfiguration;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">char</span> name [21];</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">char</span> NIF [9]; <span class="comment">/* 8 digits */</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">char</span> employeeNumber [6]; <span class="comment">/* 5 digits */</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">char</span> lastLogTime [25];</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">bool</span> adminPermission;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="classUserConfig.html">UserConfig</a> userConfiguration;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassUser_html_a446a64e63adafbc2e1428532275ad6a1"><div class="ttname"><a href="classUser.html#a446a64e63adafbc2e1428532275ad6a1">User::getName</a></div><div class="ttdeci">std::string getName() const</div><div class="ttdoc">Returns the user name.</div><div class="ttdef"><b>Definition:</b> User.h:43</div></div>
 <div class="ttc" id="aUserConfig_8h_html"><div class="ttname"><a href="UserConfig_8h.html">UserConfig.h</a></div><div class="ttdoc">Header file of UserConfig.cpp.</div></div>

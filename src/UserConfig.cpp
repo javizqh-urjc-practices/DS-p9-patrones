@@ -25,4 +25,34 @@ void UserConfig::setLanguage(std::string newLanguage){
   language [length] = '\0';
 }
 
+void UserConfig::setBackgroundColor(std::array<int,3> newBackgroundColor){
+  int colorValue;
+  for (int index = 0; index < 3; index++){
+    colorValue = newBackgroundColor[index];
+    if ( colorValue > 255) colorValue = 255; // Upper bound
+    else if (colorValue < 0) colorValue = 0; // Bottom bound 
+    this->backgroundColor[index] = colorValue;
+  }
+}
+
+void UserConfig::setFontColor(std::array<int,3> newFontColor){
+  int colorValue;
+  for (int index = 0; index < 3; index++){
+    colorValue = newFontColor[index];
+    if ( colorValue > 255) colorValue = 255; // Upper bound
+    else if (colorValue < 0) colorValue = 0; // Bottom bound 
+    this->fontColor[index] = colorValue;
+  }
+}
+
+void UserConfig::setGraphicColor(std::array<int,3> newGraphicColor){
+  int colorValue;
+  for (int index = 0; index < 3; index++){
+    colorValue = newGraphicColor[index];
+    if ( colorValue > 255) colorValue = 255; // Upper bound
+    else if (colorValue < 0) colorValue = 0; // Bottom bound 
+    this->graphicColor[index] = colorValue;
+  }
+}
+
 UserConfig::~UserConfig(){};

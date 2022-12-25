@@ -32,11 +32,17 @@ void {\bfseries print\+Left} (const std\+::string to\+Print, std\+::array$<$ int
 \item 
 void \mbox{\hyperlink{CLIUtils_8cpp_a55be4f6a5f72cd4c83b4f1b7a2596493}{print\+Color}} (std\+::string to\+Print, std\+::array$<$ int, 3 $>$ front\+Color, std\+::array$<$ int, 3 $>$ back\+Color)
 \begin{DoxyCompactList}\small\item\em Print the string to the terminal in the given color. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{CLIUtils_8cpp_a7e230d4c3af2fd4c95abcf91c4ce86c8}\label{CLIUtils_8cpp_a7e230d4c3af2fd4c95abcf91c4ce86c8}} 
-void {\bfseries start\+Custom\+Terminal} (int terminal\+Size)
+\mbox{\Hypertarget{CLIUtils_8cpp_a42d87ea54e94f00b58b35a278f44f7c3}\label{CLIUtils_8cpp_a42d87ea54e94f00b58b35a278f44f7c3}} 
+void {\bfseries start\+Custom\+Terminal} (\mbox{\hyperlink{classUser}{User}} \&user, int terminal\+Size)
 \item 
-\mbox{\Hypertarget{CLIUtils_8cpp_a2e5bb579207424bca05ef407be31d7fe}\label{CLIUtils_8cpp_a2e5bb579207424bca05ef407be31d7fe}} 
-void {\bfseries clear\+Custom\+Terminal} (int terminal\+Size)
+\mbox{\Hypertarget{CLIUtils_8cpp_a204deae331a804a4e563169412fa1bb5}\label{CLIUtils_8cpp_a204deae331a804a4e563169412fa1bb5}} 
+void {\bfseries clear\+Custom\+Terminal} (\mbox{\hyperlink{classUser}{User}} \&user, int terminal\+Size)
+\item 
+\mbox{\Hypertarget{CLIUtils_8cpp_adae4d82118639412a0f32dc63a49dd1c}\label{CLIUtils_8cpp_adae4d82118639412a0f32dc63a49dd1c}} 
+void {\bfseries clean\+Screen} (std\+::array$<$ int, 3 $>$ back\+Color)
+\item 
+\mbox{\Hypertarget{CLIUtils_8cpp_a79fd6c1e1239d1f44ed8cc6a3f9bbbe1}\label{CLIUtils_8cpp_a79fd6c1e1239d1f44ed8cc6a3f9bbbe1}} 
+void {\bfseries clean\+Screen} ()
 \item 
 \mbox{\Hypertarget{CLIUtils_8cpp_ad6f5bf84271fcfbeda2cebed35e548bb}\label{CLIUtils_8cpp_ad6f5bf84271fcfbeda2cebed35e548bb}} 
 void {\bfseries move\+Cursor} (int posX, int posY)

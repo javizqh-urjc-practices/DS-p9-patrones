@@ -31,6 +31,12 @@ class CLMenu : public Menu{
      * @param config User configuration
      */
     void show(Sensor * sensorToDisplay, UserConfig &config);
+    /**
+     * @brief Shows the config menu
+     * 
+     * @param user 
+     */
+    void show(User &user);
 
   protected:
     /**

@@ -27,7 +27,7 @@ class Dashboard{
     */
     static Dashboard *Create(User &user, const std::string type = "CLI");
     virtual ~Dashboard();
-    void setUser(User &user){this->user=&user;};
+    void setUser(User &user){this->user=&user; this->newUsers.clear();};
     virtual void showMainMenu() = 0;
     /**
     * @brief Changes the current interface to the input one

@@ -91,9 +91,19 @@ bool Dashboard::changeInterface(std::string newInterface){
     this->currentInterface = newInterface;
     return true;
   }
+  else if (newInterface.compare("config") == 0){
+    this->currentSensor = nullptr;
+    this->menu->show(*this->user);
+    this->menuBar->setCurrentMenu("Settings menu");
+    this->menuBar->show();
+    this->lastInterface = this->currentInterface;
+    this->currentInterface = newInterface;
+    return true;
+  }
   else if (this->currentInterface.compare(newInterface) == 0){
         this->menu->show(this->currentSensor,*this->user->getConfiguration());
         this->menuBar->setCurrentMenu(this->currentInterface);
+        this->menuBar->show();
         return true;
   }
   else {
@@ -158,9 +168,9 @@ void Dashboard::deleteSensor(std::string id){
   // Remove from sensor vector
   for (int index = 0; index < this->sensor.size(); index++){
     if (id.compare(this->sensor[index]->getId())== 0){
-      Sensor *sensor = this->sensor[index];
+      // Remove from server
+      std::filesystem::remove_all("server/sensor/"+id);
       this->sensor.erase(this->sensor.begin() + index);
-      delete sensor;
     }
   }
   // Reset main menu
@@ -176,7 +186,7 @@ void Dashboard::moveWindowMainMenu(int n){
 
 void Dashboard::changeCurrentSensorInfo(std::string toChange, std::string newValue){
 
-  if (this->currentInterface.compare("..") == 0) return;
+  if (this->currentSensor == nullptr) return;
 
   if (toChange.compare("area") == 0) this->currentSensor->setArea(newValue);
   else if (toChange.compare("val") == 0){

@@ -44,68 +44,69 @@
 \contentsline {section}{\numberline {4.8}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu Class Reference}{20}{section.4.8}%
 \contentsline {subsection}{\numberline {4.8.1}Member Function Documentation}{21}{subsection.4.8.1}%
 \contentsline {subsubsection}{\numberline {4.8.1.1}clearMenu()}{21}{subsubsection.4.8.1.1}%
-\contentsline {subsubsection}{\numberline {4.8.1.2}show()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{21}{subsubsection.4.8.1.2}%
-\contentsline {subsubsection}{\numberline {4.8.1.3}show()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{22}{subsubsection.4.8.1.3}%
-\contentsline {section}{\numberline {4.9}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bar Class Reference}{22}{section.4.9}%
-\contentsline {subsection}{\numberline {4.9.1}Member Function Documentation}{23}{subsection.4.9.1}%
-\contentsline {subsubsection}{\numberline {4.9.1.1}show()}{23}{subsubsection.4.9.1.1}%
+\contentsline {subsubsection}{\numberline {4.8.1.2}show()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{21}{subsubsection.4.8.1.2}%
+\contentsline {subsubsection}{\numberline {4.8.1.3}show()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{22}{subsubsection.4.8.1.3}%
+\contentsline {subsubsection}{\numberline {4.8.1.4}show()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{22}{subsubsection.4.8.1.4}%
+\contentsline {section}{\numberline {4.9}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bar Class Reference}{23}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Member Function Documentation}{24}{subsection.4.9.1}%
+\contentsline {subsubsection}{\numberline {4.9.1.1}show()}{24}{subsubsection.4.9.1.1}%
 \contentsline {section}{\numberline {4.10}Dashboard Class Reference}{24}{section.4.10}%
 \contentsline {subsection}{\numberline {4.10.1}Member Function Documentation}{26}{subsection.4.10.1}%
 \contentsline {subsubsection}{\numberline {4.10.1.1}addNewSensor()}{26}{subsubsection.4.10.1.1}%
-\contentsline {subsubsection}{\numberline {4.10.1.2}addToMainMenu()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{26}{subsubsection.4.10.1.2}%
-\contentsline {subsubsection}{\numberline {4.10.1.3}addToMainMenu()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{26}{subsubsection.4.10.1.3}%
+\contentsline {subsubsection}{\numberline {4.10.1.2}addToMainMenu()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{27}{subsubsection.4.10.1.2}%
+\contentsline {subsubsection}{\numberline {4.10.1.3}addToMainMenu()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{27}{subsubsection.4.10.1.3}%
 \contentsline {subsubsection}{\numberline {4.10.1.4}canExit()}{27}{subsubsection.4.10.1.4}%
 \contentsline {subsubsection}{\numberline {4.10.1.5}changeCurrentSensorInfo()}{27}{subsubsection.4.10.1.5}%
-\contentsline {subsubsection}{\numberline {4.10.1.6}changeInterface()}{27}{subsubsection.4.10.1.6}%
+\contentsline {subsubsection}{\numberline {4.10.1.6}changeInterface()}{28}{subsubsection.4.10.1.6}%
 \contentsline {subsubsection}{\numberline {4.10.1.7}Create()}{28}{subsubsection.4.10.1.7}%
 \contentsline {subsubsection}{\numberline {4.10.1.8}deleteSensor()}{28}{subsubsection.4.10.1.8}%
-\contentsline {subsubsection}{\numberline {4.10.1.9}exit()}{28}{subsubsection.4.10.1.9}%
+\contentsline {subsubsection}{\numberline {4.10.1.9}exit()}{29}{subsubsection.4.10.1.9}%
 \contentsline {subsubsection}{\numberline {4.10.1.10}getNewUsers()}{29}{subsubsection.4.10.1.10}%
 \contentsline {subsubsection}{\numberline {4.10.1.11}logout()}{29}{subsubsection.4.10.1.11}%
 \contentsline {subsubsection}{\numberline {4.10.1.12}moveWindowMainMenu()}{29}{subsubsection.4.10.1.12}%
-\contentsline {section}{\numberline {4.11}Database Class Reference}{29}{section.4.11}%
+\contentsline {section}{\numberline {4.11}Database Class Reference}{30}{section.4.11}%
 \contentsline {subsection}{\numberline {4.11.1}Member Function Documentation}{30}{subsection.4.11.1}%
 \contentsline {subsubsection}{\numberline {4.11.1.1}getUser()}{30}{subsubsection.4.11.1.1}%
-\contentsline {section}{\numberline {4.12}Humidity Class Reference}{30}{section.4.12}%
+\contentsline {section}{\numberline {4.12}Humidity Class Reference}{31}{section.4.12}%
 \contentsline {subsection}{\numberline {4.12.1}Constructor \& Destructor Documentation}{31}{subsection.4.12.1}%
 \contentsline {subsubsection}{\numberline {4.12.1.1}Humidity()}{31}{subsubsection.4.12.1.1}%
 \contentsline {section}{\numberline {4.13}Interface Class Reference}{32}{section.4.13}%
 \contentsline {subsection}{\numberline {4.13.1}Member Function Documentation}{33}{subsection.4.13.1}%
 \contentsline {subsubsection}{\numberline {4.13.1.1}Create()}{33}{subsubsection.4.13.1.1}%
 \contentsline {subsubsection}{\numberline {4.13.1.2}loadMenu()}{33}{subsubsection.4.13.1.2}%
-\contentsline {subsubsection}{\numberline {4.13.1.3}login()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{33}{subsubsection.4.13.1.3}%
+\contentsline {subsubsection}{\numberline {4.13.1.3}login()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{34}{subsubsection.4.13.1.3}%
 \contentsline {subsubsection}{\numberline {4.13.1.4}login()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{34}{subsubsection.4.13.1.4}%
-\contentsline {section}{\numberline {4.14}Login\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interface Class Reference}{34}{section.4.14}%
-\contentsline {subsection}{\numberline {4.14.1}Member Function Documentation}{35}{subsection.4.14.1}%
-\contentsline {subsubsection}{\numberline {4.14.1.1}checkUser()}{35}{subsubsection.4.14.1.1}%
+\contentsline {section}{\numberline {4.14}Login\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interface Class Reference}{35}{section.4.14}%
+\contentsline {subsection}{\numberline {4.14.1}Member Function Documentation}{36}{subsection.4.14.1}%
+\contentsline {subsubsection}{\numberline {4.14.1.1}checkUser()}{36}{subsubsection.4.14.1.1}%
 \contentsline {subsubsection}{\numberline {4.14.1.2}Create()}{36}{subsubsection.4.14.1.2}%
-\contentsline {section}{\numberline {4.15}Menu Class Reference}{36}{section.4.15}%
+\contentsline {section}{\numberline {4.15}Menu Class Reference}{37}{section.4.15}%
 \contentsline {subsection}{\numberline {4.15.1}Member Function Documentation}{37}{subsection.4.15.1}%
 \contentsline {subsubsection}{\numberline {4.15.1.1}Create()}{37}{subsubsection.4.15.1.1}%
-\contentsline {section}{\numberline {4.16}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bar Class Reference}{37}{section.4.16}%
-\contentsline {subsection}{\numberline {4.16.1}Member Function Documentation}{38}{subsection.4.16.1}%
-\contentsline {subsubsection}{\numberline {4.16.1.1}Create()}{38}{subsubsection.4.16.1.1}%
+\contentsline {section}{\numberline {4.16}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bar Class Reference}{38}{section.4.16}%
+\contentsline {subsection}{\numberline {4.16.1}Member Function Documentation}{39}{subsection.4.16.1}%
+\contentsline {subsubsection}{\numberline {4.16.1.1}Create()}{39}{subsubsection.4.16.1.1}%
 \contentsline {subsubsection}{\numberline {4.16.1.2}setCurrentMenu()}{39}{subsubsection.4.16.1.2}%
-\contentsline {section}{\numberline {4.17}Moisture Class Reference}{39}{section.4.17}%
+\contentsline {section}{\numberline {4.17}Moisture Class Reference}{40}{section.4.17}%
 \contentsline {subsection}{\numberline {4.17.1}Constructor \& Destructor Documentation}{40}{subsection.4.17.1}%
 \contentsline {subsubsection}{\numberline {4.17.1.1}Moisture()}{40}{subsubsection.4.17.1.1}%
 \contentsline {section}{\numberline {4.18}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Found\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{41}{section.4.18}%
-\contentsline {section}{\numberline {4.19}Sensor Class Reference}{41}{section.4.19}%
-\contentsline {subsection}{\numberline {4.19.1}Constructor \& Destructor Documentation}{42}{subsection.4.19.1}%
-\contentsline {subsubsection}{\numberline {4.19.1.1}Sensor()}{42}{subsubsection.4.19.1.1}%
+\contentsline {section}{\numberline {4.19}Sensor Class Reference}{42}{section.4.19}%
+\contentsline {subsection}{\numberline {4.19.1}Constructor \& Destructor Documentation}{43}{subsection.4.19.1}%
+\contentsline {subsubsection}{\numberline {4.19.1.1}Sensor()}{43}{subsubsection.4.19.1.1}%
 \contentsline {subsection}{\numberline {4.19.2}Member Function Documentation}{43}{subsection.4.19.2}%
 \contentsline {subsubsection}{\numberline {4.19.2.1}Create()}{43}{subsubsection.4.19.2.1}%
-\contentsline {subsubsection}{\numberline {4.19.2.2}requestData()}{43}{subsubsection.4.19.2.2}%
+\contentsline {subsubsection}{\numberline {4.19.2.2}requestData()}{44}{subsubsection.4.19.2.2}%
 \contentsline {section}{\numberline {4.20}Thermometer Class Reference}{44}{section.4.20}%
-\contentsline {subsection}{\numberline {4.20.1}Constructor \& Destructor Documentation}{44}{subsection.4.20.1}%
-\contentsline {subsubsection}{\numberline {4.20.1.1}Thermometer()}{44}{subsubsection.4.20.1.1}%
+\contentsline {subsection}{\numberline {4.20.1}Constructor \& Destructor Documentation}{45}{subsection.4.20.1}%
+\contentsline {subsubsection}{\numberline {4.20.1.1}Thermometer()}{45}{subsubsection.4.20.1.1}%
 \contentsline {section}{\numberline {4.21}User Class Reference}{45}{section.4.21}%
-\contentsline {subsection}{\numberline {4.21.1}Constructor \& Destructor Documentation}{46}{subsection.4.21.1}%
-\contentsline {subsubsection}{\numberline {4.21.1.1}User()}{46}{subsubsection.4.21.1.1}%
+\contentsline {subsection}{\numberline {4.21.1}Constructor \& Destructor Documentation}{47}{subsection.4.21.1}%
+\contentsline {subsubsection}{\numberline {4.21.1.1}User()}{47}{subsubsection.4.21.1.1}%
 \contentsline {subsection}{\numberline {4.21.2}Member Function Documentation}{47}{subsection.4.21.2}%
 \contentsline {subsubsection}{\numberline {4.21.2.1}addTimestamp()}{47}{subsubsection.4.21.2.1}%
-\contentsline {subsubsection}{\numberline {4.21.2.2}getName()}{47}{subsubsection.4.21.2.2}%
-\contentsline {subsubsection}{\numberline {4.21.2.3}getTimestamp()}{47}{subsubsection.4.21.2.3}%
+\contentsline {subsubsection}{\numberline {4.21.2.2}getName()}{48}{subsubsection.4.21.2.2}%
+\contentsline {subsubsection}{\numberline {4.21.2.3}getTimestamp()}{48}{subsubsection.4.21.2.3}%
 \contentsline {subsubsection}{\numberline {4.21.2.4}hasAdminPermission()}{48}{subsubsection.4.21.2.4}%
 \contentsline {subsubsection}{\numberline {4.21.2.5}setEmployeeNumber()}{48}{subsubsection.4.21.2.5}%
 \contentsline {subsubsection}{\numberline {4.21.2.6}setNIF()}{49}{subsubsection.4.21.2.6}%
@@ -122,7 +123,7 @@
 \contentsline {section}{\numberline {5.5}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dashboard.h File Reference}{55}{section.5.5}%
 \contentsline {subsection}{\numberline {5.5.1}Detailed Description}{56}{subsection.5.5.1}%
 \contentsline {section}{\numberline {5.6}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interface.h File Reference}{57}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}Detailed Description}{57}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.1}Detailed Description}{58}{subsection.5.6.1}%
 \contentsline {section}{\numberline {5.7}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Utils.h File Reference}{58}{section.5.7}%
 \contentsline {subsection}{\numberline {5.7.1}Detailed Description}{59}{subsection.5.7.1}%
 \contentsline {subsection}{\numberline {5.7.2}Function Documentation}{59}{subsection.5.7.2}%

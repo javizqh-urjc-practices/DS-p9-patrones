@@ -13,10 +13,11 @@
 CLMenuBar::CLMenuBar(){}
 
 void CLMenuBar::show(){
-  std::cout << "\u001b[0;0H";
+  moveCursor(0,0);
   printLeft("User: " + this->user.getName(),*this->user.getConfiguration()->getFontColor(),*this->user.getConfiguration()->getBackgroundColor());
   printCenter(this->currentMenu,*this->user.getConfiguration()->getFontColor(),*this->user.getConfiguration()->getBackgroundColor());
   printRight("Exit (exit) ",*this->user.getConfiguration()->getFontColor(),*this->user.getConfiguration()->getBackgroundColor());
   std::cout << "\n";
+  std::cout << "\u001b[u"; // Reload cursor pos
 }
 

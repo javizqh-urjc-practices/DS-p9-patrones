@@ -101,15 +101,27 @@ void printColor(std::string toPrint, std::array<int,3> frontColor, std::array<in
   std::cout << "\u001b[38;2;"<< frontColor[0] <<';'<< frontColor[1] <<';'<< frontColor[2] <<"m\u001b[48;2;"<< backColor[0] <<';'<< backColor[1] <<';'<< backColor[2] <<'m' << toPrint;
 }
 
-void startCustomTerminal(int terminalSize){
-  std::cout << "\u001b[" << terminalHeight - 1 - terminalSize << ";0H";
-  std::cout << std::setfill('-')<<std::setw(terminalWidth) << "" << std::setfill(' ');
-  std::cout << "\u001b[" << terminalHeight - 1 - terminalSize << ";" << (terminalWidth-11)/2 << "H" << " Terminal ";
-  std::cout << "\u001b[" << terminalHeight - terminalSize << ";0H";
+void startCustomTerminal(User &user, int terminalSize){
+  moveCursor(0,terminalHeight - 1 - terminalSize);
+  for (int i = 0; i < terminalWidth; i++) printColor("-",*user.getConfiguration()->getFontColor(),*user.getConfiguration()->getBackgroundColor());
+  moveCursor((terminalWidth-11)/2,terminalHeight - 1 - terminalSize);
+  printColor(" Terminal ",*user.getConfiguration()->getFontColor(),*user.getConfiguration()->getBackgroundColor());
+  moveCursor(0,terminalHeight - terminalSize);
 }
 
-void clearCustomTerminal(int terminalSize){
-  std::cout << "\u001b[" << terminalHeight - terminalSize << ";0H" << "\u001b[0J";
+void clearCustomTerminal(User &user, int terminalSize){
+  std::cout << "\u001b[" << terminalHeight - terminalSize - 1 << ";0H" << "\u001b[0J";
+  startCustomTerminal(user,10);
+}
+
+void cleanScreen(std::array<int,3> backColor){
+  system("clear");
+  printColor("\u001b[2J",{0,0,0},backColor);
+  moveCursor(0,0);
+}
+void cleanScreen(){
+  system("clear");
+  std::cout << "\u001b[0m\u001b[2J";
 }
 
 void moveCursor(int posX, int posY){
@@ -117,9 +129,9 @@ void moveCursor(int posX, int posY){
 }
 
 std::vector<std::string> newCommand(User & user, std::string currentSensor){
-  std::cout << user.getName() << "@jveh"<< ":~";
+  printColor(user.getName() + "@jveh" + ":~",*user.getConfiguration()->getFontColor(),*user.getConfiguration()->getBackgroundColor());
   if (currentSensor.compare("..") != 0) std::cout << "/" << currentSensor;
-  std::cout << "> ";
+  printColor("> ",*user.getConfiguration()->getFontColor(),*user.getConfiguration()->getBackgroundColor());
 
   char input[100] = {0};
   std::cin.getline(input,100);
@@ -202,7 +214,7 @@ void printGraphic(const std::vector<int> data, std::array<int,3> frontColor, std
     for (int value = 0; value < scale * valPerY; value++) {
       pointY += posY + (maxY - data[point + value]) / (axisYvalue / stepY);
     }
-    moveCursor(startX + (rangeX - (data.size()/scale)) + point / (scale * valPerY), pointY / (scale * valPerY));
+    moveCursor(startX + (rangeX - (data.size()/(scale * valPerY))) + point / (scale * valPerY), pointY / (scale * valPerY));
     printColor("·",pointColor,backColor) ;
   }
   

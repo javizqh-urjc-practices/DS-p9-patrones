@@ -1,25 +1,25 @@
 <map id="include/Interface.h" name="include/Interface.h">
-<area shape="rect" id="node1" title="Header file of Interface.cpp." alt="" coords="629,5,772,32"/>
-<area shape="rect" id="node2" href="$LoginInterface_8h.html" title="Header file of LoginInterface.cpp." alt="" coords="385,80,512,107"/>
-<area shape="rect" id="node4" href="$Admin_8h.html" title="Header file of Admin.cpp." alt="" coords="747,229,823,256"/>
-<area shape="rect" id="node18" href="$Dashboard_8h.html" title="Header file of Dashboard.cpp." alt="" coords="649,80,753,107"/>
-<area shape="rect" id="node3" href="$Database_8h.html" title="Header file of Database.cpp." alt="" coords="282,155,378,181"/>
-<area shape="rect" id="node13" title=" " alt="" coords="227,229,270,256"/>
-<area shape="rect" id="node14" title=" " alt="" coords="5,304,79,331"/>
-<area shape="rect" id="node15" title=" " alt="" coords="103,304,183,331"/>
-<area shape="rect" id="node16" title=" " alt="" coords="295,229,365,256"/>
-<area shape="rect" id="node17" title=" " alt="" coords="517,304,607,331"/>
-<area shape="rect" id="node5" href="$User_8h.html" title="Header file of User.cpp." alt="" coords="753,304,817,331"/>
-<area shape="rect" id="node6" title=" " alt="" coords="770,453,829,480"/>
-<area shape="rect" id="node7" title=" " alt="" coords="467,379,529,405"/>
-<area shape="rect" id="node8" title=" " alt="" coords="837,379,903,405"/>
-<area shape="rect" id="node9" title=" " alt="" coords="927,379,986,405"/>
-<area shape="rect" id="node10" title=" " alt="" coords="685,379,761,405"/>
-<area shape="rect" id="node11" href="$UserConfig_8h.html" title="Header file of UserConfig.cpp." alt="" coords="554,379,661,405"/>
-<area shape="rect" id="node12" title=" " alt="" coords="490,453,546,480"/>
-<area shape="rect" id="node19" href="$MenuBar_8h.html" title="Header file of MenuBar.cpp." alt="" coords="835,155,927,181"/>
-<area shape="rect" id="node20" href="$Menu_8h.html" title="Header file of Menu.cpp." alt="" coords="587,155,657,181"/>
-<area shape="rect" id="node21" href="$Sensor_8h.html" title="Header file of Sensor.cpp." alt="" coords="389,229,468,256"/>
-<area shape="rect" id="node22" title=" " alt="" coords="207,304,293,331"/>
-<area shape="rect" id="node23" title=" " alt="" coords="317,304,391,331"/>
+<area shape="rect" id="node1" title="Header file of Interface.cpp." alt="" coords="178,5,321,32"/>
+<area shape="rect" id="node2" href="$LoginInterface_8h.html" title="Header file of LoginInterface.cpp." alt="" coords="396,80,522,107"/>
+<area shape="rect" id="node4" href="$Admin_8h.html" title="Header file of Admin.cpp." alt="" coords="121,229,197,256"/>
+<area shape="rect" id="node18" href="$Dashboard_8h.html" title="Header file of Dashboard.cpp." alt="" coords="198,80,302,107"/>
+<area shape="rect" id="node3" href="$Database_8h.html" title="Header file of Database.cpp." alt="" coords="470,155,566,181"/>
+<area shape="rect" id="node13" title=" " alt="" coords="496,229,539,256"/>
+<area shape="rect" id="node14" title=" " alt="" coords="636,304,709,331"/>
+<area shape="rect" id="node15" title=" " alt="" coords="734,304,814,331"/>
+<area shape="rect" id="node16" title=" " alt="" coords="564,229,634,256"/>
+<area shape="rect" id="node17" title=" " alt="" coords="211,304,302,331"/>
+<area shape="rect" id="node5" href="$User_8h.html" title="Header file of User.cpp." alt="" coords="123,304,187,331"/>
+<area shape="rect" id="node6" title=" " alt="" coords="202,453,260,480"/>
+<area shape="rect" id="node7" title=" " alt="" coords="494,379,557,405"/>
+<area shape="rect" id="node8" title=" " alt="" coords="399,379,466,405"/>
+<area shape="rect" id="node9" title=" " alt="" coords="34,379,92,405"/>
+<area shape="rect" id="node10" title=" " alt="" coords="117,379,193,405"/>
+<area shape="rect" id="node11" href="$UserConfig_8h.html" title="Header file of UserConfig.cpp." alt="" coords="268,379,375,405"/>
+<area shape="rect" id="node12" title=" " alt="" coords="431,453,487,480"/>
+<area shape="rect" id="node19" href="$MenuBar_8h.html" title="Header file of MenuBar.cpp." alt="" coords="94,155,186,181"/>
+<area shape="rect" id="node20" href="$Menu_8h.html" title="Header file of Menu.cpp." alt="" coords="313,155,384,181"/>
+<area shape="rect" id="node21" href="$Sensor_8h.html" title="Header file of Sensor.cpp." alt="" coords="393,229,472,256"/>
+<area shape="rect" id="node22" title=" " alt="" coords="326,304,411,331"/>
+<area shape="rect" id="node23" title=" " alt="" coords="435,304,510,331"/>
 </map>

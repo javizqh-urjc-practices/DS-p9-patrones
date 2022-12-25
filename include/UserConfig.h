@@ -19,17 +19,18 @@ class UserConfig{
   public:
     UserConfig(std::string language = "ENG", std::array<int,3> backgroundColor = {0,0,0}, std::array<int,3> fontColor = {255,255,255} , std::array<int,3> graphicColor = {255,0,0});
 
+    // TODO: add language support
     std::string getlanguage() const { return language; };
     void setLanguage(std::string newLanguage);
 
     std::array<int,3> * getBackgroundColor(){ return &backgroundColor; };
-    void setBackgroundColor(std::array<int,3> newBackgroundColor){ backgroundColor = newBackgroundColor;};
+    void setBackgroundColor(std::array<int,3> newBackgroundColor);
 
     std::array<int,3> * getFontColor(){ return &fontColor;};
-    void setFontColor(std::array<int,3> newFontColor){ fontColor = newFontColor;};
+    void setFontColor(std::array<int,3> newFontColor);
 
     std::array<int,3> * getGraphicColor(){ return &graphicColor;};
-    void setGraphicColor(std::array<int,3> newGraphicColor){ graphicColor = newGraphicColor;};
+    void setGraphicColor(std::array<int,3> newGraphicColor);
 
     ~UserConfig();
   private:

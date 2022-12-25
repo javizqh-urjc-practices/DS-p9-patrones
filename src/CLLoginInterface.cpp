@@ -14,7 +14,8 @@ CLLoginInterface::CLLoginInterface(){}
 
 void CLLoginInterface::showWelcomeMessage(){
   std::cout << "\u001b[0m"; // No color
-  system("clear");
+  // TODO: placeholders for global configuration
+  cleanScreen({0,0,0});
   std::cout << "\u001b[2J\u001b[0;0H";
   printCenterFromFile("config/CLIWelcomeMessage.ascii", {0,255,0},{0,0,0});
   std::cout << "\n\n\n";

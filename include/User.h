@@ -77,6 +77,10 @@ public:
   void setEmployeeNumber(std::string);
 
   void setConfig(UserConfig newConfig) {userConfiguration = newConfig;};
+  void setLanguage(std::string newLanguage){ userConfiguration.setLanguage(newLanguage);};
+  void setFontColor(std::array<int,3> newFontColor){ userConfiguration.setFontColor(newFontColor);};
+  void setBackgroundColor(std::array<int,3> newBackgroundColor){ userConfiguration.setBackgroundColor(newBackgroundColor);};
+  void setGraphicColor(std::array<int,3> newGraphicColor){ userConfiguration.setGraphicColor(newGraphicColor);};
   UserConfig* getConfiguration(){ return &userConfiguration;};
   
 protected:

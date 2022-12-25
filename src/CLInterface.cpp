@@ -33,7 +33,7 @@ void CLInterface::login(int tries){
     std::cout << "\n";
     usleep(1 * 1000000);
     printColor("",*user->getConfiguration()->getFontColor(),*user->getConfiguration()->getBackgroundColor());
-    system("clear");
+    cleanScreen(*user->getConfiguration()->getBackgroundColor());
     tries = 0;
   } catch (std::exception &e) {
     printCenter("Failed login\n", {255,0,0},{0,0,0});

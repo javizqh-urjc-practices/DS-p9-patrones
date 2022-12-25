@@ -5,7 +5,7 @@
   \item {addTimestamp}
     \subitem {User}, \hyperpage{47}
   \item {addToMainMenu}
-    \subitem {Dashboard}, \hyperpage{26}
+    \subitem {Dashboard}, \hyperpage{26, 27}
   \item {Admin}, \hyperpage{7}
     \subitem {Admin}, \hyperpage{8}
   \item {AirQuality}, \hyperpage{8}
@@ -22,15 +22,15 @@
   \item {CameraRGB}, \hyperpage{11}
     \subitem {CameraRGB}, \hyperpage{12}
   \item {canExit}
-    \subitem {Dashboard}, \hyperpage{26}
+    \subitem {Dashboard}, \hyperpage{27}
   \item {changeCurrentSensorInfo}
     \subitem {Dashboard}, \hyperpage{27}
   \item {changeInterface}
-    \subitem {Dashboard}, \hyperpage{27}
+    \subitem {Dashboard}, \hyperpage{28}
   \item {changeMainMenu}
     \subitem {CLDashboard}, \hyperpage{14}
   \item {checkUser}
-    \subitem {LoginInterface}, \hyperpage{35}
+    \subitem {LoginInterface}, \hyperpage{36}
   \item {CLDashboard}, \hyperpage{12}
     \subitem {changeMainMenu}, \hyperpage{14}
     \subitem {CLDashboard}, \hyperpage{14}
@@ -60,31 +60,31 @@
   \item {CLMenu}, \hyperpage{20}
     \subitem {clearMenu}, \hyperpage{21}
     \subitem {show}, \hyperpage{21, 22}
-  \item {CLMenuBar}, \hyperpage{22}
-    \subitem {show}, \hyperpage{23}
+  \item {CLMenuBar}, \hyperpage{23}
+    \subitem {show}, \hyperpage{24}
   \item {Create}
-    \subitem {Dashboard}, \hyperpage{27}
+    \subitem {Dashboard}, \hyperpage{28}
     \subitem {Interface}, \hyperpage{33}
     \subitem {LoginInterface}, \hyperpage{36}
     \subitem {Menu}, \hyperpage{37}
-    \subitem {MenuBar}, \hyperpage{38}
+    \subitem {MenuBar}, \hyperpage{39}
     \subitem {Sensor}, \hyperpage{43}
 
   \indexspace
 
   \item {Dashboard}, \hyperpage{24}
     \subitem {addNewSensor}, \hyperpage{26}
-    \subitem {addToMainMenu}, \hyperpage{26}
-    \subitem {canExit}, \hyperpage{26}
+    \subitem {addToMainMenu}, \hyperpage{26, 27}
+    \subitem {canExit}, \hyperpage{27}
     \subitem {changeCurrentSensorInfo}, \hyperpage{27}
-    \subitem {changeInterface}, \hyperpage{27}
-    \subitem {Create}, \hyperpage{27}
+    \subitem {changeInterface}, \hyperpage{28}
+    \subitem {Create}, \hyperpage{28}
     \subitem {deleteSensor}, \hyperpage{28}
-    \subitem {exit}, \hyperpage{28}
-    \subitem {getNewUsers}, \hyperpage{28}
+    \subitem {exit}, \hyperpage{29}
+    \subitem {getNewUsers}, \hyperpage{29}
     \subitem {logout}, \hyperpage{29}
     \subitem {moveWindowMainMenu}, \hyperpage{29}
-  \item {Database}, \hyperpage{29}
+  \item {Database}, \hyperpage{30}
     \subitem {getUser}, \hyperpage{30}
   \item {deleteSensor}
     \subitem {Dashboard}, \hyperpage{28}
@@ -94,26 +94,26 @@
   \item {errorCommand}
     \subitem {CLDashboard}, \hyperpage{14}
   \item {exit}
-    \subitem {Dashboard}, \hyperpage{28}
+    \subitem {Dashboard}, \hyperpage{29}
 
   \indexspace
 
   \item {getName}
     \subitem {User}, \hyperpage{47}
   \item {getNewUsers}
-    \subitem {Dashboard}, \hyperpage{28}
+    \subitem {Dashboard}, \hyperpage{29}
   \item {getTimestamp}
-    \subitem {User}, \hyperpage{47}
+    \subitem {User}, \hyperpage{48}
   \item {getUser}
     \subitem {Database}, \hyperpage{30}
 
   \indexspace
 
   \item {hasAdminPermission}
-    \subitem {User}, \hyperpage{47}
+    \subitem {User}, \hyperpage{48}
   \item {helpCommand}
     \subitem {CLDashboard}, \hyperpage{14}
-  \item {Humidity}, \hyperpage{30}
+  \item {Humidity}, \hyperpage{31}
     \subitem {Humidity}, \hyperpage{31}
 
   \indexspace
@@ -145,7 +145,7 @@
   \item {Interface}, \hyperpage{32}
     \subitem {Create}, \hyperpage{33}
     \subitem {loadMenu}, \hyperpage{33}
-    \subitem {login}, \hyperpage{33, 34}
+    \subitem {login}, \hyperpage{34}
 
   \indexspace
 
@@ -155,21 +155,21 @@
     \subitem {Interface}, \hyperpage{33}
   \item {login}
     \subitem {CLInterface}, \hyperpage{17}
-    \subitem {Interface}, \hyperpage{33, 34}
-  \item {LoginInterface}, \hyperpage{34}
-    \subitem {checkUser}, \hyperpage{35}
+    \subitem {Interface}, \hyperpage{34}
+  \item {LoginInterface}, \hyperpage{35}
+    \subitem {checkUser}, \hyperpage{36}
     \subitem {Create}, \hyperpage{36}
   \item {logout}
     \subitem {Dashboard}, \hyperpage{29}
 
   \indexspace
 
-  \item {Menu}, \hyperpage{36}
+  \item {Menu}, \hyperpage{37}
     \subitem {Create}, \hyperpage{37}
-  \item {MenuBar}, \hyperpage{37}
-    \subitem {Create}, \hyperpage{38}
+  \item {MenuBar}, \hyperpage{38}
+    \subitem {Create}, \hyperpage{39}
     \subitem {setCurrentMenu}, \hyperpage{39}
-  \item {Moisture}, \hyperpage{39}
+  \item {Moisture}, \hyperpage{40}
     \subitem {Moisture}, \hyperpage{40}
   \item {moveWindowMainMenu}
     \subitem {Dashboard}, \hyperpage{29}
@@ -197,14 +197,14 @@
   \item {readCommand}
     \subitem {CLDashboard}, \hyperpage{15}
   \item {requestData}
-    \subitem {Sensor}, \hyperpage{43}
+    \subitem {Sensor}, \hyperpage{44}
 
   \indexspace
 
-  \item {Sensor}, \hyperpage{41}
+  \item {Sensor}, \hyperpage{42}
     \subitem {Create}, \hyperpage{43}
-    \subitem {requestData}, \hyperpage{43}
-    \subitem {Sensor}, \hyperpage{42}
+    \subitem {requestData}, \hyperpage{44}
+    \subitem {Sensor}, \hyperpage{43}
   \item {setCurrentMenu}
     \subitem {MenuBar}, \hyperpage{39}
   \item {setEmployeeNumber}
@@ -213,7 +213,7 @@
     \subitem {User}, \hyperpage{49}
   \item {show}
     \subitem {CLMenu}, \hyperpage{21, 22}
-    \subitem {CLMenuBar}, \hyperpage{23}
+    \subitem {CLMenuBar}, \hyperpage{24}
   \item {showMainMenu}
     \subitem {CLDashboard}, \hyperpage{15}
   \item {showWelcomeMessage}
@@ -245,18 +245,18 @@
   \indexspace
 
   \item {Thermometer}, \hyperpage{44}
-    \subitem {Thermometer}, \hyperpage{44}
+    \subitem {Thermometer}, \hyperpage{45}
 
   \indexspace
 
   \item {User}, \hyperpage{45}
     \subitem {addTimestamp}, \hyperpage{47}
     \subitem {getName}, \hyperpage{47}
-    \subitem {getTimestamp}, \hyperpage{47}
-    \subitem {hasAdminPermission}, \hyperpage{47}
+    \subitem {getTimestamp}, \hyperpage{48}
+    \subitem {hasAdminPermission}, \hyperpage{48}
     \subitem {setEmployeeNumber}, \hyperpage{48}
     \subitem {setNIF}, \hyperpage{49}
-    \subitem {User}, \hyperpage{46}
+    \subitem {User}, \hyperpage{47}
   \item {UserConfig}, \hyperpage{49}
 
 \end{theindex}

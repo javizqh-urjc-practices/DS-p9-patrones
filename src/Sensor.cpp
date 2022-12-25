@@ -131,37 +131,37 @@ std::vector<int> Sensor::requestData(){
     std::cout << "Couldn't open file\n";
   }
   dataFile.close();
-  // 3º remove old excess data and add new data
-  // 3.1 Create new data
-  int valueRange;
-  if (data.size() > 0){
-    int maxVal = * max_element(data.begin(), data.end());
-    if (maxVal == 0) maxVal = 10;
-    int minVal = * min_element(data.begin(), data.end());
-    if (minVal == 0) minVal = -10;
-    valueRange = maxVal - minVal;
-    if (valueRange == 0) valueRange = maxVal;
-  } else {
-    valueRange = 100;
-  }
-  int newVal = rand() % valueRange;
-  data.push_back(newVal);
-  // 3.2 Remove excess data
-  int length = data.size();
-  int dataToRemove = length - 60 * valPerMin;
-  if (dataToRemove > 0){
-    data.erase (data.begin(),data.begin()+dataToRemove);
-  } 
-  // 4º store data again in server file
-  std::ofstream outDataFile ("server/sensor/"+getId()+"/data.csv", std::ios::out); // open file
+  // 3º remove old excess data and add new data only if sensor is on
+  if (active){
+    // 3.1 Create new data
+    int valueRange;
+    if (data.size() > 0){
+      int maxVal = * max_element(data.begin(), data.end());
+      int minVal = * min_element(data.begin(), data.end());
+      if (maxVal == 0) maxVal = 10;
+      if (minVal == 0) minVal = -10;
+      valueRange = maxVal - minVal;
+      if (valueRange == 0) valueRange = maxVal;
+    } else {
+      valueRange = 100;
+    }
+    int newVal = rand() % valueRange;
+    data.push_back(newVal);
 
-  if (!outDataFile) { // file couldn't be opened
-    std::cerr << "File could not be opened" << std::endl;
-    exit (1);
-  }
+    // 3.2 Remove excess data
+    int length = data.size();
+    int dataToRemove = length - 60 * valPerMin;
+    if (dataToRemove > 0) data.erase (data.begin(),data.begin()+dataToRemove);
 
-  for (int &value : data){
-    outDataFile << value << ",";
+    // 4º store data again in server file
+    std::ofstream outDataFile ("server/sensor/"+getId()+"/data.csv", std::ios::out); // open file
+
+    if (!outDataFile) { // file couldn't be opened
+      std::cerr << "File could not be opened" << std::endl;
+      exit (1);
+    }
+
+    for (int &value : data) outDataFile << value << ",";
   }
   
   return data;
