@@ -1,20 +1,21 @@
 <map id="src/Database.cpp" name="src/Database.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="473,5,608,32"/>
-<area shape="rect" id="node2" href="$Database_8h.html" title="Header file of Database.cpp." alt="" coords="409,80,505,107"/>
-<area shape="rect" id="node17" href="$NotFoundUserException_8h.html" title="Exception thrown when user not found in database." alt="" coords="604,80,795,107"/>
-<area shape="rect" id="node3" href="$Admin_8h.html" title="Header file of Admin.cpp." alt="" coords="151,155,227,181"/>
-<area shape="rect" id="node12" title=" " alt="" coords="251,155,294,181"/>
-<area shape="rect" id="node13" title=" " alt="" coords="319,155,392,181"/>
-<area shape="rect" id="node14" title=" " alt="" coords="417,155,497,181"/>
-<area shape="rect" id="node15" title=" " alt="" coords="521,155,592,181"/>
-<area shape="rect" id="node16" title=" " alt="" coords="617,155,707,181"/>
-<area shape="rect" id="node4" href="$User_8h.html" title="Header file of User.cpp." alt="" coords="157,229,221,256"/>
-<area shape="rect" id="node5" title=" " alt="" coords="145,379,203,405"/>
-<area shape="rect" id="node6" title=" " alt="" coords="25,304,88,331"/>
-<area shape="rect" id="node7" title=" " alt="" coords="113,304,179,331"/>
-<area shape="rect" id="node8" title=" " alt="" coords="203,304,262,331"/>
-<area shape="rect" id="node9" title=" " alt="" coords="287,304,363,331"/>
-<area shape="rect" id="node10" href="$UserConfig_8h.html" title="Header file of UserConfig.cpp." alt="" coords="387,304,494,331"/>
-<area shape="rect" id="node11" title=" " alt="" coords="413,379,469,405"/>
-<area shape="rect" id="node18" title=" " alt="" coords="732,155,819,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="693,5,828,32"/>
+<area shape="rect" id="node2" href="$Database_8h.html" title="Header file of Database.cpp." alt="" coords="629,80,725,107"/>
+<area shape="rect" id="node18" href="$NotFoundUserException_8h.html" title="Exception thrown when user not found in database." alt="" coords="817,80,1008,107"/>
+<area shape="rect" id="node3" href="$Admin_8h.html" title="Header file of Admin.cpp." alt="" coords="311,155,387,181"/>
+<area shape="rect" id="node13" title=" " alt="" coords="490,453,581,480"/>
+<area shape="rect" id="node14" title=" " alt="" coords="573,155,615,181"/>
+<area shape="rect" id="node15" title=" " alt="" coords="640,155,713,181"/>
+<area shape="rect" id="node16" title=" " alt="" coords="738,155,818,181"/>
+<area shape="rect" id="node17" title=" " alt="" coords="843,155,913,181"/>
+<area shape="rect" id="node4" href="$User_8h.html" title="Header file of User.cpp." alt="" coords="205,229,269,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="145,453,203,480"/>
+<area shape="rect" id="node6" title=" " alt="" coords="29,304,92,331"/>
+<area shape="rect" id="node7" title=" " alt="" coords="117,304,183,331"/>
+<area shape="rect" id="node8" title=" " alt="" coords="207,304,266,331"/>
+<area shape="rect" id="node9" title=" " alt="" coords="291,304,367,331"/>
+<area shape="rect" id="node10" href="$UserConfig_8h.html" title="Header file of UserConfig.cpp." alt="" coords="391,304,498,331"/>
+<area shape="rect" id="node11" href="$Config_8h.html" title=" " alt="" coords="403,379,479,405"/>
+<area shape="rect" id="node12" title=" " alt="" coords="410,453,466,480"/>
+<area shape="rect" id="node19" title=" " alt="" coords="937,155,1024,181"/>
 </map>

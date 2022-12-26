@@ -1,4 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classUser.html" title=" " alt="" coords="5,5,57,32"/>
-<area shape="rect" id="node2" href="$classAdmin.html" title=" " alt="" coords="105,5,169,32"/>
+<area shape="rect" id="node1" href="$classSensor.html" title=" " alt="" coords="5,132,72,159"/>
+<area shape="rect" id="node2" href="$classAirQuality.html" title=" " alt="" coords="132,5,219,32"/>
+<area shape="rect" id="node3" href="$classCameraBW.html" title=" " alt="" coords="128,56,223,83"/>
+<area shape="rect" id="node4" href="$classCameraRGB.html" title=" " alt="" coords="125,107,226,133"/>
+<area shape="rect" id="node5" href="$classHumidity.html" title=" " alt="" coords="134,157,217,184"/>
+<area shape="rect" id="node6" href="$classMoisture.html" title=" " alt="" coords="136,208,215,235"/>
+<area shape="rect" id="node7" href="$classThermometer.html" title=" " alt="" coords="120,259,231,285"/>
 </map>

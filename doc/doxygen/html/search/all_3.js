@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['errorcommand_50',['errorCommand',['../classCLDashboard.html#a60e24b6a5f5c0f944f87459900c2c911',1,'CLDashboard']]],
-  ['exit_51',['exit',['../classDashboard.html#a783ee7cdf51ebbce302d50d2d38dd3eb',1,'Dashboard']]]
+  ['errorcommand_53',['errorCommand',['../classCLDashboard.html#a60e24b6a5f5c0f944f87459900c2c911',1,'CLDashboard']]],
+  ['exit_54',['exit',['../classDashboard.html#a783ee7cdf51ebbce302d50d2d38dd3eb',1,'Dashboard']]]
 ];

@@ -29,7 +29,13 @@ int getTerminalHeight();
  * @param frontColor 
  * @param backColor 
  */
-void printCenterFromFile(const std::string fileName, std::array<int,3> frontColor, std::array<int,3> backColor);
+void printCenterFromFile(const std::string fileName, std::array<int,3> frontColor, std::array<int,3> backColor, const int padding = 0 );
+void printRightFromFile(const std::string fileName, std::array<int,3> frontColor, std::array<int,3> backColor, const int padding = 0 );
+void printLeftFromFile(const std::string fileName, std::array<int,3> frontColor, std::array<int,3> backColor, const int padding = 0 );
+
+void printLogo(const std::string fileName, std::array<int,3> frontColor, std::array<int,3> backColor);
+
+void printColorFromFile(const std::string fileName, std::array<int,3> frontColor, std::array<int,3> backColor);
 /**
  * @brief Print the string in the center
  * 
@@ -59,6 +65,9 @@ void clearCustomTerminal(User & user,int);
 
 void cleanScreen(std::array<int,3> backColor);
 void cleanScreen();
+void newLine(int lines = 1);
+void reloadCursorPos();
+void saveCursorPos();
 
 void moveCursor(int posX, int posY);
 void printGraphic(const std::vector<int> data, std::array<int,3> frontColor, std::array<int,3> backColor, std::array<int,3> pointColor

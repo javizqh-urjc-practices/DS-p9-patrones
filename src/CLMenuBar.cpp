@@ -14,10 +14,11 @@ CLMenuBar::CLMenuBar(){}
 
 void CLMenuBar::show(){
   moveCursor(0,0);
-  printLeft("User: " + this->user.getName(),*this->user.getConfiguration()->getFontColor(),*this->user.getConfiguration()->getBackgroundColor());
+  printLeftFromFile("config/LANG/" + this->user.getConfiguration()->getLanguage() + "/user/userDisplay.txt", *this->user.getConfiguration()->getFontColor(),*this->user.getConfiguration()->getBackgroundColor());
+  printColor(this->user.getName(),*this->user.getConfiguration()->getFontColor(),*this->user.getConfiguration()->getBackgroundColor());
   printCenter(this->currentMenu,*this->user.getConfiguration()->getFontColor(),*this->user.getConfiguration()->getBackgroundColor());
-  printRight("Exit (exit) ",*this->user.getConfiguration()->getFontColor(),*this->user.getConfiguration()->getBackgroundColor());
-  std::cout << "\n";
-  std::cout << "\u001b[u"; // Reload cursor pos
+  printRightFromFile("config/LANG/" + this->user.getConfiguration()->getLanguage() + "/exitTag.txt", *this->user.getConfiguration()->getFontColor(),*this->user.getConfiguration()->getBackgroundColor());
+  newLine();
+  reloadCursorPos(); // Reload cursor pos
 }
 

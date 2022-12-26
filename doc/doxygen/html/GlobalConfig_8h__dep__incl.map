@@ -1,0 +1,14 @@
+<map id="include/GlobalConfig.h" name="include/GlobalConfig.h">
+<area shape="rect" id="node1" title=" " alt="" coords="115,5,284,32"/>
+<area shape="rect" id="node2" href="$GlobalConfig_8cpp.html" title=" " alt="" coords="5,80,161,107"/>
+<area shape="rect" id="node3" href="$LoginInterface_8h.html" title="Header file of LoginInterface.cpp." alt="" coords="355,80,534,107"/>
+<area shape="rect" id="node9" href="$main_8h.html" title="Header file of main.cpp." alt="" coords="95,229,213,256"/>
+<area shape="rect" id="node4" href="$LoginInterface_8cpp.html" title=" " alt="" coords="678,229,843,256"/>
+<area shape="rect" id="node5" href="$Interface_8h.html" title="Header file of Interface.cpp." alt="" coords="245,155,388,181"/>
+<area shape="rect" id="node11" href="$CLLoginInterface_8h.html" title="Header file of CLLoginInterface.cpp." alt="" coords="466,155,661,181"/>
+<area shape="rect" id="node6" href="$Interface_8cpp.html" title=" " alt="" coords="209,304,339,331"/>
+<area shape="rect" id="node7" href="$CLInterface_8h.html" title="Header file of CLInterface.cpp." alt="" coords="289,229,448,256"/>
+<area shape="rect" id="node8" href="$CLInterface_8cpp.html" title=" " alt="" coords="363,304,510,331"/>
+<area shape="rect" id="node10" href="$main_8cpp.html" title=" " alt="" coords="80,304,185,331"/>
+<area shape="rect" id="node12" href="$CLLoginInterface_8cpp.html" title=" " alt="" coords="473,229,654,256"/>
+</map>

@@ -1,0 +1,1 @@
+- Color del fondo (r,g,b): 

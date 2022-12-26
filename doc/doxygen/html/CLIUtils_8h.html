@@ -85,19 +85,21 @@ Include dependency graph for CLIUtils.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="CLIUtils_8h__incl.png" border="0" usemap="#include_2CLIUtils_8h" alt=""/></div>
 <map name="include_2CLIUtils_8h" id="include_2CLIUtils_8h">
-<area shape="rect" title="Header file of CLIUtils.cpp." alt="" coords="597,5,731,32"/>
-<area shape="rect" href="User_8h.html" title="Header file of User.cpp." alt="" coords="203,80,267,107"/>
-<area shape="rect" title=" " alt="" coords="460,229,516,256"/>
-<area shape="rect" title=" " alt="" coords="571,80,651,107"/>
-<area shape="rect" title=" " alt="" coords="675,80,760,107"/>
-<area shape="rect" title=" " alt="" coords="784,80,859,107"/>
-<area shape="rect" title=" " alt="" coords="883,80,957,107"/>
-<area shape="rect" title=" " alt="" coords="192,229,251,256"/>
-<area shape="rect" title=" " alt="" coords="27,155,90,181"/>
-<area shape="rect" title=" " alt="" coords="115,155,181,181"/>
-<area shape="rect" title=" " alt="" coords="205,155,264,181"/>
-<area shape="rect" title=" " alt="" coords="289,155,365,181"/>
-<area shape="rect" href="UserConfig_8h.html" title="Header file of UserConfig.cpp." alt="" coords="389,155,496,181"/>
+<area shape="rect" title="Header file of CLIUtils.cpp." alt="" coords="599,5,733,32"/>
+<area shape="rect" href="User_8h.html" title="Header file of User.cpp." alt="" coords="205,80,269,107"/>
+<area shape="rect" title=" " alt="" coords="507,304,563,331"/>
+<area shape="rect" title=" " alt="" coords="573,80,653,107"/>
+<area shape="rect" title=" " alt="" coords="677,80,762,107"/>
+<area shape="rect" title=" " alt="" coords="786,80,861,107"/>
+<area shape="rect" title=" " alt="" coords="885,80,959,107"/>
+<area shape="rect" title=" " alt="" coords="137,304,195,331"/>
+<area shape="rect" title=" " alt="" coords="29,155,92,181"/>
+<area shape="rect" title=" " alt="" coords="117,155,183,181"/>
+<area shape="rect" title=" " alt="" coords="207,155,266,181"/>
+<area shape="rect" title=" " alt="" coords="291,155,367,181"/>
+<area shape="rect" href="UserConfig_8h.html" title="Header file of UserConfig.cpp." alt="" coords="391,155,498,181"/>
+<area shape="rect" href="Config_8h.html" title=" " alt="" coords="403,229,479,256"/>
+<area shape="rect" title=" " alt="" coords="393,304,483,331"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -138,9 +140,21 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getTerminalWidth</b> (
 <tr class="memitem:a5501eb77221bd7401ce720fc4166a708"><td class="memItemLeft" align="right" valign="top"><a id="a5501eb77221bd7401ce720fc4166a708"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>getTerminalHeight</b> ()</td></tr>
 <tr class="separator:a5501eb77221bd7401ce720fc4166a708"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9401d6a108b239ee22fe994e84903627"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIUtils_8h.html#a9401d6a108b239ee22fe994e84903627">printCenterFromFile</a> (const std::string fileName, std::array&lt; int, 3 &gt; frontColor, std::array&lt; int, 3 &gt; backColor)</td></tr>
-<tr class="memdesc:a9401d6a108b239ee22fe994e84903627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the contents of the file in the center.  <a href="CLIUtils_8h.html#a9401d6a108b239ee22fe994e84903627">More...</a><br /></td></tr>
-<tr class="separator:a9401d6a108b239ee22fe994e84903627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa273cd2c4b4b755a261f4c32f37f3ba0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIUtils_8h.html#aa273cd2c4b4b755a261f4c32f37f3ba0">printCenterFromFile</a> (const std::string fileName, std::array&lt; int, 3 &gt; frontColor, std::array&lt; int, 3 &gt; backColor, const int padding=0)</td></tr>
+<tr class="memdesc:aa273cd2c4b4b755a261f4c32f37f3ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the contents of the file in the center.  <a href="CLIUtils_8h.html#aa273cd2c4b4b755a261f4c32f37f3ba0">More...</a><br /></td></tr>
+<tr class="separator:aa273cd2c4b4b755a261f4c32f37f3ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e89c47352a6899c8eb887ffdd5a08a1"><td class="memItemLeft" align="right" valign="top"><a id="a2e89c47352a6899c8eb887ffdd5a08a1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>printRightFromFile</b> (const std::string fileName, std::array&lt; int, 3 &gt; frontColor, std::array&lt; int, 3 &gt; backColor, const int padding=0)</td></tr>
+<tr class="separator:a2e89c47352a6899c8eb887ffdd5a08a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2666250d5db277c8a8728fbe450c1119"><td class="memItemLeft" align="right" valign="top"><a id="a2666250d5db277c8a8728fbe450c1119"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>printLeftFromFile</b> (const std::string fileName, std::array&lt; int, 3 &gt; frontColor, std::array&lt; int, 3 &gt; backColor, const int padding=0)</td></tr>
+<tr class="separator:a2666250d5db277c8a8728fbe450c1119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad60d526d9e4d9868fc0776409a10e167"><td class="memItemLeft" align="right" valign="top"><a id="ad60d526d9e4d9868fc0776409a10e167"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>printLogo</b> (const std::string fileName, std::array&lt; int, 3 &gt; frontColor, std::array&lt; int, 3 &gt; backColor)</td></tr>
+<tr class="separator:ad60d526d9e4d9868fc0776409a10e167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d97d1e4fc43422b34a6ce3efca82c07"><td class="memItemLeft" align="right" valign="top"><a id="a4d97d1e4fc43422b34a6ce3efca82c07"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>printColorFromFile</b> (const std::string fileName, std::array&lt; int, 3 &gt; frontColor, std::array&lt; int, 3 &gt; backColor)</td></tr>
+<tr class="separator:a4d97d1e4fc43422b34a6ce3efca82c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab7fae4e4e79d368ccf9bbdb7d5e3679"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIUtils_8h.html#aab7fae4e4e79d368ccf9bbdb7d5e3679">printCenter</a> (const std::string toPrint, std::array&lt; int, 3 &gt; frontColor, std::array&lt; int, 3 &gt; backColor, const int padding=0)</td></tr>
 <tr class="memdesc:aab7fae4e4e79d368ccf9bbdb7d5e3679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the string in the center.  <a href="CLIUtils_8h.html#aab7fae4e4e79d368ccf9bbdb7d5e3679">More...</a><br /></td></tr>
 <tr class="separator:aab7fae4e4e79d368ccf9bbdb7d5e3679"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,6 +182,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>cleanScreen</b> (std:
 <tr class="memitem:a79fd6c1e1239d1f44ed8cc6a3f9bbbe1"><td class="memItemLeft" align="right" valign="top"><a id="a79fd6c1e1239d1f44ed8cc6a3f9bbbe1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>cleanScreen</b> ()</td></tr>
 <tr class="separator:a79fd6c1e1239d1f44ed8cc6a3f9bbbe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6efb1865f033c5b0f8520dec0598963a"><td class="memItemLeft" align="right" valign="top"><a id="a6efb1865f033c5b0f8520dec0598963a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>newLine</b> (int lines=1)</td></tr>
+<tr class="separator:a6efb1865f033c5b0f8520dec0598963a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d2e8ae782c1f07df4c5099a71578af"><td class="memItemLeft" align="right" valign="top"><a id="ae8d2e8ae782c1f07df4c5099a71578af"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reloadCursorPos</b> ()</td></tr>
+<tr class="separator:ae8d2e8ae782c1f07df4c5099a71578af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c3a2cf03e7e4a6a14c321b54ef645a9"><td class="memItemLeft" align="right" valign="top"><a id="a1c3a2cf03e7e4a6a14c321b54ef645a9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>saveCursorPos</b> ()</td></tr>
+<tr class="separator:a1c3a2cf03e7e4a6a14c321b54ef645a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6f5bf84271fcfbeda2cebed35e548bb"><td class="memItemLeft" align="right" valign="top"><a id="ad6f5bf84271fcfbeda2cebed35e548bb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>moveCursor</b> (int posX, int posY)</td></tr>
 <tr class="separator:ad6f5bf84271fcfbeda2cebed35e548bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -233,8 +256,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>printGraphic</b> (con
 
 </div>
 </div>
-<a id="a9401d6a108b239ee22fe994e84903627"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9401d6a108b239ee22fe994e84903627">&#9670;&nbsp;</a></span>printCenterFromFile()</h2>
+<a id="aa273cd2c4b4b755a261f4c32f37f3ba0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa273cd2c4b4b755a261f4c32f37f3ba0">&#9670;&nbsp;</a></span>printCenterFromFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -255,7 +278,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>printGraphic</b> (con
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::array&lt; int, 3 &gt;&#160;</td>
-          <td class="paramname"><em>backColor</em>&#160;</td>
+          <td class="paramname"><em>backColor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>padding</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>

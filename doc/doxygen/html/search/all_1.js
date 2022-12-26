@@ -29,7 +29,10 @@ var searchData=
   ['clmenubar_37',['CLMenuBar',['../classCLMenuBar.html',1,'']]],
   ['clmenubar_2ecpp_38',['CLMenuBar.cpp',['../CLMenuBar_8cpp.html',1,'']]],
   ['clmenubar_2eh_39',['CLMenuBar.h',['../CLMenuBar_8h.html',1,'']]],
-  ['create_40',['Create',['../classDashboard.html#a1757ded166a43ceebbbd9f5275d5ee0f',1,'Dashboard::Create()'],['../classInterface.html#af255dbfbcb0865b690d5d9b06359c5b8',1,'Interface::Create()'],['../classLoginInterface.html#a8684c10e4fff3b3313ad72b9ea88b5a3',1,'LoginInterface::Create()'],['../classMenu.html#a85a0d1f0ff710013ee1a2fd138c479ba',1,'Menu::Create()'],['../classMenuBar.html#a552f57a2d44759d6b18e985049ddc9a3',1,'MenuBar::Create()'],['../classSensor.html#a580b1877b7ba5fa04ac7be229a695fc7',1,'Sensor::Create()']]],
-  ['currentinterface_41',['currentInterface',['../classDashboard.html#a6a2c74734733a39eb0ee8bfe464bd1cd',1,'Dashboard']]],
-  ['currentsensor_42',['currentSensor',['../classDashboard.html#a17a15dd4e91111f87826c508bdc12916',1,'Dashboard']]]
+  ['config_40',['Config',['../classConfig.html',1,'']]],
+  ['config_2ecpp_41',['Config.cpp',['../Config_8cpp.html',1,'']]],
+  ['config_2eh_42',['Config.h',['../Config_8h.html',1,'']]],
+  ['create_43',['Create',['../classDashboard.html#a1757ded166a43ceebbbd9f5275d5ee0f',1,'Dashboard::Create()'],['../classInterface.html#af255dbfbcb0865b690d5d9b06359c5b8',1,'Interface::Create()'],['../classLoginInterface.html#a8684c10e4fff3b3313ad72b9ea88b5a3',1,'LoginInterface::Create()'],['../classMenu.html#a85a0d1f0ff710013ee1a2fd138c479ba',1,'Menu::Create()'],['../classMenuBar.html#a552f57a2d44759d6b18e985049ddc9a3',1,'MenuBar::Create()'],['../classSensor.html#a580b1877b7ba5fa04ac7be229a695fc7',1,'Sensor::Create()']]],
+  ['currentinterface_44',['currentInterface',['../classDashboard.html#a6a2c74734733a39eb0ee8bfe464bd1cd',1,'Dashboard']]],
+  ['currentsensor_45',['currentSensor',['../classDashboard.html#a17a15dd4e91111f87826c508bdc12916',1,'Dashboard']]]
 ];

@@ -1,0 +1,1 @@
+- Color de la gráfica (r,g,b): 

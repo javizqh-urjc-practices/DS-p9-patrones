@@ -57,7 +57,7 @@ Sensor::Sensor(std::string id, std::string type, std::string magnitude, bool act
   setMagnitude(magnitude);
   setActive(active);
   setValPerMin(valPerMin);
-  // Create the sensor data server folder for each sensor
+  // Create the sensor data server folder
   if (!std::filesystem::is_directory("server/sensor/"+getId()) || !std::filesystem::exists("server/sensor/"+getId())) { // Check if folder exists
     std::filesystem::create_directory("server/sensor/"+getId()); // create folder
   } 

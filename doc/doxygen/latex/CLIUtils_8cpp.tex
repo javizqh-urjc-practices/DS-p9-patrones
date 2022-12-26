@@ -1,7 +1,8 @@
 \hypertarget{CLIUtils_8cpp}{}\doxysection{src/\+C\+L\+I\+Utils.cpp File Reference}
 \label{CLIUtils_8cpp}\index{src/CLIUtils.cpp@{src/CLIUtils.cpp}}
 {\ttfamily \#include \char`\"{}C\+L\+I\+Utils.\+h\char`\"{}}\newline
-Include dependency graph for C\+L\+I\+Utils.\+cpp\+:\nopagebreak
+Include dependency graph for C\+L\+I\+Utils.\+cpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,8 +21,20 @@ int {\bfseries get\+Terminal\+Width} ()
 \mbox{\Hypertarget{CLIUtils_8cpp_a5501eb77221bd7401ce720fc4166a708}\label{CLIUtils_8cpp_a5501eb77221bd7401ce720fc4166a708}} 
 int {\bfseries get\+Terminal\+Height} ()
 \item 
-void \mbox{\hyperlink{CLIUtils_8cpp_aa092c57a062caf751f369869d54312e8}{print\+Center\+From\+File}} (std\+::string file\+Name, std\+::array$<$ int, 3 $>$ front\+Color, std\+::array$<$ int, 3 $>$ back\+Color)
+\mbox{\Hypertarget{CLIUtils_8cpp_a15babc66007604df5fc2c2f5d51f3258}\label{CLIUtils_8cpp_a15babc66007604df5fc2c2f5d51f3258}} 
+void {\bfseries print\+Color\+From\+File} (std\+::string file\+Name, std\+::array$<$ int, 3 $>$ front\+Color, std\+::array$<$ int, 3 $>$ back\+Color)
+\item 
+\mbox{\Hypertarget{CLIUtils_8cpp_af4b1be1aa278762ce0f09ad23c604f7b}\label{CLIUtils_8cpp_af4b1be1aa278762ce0f09ad23c604f7b}} 
+void {\bfseries print\+Right\+From\+File} (std\+::string file\+Name, std\+::array$<$ int, 3 $>$ front\+Color, std\+::array$<$ int, 3 $>$ back\+Color, const int padding)
+\item 
+\mbox{\Hypertarget{CLIUtils_8cpp_aa79e38ef5783f5ce32f6d39f2a6fb8ed}\label{CLIUtils_8cpp_aa79e38ef5783f5ce32f6d39f2a6fb8ed}} 
+void {\bfseries print\+Left\+From\+File} (std\+::string file\+Name, std\+::array$<$ int, 3 $>$ front\+Color, std\+::array$<$ int, 3 $>$ back\+Color, const int padding)
+\item 
+void \mbox{\hyperlink{CLIUtils_8cpp_a8728fb6485a8701c5fc472f218f0c821}{print\+Center\+From\+File}} (std\+::string file\+Name, std\+::array$<$ int, 3 $>$ front\+Color, std\+::array$<$ int, 3 $>$ back\+Color, const int padding)
 \begin{DoxyCompactList}\small\item\em Print the contents of the file in the center. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{CLIUtils_8cpp_abbd0ec5a145b30b210140d54b6147379}\label{CLIUtils_8cpp_abbd0ec5a145b30b210140d54b6147379}} 
+void {\bfseries print\+Logo} (std\+::string file\+Name, std\+::array$<$ int, 3 $>$ front\+Color, std\+::array$<$ int, 3 $>$ back\+Color)
+\item 
 void \mbox{\hyperlink{CLIUtils_8cpp_ade71e788a6229a82f547dd01e57b0d8f}{print\+Center}} (const std\+::string to\+Print, std\+::array$<$ int, 3 $>$ front\+Color, std\+::array$<$ int, 3 $>$ back\+Color, const int padding)
 \begin{DoxyCompactList}\small\item\em Print the string in the center. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{CLIUtils_8cpp_a49b26bcd1feaed415497028f43de6525}\label{CLIUtils_8cpp_a49b26bcd1feaed415497028f43de6525}} 
@@ -46,6 +59,15 @@ void {\bfseries clean\+Screen} ()
 \item 
 \mbox{\Hypertarget{CLIUtils_8cpp_ad6f5bf84271fcfbeda2cebed35e548bb}\label{CLIUtils_8cpp_ad6f5bf84271fcfbeda2cebed35e548bb}} 
 void {\bfseries move\+Cursor} (int posX, int posY)
+\item 
+\mbox{\Hypertarget{CLIUtils_8cpp_aed77a7cf119c3d5e99706c990f75ae93}\label{CLIUtils_8cpp_aed77a7cf119c3d5e99706c990f75ae93}} 
+void {\bfseries new\+Line} (int lines)
+\item 
+\mbox{\Hypertarget{CLIUtils_8cpp_ae8d2e8ae782c1f07df4c5099a71578af}\label{CLIUtils_8cpp_ae8d2e8ae782c1f07df4c5099a71578af}} 
+void {\bfseries reload\+Cursor\+Pos} ()
+\item 
+\mbox{\Hypertarget{CLIUtils_8cpp_a1c3a2cf03e7e4a6a14c321b54ef645a9}\label{CLIUtils_8cpp_a1c3a2cf03e7e4a6a14c321b54ef645a9}} 
+void {\bfseries save\+Cursor\+Pos} ()
 \item 
 \mbox{\Hypertarget{CLIUtils_8cpp_a03ad7540d3d4af77001bd843154b976b}\label{CLIUtils_8cpp_a03ad7540d3d4af77001bd843154b976b}} 
 std\+::vector$<$ std\+::string $>$ {\bfseries new\+Command} (\mbox{\hyperlink{classUser}{User}} \&user, std\+::string current\+Sensor)
@@ -101,11 +123,11 @@ Print the string in the center.
 {\em padding} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{CLIUtils_8cpp_aa092c57a062caf751f369869d54312e8}\label{CLIUtils_8cpp_aa092c57a062caf751f369869d54312e8}} 
+\mbox{\Hypertarget{CLIUtils_8cpp_a8728fb6485a8701c5fc472f218f0c821}\label{CLIUtils_8cpp_a8728fb6485a8701c5fc472f218f0c821}} 
 \index{CLIUtils.cpp@{CLIUtils.cpp}!printCenterFromFile@{printCenterFromFile}}
 \index{printCenterFromFile@{printCenterFromFile}!CLIUtils.cpp@{CLIUtils.cpp}}
 \doxysubsubsection{\texorpdfstring{printCenterFromFile()}{printCenterFromFile()}}
-{\footnotesize\ttfamily void print\+Center\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string}]{file\+Name,  }\item[{std\+::array$<$ int, 3 $>$}]{front\+Color,  }\item[{std\+::array$<$ int, 3 $>$}]{back\+Color }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void print\+Center\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string}]{file\+Name,  }\item[{std\+::array$<$ int, 3 $>$}]{front\+Color,  }\item[{std\+::array$<$ int, 3 $>$}]{back\+Color,  }\item[{const int}]{padding = {\ttfamily 0} }\end{DoxyParamCaption})}
 
 
 

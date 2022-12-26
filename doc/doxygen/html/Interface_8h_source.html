@@ -81,18 +81,20 @@ $(function() {
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">static</span> <a class="code" href="classInterface.html">Interface</a> *<a class="code" href="classInterface.html#af255dbfbcb0865b690d5d9b06359c5b8">Create</a>(<span class="keyword">const</span> std::string type = <span class="stringliteral">&quot;CLI&quot;</span>);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="classInterface.html">Interface</a>(); <span class="comment">/* basic constructor */</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classInterface.html#ac9975b2282ec4ece7ae12a4b32cb8b02">login</a>(<span class="keywordtype">int</span> tries) = 0;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classInterface.html#ac9975b2282ec4ece7ae12a4b32cb8b02">login</a>(std::string userNumber, std::string nif);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classInterface.html#a3240c6067edc35cfff4bac43160996f4">loadMenu</a>();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classInterface.html">Interface</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="classLoginInterface.html">LoginInterface</a> * loginInterface;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="classDashboard.html">Dashboard</a> * dashboard;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="classUser.html">User</a> * user;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> setGlobalConfig(<a class="code" href="classGlobalConfig.html">GlobalConfig</a> *config){globalConfig = config;};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classInterface.html#ac9975b2282ec4ece7ae12a4b32cb8b02">login</a>(<span class="keywordtype">int</span> tries) = 0;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classInterface.html#ac9975b2282ec4ece7ae12a4b32cb8b02">login</a>(std::string userNumber, std::string nif);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classInterface.html#a3240c6067edc35cfff4bac43160996f4">loadMenu</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classInterface.html">Interface</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="classLoginInterface.html">LoginInterface</a> * loginInterface;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="classDashboard.html">Dashboard</a> * dashboard;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="classUser.html">User</a> * user;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="classGlobalConfig.html">GlobalConfig</a> * globalConfig;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassInterface_html_af255dbfbcb0865b690d5d9b06359c5b8"><div class="ttname"><a href="classInterface.html#af255dbfbcb0865b690d5d9b06359c5b8">Interface::Create</a></div><div class="ttdeci">static Interface * Create(const std::string type=&quot;CLI&quot;)</div><div class="ttdoc">Create a new Interface instance of the type specified.</div><div class="ttdef"><b>Definition:</b> Interface.cpp:16</div></div>
 <div class="ttc" id="aAdmin_8h_html"><div class="ttname"><a href="Admin_8h.html">Admin.h</a></div><div class="ttdoc">Header file of Admin.cpp.</div></div>
@@ -100,8 +102,9 @@ $(function() {
 <div class="ttc" id="aclassInterface_html"><div class="ttname"><a href="classInterface.html">Interface</a></div><div class="ttdef"><b>Definition:</b> Interface.h:18</div></div>
 <div class="ttc" id="aclassDashboard_html"><div class="ttname"><a href="classDashboard.html">Dashboard</a></div><div class="ttdef"><b>Definition:</b> Dashboard.h:20</div></div>
 <div class="ttc" id="aDashboard_8h_html"><div class="ttname"><a href="Dashboard_8h.html">Dashboard.h</a></div><div class="ttdoc">Header file of Dashboard.cpp.</div></div>
-<div class="ttc" id="aclassLoginInterface_html"><div class="ttname"><a href="classLoginInterface.html">LoginInterface</a></div><div class="ttdef"><b>Definition:</b> LoginInterface.h:16</div></div>
+<div class="ttc" id="aclassLoginInterface_html"><div class="ttname"><a href="classLoginInterface.html">LoginInterface</a></div><div class="ttdef"><b>Definition:</b> LoginInterface.h:17</div></div>
 <div class="ttc" id="aclassUser_html"><div class="ttname"><a href="classUser.html">User</a></div><div class="ttdef"><b>Definition:</b> User.h:20</div></div>
+<div class="ttc" id="aclassGlobalConfig_html"><div class="ttname"><a href="classGlobalConfig.html">GlobalConfig</a></div><div class="ttdef"><b>Definition:</b> GlobalConfig.h:17</div></div>
 <div class="ttc" id="aclassInterface_html_ac9975b2282ec4ece7ae12a4b32cb8b02"><div class="ttname"><a href="classInterface.html#ac9975b2282ec4ece7ae12a4b32cb8b02">Interface::login</a></div><div class="ttdeci">virtual void login(int tries)=0</div><div class="ttdoc">Virtual interface for the login method.</div></div>
 <div class="ttc" id="aclassInterface_html_a3240c6067edc35cfff4bac43160996f4"><div class="ttname"><a href="classInterface.html#a3240c6067edc35cfff4bac43160996f4">Interface::loadMenu</a></div><div class="ttdeci">bool loadMenu()</div><div class="ttdoc">Creates and loads the dashboard.</div><div class="ttdef"><b>Definition:</b> Interface.cpp:50</div></div>
 <!-- start footer part -->

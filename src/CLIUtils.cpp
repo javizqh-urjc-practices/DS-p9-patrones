@@ -58,7 +58,79 @@ int getTerminalHeight(){
   return terminalHeight;
 }
 
-void printCenterFromFile(std::string fileName, std::array<int,3> frontColor, std::array<int,3> backColor){
+void printColorFromFile(std::string fileName, std::array<int,3> frontColor, std::array<int,3> backColor){
+  std::ifstream configFile;
+  configFile.open(fileName);
+  std::string line;
+  if ( configFile.is_open() ) {
+    while ( configFile ) { // equivalent to myfile.good()
+    std::getline (configFile, line);
+    printColor(line,frontColor,backColor);
+    break; // Read only first line
+    }
+  }
+  else {
+    cleanScreen();
+    std::cout << "Couldn't open " << fileName << "\n";
+    exit(1);
+  }
+};
+
+void printRightFromFile(std::string fileName, std::array<int,3> frontColor, std::array<int,3> backColor, const int padding){
+  std::ifstream configFile;
+  configFile.open(fileName);
+  std::string line;
+  if ( configFile.is_open() ) {
+    while ( configFile ) { // equivalent to myfile.good()
+    std::getline (configFile, line);
+    printRight(line,frontColor,backColor,padding);
+    break; // Read only first line
+    }
+  }
+  else {
+    cleanScreen();
+    std::cout << "Couldn't open " << fileName << "\n";
+    exit(1);
+  }
+};
+
+void printLeftFromFile(std::string fileName, std::array<int,3> frontColor, std::array<int,3> backColor, const int padding){
+  std::ifstream configFile;
+  configFile.open(fileName);
+  std::string line;
+  if ( configFile.is_open() ) {
+    while ( configFile ) { // equivalent to myfile.good()
+    std::getline (configFile, line);
+    printLeft(line,frontColor,backColor,padding);
+    break; // Read only first line
+    }
+  }
+  else {
+    cleanScreen();
+    std::cout << "Couldn't open " << fileName << "\n";
+    exit(1);
+  }
+};
+
+void printCenterFromFile(std::string fileName, std::array<int,3> frontColor, std::array<int,3> backColor, const int padding){
+  std::ifstream configFile;
+  configFile.open(fileName);
+  std::string line;
+  if ( configFile.is_open() ) {
+    while ( configFile ) { // equivalent to myfile.good()
+    std::getline (configFile, line);
+    printCenter(line,frontColor,backColor,padding);
+    break; // Read only first line
+    }
+  }
+  else {
+    cleanScreen();
+    std::cout << "Couldn't open " << fileName << "\n";
+    exit(1);
+  }
+};
+
+void printLogo(std::string fileName, std::array<int,3> frontColor, std::array<int,3> backColor){
   std::ifstream configFile;
   configFile.open(fileName);
   std::string line;
@@ -67,11 +139,13 @@ void printCenterFromFile(std::string fileName, std::array<int,3> frontColor, std
     std::getline (configFile, line);
     std::cout << std::setw((terminalWidth-line.size())/2);
     printColor(line,frontColor,backColor);
-    std::cout << "\n";
+    newLine();
     }
   }
   else {
-  std::cout << "Couldn't open file\n";
+    std::cout << "Couldn't open file\n";
+    cleanScreen();
+    exit(1);
   }
 };
 
@@ -105,7 +179,7 @@ void startCustomTerminal(User &user, int terminalSize){
   moveCursor(0,terminalHeight - 1 - terminalSize);
   for (int i = 0; i < terminalWidth; i++) printColor("-",*user.getConfiguration()->getFontColor(),*user.getConfiguration()->getBackgroundColor());
   moveCursor((terminalWidth-11)/2,terminalHeight - 1 - terminalSize);
-  printColor(" Terminal ",*user.getConfiguration()->getFontColor(),*user.getConfiguration()->getBackgroundColor());
+  printColorFromFile("config/LANG/" + user.getConfiguration()->getLanguage() + "/commands/terminalHeader.txt", *user.getConfiguration()->getFontColor(),*user.getConfiguration()->getBackgroundColor());
   moveCursor(0,terminalHeight - terminalSize);
 }
 
@@ -122,10 +196,23 @@ void cleanScreen(std::array<int,3> backColor){
 void cleanScreen(){
   system("clear");
   std::cout << "\u001b[0m\u001b[2J";
+  moveCursor(0,0);
 }
 
 void moveCursor(int posX, int posY){
   std::cout << "\u001b[" << posY << ";" << posX << "H";
+}
+
+void newLine(int lines){
+  for(int i = 0; i < lines; i++) std::cout << "\n";
+}
+
+void reloadCursorPos(){
+  std::cout << "\u001b[u";
+}
+
+void saveCursorPos(){
+  std::cout << "\u001b[s";
 }
 
 std::vector<std::string> newCommand(User & user, std::string currentSensor){

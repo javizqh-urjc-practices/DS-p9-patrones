@@ -13,16 +13,13 @@
 CLLoginInterface::CLLoginInterface(){}
 
 void CLLoginInterface::showWelcomeMessage(){
-  std::cout << "\u001b[0m"; // No color
-  // TODO: placeholders for global configuration
-  cleanScreen({0,0,0});
-  std::cout << "\u001b[2J\u001b[0;0H";
-  printCenterFromFile("config/CLIWelcomeMessage.ascii", {0,255,0},{0,0,0});
-  std::cout << "\n\n\n";
-  printCenter("Enter your employee number: ",{255,255,255},{0,0,0},5);
-  std::cout << "\n\n\n";
-  printCenter("Enter your NIF: ",{255,255,255},{0,0,0},8);
-  std::cout << "\u001b[s";
+  cleanScreen(*globalConfig->getBackgroundColor());
+  printLogo("config/LANG/" + globalConfig->getLanguage() + "/logo.txt", *globalConfig->getLogoColor(),*globalConfig->getBackgroundColor());
+  newLine(3);
+  printCenterFromFile("config/LANG/" + globalConfig->getLanguage() + "/login/askNumber.txt",*globalConfig->getFontColor(),*globalConfig->getBackgroundColor(),5);
+  newLine(3);
+  printCenterFromFile("config/LANG/" + globalConfig->getLanguage() + "/login/askNIF.txt",*globalConfig->getFontColor(),*globalConfig->getBackgroundColor(),8);
+  saveCursorPos();
 }
 
 void CLLoginInterface::askEmployeeNumber(){
@@ -38,12 +35,12 @@ void CLLoginInterface::askEmployeeNumber(const std::string & userNumber){
 }
 
 void CLLoginInterface::askNIF(){
-  std::cout << "\u001b[u";
+  reloadCursorPos();
   char * inputBuffer = new char[100];
   std::cin.getline(inputBuffer ,100);
   this->inputNIF = inputBuffer;
   delete inputBuffer;
-  std::cout << "\n\n\n";
+  newLine(3);
 }
 
 void CLLoginInterface::askNIF(const std::string & nif){

@@ -15,9 +15,10 @@ CLInterface::CLInterface(){
 };
 
 void CLInterface::login(int tries){
-  if (tries == 5) std::exit(0);
+  if (tries == globalConfig->getTriesToLogin()) {cleanScreen();std::exit(0);}
 
   loginInterface = LoginInterface::Create();
+  loginInterface->setGlobalConfig(globalConfig);
   this->loginInterface = loginInterface;
 
   User *currentUser = new User();
@@ -29,14 +30,15 @@ void CLInterface::login(int tries){
   usleep(2 * 1000000);
   try {
     loginInterface->checkUser(*user);
-    printCenter("Login successful",{255,255,255},{0,0,0});
-    std::cout << "\n";
+    printCenterFromFile("config/LANG/" + globalConfig->getLanguage() + "/login/succesful.txt",*globalConfig->getFontColor(),*globalConfig->getBackgroundColor());
+    newLine();
     usleep(1 * 1000000);
     printColor("",*user->getConfiguration()->getFontColor(),*user->getConfiguration()->getBackgroundColor());
     cleanScreen(*user->getConfiguration()->getBackgroundColor());
     tries = 0;
   } catch (std::exception &e) {
-    printCenter("Failed login\n", {255,0,0},{0,0,0});
+    printCenterFromFile("config/LANG/" + globalConfig->getLanguage() + "/login/failed.txt", {255,0,0},*globalConfig->getBackgroundColor());
+    newLine();
     usleep(1 * 1000000);
     tries++;
     login(tries);

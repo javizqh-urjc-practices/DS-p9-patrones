@@ -94,7 +94,20 @@ bool Dashboard::changeInterface(std::string newInterface){
   else if (newInterface.compare("config") == 0){
     this->currentSensor = nullptr;
     this->menu->show(*this->user);
-    this->menuBar->setCurrentMenu("Settings menu");
+    std::ifstream settingsTag;
+    settingsTag.open("config/LANG/" + this->user->getConfiguration()->getLanguage() + "/user/settingsHeader.txt");
+    std::string line;
+    if ( settingsTag.is_open() ) {
+      while ( settingsTag ) { // equivalent to myfile.good()
+      std::getline (settingsTag, line);
+      this->menuBar->setCurrentMenu(line);
+      break; // Read only first line
+      }
+    }
+    else {
+      std::cout << "Couldn't open file\n";
+      std::exit(1);
+    }
     this->menuBar->show();
     this->lastInterface = this->currentInterface;
     this->currentInterface = newInterface;

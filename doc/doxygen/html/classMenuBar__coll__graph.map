@@ -1,5 +1,6 @@
 <map id="MenuBar" name="MenuBar">
-<area shape="rect" id="node1" title=" " alt="" coords="13,184,93,211"/>
-<area shape="rect" id="node2" href="$classUser.html" title=" " alt="" coords="27,95,79,121"/>
-<area shape="rect" id="node3" href="$classUserConfig.html" title=" " alt="" coords="5,5,100,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="13,260,93,287"/>
+<area shape="rect" id="node2" href="$classUser.html" title=" " alt="" coords="27,171,79,197"/>
+<area shape="rect" id="node3" href="$classUserConfig.html" title=" " alt="" coords="5,81,100,108"/>
+<area shape="rect" id="node4" href="$classConfig.html" title=" " alt="" coords="21,5,85,32"/>
 </map>

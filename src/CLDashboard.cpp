@@ -47,15 +47,15 @@ void CLDashboard::readCommand(){
       else if (command[0].compare("exit") == 0){ exit(); break;}
       else if (command[0].compare("config") == 0) {
         changeInterface("config");
-        std::cout << "\u001b[u"; // Reload cursor pos
+        reloadCursorPos(); // Reload cursor pos
       }
       else if (command[0].compare("update") == 0) {
         changeInterface(this->currentInterface);
-        std::cout << "\u001b[u"; // Reload cursor pos
+        reloadCursorPos(); // Reload cursor pos
       }
       else if (command[0].compare("back") == 0) {
         changeInterface(this->lastInterface);
-        std::cout << "\u001b[u"; // Reload cursor pos
+        reloadCursorPos(); // Reload cursor pos
       }
       else errorCommand(command[0]);
     }
@@ -67,26 +67,34 @@ void CLDashboard::readCommand(){
       else if (command[0].compare("set") == 0) changeCurrentSensorInfo("state", command[1]);
       else if (command[0].compare("cs") == 0) {
         if (! changeInterface(command[1])) {lineNumber++;errorCommand("cs "+command[1]);}
-        else {std::cout << "\u001b[u"; }// Reload cursor pos
+        else {reloadCursorPos(); }// Reload cursor pos
       }
       else if (command[0].compare("add") == 0){
         if (! this->user->hasAdminPermission()){permissionError();continue;}
         addNewSensor(command[1]);
         changeInterface(this->currentInterface);
-        std::cout << "\u001b[u"; // Reload cursor pos
+        reloadCursorPos(); // Reload cursor pos
         lineNumber++;
       }
       else if (command[0].compare("rm") == 0){
         if (! this->user->hasAdminPermission()){permissionError();continue;}
         deleteSensor(command[1]);
         changeInterface(this->currentInterface);
-        std::cout << "\u001b[u"; // Reload cursor pos
+        reloadCursorPos(); // Reload cursor pos
       }
       else if (command[0].compare("name") == 0){
         this->user->setName(command[1]);
         this->menuBar->setUser(*this->user);
         changeInterface(this->currentInterface);
-        std::cout << "\u001b[u"; // Reload cursor pos
+        reloadCursorPos(); // Reload cursor pos
+      }
+      else if (command[0].compare("lang") == 0){
+        this->user->setLanguage(command[1]);
+        this->menuBar->setUser(*this->user);
+        cleanScreen(*this->user->getConfiguration()->getBackgroundColor()); 
+        changeInterface(this->currentInterface);
+        lineNumber = 0; 
+        clearCustomTerminal(*this->user,10);
       }
       else errorCommand(command[0]);
     }
@@ -133,8 +141,7 @@ void CLDashboard::readCommand(){
           changeInterface(this->currentInterface);
           lineNumber = 0; 
           clearCustomTerminal(*this->user,10);
-        } catch(const std::exception& e) {
-        } 
+        } catch(const std::exception& e) {lineNumber++;errorCommand(command[0]);} 
       }
       else if (command[0].compare("background") == 0){
         try {
@@ -144,8 +151,7 @@ void CLDashboard::readCommand(){
           changeInterface(this->currentInterface);
           lineNumber = 0; 
           clearCustomTerminal(*this->user,10);
-        } catch(const std::exception& e) {
-        } 
+        } catch(const std::exception& e) {lineNumber++;errorCommand(command[0]);} 
       }
       else if (command[0].compare("graphic") == 0){
         try {
@@ -154,8 +160,7 @@ void CLDashboard::readCommand(){
           cleanScreen(*this->user->getConfiguration()->getBackgroundColor());
           changeInterface(this->currentInterface);
           clearCustomTerminal(*this->user,10);
-        } catch(const std::exception& e) {
-        } 
+        } catch(const std::exception& e) {lineNumber++;errorCommand(command[0]);} 
       }
       else errorCommand(command[0]);
     }
@@ -172,28 +177,33 @@ if (this->currentInterface.compare("..") != 0) return;
   for ( Sensor *s: this->mainMenu[this->mainMenuIndex]){
     std::cout << s->getId() << "\t";
   }
-  std::cout << "\n";
+  newLine();
 }
 
 void CLDashboard::changeMainMenu(int n){
   if (this->currentInterface.compare("..") == 0){ 
     moveWindowMainMenu(n);
     changeInterface("..");
-    std::cout << "\u001b[u"; // Reload cursor pos
+    reloadCursorPos(); // Reload cursor pos
   }
 }
 
 
 void CLDashboard::helpCommand(std::string command){
+  //TODO: add help command
   std::cout << "Help " << command << "\n";
 }
 
 void CLDashboard::errorCommand(std::string command){
-  std::cout << command << ": command not found\n";
+  printColor(command,*user->getConfiguration()->getFontColor(),*user->getConfiguration()->getBackgroundColor());
+  printColorFromFile("config/LANG/" + user->getConfiguration()->getLanguage() + "/commands/notFound.txt", *user->getConfiguration()->getFontColor(),*user->getConfiguration()->getBackgroundColor());
+  newLine();
 }
 
 void CLDashboard::permissionError(){
-  std::cout << this->user->getName() << " does not have the permissions required. Make sure to contact an administrator.\n";
+  printColor(this->user->getName(),*user->getConfiguration()->getFontColor(),*user->getConfiguration()->getBackgroundColor());
+  printColorFromFile("config/LANG/" + user->getConfiguration()->getLanguage() + "/commands/permissionError.txt", *user->getConfiguration()->getFontColor(),*user->getConfiguration()->getBackgroundColor());
+  newLine();
 }
 
 CLDashboard::~CLDashboard(){

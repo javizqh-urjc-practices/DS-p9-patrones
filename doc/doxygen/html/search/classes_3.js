@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['humidity_123',['Humidity',['../classHumidity.html',1,'']]]
+  ['globalconfig_130',['GlobalConfig',['../classGlobalConfig.html',1,'']]]
 ];

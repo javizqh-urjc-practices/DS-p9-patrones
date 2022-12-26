@@ -25,6 +25,7 @@ public:
   */
   static Interface *Create(const std::string type = "CLI");
   Interface(); /* basic constructor */
+  void setGlobalConfig(GlobalConfig *config){globalConfig = config;};
   /**
    * @brief Virtual interface for the login method
    * 
@@ -52,6 +53,7 @@ protected:
   LoginInterface * loginInterface;
   Dashboard * dashboard;
   User * user;
+  GlobalConfig * globalConfig;
 };
 
 #endif

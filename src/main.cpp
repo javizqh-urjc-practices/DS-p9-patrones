@@ -11,19 +11,21 @@
 #include "main.h"
 
 int main(int argc,char* argv[]){
-  Interface *interfaceCli;
-  interfaceCli = Interface::Create();
+  GlobalConfig *globalConfig = new GlobalConfig("ESP",5,{0,130,50},{0,0,0},{255,255,255});
+  Interface *interface;
+  interface = Interface::Create();
+  interface->setGlobalConfig(globalConfig);
   if ( argc - 1  == 0 ){
     bool isRunning = true;
     while (isRunning) {
       // Execute the program until exit is requested
-      interfaceCli->login(0);
-      isRunning = ! interfaceCli->loadMenu();
+      interface->login(0);
+      isRunning = ! interface->loadMenu();
     }
   }
   else if (argc - 1 == 2){
-    interfaceCli->login(argv[1],argv[2]);
-    interfaceCli->loadMenu();
+    interface->login(argv[1],argv[2]);
+    interface->loadMenu();
   }
-  delete interfaceCli;
+  delete interface;
 }

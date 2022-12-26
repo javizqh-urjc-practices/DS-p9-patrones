@@ -78,20 +78,22 @@ Include dependency graph for CLIUtils.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="CLIUtils_8cpp__incl.png" border="0" usemap="#src_2CLIUtils_8cpp" alt=""/></div>
 <map name="src_2CLIUtils_8cpp" id="src_2CLIUtils_8cpp">
-<area shape="rect" title=" " alt="" coords="603,5,725,32"/>
-<area shape="rect" href="CLIUtils_8h.html" title="Header file of CLIUtils.cpp." alt="" coords="622,80,706,107"/>
-<area shape="rect" href="User_8h.html" title="Header file of User.cpp." alt="" coords="203,155,267,181"/>
-<area shape="rect" title=" " alt="" coords="460,304,516,331"/>
-<area shape="rect" title=" " alt="" coords="571,155,651,181"/>
-<area shape="rect" title=" " alt="" coords="675,155,760,181"/>
-<area shape="rect" title=" " alt="" coords="784,155,859,181"/>
-<area shape="rect" title=" " alt="" coords="883,155,957,181"/>
-<area shape="rect" title=" " alt="" coords="192,304,251,331"/>
-<area shape="rect" title=" " alt="" coords="27,229,90,256"/>
-<area shape="rect" title=" " alt="" coords="115,229,181,256"/>
-<area shape="rect" title=" " alt="" coords="205,229,264,256"/>
-<area shape="rect" title=" " alt="" coords="289,229,365,256"/>
-<area shape="rect" href="UserConfig_8h.html" title="Header file of UserConfig.cpp." alt="" coords="389,229,496,256"/>
+<area shape="rect" title=" " alt="" coords="605,5,727,32"/>
+<area shape="rect" href="CLIUtils_8h.html" title="Header file of CLIUtils.cpp." alt="" coords="624,80,708,107"/>
+<area shape="rect" href="User_8h.html" title="Header file of User.cpp." alt="" coords="205,155,269,181"/>
+<area shape="rect" title=" " alt="" coords="507,379,563,405"/>
+<area shape="rect" title=" " alt="" coords="573,155,653,181"/>
+<area shape="rect" title=" " alt="" coords="677,155,762,181"/>
+<area shape="rect" title=" " alt="" coords="786,155,861,181"/>
+<area shape="rect" title=" " alt="" coords="885,155,959,181"/>
+<area shape="rect" title=" " alt="" coords="137,379,195,405"/>
+<area shape="rect" title=" " alt="" coords="29,229,92,256"/>
+<area shape="rect" title=" " alt="" coords="117,229,183,256"/>
+<area shape="rect" title=" " alt="" coords="207,229,266,256"/>
+<area shape="rect" title=" " alt="" coords="291,229,367,256"/>
+<area shape="rect" href="UserConfig_8h.html" title="Header file of UserConfig.cpp." alt="" coords="391,229,498,256"/>
+<area shape="rect" href="Config_8h.html" title=" " alt="" coords="403,304,479,331"/>
+<area shape="rect" title=" " alt="" coords="393,379,483,405"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -106,9 +108,21 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getTerminalWidth</b> (
 <tr class="memitem:a5501eb77221bd7401ce720fc4166a708"><td class="memItemLeft" align="right" valign="top"><a id="a5501eb77221bd7401ce720fc4166a708"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>getTerminalHeight</b> ()</td></tr>
 <tr class="separator:a5501eb77221bd7401ce720fc4166a708"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa092c57a062caf751f369869d54312e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIUtils_8cpp.html#aa092c57a062caf751f369869d54312e8">printCenterFromFile</a> (std::string fileName, std::array&lt; int, 3 &gt; frontColor, std::array&lt; int, 3 &gt; backColor)</td></tr>
-<tr class="memdesc:aa092c57a062caf751f369869d54312e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the contents of the file in the center.  <a href="CLIUtils_8cpp.html#aa092c57a062caf751f369869d54312e8">More...</a><br /></td></tr>
-<tr class="separator:aa092c57a062caf751f369869d54312e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15babc66007604df5fc2c2f5d51f3258"><td class="memItemLeft" align="right" valign="top"><a id="a15babc66007604df5fc2c2f5d51f3258"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>printColorFromFile</b> (std::string fileName, std::array&lt; int, 3 &gt; frontColor, std::array&lt; int, 3 &gt; backColor)</td></tr>
+<tr class="separator:a15babc66007604df5fc2c2f5d51f3258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4b1be1aa278762ce0f09ad23c604f7b"><td class="memItemLeft" align="right" valign="top"><a id="af4b1be1aa278762ce0f09ad23c604f7b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>printRightFromFile</b> (std::string fileName, std::array&lt; int, 3 &gt; frontColor, std::array&lt; int, 3 &gt; backColor, const int padding)</td></tr>
+<tr class="separator:af4b1be1aa278762ce0f09ad23c604f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa79e38ef5783f5ce32f6d39f2a6fb8ed"><td class="memItemLeft" align="right" valign="top"><a id="aa79e38ef5783f5ce32f6d39f2a6fb8ed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>printLeftFromFile</b> (std::string fileName, std::array&lt; int, 3 &gt; frontColor, std::array&lt; int, 3 &gt; backColor, const int padding)</td></tr>
+<tr class="separator:aa79e38ef5783f5ce32f6d39f2a6fb8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8728fb6485a8701c5fc472f218f0c821"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIUtils_8cpp.html#a8728fb6485a8701c5fc472f218f0c821">printCenterFromFile</a> (std::string fileName, std::array&lt; int, 3 &gt; frontColor, std::array&lt; int, 3 &gt; backColor, const int padding)</td></tr>
+<tr class="memdesc:a8728fb6485a8701c5fc472f218f0c821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the contents of the file in the center.  <a href="CLIUtils_8cpp.html#a8728fb6485a8701c5fc472f218f0c821">More...</a><br /></td></tr>
+<tr class="separator:a8728fb6485a8701c5fc472f218f0c821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbd0ec5a145b30b210140d54b6147379"><td class="memItemLeft" align="right" valign="top"><a id="abbd0ec5a145b30b210140d54b6147379"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>printLogo</b> (std::string fileName, std::array&lt; int, 3 &gt; frontColor, std::array&lt; int, 3 &gt; backColor)</td></tr>
+<tr class="separator:abbd0ec5a145b30b210140d54b6147379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade71e788a6229a82f547dd01e57b0d8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CLIUtils_8cpp.html#ade71e788a6229a82f547dd01e57b0d8f">printCenter</a> (const std::string toPrint, std::array&lt; int, 3 &gt; frontColor, std::array&lt; int, 3 &gt; backColor, const int padding)</td></tr>
 <tr class="memdesc:ade71e788a6229a82f547dd01e57b0d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the string in the center.  <a href="CLIUtils_8cpp.html#ade71e788a6229a82f547dd01e57b0d8f">More...</a><br /></td></tr>
 <tr class="separator:ade71e788a6229a82f547dd01e57b0d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,6 +150,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>cleanScreen</b> ()</t
 <tr class="memitem:ad6f5bf84271fcfbeda2cebed35e548bb"><td class="memItemLeft" align="right" valign="top"><a id="ad6f5bf84271fcfbeda2cebed35e548bb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>moveCursor</b> (int posX, int posY)</td></tr>
 <tr class="separator:ad6f5bf84271fcfbeda2cebed35e548bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed77a7cf119c3d5e99706c990f75ae93"><td class="memItemLeft" align="right" valign="top"><a id="aed77a7cf119c3d5e99706c990f75ae93"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>newLine</b> (int lines)</td></tr>
+<tr class="separator:aed77a7cf119c3d5e99706c990f75ae93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d2e8ae782c1f07df4c5099a71578af"><td class="memItemLeft" align="right" valign="top"><a id="ae8d2e8ae782c1f07df4c5099a71578af"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reloadCursorPos</b> ()</td></tr>
+<tr class="separator:ae8d2e8ae782c1f07df4c5099a71578af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c3a2cf03e7e4a6a14c321b54ef645a9"><td class="memItemLeft" align="right" valign="top"><a id="a1c3a2cf03e7e4a6a14c321b54ef645a9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>saveCursorPos</b> ()</td></tr>
+<tr class="separator:a1c3a2cf03e7e4a6a14c321b54ef645a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03ad7540d3d4af77001bd843154b976b"><td class="memItemLeft" align="right" valign="top"><a id="a03ad7540d3d4af77001bd843154b976b"></a>
 std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>newCommand</b> (<a class="el" href="classUser.html">User</a> &amp;user, std::string currentSensor)</td></tr>
 <tr class="separator:a03ad7540d3d4af77001bd843154b976b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,8 +232,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>terminalHeight</b></td
 
 </div>
 </div>
-<a id="aa092c57a062caf751f369869d54312e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa092c57a062caf751f369869d54312e8">&#9670;&nbsp;</a></span>printCenterFromFile()</h2>
+<a id="a8728fb6485a8701c5fc472f218f0c821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8728fb6485a8701c5fc472f218f0c821">&#9670;&nbsp;</a></span>printCenterFromFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -231,7 +254,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>terminalHeight</b></td
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::array&lt; int, 3 &gt;&#160;</td>
-          <td class="paramname"><em>backColor</em>&#160;</td>
+          <td class="paramname"><em>backColor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>padding</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
