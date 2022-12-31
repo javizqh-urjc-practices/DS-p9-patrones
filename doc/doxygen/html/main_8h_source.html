@@ -72,15 +72,19 @@ $(function() {
 <a href="main_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Interface_8h.html">Interface.h</a>&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="GlobalConfig_8h.html">GlobalConfig.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef MAIN_H</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define MAIN_H</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc,<span class="keywordtype">char</span>* argv[]);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="NotFoundArgument_8h.html">NotFoundArgument.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifndef MAIN_H</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define MAIN_H</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc,<span class="keywordtype">char</span>* argv[],<span class="keywordtype">char</span> *envp[]);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> checkArgumentIndex(<span class="keywordtype">int</span> indexToCheck, <span class="keywordtype">int</span> argSize){<span class="keywordflow">return</span> ! (indexToCheck &gt;= argSize);};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aGlobalConfig_8h_html"><div class="ttname"><a href="GlobalConfig_8h.html">GlobalConfig.h</a></div></div>
+<div class="ttc" id="aNotFoundArgument_8h_html"><div class="ttname"><a href="NotFoundArgument_8h.html">NotFoundArgument.h</a></div></div>
 <div class="ttc" id="aInterface_8h_html"><div class="ttname"><a href="Interface_8h.html">Interface.h</a></div><div class="ttdoc">Header file of Interface.cpp.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

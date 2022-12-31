@@ -11,10 +11,13 @@
 
 #include "Interface.h"
 #include "GlobalConfig.h"
+#include "NotFoundArgument.h"
 
 #ifndef MAIN_H
 #define	MAIN_H
 
-int main(int argc,char* argv[]);
+int main(int argc,char* argv[],char *envp[]);
+
+inline bool checkArgumentIndex(int indexToCheck, int argSize){return ! (indexToCheck >= argSize);};
 
 #endif

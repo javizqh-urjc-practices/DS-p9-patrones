@@ -190,8 +190,8 @@ void CLDashboard::changeMainMenu(int n){
 
 
 void CLDashboard::helpCommand(std::string command){
-  //TODO: add help command
-  std::cout << "Help " << command << "\n";
+  printColorFromFile("config/LANG/" + user->getConfiguration()->getLanguage() + "/commands/help/" + command + ".man", *user->getConfiguration()->getFontColor(),*user->getConfiguration()->getBackgroundColor());
+  newLine();
 }
 
 void CLDashboard::errorCommand(std::string command){

@@ -17,7 +17,7 @@
 class GlobalConfig: public Config{
   public:
     GlobalConfig(std::string language = "ENG",int triesToLogin = 5, std::array<int,3> backgroundColor = {0,0,0},
-     std::array<int,3> fontColor = {255,255,255} , std::array<int,3> logoColor = {255,0,0});
+     std::array<int,3> fontColor = {255,255,255} , std::array<int,3> logoColor = {0,255,0});
 
     int getTriesToLogin() const { return triesToLogin; };
     void setTriesToLogin(int newTriesToLogin);

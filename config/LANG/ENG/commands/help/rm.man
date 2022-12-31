@@ -1,0 +1,1 @@
+rm <sensor_id>
