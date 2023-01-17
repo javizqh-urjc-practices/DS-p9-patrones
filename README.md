@@ -65,4 +65,4 @@ man jveh
 
 ## Documentation
 
-The documentation can be read from the following [pdf](/doc/refman.pdf).
+The documentation can be read from the following [pdf](/doc/doxygen/refman.pdf).
