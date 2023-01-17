@@ -57,6 +57,8 @@ void setTerminalSize(){
   terminalHeight = lines;
 
   if (lines < minHeight) throw MinTerminalSize();
+
+  std::filesystem::remove("terminalSize.txt" ); // Delete the file
 };
 
 int getTerminalWidth(){
