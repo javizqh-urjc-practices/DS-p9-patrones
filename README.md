@@ -25,31 +25,44 @@ The code can be compiled with the provided commands.
 ```bash
 git clone https://github.com/clases-julio/p9-patrones-JavierIzqUni.git
 cd p9-patrones-JavierIzqUni
-./install
 ```
 
-## Documentation
+## Installation
+Being in the base directory (p9-patrones-JavierIzqUni)run to install:
+```bash
+chmod +x install
+sudo ./install
+```
+This will install a bash command to launch the program.
 
-The documentation can be read from the following [pdf](/doc/refman.pdf).
-## Sample Execution & Output
+To uninstall run in the base direcory:
+```bash
+sudo ./uninstall
+```
+
+## Execution
 
 If run without command line arguments, using
 
-```
-build/main
+```bash
+jveh
 ```
 
 the program will start using the default configuration, using the command line interface.
 
 
-If run using 
-
+To know more about the options available use:
+```bash
+man jveh
 ```
-build/main <employee Number> <employee NIF>
-```
 
-the program will try to log in with the passed arguments using the command line interface, if it fails the program will exit with an error
+## CLI Options
+  * -u / --user: Logins with the specified number and NIF
+  * -L / --lang: Change the login language to specified one. Only available English and Spanish
+  * -b / --background: Change the login background color to specified rgb values
+  * -f / --font: Change the login font color to specified rgb values
+  * -l / --logo: Change the login logo color to specified rgb values
 
-## Recomendations
-* Use the text mode in order to see with more resolution. Usually press: `Super + F2/F3/F4`
-* You must run the program without being inside the build directory.
+## Documentation
+
+The documentation can be read from the following [pdf](/doc/refman.pdf).
