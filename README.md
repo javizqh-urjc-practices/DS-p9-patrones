@@ -1,4 +1,17 @@
-# p8-ficheros
+# p9-patrones
+![Logo](doc/media/logo.png)
+
+Manage all your sensor from a single interface
+## Features
+  * 2 Languages supported: English and Spanish
+  * Almost total configuration of the interface
+  * Change the configuration without restarting the interface
+  * Dynamic interface
+  * Real time control of the sensors
+  * Terminal like interface with unique graphics
+  * Administrator and normal user distintions
+  * Administrators can manage the users
+  * Administrator can manage the sensors
 ## Requirements
 
   * Linux
@@ -10,8 +23,8 @@
 
 The code can be compiled with the provided commands.
 ```bash
-git clone https://github.com/clases-julio/p8-ficheros-JavierIzqUni.git
-cd p8-ficheros-JavierIzqUni
+git clone https://github.com/clases-julio/p9-patrones-JavierIzqUni.git
+cd p9-patrones-JavierIzqUni
 ./install
 ```
 
