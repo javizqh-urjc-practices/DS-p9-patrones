@@ -66,3 +66,11 @@ man jveh
 ## Documentation
 
 The documentation can be read from the following [pdf](/doc/doxygen/refman.pdf).
+
+You can also see the documentation if you have the repository cloned opening the file /doc/doxygen/html/index.html in a search engine.
+
+## Design pattern used
+I used various design patterns, but the most significant one would be the Singleton used in the login interface and in the dashboard, so you
+can only create one, making the login much easier than before.
+
+The other important one would be factory method, used for creating the correct interface for each platform, making expandability easier and faster.
