@@ -22,7 +22,7 @@ Interface *Interface::Create(const std::string type){
      std::cerr << "Exception: " << except.what() << std::endl;
      std::exit(EXIT_FAILURE);
     } catch(std::exception &e){
-      throw e;
+      throw;
     }
   }
   else {
@@ -54,6 +54,7 @@ bool Interface::loadMenu(){
   this->dashboard->showMainMenu();
   try {
     this->loginInterface->database->addUsers(this->dashboard->getNewUsers());
+    this->loginInterface->database->deleteUsers(this->dashboard->getDeleteUsers());
     this->loginInterface->database->resetUser(*user);
     system("clear");
   } catch (std::exception &e) {

@@ -14,6 +14,10 @@ int terminalWidth;
 int terminalHeight;
 
 void setTerminalSize(){
+  // Minimum terminal size 100 x 50
+  int minWidth = 100;
+  int minHeight = 50;
+
   system("tput cols > terminalSize.txt"); /* For height it is tput lines*/
   std::ifstream terminalSize;
   terminalSize.open("terminalSize.txt");
@@ -33,12 +37,14 @@ void setTerminalSize(){
   terminalSize.close();
   terminalWidth = columns;
 
+  if (columns < minWidth) throw MinTerminalSize();
+
   system("tput lines > terminalSize.txt");
   terminalSize.open("terminalSize.txt");
   int lines = 0;
   
   if ( terminalSize.is_open() ) {
-    while ( terminalSize ) { // equivalent to myfile.good()
+    while ( terminalSize ) {
       std::getline (terminalSize, line);
       lines = stoi(line);
       break;
@@ -47,7 +53,10 @@ void setTerminalSize(){
   else {
     std::cout << "Couldn't open file\n";
   }
+  terminalSize.close();
   terminalHeight = lines;
+
+  if (lines < minHeight) throw MinTerminalSize();
 };
 
 int getTerminalWidth(){
@@ -137,8 +146,7 @@ void printLogo(std::string fileName, std::array<int,3> frontColor, std::array<in
   if ( configFile.is_open() ) {
     while ( configFile ) { // equivalent to myfile.good()
     std::getline (configFile, line);
-    std::cout << std::setw((terminalWidth-line.size())/2);
-    printColor(line,frontColor,backColor);
+    printCenter(line,frontColor,backColor);
     newLine();
     }
   }

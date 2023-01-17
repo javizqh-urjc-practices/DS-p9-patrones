@@ -48,19 +48,22 @@ class CLDashboard : public Dashboard{
     * @brief Displays the use of the command 
     * 
     * @param command Command to display info about
+    * @param lineNumber Number of lines displayed
     */
-    void helpCommand(std::string command = "");
+    void helpCommand(std::string command, int &lineNumber);
     /**
     * @brief Shows error message because the command not being found
     * 
     * @param command Command input
+    * @param lineNumber Number of lines displayed
     */
-    void errorCommand(std::string command = "");
+    void errorCommand(std::string command, int &lineNumber  );
     /**
     * @brief Shows error message because the permission being denied to execute it
     * 
+    * @param lineNumber Number of lines displayed
     */
-    void permissionError();
+    void permissionError(int &lineNumber);
 };
 
 #endif

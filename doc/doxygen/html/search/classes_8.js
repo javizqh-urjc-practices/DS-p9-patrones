@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['notfoundargument_139',['NotFoundArgument',['../classNotFoundArgument.html',1,'']]],
-  ['notfounduserexception_140',['NotFoundUserException',['../classNotFoundUserException.html',1,'']]]
+  ['notfoundargument_144',['NotFoundArgument',['../classNotFoundArgument.html',1,'']]],
+  ['notfounduserexception_145',['NotFoundUserException',['../classNotFoundUserException.html',1,'']]]
 ];

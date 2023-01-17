@@ -34,11 +34,11 @@ void \mbox{\hyperlink{classCLDashboard_a545f2058373b09180fc8690bb11e0439}{read\+
 \begin{DoxyCompactList}\small\item\em Reads and executes a command from the terminal. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCLDashboard_aaf8f41673fe6af9973e699022581459c}{list\+Sensor}} ()
 \begin{DoxyCompactList}\small\item\em Command that lists the sensors in the current menu page. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classCLDashboard_affb9cdde7d7b7f6bc3c72db3c941e80b}{help\+Command}} (std\+::string command=\char`\"{}\char`\"{})
+void \mbox{\hyperlink{classCLDashboard_a4193eef334190d54b9bb37fae977adb6}{help\+Command}} (std\+::string command, int \&line\+Number)
 \begin{DoxyCompactList}\small\item\em Displays the use of the command. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classCLDashboard_a60e24b6a5f5c0f944f87459900c2c911}{error\+Command}} (std\+::string command=\char`\"{}\char`\"{})
+void \mbox{\hyperlink{classCLDashboard_a107dc33c9afc23bdaec726f7240927a4}{error\+Command}} (std\+::string command, int \&line\+Number)
 \begin{DoxyCompactList}\small\item\em Shows error message because the command not being found. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classCLDashboard_ac858ce5c07768f02f96779507ecb92f2}{permission\+Error}} ()
+void \mbox{\hyperlink{classCLDashboard_ad30650922c3c2625af20cf695a9e1904}{permission\+Error}} (int \&line\+Number)
 \begin{DoxyCompactList}\small\item\em Shows error message because the permission being denied to execute it. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -72,11 +72,11 @@ Change the page of the menu.
 {\em n} & Number of pages to shift ( positive to the right ) \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classCLDashboard_a60e24b6a5f5c0f944f87459900c2c911}\label{classCLDashboard_a60e24b6a5f5c0f944f87459900c2c911}} 
+\mbox{\Hypertarget{classCLDashboard_a107dc33c9afc23bdaec726f7240927a4}\label{classCLDashboard_a107dc33c9afc23bdaec726f7240927a4}} 
 \index{CLDashboard@{CLDashboard}!errorCommand@{errorCommand}}
 \index{errorCommand@{errorCommand}!CLDashboard@{CLDashboard}}
 \doxysubsubsection{\texorpdfstring{errorCommand()}{errorCommand()}}
-{\footnotesize\ttfamily void C\+L\+Dashboard\+::error\+Command (\begin{DoxyParamCaption}\item[{std\+::string}]{command = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily void C\+L\+Dashboard\+::error\+Command (\begin{DoxyParamCaption}\item[{std\+::string}]{command,  }\item[{int \&}]{line\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
@@ -86,12 +86,14 @@ Shows error message because the command not being found.
 \begin{DoxyParams}{Parameters}
 {\em command} & Command input \\
 \hline
+{\em line\+Number} & Number of lines displayed \\
+\hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classCLDashboard_affb9cdde7d7b7f6bc3c72db3c941e80b}\label{classCLDashboard_affb9cdde7d7b7f6bc3c72db3c941e80b}} 
+\mbox{\Hypertarget{classCLDashboard_a4193eef334190d54b9bb37fae977adb6}\label{classCLDashboard_a4193eef334190d54b9bb37fae977adb6}} 
 \index{CLDashboard@{CLDashboard}!helpCommand@{helpCommand}}
 \index{helpCommand@{helpCommand}!CLDashboard@{CLDashboard}}
 \doxysubsubsection{\texorpdfstring{helpCommand()}{helpCommand()}}
-{\footnotesize\ttfamily void C\+L\+Dashboard\+::help\+Command (\begin{DoxyParamCaption}\item[{std\+::string}]{command = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily void C\+L\+Dashboard\+::help\+Command (\begin{DoxyParamCaption}\item[{std\+::string}]{command,  }\item[{int \&}]{line\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
@@ -100,6 +102,8 @@ Displays the use of the command.
 
 \begin{DoxyParams}{Parameters}
 {\em command} & Command to display info about \\
+\hline
+{\em line\+Number} & Number of lines displayed \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classCLDashboard_aaf8f41673fe6af9973e699022581459c}\label{classCLDashboard_aaf8f41673fe6af9973e699022581459c}} 
@@ -112,16 +116,21 @@ Displays the use of the command.
 
 Command that lists the sensors in the current menu page. 
 
-\mbox{\Hypertarget{classCLDashboard_ac858ce5c07768f02f96779507ecb92f2}\label{classCLDashboard_ac858ce5c07768f02f96779507ecb92f2}} 
+\mbox{\Hypertarget{classCLDashboard_ad30650922c3c2625af20cf695a9e1904}\label{classCLDashboard_ad30650922c3c2625af20cf695a9e1904}} 
 \index{CLDashboard@{CLDashboard}!permissionError@{permissionError}}
 \index{permissionError@{permissionError}!CLDashboard@{CLDashboard}}
 \doxysubsubsection{\texorpdfstring{permissionError()}{permissionError()}}
-{\footnotesize\ttfamily void C\+L\+Dashboard\+::permission\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily void C\+L\+Dashboard\+::permission\+Error (\begin{DoxyParamCaption}\item[{int \&}]{line\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
 Shows error message because the permission being denied to execute it. 
 
+
+\begin{DoxyParams}{Parameters}
+{\em line\+Number} & Number of lines displayed \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classCLDashboard_a545f2058373b09180fc8690bb11e0439}\label{classCLDashboard_a545f2058373b09180fc8690bb11e0439}} 
 \index{CLDashboard@{CLDashboard}!readCommand@{readCommand}}
 \index{readCommand@{readCommand}!CLDashboard@{CLDashboard}}

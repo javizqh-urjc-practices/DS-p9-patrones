@@ -15,6 +15,22 @@ CLDashboard::CLDashboard(User &user):Dashboard(user){
   this->mainMenuIndex = 0;
   this->menuBar = MenuBar::Create();
   this->menu = Menu::Create();
+
+  // Calculate number of sensors per menu
+  int sensorX = 35;
+  int availableSizeX = getTerminalWidth();
+  int graphicsInX = availableSizeX / sensorX;
+  graphicsInX  = (graphicsInX < 3 ? graphicsInX : 3);
+
+  int sensorY = 20;
+  int terminalSizeY = 11;
+  int menuBarSizeY = 2;
+  int availableSizeY = getTerminalHeight() - terminalSizeY - menuBarSizeY;
+  int graphicsInY = availableSizeY / sensorY;
+  graphicsInY  = (graphicsInY < 2 ? graphicsInY : 2);
+
+  setNumberOfSensorsPerMenu(graphicsInX*graphicsInY);
+  addToMainMenu(); 
 }
 
 void CLDashboard::showMainMenu(){
@@ -57,27 +73,27 @@ void CLDashboard::readCommand(){
         changeInterface(this->lastInterface);
         reloadCursorPos(); // Reload cursor pos
       }
-      else errorCommand(command[0]);
+      else errorCommand(command[0],lineNumber);
     }
 
     /* Command with two words */
     /* Check if the command has two words */
     else if (command.size() == 2){
-      if (command[0].compare("man") == 0) {lineNumber++; helpCommand(command[1]);}
+      if (command[0].compare("man") == 0) { helpCommand(command[1],lineNumber);}
       else if (command[0].compare("set") == 0) changeCurrentSensorInfo("state", command[1]);
       else if (command[0].compare("cs") == 0) {
-        if (! changeInterface(command[1])) {lineNumber++;errorCommand("cs "+command[1]);}
+        if (! changeInterface(command[1])) {errorCommand("cs "+command[1], lineNumber);}
         else {reloadCursorPos(); }// Reload cursor pos
       }
       else if (command[0].compare("add") == 0){
-        if (! this->user->hasAdminPermission()){permissionError();continue;}
+        if (! this->user->hasAdminPermission()){permissionError(lineNumber);continue;}
         addNewSensor(command[1]);
         changeInterface(this->currentInterface);
         reloadCursorPos(); // Reload cursor pos
         lineNumber++;
       }
       else if (command[0].compare("rm") == 0){
-        if (! this->user->hasAdminPermission()){permissionError();continue;}
+        if (! this->user->hasAdminPermission()){permissionError(lineNumber);continue;}
         deleteSensor(command[1]);
         changeInterface(this->currentInterface);
         reloadCursorPos(); // Reload cursor pos
@@ -96,7 +112,7 @@ void CLDashboard::readCommand(){
         lineNumber = 0; 
         clearCustomTerminal(*this->user,10);
       }
-      else errorCommand(command[0]);
+      else errorCommand(command[0],lineNumber);
     }
 
     /* Command with three words */
@@ -104,34 +120,52 @@ void CLDashboard::readCommand(){
     else if (command.size() == 3){
       if (command[0].compare("set") == 0) changeCurrentSensorInfo(command[1], command[2]);
       else if (command[0].compare("user") == 0){
-        if (! this->user->hasAdminPermission()){permissionError();continue;}
-        if (command[1].size() != 5 && command[2].size() != 8) errorCommand(command[0]);
-        User *user = new User(command[1], command[2]);
-        this->newUsers.push_back(*user);
+        if (! this->user->hasAdminPermission()){permissionError(lineNumber);continue;}
+        if (command[1].size() > 5 || command[2].size() != 8) errorCommand(command[0],lineNumber);
+        else {
+          User *user = new User(command[1], command[2]);
+          this->newUsers.push_back(*user);
+        }
       }
       else if (command[0].compare("admin") == 0){
-        if (! this->user->hasAdminPermission()){permissionError();continue;}
-        if (command[1].size() != 5 && command[2].size() != 8) errorCommand(command[0]);
-        Admin *admin = new Admin(command[1], command[2]);
-        this->newUsers.push_back(*admin);
+        if (! this->user->hasAdminPermission()){permissionError(lineNumber);continue;}
+        if (command[1].size() > 5 || command[2].size() != 8) errorCommand(command[0],lineNumber);
+        else {
+          Admin *admin = new Admin(command[1], command[2]);
+          this->newUsers.push_back(*admin);
+        }
       }
-      else errorCommand(command[0]);
+      else if (command[0].compare("rm") == 0){
+        if (! this->user->hasAdminPermission()){permissionError(lineNumber);continue;}
+
+        if (command[1].compare(this->user->getEmployeeNumber()) && command[2].compare(this->user->getNIF())) errorCommand(command[0],lineNumber);
+        else if (command[1].size() > 5 || command[2].size() != 8) errorCommand(command[0],lineNumber);
+        else {
+          User *user = new User(command[1], command[2]);
+          this->deleteUsers.push_back(*user);
+        }
+      }
+      else errorCommand(command[0],lineNumber);
     }
 
     /* Command with four words */
     /* Check if the command has four words */
     else if (command.size() == 4){
       if (command[0].compare("user") == 0){
-        if (! this->user->hasAdminPermission()){permissionError();continue;}
-        if (command[1].size() != 5 && command[2].size() != 8) errorCommand(command[0]);
-        User *user = new User(command[1], command[2], command[3]);
-        this->newUsers.push_back(*user);
+        if (! this->user->hasAdminPermission()){permissionError(lineNumber);continue;}
+        if (command[1].size() > 5 || command[2].size() != 8) errorCommand(command[0],lineNumber);
+        else {
+          User *user = new User(command[1], command[2], command[3]);
+          this->newUsers.push_back(*user);
+        }
       }
       else if (command[0].compare("admin") == 0){
-        if (! this->user->hasAdminPermission()){permissionError();continue;}
-        if (command[1].size() != 5 && command[2].size() != 8) errorCommand(command[0]);
-        Admin *admin = new Admin(command[1], command[2], command[3]);
-        this->newUsers.push_back(*admin);
+        if (! this->user->hasAdminPermission()){permissionError(lineNumber);continue;}
+        if (command[1].size() > 5 || command[2].size() != 8) errorCommand(command[0],lineNumber);
+        else {
+          Admin *admin = new Admin(command[1], command[2], command[3]);
+          this->newUsers.push_back(*admin);
+        }    
       }
       else if (command[0].compare("font") == 0){
         try {
@@ -141,7 +175,7 @@ void CLDashboard::readCommand(){
           changeInterface(this->currentInterface);
           lineNumber = 0; 
           clearCustomTerminal(*this->user,10);
-        } catch(const std::exception& e) {lineNumber++;errorCommand(command[0]);} 
+        } catch(const std::exception& e) {errorCommand(command[0],lineNumber);} 
       }
       else if (command[0].compare("background") == 0){
         try {
@@ -151,7 +185,7 @@ void CLDashboard::readCommand(){
           changeInterface(this->currentInterface);
           lineNumber = 0; 
           clearCustomTerminal(*this->user,10);
-        } catch(const std::exception& e) {lineNumber++;errorCommand(command[0]);} 
+        } catch(const std::exception& e) {errorCommand(command[0],lineNumber);} 
       }
       else if (command[0].compare("graphic") == 0){
         try {
@@ -160,12 +194,12 @@ void CLDashboard::readCommand(){
           cleanScreen(*this->user->getConfiguration()->getBackgroundColor());
           changeInterface(this->currentInterface);
           clearCustomTerminal(*this->user,10);
-        } catch(const std::exception& e) {lineNumber++;errorCommand(command[0]);} 
+        } catch(const std::exception& e) {errorCommand(command[0],lineNumber);} 
       }
-      else errorCommand(command[0]);
+      else errorCommand(command[0],lineNumber);
     }
     
-    else {lineNumber++;errorCommand(command[0]);}
+    else {errorCommand(command[0],lineNumber);}
 
     command.clear();
   }
@@ -189,21 +223,24 @@ void CLDashboard::changeMainMenu(int n){
 }
 
 
-void CLDashboard::helpCommand(std::string command){
+void CLDashboard::helpCommand(std::string command, int &lineNumber){
   printColorFromFile("config/LANG/" + user->getConfiguration()->getLanguage() + "/commands/help/" + command + ".man", *user->getConfiguration()->getFontColor(),*user->getConfiguration()->getBackgroundColor());
   newLine();
+  lineNumber++;
 }
 
-void CLDashboard::errorCommand(std::string command){
+void CLDashboard::errorCommand(std::string command, int &lineNumber){
   printColor(command,*user->getConfiguration()->getFontColor(),*user->getConfiguration()->getBackgroundColor());
   printColorFromFile("config/LANG/" + user->getConfiguration()->getLanguage() + "/commands/notFound.txt", *user->getConfiguration()->getFontColor(),*user->getConfiguration()->getBackgroundColor());
   newLine();
+  lineNumber++;
 }
 
-void CLDashboard::permissionError(){
+void CLDashboard::permissionError(int &lineNumber){
   printColor(this->user->getName(),*user->getConfiguration()->getFontColor(),*user->getConfiguration()->getBackgroundColor());
   printColorFromFile("config/LANG/" + user->getConfiguration()->getLanguage() + "/commands/permissionError.txt", *user->getConfiguration()->getFontColor(),*user->getConfiguration()->getBackgroundColor());
   newLine();
+  lineNumber++;
 }
 
 CLDashboard::~CLDashboard(){

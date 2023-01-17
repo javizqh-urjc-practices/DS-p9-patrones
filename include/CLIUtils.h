@@ -9,6 +9,7 @@
  * 
  */
 #include "User.h"
+#include "MinTerminalSize.h"
 #include <iostream>
 #include <algorithm>
 #include <iomanip>

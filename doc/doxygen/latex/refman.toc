@@ -62,58 +62,62 @@
 \contentsline {subsubsection}{\numberline {4.11.1.7}Create()}{31}{subsubsection.4.11.1.7}%
 \contentsline {subsubsection}{\numberline {4.11.1.8}deleteSensor()}{31}{subsubsection.4.11.1.8}%
 \contentsline {subsubsection}{\numberline {4.11.1.9}exit()}{31}{subsubsection.4.11.1.9}%
-\contentsline {subsubsection}{\numberline {4.11.1.10}getNewUsers()}{32}{subsubsection.4.11.1.10}%
-\contentsline {subsubsection}{\numberline {4.11.1.11}logout()}{32}{subsubsection.4.11.1.11}%
-\contentsline {subsubsection}{\numberline {4.11.1.12}moveWindowMainMenu()}{32}{subsubsection.4.11.1.12}%
-\contentsline {section}{\numberline {4.12}Database Class Reference}{32}{section.4.12}%
+\contentsline {subsubsection}{\numberline {4.11.1.10}getDeleteUsers()}{32}{subsubsection.4.11.1.10}%
+\contentsline {subsubsection}{\numberline {4.11.1.11}getNewUsers()}{32}{subsubsection.4.11.1.11}%
+\contentsline {subsubsection}{\numberline {4.11.1.12}logout()}{32}{subsubsection.4.11.1.12}%
+\contentsline {subsubsection}{\numberline {4.11.1.13}moveWindowMainMenu()}{32}{subsubsection.4.11.1.13}%
+\contentsline {subsection}{\numberline {4.11.2}Member Data Documentation}{33}{subsection.4.11.2}%
+\contentsline {subsubsection}{\numberline {4.11.2.1}numberOfSensorsPerMenu}{33}{subsubsection.4.11.2.1}%
+\contentsline {section}{\numberline {4.12}Database Class Reference}{33}{section.4.12}%
 \contentsline {subsection}{\numberline {4.12.1}Member Function Documentation}{33}{subsection.4.12.1}%
 \contentsline {subsubsection}{\numberline {4.12.1.1}getUser()}{33}{subsubsection.4.12.1.1}%
-\contentsline {section}{\numberline {4.13}Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config Class Reference}{33}{section.4.13}%
-\contentsline {section}{\numberline {4.14}Humidity Class Reference}{34}{section.4.14}%
-\contentsline {subsection}{\numberline {4.14.1}Constructor \& Destructor Documentation}{35}{subsection.4.14.1}%
-\contentsline {subsubsection}{\numberline {4.14.1.1}Humidity()}{35}{subsubsection.4.14.1.1}%
+\contentsline {section}{\numberline {4.13}Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config Class Reference}{34}{section.4.13}%
+\contentsline {section}{\numberline {4.14}Humidity Class Reference}{35}{section.4.14}%
+\contentsline {subsection}{\numberline {4.14.1}Constructor \& Destructor Documentation}{36}{subsection.4.14.1}%
+\contentsline {subsubsection}{\numberline {4.14.1.1}Humidity()}{36}{subsubsection.4.14.1.1}%
 \contentsline {section}{\numberline {4.15}Interface Class Reference}{36}{section.4.15}%
 \contentsline {subsection}{\numberline {4.15.1}Member Function Documentation}{37}{subsection.4.15.1}%
 \contentsline {subsubsection}{\numberline {4.15.1.1}Create()}{37}{subsubsection.4.15.1.1}%
-\contentsline {subsubsection}{\numberline {4.15.1.2}loadMenu()}{37}{subsubsection.4.15.1.2}%
-\contentsline {subsubsection}{\numberline {4.15.1.3}login()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{37}{subsubsection.4.15.1.3}%
+\contentsline {subsubsection}{\numberline {4.15.1.2}loadMenu()}{38}{subsubsection.4.15.1.2}%
+\contentsline {subsubsection}{\numberline {4.15.1.3}login()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{38}{subsubsection.4.15.1.3}%
 \contentsline {subsubsection}{\numberline {4.15.1.4}login()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{38}{subsubsection.4.15.1.4}%
-\contentsline {section}{\numberline {4.16}Login\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interface Class Reference}{38}{section.4.16}%
+\contentsline {section}{\numberline {4.16}Login\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interface Class Reference}{39}{section.4.16}%
 \contentsline {subsection}{\numberline {4.16.1}Member Function Documentation}{40}{subsection.4.16.1}%
 \contentsline {subsubsection}{\numberline {4.16.1.1}checkUser()}{40}{subsubsection.4.16.1.1}%
-\contentsline {subsubsection}{\numberline {4.16.1.2}Create()}{40}{subsubsection.4.16.1.2}%
+\contentsline {subsubsection}{\numberline {4.16.1.2}Create()}{41}{subsubsection.4.16.1.2}%
 \contentsline {section}{\numberline {4.17}Menu Class Reference}{41}{section.4.17}%
-\contentsline {subsection}{\numberline {4.17.1}Member Function Documentation}{41}{subsection.4.17.1}%
-\contentsline {subsubsection}{\numberline {4.17.1.1}Create()}{41}{subsubsection.4.17.1.1}%
+\contentsline {subsection}{\numberline {4.17.1}Member Function Documentation}{42}{subsection.4.17.1}%
+\contentsline {subsubsection}{\numberline {4.17.1.1}Create()}{42}{subsubsection.4.17.1.1}%
 \contentsline {section}{\numberline {4.18}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bar Class Reference}{42}{section.4.18}%
 \contentsline {subsection}{\numberline {4.18.1}Member Function Documentation}{43}{subsection.4.18.1}%
 \contentsline {subsubsection}{\numberline {4.18.1.1}Create()}{43}{subsubsection.4.18.1.1}%
-\contentsline {subsubsection}{\numberline {4.18.1.2}setCurrentMenu()}{43}{subsubsection.4.18.1.2}%
-\contentsline {section}{\numberline {4.19}Moisture Class Reference}{44}{section.4.19}%
-\contentsline {subsection}{\numberline {4.19.1}Constructor \& Destructor Documentation}{45}{subsection.4.19.1}%
-\contentsline {subsubsection}{\numberline {4.19.1.1}Moisture()}{45}{subsubsection.4.19.1.1}%
-\contentsline {section}{\numberline {4.20}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Found\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Argument Class Reference}{45}{section.4.20}%
-\contentsline {section}{\numberline {4.21}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Found\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{46}{section.4.21}%
-\contentsline {section}{\numberline {4.22}Sensor Class Reference}{47}{section.4.22}%
-\contentsline {subsection}{\numberline {4.22.1}Constructor \& Destructor Documentation}{48}{subsection.4.22.1}%
-\contentsline {subsubsection}{\numberline {4.22.1.1}Sensor()}{48}{subsubsection.4.22.1.1}%
-\contentsline {subsection}{\numberline {4.22.2}Member Function Documentation}{48}{subsection.4.22.2}%
-\contentsline {subsubsection}{\numberline {4.22.2.1}Create()}{48}{subsubsection.4.22.2.1}%
-\contentsline {subsubsection}{\numberline {4.22.2.2}requestData()}{49}{subsubsection.4.22.2.2}%
-\contentsline {section}{\numberline {4.23}Thermometer Class Reference}{49}{section.4.23}%
-\contentsline {subsection}{\numberline {4.23.1}Constructor \& Destructor Documentation}{50}{subsection.4.23.1}%
-\contentsline {subsubsection}{\numberline {4.23.1.1}Thermometer()}{50}{subsubsection.4.23.1.1}%
-\contentsline {section}{\numberline {4.24}User Class Reference}{51}{section.4.24}%
-\contentsline {subsection}{\numberline {4.24.1}Constructor \& Destructor Documentation}{52}{subsection.4.24.1}%
-\contentsline {subsubsection}{\numberline {4.24.1.1}User()}{52}{subsubsection.4.24.1.1}%
-\contentsline {subsection}{\numberline {4.24.2}Member Function Documentation}{53}{subsection.4.24.2}%
-\contentsline {subsubsection}{\numberline {4.24.2.1}addTimestamp()}{53}{subsubsection.4.24.2.1}%
-\contentsline {subsubsection}{\numberline {4.24.2.2}getName()}{53}{subsubsection.4.24.2.2}%
-\contentsline {subsubsection}{\numberline {4.24.2.3}getTimestamp()}{53}{subsubsection.4.24.2.3}%
-\contentsline {subsubsection}{\numberline {4.24.2.4}hasAdminPermission()}{53}{subsubsection.4.24.2.4}%
-\contentsline {subsubsection}{\numberline {4.24.2.5}setEmployeeNumber()}{53}{subsubsection.4.24.2.5}%
-\contentsline {subsubsection}{\numberline {4.24.2.6}setNIF()}{54}{subsubsection.4.24.2.6}%
-\contentsline {section}{\numberline {4.25}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config Class Reference}{54}{section.4.25}%
+\contentsline {subsubsection}{\numberline {4.18.1.2}setCurrentMenu()}{44}{subsubsection.4.18.1.2}%
+\contentsline {section}{\numberline {4.19}Min\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Terminal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Size Class Reference}{44}{section.4.19}%
+\contentsline {section}{\numberline {4.20}Moisture Class Reference}{45}{section.4.20}%
+\contentsline {subsection}{\numberline {4.20.1}Constructor \& Destructor Documentation}{46}{subsection.4.20.1}%
+\contentsline {subsubsection}{\numberline {4.20.1.1}Moisture()}{46}{subsubsection.4.20.1.1}%
+\contentsline {section}{\numberline {4.21}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Found\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Argument Class Reference}{46}{section.4.21}%
+\contentsline {section}{\numberline {4.22}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Found\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{47}{section.4.22}%
+\contentsline {section}{\numberline {4.23}Sensor Class Reference}{48}{section.4.23}%
+\contentsline {subsection}{\numberline {4.23.1}Constructor \& Destructor Documentation}{49}{subsection.4.23.1}%
+\contentsline {subsubsection}{\numberline {4.23.1.1}Sensor()}{49}{subsubsection.4.23.1.1}%
+\contentsline {subsection}{\numberline {4.23.2}Member Function Documentation}{49}{subsection.4.23.2}%
+\contentsline {subsubsection}{\numberline {4.23.2.1}Create()}{49}{subsubsection.4.23.2.1}%
+\contentsline {subsubsection}{\numberline {4.23.2.2}requestData()}{50}{subsubsection.4.23.2.2}%
+\contentsline {section}{\numberline {4.24}Thermometer Class Reference}{50}{section.4.24}%
+\contentsline {subsection}{\numberline {4.24.1}Constructor \& Destructor Documentation}{51}{subsection.4.24.1}%
+\contentsline {subsubsection}{\numberline {4.24.1.1}Thermometer()}{51}{subsubsection.4.24.1.1}%
+\contentsline {section}{\numberline {4.25}User Class Reference}{52}{section.4.25}%
+\contentsline {subsection}{\numberline {4.25.1}Constructor \& Destructor Documentation}{53}{subsection.4.25.1}%
+\contentsline {subsubsection}{\numberline {4.25.1.1}User()}{53}{subsubsection.4.25.1.1}%
+\contentsline {subsection}{\numberline {4.25.2}Member Function Documentation}{54}{subsection.4.25.2}%
+\contentsline {subsubsection}{\numberline {4.25.2.1}addTimestamp()}{54}{subsubsection.4.25.2.1}%
+\contentsline {subsubsection}{\numberline {4.25.2.2}getName()}{54}{subsubsection.4.25.2.2}%
+\contentsline {subsubsection}{\numberline {4.25.2.3}getTimestamp()}{54}{subsubsection.4.25.2.3}%
+\contentsline {subsubsection}{\numberline {4.25.2.4}hasAdminPermission()}{54}{subsubsection.4.25.2.4}%
+\contentsline {subsubsection}{\numberline {4.25.2.5}setEmployeeNumber()}{54}{subsubsection.4.25.2.5}%
+\contentsline {subsubsection}{\numberline {4.25.2.6}setNIF()}{55}{subsubsection.4.25.2.6}%
+\contentsline {section}{\numberline {4.26}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config Class Reference}{55}{section.4.26}%
 \contentsline {chapter}{\numberline {5}File Documentation}{57}{chapter.5}%
 \contentsline {section}{\numberline {5.1}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Admin.h File Reference}{57}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Detailed Description}{58}{subsection.5.1.1}%
@@ -124,7 +128,7 @@
 \contentsline {section}{\numberline {5.4}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Camera\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GB.h File Reference}{61}{section.5.4}%
 \contentsline {subsection}{\numberline {5.4.1}Detailed Description}{61}{subsection.5.4.1}%
 \contentsline {section}{\numberline {5.5}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dashboard.h File Reference}{62}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{63}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{62}{subsection.5.5.1}%
 \contentsline {section}{\numberline {5.6}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interface.h File Reference}{63}{section.5.6}%
 \contentsline {subsection}{\numberline {5.6.1}Detailed Description}{64}{subsection.5.6.1}%
 \contentsline {section}{\numberline {5.7}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Utils.h File Reference}{65}{section.5.7}%
@@ -159,72 +163,74 @@
 \contentsline {subsection}{\numberline {5.19.1}Detailed Description}{83}{subsection.5.19.1}%
 \contentsline {section}{\numberline {5.20}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bar.h File Reference}{83}{section.5.20}%
 \contentsline {subsection}{\numberline {5.20.1}Detailed Description}{84}{subsection.5.20.1}%
-\contentsline {section}{\numberline {5.21}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Moisture.h File Reference}{85}{section.5.21}%
+\contentsline {section}{\numberline {5.21}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Min\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Terminal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Size.h File Reference}{85}{section.5.21}%
 \contentsline {subsection}{\numberline {5.21.1}Detailed Description}{85}{subsection.5.21.1}%
-\contentsline {section}{\numberline {5.22}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Found\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Argument.h File Reference}{86}{section.5.22}%
+\contentsline {section}{\numberline {5.22}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Moisture.h File Reference}{86}{section.5.22}%
 \contentsline {subsection}{\numberline {5.22.1}Detailed Description}{86}{subsection.5.22.1}%
-\contentsline {section}{\numberline {5.23}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Found\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.h File Reference}{87}{section.5.23}%
-\contentsline {subsection}{\numberline {5.23.1}Detailed Description}{88}{subsection.5.23.1}%
-\contentsline {section}{\numberline {5.24}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sensor.h File Reference}{88}{section.5.24}%
+\contentsline {section}{\numberline {5.23}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Found\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Argument.h File Reference}{87}{section.5.23}%
+\contentsline {subsection}{\numberline {5.23.1}Detailed Description}{87}{subsection.5.23.1}%
+\contentsline {section}{\numberline {5.24}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Found\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.h File Reference}{88}{section.5.24}%
 \contentsline {subsection}{\numberline {5.24.1}Detailed Description}{89}{subsection.5.24.1}%
-\contentsline {section}{\numberline {5.25}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Thermometer.h File Reference}{89}{section.5.25}%
+\contentsline {section}{\numberline {5.25}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sensor.h File Reference}{89}{section.5.25}%
 \contentsline {subsection}{\numberline {5.25.1}Detailed Description}{90}{subsection.5.25.1}%
-\contentsline {section}{\numberline {5.26}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User.h File Reference}{90}{section.5.26}%
+\contentsline {section}{\numberline {5.26}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Thermometer.h File Reference}{90}{section.5.26}%
 \contentsline {subsection}{\numberline {5.26.1}Detailed Description}{91}{subsection.5.26.1}%
-\contentsline {section}{\numberline {5.27}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config.h File Reference}{91}{section.5.27}%
+\contentsline {section}{\numberline {5.27}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User.h File Reference}{91}{section.5.27}%
 \contentsline {subsection}{\numberline {5.27.1}Detailed Description}{92}{subsection.5.27.1}%
-\contentsline {section}{\numberline {5.28}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Admin.cpp File Reference}{93}{section.5.28}%
+\contentsline {section}{\numberline {5.28}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config.h File Reference}{92}{section.5.28}%
 \contentsline {subsection}{\numberline {5.28.1}Detailed Description}{93}{subsection.5.28.1}%
-\contentsline {section}{\numberline {5.29}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Air\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Quality.cpp File Reference}{94}{section.5.29}%
+\contentsline {section}{\numberline {5.29}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Admin.cpp File Reference}{94}{section.5.29}%
 \contentsline {subsection}{\numberline {5.29.1}Detailed Description}{94}{subsection.5.29.1}%
-\contentsline {section}{\numberline {5.30}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Camera\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BW.cpp File Reference}{94}{section.5.30}%
+\contentsline {section}{\numberline {5.30}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Air\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Quality.cpp File Reference}{95}{section.5.30}%
 \contentsline {subsection}{\numberline {5.30.1}Detailed Description}{95}{subsection.5.30.1}%
-\contentsline {section}{\numberline {5.31}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Camera\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GB.cpp File Reference}{95}{section.5.31}%
-\contentsline {subsection}{\numberline {5.31.1}Detailed Description}{95}{subsection.5.31.1}%
-\contentsline {section}{\numberline {5.32}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dashboard.cpp File Reference}{96}{section.5.32}%
+\contentsline {section}{\numberline {5.31}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Camera\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BW.cpp File Reference}{95}{section.5.31}%
+\contentsline {subsection}{\numberline {5.31.1}Detailed Description}{96}{subsection.5.31.1}%
+\contentsline {section}{\numberline {5.32}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Camera\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GB.cpp File Reference}{96}{section.5.32}%
 \contentsline {subsection}{\numberline {5.32.1}Detailed Description}{96}{subsection.5.32.1}%
-\contentsline {section}{\numberline {5.33}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interface.cpp File Reference}{97}{section.5.33}%
+\contentsline {section}{\numberline {5.33}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dashboard.cpp File Reference}{97}{section.5.33}%
 \contentsline {subsection}{\numberline {5.33.1}Detailed Description}{97}{subsection.5.33.1}%
-\contentsline {section}{\numberline {5.34}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Utils.cpp File Reference}{98}{section.5.34}%
-\contentsline {subsection}{\numberline {5.34.1}Detailed Description}{99}{subsection.5.34.1}%
-\contentsline {subsection}{\numberline {5.34.2}Function Documentation}{99}{subsection.5.34.2}%
-\contentsline {subsubsection}{\numberline {5.34.2.1}printCenter()}{99}{subsubsection.5.34.2.1}%
-\contentsline {subsubsection}{\numberline {5.34.2.2}printCenterFromFile()}{100}{subsubsection.5.34.2.2}%
-\contentsline {subsubsection}{\numberline {5.34.2.3}printColor()}{100}{subsubsection.5.34.2.3}%
-\contentsline {section}{\numberline {5.35}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Login\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interface.cpp File Reference}{100}{section.5.35}%
-\contentsline {subsection}{\numberline {5.35.1}Detailed Description}{101}{subsection.5.35.1}%
-\contentsline {section}{\numberline {5.36}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu.cpp File Reference}{101}{section.5.36}%
+\contentsline {section}{\numberline {5.34}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interface.cpp File Reference}{98}{section.5.34}%
+\contentsline {subsection}{\numberline {5.34.1}Detailed Description}{98}{subsection.5.34.1}%
+\contentsline {section}{\numberline {5.35}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Utils.cpp File Reference}{99}{section.5.35}%
+\contentsline {subsection}{\numberline {5.35.1}Detailed Description}{100}{subsection.5.35.1}%
+\contentsline {subsection}{\numberline {5.35.2}Function Documentation}{100}{subsection.5.35.2}%
+\contentsline {subsubsection}{\numberline {5.35.2.1}printCenter()}{100}{subsubsection.5.35.2.1}%
+\contentsline {subsubsection}{\numberline {5.35.2.2}printCenterFromFile()}{101}{subsubsection.5.35.2.2}%
+\contentsline {subsubsection}{\numberline {5.35.2.3}printColor()}{101}{subsubsection.5.35.2.3}%
+\contentsline {section}{\numberline {5.36}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Login\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interface.cpp File Reference}{101}{section.5.36}%
 \contentsline {subsection}{\numberline {5.36.1}Detailed Description}{102}{subsection.5.36.1}%
-\contentsline {section}{\numberline {5.37}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bar.cpp File Reference}{102}{section.5.37}%
+\contentsline {section}{\numberline {5.37}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu.cpp File Reference}{102}{section.5.37}%
 \contentsline {subsection}{\numberline {5.37.1}Detailed Description}{103}{subsection.5.37.1}%
-\contentsline {section}{\numberline {5.38}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config.cpp File Reference}{103}{section.5.38}%
+\contentsline {section}{\numberline {5.38}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bar.cpp File Reference}{103}{section.5.38}%
 \contentsline {subsection}{\numberline {5.38.1}Detailed Description}{104}{subsection.5.38.1}%
-\contentsline {section}{\numberline {5.39}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dashboard.cpp File Reference}{104}{section.5.39}%
+\contentsline {section}{\numberline {5.39}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config.cpp File Reference}{104}{section.5.39}%
 \contentsline {subsection}{\numberline {5.39.1}Detailed Description}{105}{subsection.5.39.1}%
-\contentsline {section}{\numberline {5.40}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Database.cpp File Reference}{105}{section.5.40}%
+\contentsline {section}{\numberline {5.40}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dashboard.cpp File Reference}{105}{section.5.40}%
 \contentsline {subsection}{\numberline {5.40.1}Detailed Description}{106}{subsection.5.40.1}%
-\contentsline {section}{\numberline {5.41}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config.cpp File Reference}{106}{section.5.41}%
+\contentsline {section}{\numberline {5.41}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Database.cpp File Reference}{106}{section.5.41}%
 \contentsline {subsection}{\numberline {5.41.1}Detailed Description}{107}{subsection.5.41.1}%
-\contentsline {section}{\numberline {5.42}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Humidity.cpp File Reference}{107}{section.5.42}%
+\contentsline {section}{\numberline {5.42}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config.cpp File Reference}{107}{section.5.42}%
 \contentsline {subsection}{\numberline {5.42.1}Detailed Description}{108}{subsection.5.42.1}%
-\contentsline {section}{\numberline {5.43}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interface.cpp File Reference}{108}{section.5.43}%
+\contentsline {section}{\numberline {5.43}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Humidity.cpp File Reference}{108}{section.5.43}%
 \contentsline {subsection}{\numberline {5.43.1}Detailed Description}{109}{subsection.5.43.1}%
-\contentsline {section}{\numberline {5.44}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Login\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interface.cpp File Reference}{109}{section.5.44}%
+\contentsline {section}{\numberline {5.44}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interface.cpp File Reference}{109}{section.5.44}%
 \contentsline {subsection}{\numberline {5.44.1}Detailed Description}{110}{subsection.5.44.1}%
-\contentsline {section}{\numberline {5.45}src/main.cpp File Reference}{110}{section.5.45}%
+\contentsline {section}{\numberline {5.45}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Login\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interface.cpp File Reference}{110}{section.5.45}%
 \contentsline {subsection}{\numberline {5.45.1}Detailed Description}{111}{subsection.5.45.1}%
-\contentsline {section}{\numberline {5.46}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu.cpp File Reference}{112}{section.5.46}%
+\contentsline {section}{\numberline {5.46}src/main.cpp File Reference}{111}{section.5.46}%
 \contentsline {subsection}{\numberline {5.46.1}Detailed Description}{112}{subsection.5.46.1}%
-\contentsline {section}{\numberline {5.47}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bar.cpp File Reference}{113}{section.5.47}%
+\contentsline {section}{\numberline {5.47}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu.cpp File Reference}{113}{section.5.47}%
 \contentsline {subsection}{\numberline {5.47.1}Detailed Description}{113}{subsection.5.47.1}%
-\contentsline {section}{\numberline {5.48}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Moisture.cpp File Reference}{114}{section.5.48}%
+\contentsline {section}{\numberline {5.48}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bar.cpp File Reference}{114}{section.5.48}%
 \contentsline {subsection}{\numberline {5.48.1}Detailed Description}{114}{subsection.5.48.1}%
-\contentsline {section}{\numberline {5.49}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sensor.cpp File Reference}{114}{section.5.49}%
+\contentsline {section}{\numberline {5.49}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Moisture.cpp File Reference}{114}{section.5.49}%
 \contentsline {subsection}{\numberline {5.49.1}Detailed Description}{115}{subsection.5.49.1}%
-\contentsline {section}{\numberline {5.50}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Thermometer.cpp File Reference}{115}{section.5.50}%
+\contentsline {section}{\numberline {5.50}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sensor.cpp File Reference}{115}{section.5.50}%
 \contentsline {subsection}{\numberline {5.50.1}Detailed Description}{116}{subsection.5.50.1}%
-\contentsline {section}{\numberline {5.51}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User.cpp File Reference}{116}{section.5.51}%
+\contentsline {section}{\numberline {5.51}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Thermometer.cpp File Reference}{116}{section.5.51}%
 \contentsline {subsection}{\numberline {5.51.1}Detailed Description}{117}{subsection.5.51.1}%
-\contentsline {section}{\numberline {5.52}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config.cpp File Reference}{117}{section.5.52}%
+\contentsline {section}{\numberline {5.52}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User.cpp File Reference}{117}{section.5.52}%
 \contentsline {subsection}{\numberline {5.52.1}Detailed Description}{118}{subsection.5.52.1}%
-\contentsline {chapter}{Index}{119}{section*.213}%
+\contentsline {section}{\numberline {5.53}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config.cpp File Reference}{118}{section.5.53}%
+\contentsline {subsection}{\numberline {5.53.1}Detailed Description}{119}{subsection.5.53.1}%
+\contentsline {chapter}{Index}{121}{section*.218}%

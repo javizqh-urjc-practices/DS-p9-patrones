@@ -71,55 +71,57 @@ $(function() {
 <div class="contents">
 <a href="CLIUtils_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="User_8h.html">User.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef CLIUTILS_H </span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define CLIUTILS_H </span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">void</span> setTerminalSize();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">int</span> getTerminalWidth();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> getTerminalHeight();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> <a class="code" href="CLIUtils_8h.html#aa273cd2c4b4b755a261f4c32f37f3ba0">printCenterFromFile</a>(<span class="keyword">const</span> std::string fileName, std::array&lt;int,3&gt; frontColor, std::array&lt;int,3&gt; backColor, <span class="keyword">const</span> <span class="keywordtype">int</span> padding = 0 );</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">void</span> printRightFromFile(<span class="keyword">const</span> std::string fileName, std::array&lt;int,3&gt; frontColor, std::array&lt;int,3&gt; backColor, <span class="keyword">const</span> <span class="keywordtype">int</span> padding = 0 );</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> printLeftFromFile(<span class="keyword">const</span> std::string fileName, std::array&lt;int,3&gt; frontColor, std::array&lt;int,3&gt; backColor, <span class="keyword">const</span> <span class="keywordtype">int</span> padding = 0 );</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> printLogo(<span class="keyword">const</span> std::string fileName, std::array&lt;int,3&gt; frontColor, std::array&lt;int,3&gt; backColor);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> printColorFromFile(<span class="keyword">const</span> std::string fileName, std::array&lt;int,3&gt; frontColor, std::array&lt;int,3&gt; backColor);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">void</span> <a class="code" href="CLIUtils_8h.html#aab7fae4e4e79d368ccf9bbdb7d5e3679">printCenter</a>(<span class="keyword">const</span> std::string toPrint, std::array&lt;int,3&gt; frontColor, std::array&lt;int,3&gt; backColor, <span class="keyword">const</span> <span class="keywordtype">int</span> padding = 0 );</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> printRight(<span class="keyword">const</span> std::string toPrint, std::array&lt;int,3&gt; frontColor, std::array&lt;int,3&gt; backColor, <span class="keyword">const</span> <span class="keywordtype">int</span> padding = 0 );</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> printLeft(<span class="keyword">const</span> std::string toPrint, std::array&lt;int,3&gt; frontColor, std::array&lt;int,3&gt; backColor, <span class="keyword">const</span> <span class="keywordtype">int</span> padding = 0);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span> <a class="code" href="CLIUtils_8h.html#a55be4f6a5f72cd4c83b4f1b7a2596493">printColor</a>(std::string toPrint, std::array&lt;int,3&gt; frontColor, std::array&lt;int,3&gt; backColor);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> startCustomTerminal(<a class="code" href="classUser.html">User</a> &amp; user,<span class="keywordtype">int</span> );</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;std::vector&lt;std::string&gt; newCommand(<a class="code" href="classUser.html">User</a> &amp; user,std::string = <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span> clearCustomTerminal(<a class="code" href="classUser.html">User</a> &amp; user,<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span> cleanScreen(std::array&lt;int,3&gt; backColor);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">void</span> cleanScreen();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">void</span> newLine(<span class="keywordtype">int</span> lines = 1);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span> reloadCursorPos();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">void</span> saveCursorPos();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span> moveCursor(<span class="keywordtype">int</span> posX, <span class="keywordtype">int</span> posY);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">void</span> printGraphic(<span class="keyword">const</span> std::vector&lt;int&gt; data, std::array&lt;int,3&gt; frontColor, std::array&lt;int,3&gt; backColor, std::array&lt;int,3&gt; pointColor</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  , <span class="keywordtype">int</span> valPerY = 1, <span class="keywordtype">int</span> posX = 10, <span class="keywordtype">int</span> posY = 10, <span class="keywordtype">int</span> scale = 1);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">  #endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="MinTerminalSize_8h.html">MinTerminalSize.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef CLIUTILS_H </span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define CLIUTILS_H </span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> setTerminalSize();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> getTerminalWidth();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">int</span> getTerminalHeight();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">void</span> <a class="code" href="CLIUtils_8h.html#aa273cd2c4b4b755a261f4c32f37f3ba0">printCenterFromFile</a>(<span class="keyword">const</span> std::string fileName, std::array&lt;int,3&gt; frontColor, std::array&lt;int,3&gt; backColor, <span class="keyword">const</span> <span class="keywordtype">int</span> padding = 0 );</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> printRightFromFile(<span class="keyword">const</span> std::string fileName, std::array&lt;int,3&gt; frontColor, std::array&lt;int,3&gt; backColor, <span class="keyword">const</span> <span class="keywordtype">int</span> padding = 0 );</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> printLeftFromFile(<span class="keyword">const</span> std::string fileName, std::array&lt;int,3&gt; frontColor, std::array&lt;int,3&gt; backColor, <span class="keyword">const</span> <span class="keywordtype">int</span> padding = 0 );</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> printLogo(<span class="keyword">const</span> std::string fileName, std::array&lt;int,3&gt; frontColor, std::array&lt;int,3&gt; backColor);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> printColorFromFile(<span class="keyword">const</span> std::string fileName, std::array&lt;int,3&gt; frontColor, std::array&lt;int,3&gt; backColor);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">void</span> <a class="code" href="CLIUtils_8h.html#aab7fae4e4e79d368ccf9bbdb7d5e3679">printCenter</a>(<span class="keyword">const</span> std::string toPrint, std::array&lt;int,3&gt; frontColor, std::array&lt;int,3&gt; backColor, <span class="keyword">const</span> <span class="keywordtype">int</span> padding = 0 );</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> printRight(<span class="keyword">const</span> std::string toPrint, std::array&lt;int,3&gt; frontColor, std::array&lt;int,3&gt; backColor, <span class="keyword">const</span> <span class="keywordtype">int</span> padding = 0 );</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> printLeft(<span class="keyword">const</span> std::string toPrint, std::array&lt;int,3&gt; frontColor, std::array&lt;int,3&gt; backColor, <span class="keyword">const</span> <span class="keywordtype">int</span> padding = 0);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">void</span> <a class="code" href="CLIUtils_8h.html#a55be4f6a5f72cd4c83b4f1b7a2596493">printColor</a>(std::string toPrint, std::array&lt;int,3&gt; frontColor, std::array&lt;int,3&gt; backColor);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span> startCustomTerminal(<a class="code" href="classUser.html">User</a> &amp; user,<span class="keywordtype">int</span> );</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;std::vector&lt;std::string&gt; newCommand(<a class="code" href="classUser.html">User</a> &amp; user,std::string = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span> clearCustomTerminal(<a class="code" href="classUser.html">User</a> &amp; user,<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">void</span> cleanScreen(std::array&lt;int,3&gt; backColor);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">void</span> cleanScreen();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span> newLine(<span class="keywordtype">int</span> lines = 1);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">void</span> reloadCursorPos();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">void</span> saveCursorPos();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">void</span> moveCursor(<span class="keywordtype">int</span> posX, <span class="keywordtype">int</span> posY);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span> printGraphic(<span class="keyword">const</span> std::vector&lt;int&gt; data, std::array&lt;int,3&gt; frontColor, std::array&lt;int,3&gt; backColor, std::array&lt;int,3&gt; pointColor</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  , <span class="keywordtype">int</span> valPerY = 1, <span class="keywordtype">int</span> posX = 10, <span class="keywordtype">int</span> posY = 10, <span class="keywordtype">int</span> scale = 1);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">  #endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aCLIUtils_8h_html_aa273cd2c4b4b755a261f4c32f37f3ba0"><div class="ttname"><a href="CLIUtils_8h.html#aa273cd2c4b4b755a261f4c32f37f3ba0">printCenterFromFile</a></div><div class="ttdeci">void printCenterFromFile(const std::string fileName, std::array&lt; int, 3 &gt; frontColor, std::array&lt; int, 3 &gt; backColor, const int padding=0)</div><div class="ttdoc">Print the contents of the file in the center.</div><div class="ttdef"><b>Definition:</b> CLIUtils.cpp:115</div></div>
-<div class="ttc" id="aCLIUtils_8h_html_aab7fae4e4e79d368ccf9bbdb7d5e3679"><div class="ttname"><a href="CLIUtils_8h.html#aab7fae4e4e79d368ccf9bbdb7d5e3679">printCenter</a></div><div class="ttdeci">void printCenter(const std::string toPrint, std::array&lt; int, 3 &gt; frontColor, std::array&lt; int, 3 &gt; backColor, const int padding=0)</div><div class="ttdoc">Print the string in the center.</div><div class="ttdef"><b>Definition:</b> CLIUtils.cpp:153</div></div>
+<div class="ttc" id="aMinTerminalSize_8h_html"><div class="ttname"><a href="MinTerminalSize_8h.html">MinTerminalSize.h</a></div></div>
+<div class="ttc" id="aCLIUtils_8h_html_aa273cd2c4b4b755a261f4c32f37f3ba0"><div class="ttname"><a href="CLIUtils_8h.html#aa273cd2c4b4b755a261f4c32f37f3ba0">printCenterFromFile</a></div><div class="ttdeci">void printCenterFromFile(const std::string fileName, std::array&lt; int, 3 &gt; frontColor, std::array&lt; int, 3 &gt; backColor, const int padding=0)</div><div class="ttdoc">Print the contents of the file in the center.</div><div class="ttdef"><b>Definition:</b> CLIUtils.cpp:124</div></div>
+<div class="ttc" id="aCLIUtils_8h_html_aab7fae4e4e79d368ccf9bbdb7d5e3679"><div class="ttname"><a href="CLIUtils_8h.html#aab7fae4e4e79d368ccf9bbdb7d5e3679">printCenter</a></div><div class="ttdeci">void printCenter(const std::string toPrint, std::array&lt; int, 3 &gt; frontColor, std::array&lt; int, 3 &gt; backColor, const int padding=0)</div><div class="ttdoc">Print the string in the center.</div><div class="ttdef"><b>Definition:</b> CLIUtils.cpp:161</div></div>
 <div class="ttc" id="aUser_8h_html"><div class="ttname"><a href="User_8h.html">User.h</a></div><div class="ttdoc">Header file of User.cpp.</div></div>
 <div class="ttc" id="aclassUser_html"><div class="ttname"><a href="classUser.html">User</a></div><div class="ttdef"><b>Definition:</b> User.h:20</div></div>
-<div class="ttc" id="aCLIUtils_8h_html_a55be4f6a5f72cd4c83b4f1b7a2596493"><div class="ttname"><a href="CLIUtils_8h.html#a55be4f6a5f72cd4c83b4f1b7a2596493">printColor</a></div><div class="ttdeci">void printColor(std::string toPrint, std::array&lt; int, 3 &gt; frontColor, std::array&lt; int, 3 &gt; backColor)</div><div class="ttdoc">Print the string to the terminal in the given color.</div><div class="ttdef"><b>Definition:</b> CLIUtils.cpp:173</div></div>
+<div class="ttc" id="aCLIUtils_8h_html_a55be4f6a5f72cd4c83b4f1b7a2596493"><div class="ttname"><a href="CLIUtils_8h.html#a55be4f6a5f72cd4c83b4f1b7a2596493">printColor</a></div><div class="ttdeci">void printColor(std::string toPrint, std::array&lt; int, 3 &gt; frontColor, std::array&lt; int, 3 &gt; backColor)</div><div class="ttdoc">Print the string to the terminal in the given color.</div><div class="ttdef"><b>Definition:</b> CLIUtils.cpp:181</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

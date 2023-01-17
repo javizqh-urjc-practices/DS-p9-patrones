@@ -43,7 +43,6 @@ Dashboard::Dashboard(User &user){
     }
   }
 
-  addToMainMenu(); 
   // End loading from file
   
   //Sensor *sensor1 = Sensor::Create("thermometer");
@@ -135,9 +134,18 @@ bool Dashboard::changeInterface(std::string newInterface){
   }
 }
 
+void Dashboard::setNumberOfSensorsPerMenu(int numberOfSensors) {
+  // Max value 6, minimum value greater than 0 (positive)
+  int maxValue = 6;
+  if (numberOfSensors < 0) this->numberOfSensorsPerMenu = 1;
+  else if (numberOfSensors > maxValue) this->numberOfSensorsPerMenu = maxValue;
+  else this->numberOfSensorsPerMenu = numberOfSensors;
+  
+}
+
 void Dashboard::addToMainMenu(Sensor *sensor){
   std::vector<Sensor *> tmp;
-  if (this->mainMenu.back().size() < 6) {
+  if (this->mainMenu.back().size() < this->numberOfSensorsPerMenu) {
     tmp = this->mainMenu.back();
     this->mainMenu.pop_back();
   }
@@ -150,13 +158,13 @@ void Dashboard::addToMainMenu(Sensor *sensor){
 
 void Dashboard::addToMainMenu(){
   std::vector<Sensor *> tmp;
-  int nSensorWindow = 6;
+  int nSensorWindow = this->numberOfSensorsPerMenu;
   int sensorsToAdd = this->sensor.size();
-  for (int windows = 0; windows < ((sensorsToAdd - 1)/ 6) + 1; windows++){
+  for (int windows = 0; windows < ((sensorsToAdd - 1)/ this->numberOfSensorsPerMenu) + 1; windows++){
     tmp.clear();
-    if ( sensorsToAdd / (6*(windows+1)) == 0) nSensorWindow = sensorsToAdd - (6 * windows) ;
+    if ( sensorsToAdd / (nSensorWindow*(windows+1)) == 0) nSensorWindow = sensorsToAdd - (nSensorWindow * windows) ;
     for (int nSensor = 0; nSensor < nSensorWindow; nSensor++) {
-      tmp.push_back(this->sensor[nSensor + (windows * 6)]);
+      tmp.push_back(this->sensor[nSensor + (windows * this->numberOfSensorsPerMenu)]);
     }
     this->mainMenu.push_back(tmp);
   }

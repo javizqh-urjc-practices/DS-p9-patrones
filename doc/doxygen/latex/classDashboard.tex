@@ -29,6 +29,9 @@ virtual void {\bfseries show\+Main\+Menu} ()=0
 \item 
 bool \mbox{\hyperlink{classDashboard_aef27a85e48af95a081c21aaec82b366c}{change\+Interface}} (std\+::string new\+Interface=\char`\"{}\char`\"{})
 \begin{DoxyCompactList}\small\item\em Changes the current interface to the input one. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDashboard_ad7dda3d2560320d81e8b85a5a63308b5}\label{classDashboard_ad7dda3d2560320d81e8b85a5a63308b5}} 
+void {\bfseries set\+Number\+Of\+Sensors\+Per\+Menu} (int num\+Of\+Sensors\+Per\+Menu)
+\item 
 void \mbox{\hyperlink{classDashboard_a2ca43807bdee5a145328ef9062cb623c}{add\+To\+Main\+Menu}} ()
 \begin{DoxyCompactList}\small\item\em Adds all the current sensors to the dashboard. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classDashboard_a0cbf6d8ef182d1cdc8ef11b941338245}{add\+To\+Main\+Menu}} (\mbox{\hyperlink{classSensor}{Sensor}} $\ast$\mbox{\hyperlink{classDashboard_af375fed50c85669633ae7d49b32ecdb7}{sensor}})
@@ -43,6 +46,8 @@ void \mbox{\hyperlink{classDashboard_a596f0db2b83abf050e08aff47c92f47d}{delete\+
 \begin{DoxyCompactList}\small\item\em Deletes the desired sensor from the dashboard. \end{DoxyCompactList}\item 
 std\+::vector$<$ \mbox{\hyperlink{classUser}{User}} $>$ \mbox{\hyperlink{classDashboard_ae7d9b58184a050bdfc0b512d4234f3fd}{get\+New\+Users}} ()
 \begin{DoxyCompactList}\small\item\em Get the New Users vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classUser}{User}} $>$ \mbox{\hyperlink{classDashboard_a26b85b0675cd829462e8421de305639b}{get\+Delete\+Users}} ()
+\begin{DoxyCompactList}\small\item\em Get the vector of users to delete. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classDashboard_a783ee7cdf51ebbce302d50d2d38dd3eb}{exit}} ()
 \begin{DoxyCompactList}\small\item\em Exits the dashboard and finishes the program. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classDashboard_ae5dae4e3e9ba3b051ddbb700e7ef1dae}{logout}} ()
@@ -90,11 +95,16 @@ std\+::string \mbox{\hyperlink{classDashboard_ac372f35f9eca5781c45ce0cf57d590a7}
 \mbox{\Hypertarget{classDashboard_a17a15dd4e91111f87826c508bdc12916}\label{classDashboard_a17a15dd4e91111f87826c508bdc12916}} 
 \mbox{\hyperlink{classSensor}{Sensor}} $\ast$ \mbox{\hyperlink{classDashboard_a17a15dd4e91111f87826c508bdc12916}{current\+Sensor}}
 \begin{DoxyCompactList}\small\item\em If the current\+Interface is a sensor then the value would be that sensor, if not the value is nullptr. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDashboard_a132711a86f461aa679221f311af6ee9c}{number\+Of\+Sensors\+Per\+Menu}}
+\begin{DoxyCompactList}\small\item\em Number of sensors shown by menu. Max value 6. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classDashboard_a8312587c200243648871fccbf0e87709}\label{classDashboard_a8312587c200243648871fccbf0e87709}} 
 bool {\bfseries allowed\+To\+Exit}
 \item 
 \mbox{\Hypertarget{classDashboard_a8bd7f18e0dd376af0ab0a57e161da23b}\label{classDashboard_a8bd7f18e0dd376af0ab0a57e161da23b}} 
 std\+::vector$<$ \mbox{\hyperlink{classUser}{User}} $>$ {\bfseries new\+Users}
+\item 
+\mbox{\Hypertarget{classDashboard_a195ff1d9211d9f9c3e9b815491b12462}\label{classDashboard_a195ff1d9211d9f9c3e9b815491b12462}} 
+std\+::vector$<$ \mbox{\hyperlink{classUser}{User}} $>$ {\bfseries delete\+Users}
 \end{DoxyCompactItemize}
 
 
@@ -247,6 +257,19 @@ Exits the dashboard and finishes the program.
 \begin{DoxySeeAlso}{See also}
 clean\+Sensor 
 \end{DoxySeeAlso}
+\mbox{\Hypertarget{classDashboard_a26b85b0675cd829462e8421de305639b}\label{classDashboard_a26b85b0675cd829462e8421de305639b}} 
+\index{Dashboard@{Dashboard}!getDeleteUsers@{getDeleteUsers}}
+\index{getDeleteUsers@{getDeleteUsers}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{getDeleteUsers()}{getDeleteUsers()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUser}{User}}$>$ Dashboard\+::get\+Delete\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the vector of users to delete. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+User$>$ 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classDashboard_ae7d9b58184a050bdfc0b512d4234f3fd}\label{classDashboard_ae7d9b58184a050bdfc0b512d4234f3fd}} 
 \index{Dashboard@{Dashboard}!getNewUsers@{getNewUsers}}
 \index{getNewUsers@{getNewUsers}!Dashboard@{Dashboard}}
@@ -288,6 +311,19 @@ Shifts the main menu n pages.
 {\em n} & Number of pages to shift ( positive to the right ) \\
 \hline
 \end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classDashboard_a132711a86f461aa679221f311af6ee9c}\label{classDashboard_a132711a86f461aa679221f311af6ee9c}} 
+\index{Dashboard@{Dashboard}!numberOfSensorsPerMenu@{numberOfSensorsPerMenu}}
+\index{numberOfSensorsPerMenu@{numberOfSensorsPerMenu}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{numberOfSensorsPerMenu}{numberOfSensorsPerMenu}}
+{\footnotesize\ttfamily int Dashboard\+::number\+Of\+Sensors\+Per\+Menu\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Number of sensors shown by menu. Max value 6. 
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

@@ -25,13 +25,13 @@ Database::Database(){
     inUsersFile.read (reinterpret_cast <char *>(&user), 
       sizeof (User));
   }
-
   std::filesystem::copy("server/database/users.dat", "server/database/users.dat~",std::filesystem::copy_options::update_existing);
   //User *user1 = new User("10000","1234567A","paco");
   //UserConfig *user2Config = new UserConfig("ENT",{255,255,255},{0,0,150},{200,200,0});
   //User *user2 = new User(*user2Config,"20000","1234527J", "juan");
   //Admin *admin1 = new Admin("30000","1234567C", "ELBOSS");
   //this->user.insert(*user1);
+  //this->user.insert(*user2);
   //this->user.insert(*user2);
   //this->user.insert(*admin1);
 }
@@ -58,7 +58,27 @@ void Database::addUsers(std::vector<User> newUsers){
   }
 };
 
+void Database::deleteUsers(std::vector<User> deleteUsers){
+  if (deleteUsers.empty()) return;
+  if (this->user.size() == 1) return;
+  
+  std::set<User> updatedUsers;  
+  for (User deleteUser : deleteUsers){
+    for (User i: this->user){
+      if (!(i.isSameEmployeeNumber(deleteUser.getEmployeeNumber()) && i.isSameNIF(deleteUser.getNIF()))){
+        updatedUsers.insert(i);
+      }
+    }
+  }
+  this->user.clear();
+  this->user = updatedUsers;
+};
+
 Database::~Database(){
+  // Delete the file and create it again
+  std::filesystem::remove("server/database/users.dat" );
+  std::ofstream { "server/database/users.dat" };
+
   std::fstream outUsersFile ("server/database/users.dat", std::ios::in | std::ios::out | std::ios::binary); // ios::in will require an existing file
   if (!outUsersFile){
     // Create file if it doesn't exist

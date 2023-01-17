@@ -37,6 +37,7 @@ class Dashboard{
     * @return false = cannot change interface
     */
     bool changeInterface(std::string newInterface = "");
+    void setNumberOfSensorsPerMenu(int numOfSensorsPerMenu);
     /**
     * @brief Adds all the current sensors to the dashboard
     * @note Only called at the start of the program
@@ -81,6 +82,12 @@ class Dashboard{
      * @return std::vector<User> 
      */
     std::vector<User> getNewUsers(){return this->newUsers;};
+    /**
+     * @brief Get the vector of users to delete
+     * 
+     * @return std::vector<User> 
+     */
+    std::vector<User> getDeleteUsers(){return this->deleteUsers;};
     /**
     * @brief Exits the dashboard and finishes the program
     * @see cleanSensor
@@ -128,8 +135,14 @@ class Dashboard{
      * @brief If the currentInterface is a sensor then the value would be that sensor, if not the value is nullptr
      */
     Sensor * currentSensor;
+    /**
+     * @brief Number of sensors shown by menu. Max value 6
+     * 
+     */
+    int numberOfSensorsPerMenu ;
     bool allowedToExit;
     std::vector<User> newUsers;
+    std::vector<User> deleteUsers;
 
 private:
   static Dashboard* singleDashboard;

@@ -106,6 +106,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>showMainMenu<
 <tr class="memitem:aef27a85e48af95a081c21aaec82b366c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDashboard.html#aef27a85e48af95a081c21aaec82b366c">changeInterface</a> (std::string newInterface=&quot;&quot;)</td></tr>
 <tr class="memdesc:aef27a85e48af95a081c21aaec82b366c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the current interface to the input one.  <a href="classDashboard.html#aef27a85e48af95a081c21aaec82b366c">More...</a><br /></td></tr>
 <tr class="separator:aef27a85e48af95a081c21aaec82b366c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7dda3d2560320d81e8b85a5a63308b5"><td class="memItemLeft" align="right" valign="top"><a id="ad7dda3d2560320d81e8b85a5a63308b5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setNumberOfSensorsPerMenu</b> (int numOfSensorsPerMenu)</td></tr>
+<tr class="separator:ad7dda3d2560320d81e8b85a5a63308b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ca43807bdee5a145328ef9062cb623c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDashboard.html#a2ca43807bdee5a145328ef9062cb623c">addToMainMenu</a> ()</td></tr>
 <tr class="memdesc:a2ca43807bdee5a145328ef9062cb623c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds all the current sensors to the dashboard.  <a href="classDashboard.html#a2ca43807bdee5a145328ef9062cb623c">More...</a><br /></td></tr>
 <tr class="separator:a2ca43807bdee5a145328ef9062cb623c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,6 +130,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>showMainMenu<
 <tr class="memitem:ae7d9b58184a050bdfc0b512d4234f3fd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classUser.html">User</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDashboard.html#ae7d9b58184a050bdfc0b512d4234f3fd">getNewUsers</a> ()</td></tr>
 <tr class="memdesc:ae7d9b58184a050bdfc0b512d4234f3fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the New Users vector.  <a href="classDashboard.html#ae7d9b58184a050bdfc0b512d4234f3fd">More...</a><br /></td></tr>
 <tr class="separator:ae7d9b58184a050bdfc0b512d4234f3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b85b0675cd829462e8421de305639b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classUser.html">User</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDashboard.html#a26b85b0675cd829462e8421de305639b">getDeleteUsers</a> ()</td></tr>
+<tr class="memdesc:a26b85b0675cd829462e8421de305639b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the vector of users to delete.  <a href="classDashboard.html#a26b85b0675cd829462e8421de305639b">More...</a><br /></td></tr>
+<tr class="separator:a26b85b0675cd829462e8421de305639b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a783ee7cdf51ebbce302d50d2d38dd3eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDashboard.html#a783ee7cdf51ebbce302d50d2d38dd3eb">exit</a> ()</td></tr>
 <tr class="memdesc:a783ee7cdf51ebbce302d50d2d38dd3eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exits the dashboard and finishes the program.  <a href="classDashboard.html#a783ee7cdf51ebbce302d50d2d38dd3eb">More...</a><br /></td></tr>
 <tr class="separator:a783ee7cdf51ebbce302d50d2d38dd3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,12 +190,18 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <a class="el" href="classSensor.html">Sensor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDashboard.html#a17a15dd4e91111f87826c508bdc12916">currentSensor</a></td></tr>
 <tr class="memdesc:a17a15dd4e91111f87826c508bdc12916"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the currentInterface is a sensor then the value would be that sensor, if not the value is nullptr. <br /></td></tr>
 <tr class="separator:a17a15dd4e91111f87826c508bdc12916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132711a86f461aa679221f311af6ee9c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDashboard.html#a132711a86f461aa679221f311af6ee9c">numberOfSensorsPerMenu</a></td></tr>
+<tr class="memdesc:a132711a86f461aa679221f311af6ee9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of sensors shown by menu. Max value 6.  <a href="classDashboard.html#a132711a86f461aa679221f311af6ee9c">More...</a><br /></td></tr>
+<tr class="separator:a132711a86f461aa679221f311af6ee9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8312587c200243648871fccbf0e87709"><td class="memItemLeft" align="right" valign="top"><a id="a8312587c200243648871fccbf0e87709"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>allowedToExit</b></td></tr>
 <tr class="separator:a8312587c200243648871fccbf0e87709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bd7f18e0dd376af0ab0a57e161da23b"><td class="memItemLeft" align="right" valign="top"><a id="a8bd7f18e0dd376af0ab0a57e161da23b"></a>
 std::vector&lt; <a class="el" href="classUser.html">User</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>newUsers</b></td></tr>
 <tr class="separator:a8bd7f18e0dd376af0ab0a57e161da23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a195ff1d9211d9f9c3e9b815491b12462"><td class="memItemLeft" align="right" valign="top"><a id="a195ff1d9211d9f9c3e9b815491b12462"></a>
+std::vector&lt; <a class="el" href="classUser.html">User</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>deleteUsers</b></td></tr>
+<tr class="separator:a195ff1d9211d9f9c3e9b815491b12462"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a00115991c39a1793e1fb0dd01a09ea97"></a>
@@ -446,6 +458,34 @@ false = cannot change interface </dd></dl>
 
 </div>
 </div>
+<a id="a26b85b0675cd829462e8421de305639b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26b85b0675cd829462e8421de305639b">&#9670;&nbsp;</a></span>getDeleteUsers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classUser.html">User</a>&gt; Dashboard::getDeleteUsers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the vector of users to delete. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::vector&lt;User&gt; </dd></dl>
+
+</div>
+</div>
 <a id="ae7d9b58184a050bdfc0b512d4234f3fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae7d9b58184a050bdfc0b512d4234f3fd">&#9670;&nbsp;</a></span>getNewUsers()</h2>
 
@@ -517,6 +557,31 @@ false = cannot change interface </dd></dl>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a132711a86f461aa679221f311af6ee9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a132711a86f461aa679221f311af6ee9c">&#9670;&nbsp;</a></span>numberOfSensorsPerMenu</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dashboard::numberOfSensorsPerMenu</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of sensors shown by menu. Max value 6. </p>
 
 </div>
 </div>

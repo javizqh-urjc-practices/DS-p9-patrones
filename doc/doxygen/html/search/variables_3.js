@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sensor_251',['sensor',['../classDashboard.html#af375fed50c85669633ae7d49b32ecdb7',1,'Dashboard']]]
+  ['numberofsensorspermenu_258',['numberOfSensorsPerMenu',['../classDashboard.html#a132711a86f461aa679221f311af6ee9c',1,'Dashboard']]]
 ];
