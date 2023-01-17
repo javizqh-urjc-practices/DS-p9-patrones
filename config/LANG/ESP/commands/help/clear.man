@@ -1,0 +1,1 @@
+clear    limpia el terminal

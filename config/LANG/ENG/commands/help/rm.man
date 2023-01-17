@@ -1,1 +1,1 @@
-rm <sensor_id>|<employee_number> <employee_nif>
+rm <sensor_id>|<employee_number> <employee_nif>  removes the sensor or the user

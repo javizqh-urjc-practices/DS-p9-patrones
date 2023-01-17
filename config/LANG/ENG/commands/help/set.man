@@ -1,1 +1,1 @@
-set {on|off|area|val|state} [new_value]
+set (<on|off> /or/ <area|val|state> <new_value>)  set sensor value

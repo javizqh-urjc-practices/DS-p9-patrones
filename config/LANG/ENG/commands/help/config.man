@@ -1,1 +1,1 @@
-config
+config   enter config menu

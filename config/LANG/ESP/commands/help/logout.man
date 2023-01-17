@@ -1,0 +1,1 @@
+logout    cierra la sesión

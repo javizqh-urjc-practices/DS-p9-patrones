@@ -1,1 +1,1 @@
-background <r_value> <g_value> <b_value>
+background <r_value> <g_value> <b_value>   change the background to the rgb value

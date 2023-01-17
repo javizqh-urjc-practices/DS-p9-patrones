@@ -1,1 +1,1 @@
-user <employee_number> <employee_nif> [name] 
+user <employee_number> <employee_nif> [name]    create a new user

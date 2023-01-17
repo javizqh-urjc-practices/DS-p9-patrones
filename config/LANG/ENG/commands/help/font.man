@@ -1,1 +1,1 @@
-font <r_value> <g_value> <b_value>
+font <r_value> <g_value> <b_value>   change the font to the rgb value

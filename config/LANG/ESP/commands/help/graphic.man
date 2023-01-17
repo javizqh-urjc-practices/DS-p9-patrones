@@ -1,0 +1,1 @@
+graphic <r_value> <g_value> <b_value>   cambia la gráfica al color rgb

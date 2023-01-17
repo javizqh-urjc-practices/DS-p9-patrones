@@ -1,0 +1,1 @@
+add <sensor_type>    crea un nuevo sensor

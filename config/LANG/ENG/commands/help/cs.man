@@ -1,1 +1,1 @@
-cs <sensor_id|..>
+cs <sensor_id|..|config>    change the current menu

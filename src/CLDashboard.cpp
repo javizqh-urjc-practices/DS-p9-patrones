@@ -57,7 +57,7 @@ void CLDashboard::readCommand(){
       if (command[0].compare("ls") == 0){ lineNumber++; listSensor();}
       else if (command[0].compare("left") == 0) changeMainMenu(-1);
       else if (command[0].compare("right") == 0) changeMainMenu(1);
-      else if (command[0].compare("log") == 0) std::cout << this->user->getTimestamp();
+      else if (command[0].compare("log") == 0) { printColor(this->user->getTimestamp(),*user->getConfiguration()->getFontColor(),*user->getConfiguration()->getBackgroundColor());newLine();lineNumber++;}
       else if (command[0].compare("clear") == 0) { lineNumber=0; clearCustomTerminal(*this->user,10);;}
       else if (command[0].compare("logout") == 0){ logout(); break;}
       else if (command[0].compare("exit") == 0){ exit(); break;}

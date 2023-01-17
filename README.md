@@ -2,6 +2,16 @@
 ![Logo](doc/media/logo.png)
 
 Manage all your sensor from a single interface
+## Index
+ * [Features](#feature)
+ * [Requirements](#requirements)
+ * [Installation](#installation)
+ * [Execution](#execution)
+ * [CLI Options](#cli-options)
+ * [Interface Termminal Commands](#interface-termminal-commands)
+ * [Documentation](#documentation)
+ * [Design pattern used](#design-pattern-used)
+
 ## Features
   * 2 Languages supported: English and Spanish
   * Almost total configuration of the interface
@@ -62,6 +72,31 @@ man jveh
   * -b / --background: Change the login background color to specified rgb values
   * -f / --font: Change the login font color to specified rgb values
   * -l / --logo: Change the login logo color to specified rgb values
+
+## Interface Termminal Commands
+To know more about the following commands type man <command>.
+  * add
+  * admin
+  * back
+  * background
+  * clear
+  * config
+  * cs
+  * exit
+  * font
+  * graphic
+  * lang
+  * left
+  * log
+  * logout
+  * ls
+  * man
+  * name
+  * right
+  * rm
+  * set
+  * update
+  * user
 
 ## Documentation
 

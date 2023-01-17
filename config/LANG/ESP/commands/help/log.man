@@ -1,0 +1,1 @@
+log    muestra el último tiempo de inicio de sesión

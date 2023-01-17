@@ -1,0 +1,1 @@
+ls   muestra los sensores del menu

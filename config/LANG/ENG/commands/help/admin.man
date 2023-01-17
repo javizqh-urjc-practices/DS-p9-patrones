@@ -1,1 +1,1 @@
-admin <employee_number> <employee_nif> [name] 
+admin <employee_number> <employee_nif> [name]    create a new admin

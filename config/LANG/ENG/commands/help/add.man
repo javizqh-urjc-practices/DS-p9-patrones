@@ -1,1 +1,1 @@
-add <sensor_type>
+add <sensor_type>    creates a new sensor

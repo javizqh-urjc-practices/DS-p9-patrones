@@ -1,1 +1,1 @@
-man <command>
+man <command>   print manual

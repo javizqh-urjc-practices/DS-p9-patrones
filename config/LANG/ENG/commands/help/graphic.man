@@ -1,1 +1,1 @@
-graphic <r_value> <g_value> <b_value>
+graphic <r_value> <g_value> <b_value>   change the graphics to the rgb value

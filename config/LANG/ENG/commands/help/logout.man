@@ -1,1 +1,1 @@
-logout
+logout    log out user

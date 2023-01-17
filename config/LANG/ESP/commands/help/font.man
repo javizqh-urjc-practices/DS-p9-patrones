@@ -1,0 +1,1 @@
+font <r_value> <g_value> <b_value>   cambia la fuente al color rgb
