@@ -44,22 +44,6 @@ Dashboard::Dashboard(User &user){
   }
 
   // End loading from file
-  
-  //Sensor *sensor1 = Sensor::Create("thermometer");
-  //Sensor *sensor2 = Sensor::Create("humidity");
-  //Sensor *sensor3 = Sensor::Create("humidity");
-  //Sensor *sensor4 = Sensor::Create("airquality");
-  //Sensor *sensor5 = Sensor::Create("moisture");
-  //Sensor *sensor6 = Sensor::Create("rgbcamera");
-  //Sensor *sensor7 = Sensor::Create("bwcamera");
-  //this->sensor.push_back(sensor1);
-  //this->sensor.push_back(sensor2);
-  //this->sensor.push_back(sensor3);
-  //this->sensor.push_back(sensor4);
-  //this->sensor.push_back(sensor5);
-  //this->sensor.push_back(sensor6);
-  //this->sensor.push_back(sensor7);
-  //addToMainMenu();
 }
 
 Dashboard* Dashboard::singleDashboard = nullptr;

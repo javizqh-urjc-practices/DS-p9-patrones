@@ -26,14 +26,11 @@ Database::Database(){
       sizeof (User));
   }
   std::filesystem::copy("server/database/users.dat", "server/database/users.dat~",std::filesystem::copy_options::update_existing);
-  //User *user1 = new User("10000","1234567A","paco");
-  //UserConfig *user2Config = new UserConfig("ENT",{255,255,255},{0,0,150},{200,200,0});
-  //User *user2 = new User(*user2Config,"20000","1234527J", "juan");
-  //Admin *admin1 = new Admin("30000","1234567C", "ELBOSS");
-  //this->user.insert(*user1);
-  //this->user.insert(*user2);
-  //this->user.insert(*user2);
-  //this->user.insert(*admin1);
+
+  if (this->user.empty()){
+    Admin *defaultAdmin = new Admin("98765","1234567A");
+    this->user.insert(*defaultAdmin);
+  }
 }
 
 void Database::getUser(std::string employeeNumber, std::string NIF, User &user){
