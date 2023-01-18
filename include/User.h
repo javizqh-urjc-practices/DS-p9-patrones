@@ -30,9 +30,21 @@ public:
   User(std::string number = "00000",std::string nif = "00000000",std::string name = "default");
   User(UserConfig UserConfig, std::string number = "00000",std::string nif = "00000000",std::string name = "default");
   ~User();
+  /**
+  * @brief Set the user NIF
+  * 
+  * @param NIF 
+  */
+  void setNIF(std::string);
   std::string getNIF() const {return NIF;};
   bool isSameNIF(std::string NIF);
 
+  /**
+  * @brief Set the user employee number
+  * 
+  * @param employeeNumber 
+  */
+  void setEmployeeNumber(std::string);
   std::string getEmployeeNumber() const {return employeeNumber;};
   bool isSameEmployeeNumber(std::string employeeNumber);
   /**
@@ -63,18 +75,6 @@ public:
   bool operator<(const User &) const;
   bool operator==(const User &) const;
 
-  /**
-  * @brief Set the user NIF
-  * 
-  * @param NIF 
-  */
-  void setNIF(std::string);
-  /**
-  * @brief Set the user employee number
-  * 
-  * @param employeeNumber 
-  */
-  void setEmployeeNumber(std::string);
 
   void setConfig(UserConfig newConfig) {userConfiguration = newConfig;};
   void setLanguage(std::string newLanguage){ userConfiguration.setLanguage(newLanguage);};

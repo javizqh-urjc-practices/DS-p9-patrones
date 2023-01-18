@@ -10,6 +10,7 @@ Manage all your sensor from a single interface
  * [First execution and account set up](#First-execution-and-account-set-up)
  * [CLI Options](#cli-options)
  * [Interface Termminal Commands](#interface-termminal-commands)
+ * [Available sensors](#available-sensors)
  * [Documentation](#documentation)
  * [Design pattern used](#design-pattern-used)
 
@@ -118,9 +119,18 @@ To know more about the following commands type man <command>.
   * update
   * user
 
+## Available sensors
+The following types are the ones supported:
+  * Camera RGB: rgbcamera
+  * Camera BW: bwcamera
+  * Thermometer: thermometer
+  * Moisture sensor: moisture
+  * Humidity sensor: humidity
+  * Air quality sensor: airquality
+
 ## Documentation
 
-The documentation can be read from the following [pdf](/doc/doxygen/refman.pdf).
+The documentation can be read from the following [pdf](/doc/doxygen/refman.pdf). If you want to see the class diagram, it can be read from the next [pdf](doc/uml/ClassDiagram.pdf).
 
 You can also see the documentation if you have the repository cloned opening the file /doc/doxygen/html/index.html in a search engine.
 

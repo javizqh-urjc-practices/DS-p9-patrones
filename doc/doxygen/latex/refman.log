@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.12.23)  18 JAN 2023 19:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.12.23)  18 JAN 2023 21:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1439,12 +1439,12 @@ Overfull \hbox (70.30438pt too wide) in paragraph at lines 66--68
  []
 
 [48] [49]
-Underfull \hbox (badness 10000) detected at line 143
+Underfull \hbox (badness 10000) detected at line 134
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 156
+Underfull \hbox (badness 10000) detected at line 147
 [][][]
  []
 
@@ -1453,7 +1453,7 @@ Underfull \hbox (badness 10000) detected at line 156
 pdfTeX warning: pdflatex (file ./classThermometer__inherit__graph.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
 >
-<classThermometer__inherit__graph.pdf, id=2572, 163.61125pt x 156.585pt>
+<classThermometer__inherit__graph.pdf, id=2570, 163.61125pt x 156.585pt>
 File: classThermometer__inherit__graph.pdf Graphic file (type pdf)
 <use classThermometer__inherit__graph.pdf>
 Package pdftex.def Info: classThermometer__inherit__graph.pdf  used on input li
@@ -1464,35 +1464,35 @@ ne 9.
 pdfTeX warning: pdflatex (file ./classThermometer__coll__graph.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
 >
-<classThermometer__coll__graph.pdf, id=2581, 163.61125pt x 156.585pt>
+<classThermometer__coll__graph.pdf, id=2579, 163.61125pt x 156.585pt>
 File: classThermometer__coll__graph.pdf Graphic file (type pdf)
 <use classThermometer__coll__graph.pdf>
 Package pdftex.def Info: classThermometer__coll__graph.pdf  used on input line 
 18.
 (pdftex.def)             Requested size: 163.0pt x 155.99922pt.
  [50]) (./classUser.tex <./classUser__inherit__graph.pdf>
-<classUser__inherit__graph.pdf, id=2601, 128.48pt x 156.585pt>
+<classUser__inherit__graph.pdf, id=2599, 128.48pt x 156.585pt>
 File: classUser__inherit__graph.pdf Graphic file (type pdf)
 <use classUser__inherit__graph.pdf>
 Package pdftex.def Info: classUser__inherit__graph.pdf  used on input line 9.
 (pdftex.def)             Requested size: 128.0pt x 156.01117pt.
- [51] <./classUser__coll__graph.pdf>
-<classUser__coll__graph.pdf, id=2619, 207.77625pt x 224.84pt>
+ <./classUser__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classUser__coll__graph.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>
+<classUser__coll__graph.pdf, id=2607, 207.77625pt x 224.84pt>
 File: classUser__coll__graph.pdf Graphic file (type pdf)
 <use classUser__coll__graph.pdf>
 Package pdftex.def Info: classUser__coll__graph.pdf  used on input line 18.
 (pdftex.def)             Requested size: 207.0pt x 224.00919pt.
-
+ [51]
 Underfull \hbox (badness 3803) in paragraph at lines 26--29
 [][] \T1/phv/b/n/10 User \T1/phv/m/n/10 ([] [], std[]::string num-ber="00000", 
 std[]::string nif="00000000", std[]::string
  []
 
-[52]
-Overfull \vbox (27.91313pt too high) has occurred while \output is active []
-
-
-[53]
+[52] [53]
 Underfull \hbox (badness 10000) detected at line 152
 [][][]
  []
@@ -1507,7 +1507,10 @@ Underfull \hbox (badness 10000) detected at line 178
 [][][]
  []
 
-[54]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54]
 Overfull \hbox (0.98067pt too wide) in paragraph at lines 1--1
 []\T1/phv/m/sl/10 N[] 
  []
@@ -1517,7 +1520,7 @@ Overfull \hbox (0.98067pt too wide) in paragraph at lines 1--1
 pdfTeX warning: pdflatex (file ./classUserConfig__inherit__graph.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
 >
-<classUserConfig__inherit__graph.pdf, id=2696, 151.56625pt x 156.585pt>
+<classUserConfig__inherit__graph.pdf, id=2694, 151.56625pt x 156.585pt>
 File: classUserConfig__inherit__graph.pdf Graphic file (type pdf)
 <use classUserConfig__inherit__graph.pdf>
 Package pdftex.def Info: classUserConfig__inherit__graph.pdf  used on input lin
@@ -1528,20 +1531,20 @@ e 9.
 pdfTeX warning: pdflatex (file ./classUserConfig__coll__graph.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >
-<classUserConfig__coll__graph.pdf, id=2704, 151.56625pt x 156.585pt>
+<classUserConfig__coll__graph.pdf, id=2702, 151.56625pt x 156.585pt>
 File: classUserConfig__coll__graph.pdf Graphic file (type pdf)
 <use classUserConfig__coll__graph.pdf>
 Package pdftex.def Info: classUserConfig__coll__graph.pdf  used on input line 1
 8.
 (pdftex.def)             Requested size: 151.0pt x 156.00162pt.
-
-Underfull \vbox (badness 1082) has occurred while \output is active []
-
- [55])
-[56]
+ [55]) [56]
 Chapter 5.
-(./Admin_8h.tex <./Admin_8h__incl.pdf>
-<Admin_8h__incl.pdf, id=2737, 450.68375pt x 325.215pt>
+(./Admin_8h.tex <./Admin_8h__incl.pdf
+
+pdfTeX warning: pdflatex (file ./Admin_8h__incl.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+>
+<Admin_8h__incl.pdf, id=2733, 450.68375pt x 325.215pt>
 File: Admin_8h__incl.pdf Graphic file (type pdf)
 <use Admin_8h__incl.pdf>
 Package pdftex.def Info: Admin_8h__incl.pdf  used on input line 13.
@@ -1551,7 +1554,7 @@ Package pdftex.def Info: Admin_8h__incl.pdf  used on input line 13.
 pdfTeX warning: pdflatex (file ./Admin_8h__dep__incl.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
 >
-<Admin_8h__dep__incl.pdf, id=2745, 1062.97125pt x 381.425pt>
+<Admin_8h__dep__incl.pdf, id=2741, 1062.97125pt x 381.425pt>
 File: Admin_8h__dep__incl.pdf Graphic file (type pdf)
 <use Admin_8h__dep__incl.pdf>
 Package pdftex.def Info: Admin_8h__dep__incl.pdf  used on input line 20.
@@ -1582,7 +1585,7 @@ Underfull \hbox (badness 10000) detected at line 42
  []
 
 ) (./AirQuality_8h.tex <./AirQuality_8h__incl.pdf>
-<AirQuality_8h__incl.pdf, id=2763, 584.1825pt x 212.795pt>
+<AirQuality_8h__incl.pdf, id=2759, 584.1825pt x 212.795pt>
 File: AirQuality_8h__incl.pdf Graphic file (type pdf)
 <use AirQuality_8h__incl.pdf>
 Package pdftex.def Info: AirQuality_8h__incl.pdf  used on input line 13.
@@ -1592,7 +1595,7 @@ Package pdftex.def Info: AirQuality_8h__incl.pdf  used on input line 13.
 pdfTeX warning: pdflatex (file ./AirQuality_8h__dep__incl.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
 >
-<AirQuality_8h__dep__incl.pdf, id=2771, 287.0725pt x 156.585pt>
+<AirQuality_8h__dep__incl.pdf, id=2767, 287.0725pt x 156.585pt>
 File: AirQuality_8h__dep__incl.pdf Graphic file (type pdf)
 <use AirQuality_8h__dep__incl.pdf>
 Package pdftex.def Info: AirQuality_8h__dep__incl.pdf  used on input line 20.
@@ -1618,7 +1621,7 @@ Underfull \hbox (badness 10000) detected at line 42
  []
 
 ) (./CameraBW_8h.tex [59] <./CameraBW_8h__incl.pdf>
-<CameraBW_8h__incl.pdf, id=2800, 584.1825pt x 212.795pt>
+<CameraBW_8h__incl.pdf, id=2795, 584.1825pt x 212.795pt>
 File: CameraBW_8h__incl.pdf Graphic file (type pdf)
 <use CameraBW_8h__incl.pdf>
 Package pdftex.def Info: CameraBW_8h__incl.pdf  used on input line 13.
@@ -1628,7 +1631,7 @@ Package pdftex.def Info: CameraBW_8h__incl.pdf  used on input line 13.
 pdfTeX warning: pdflatex (file ./CameraBW_8h__dep__incl.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
 >
-<CameraBW_8h__dep__incl.pdf, id=2808, 293.095pt x 156.585pt>
+<CameraBW_8h__dep__incl.pdf, id=2804, 293.095pt x 156.585pt>
 File: CameraBW_8h__dep__incl.pdf Graphic file (type pdf)
 <use CameraBW_8h__dep__incl.pdf>
 Package pdftex.def Info: CameraBW_8h__dep__incl.pdf  used on input line 20.
@@ -1654,7 +1657,7 @@ Underfull \hbox (badness 10000) detected at line 42
  []
 
 ) (./CameraRGB_8h.tex [60] <./CameraRGB_8h__incl.pdf>
-<CameraRGB_8h__incl.pdf, id=2828, 584.1825pt x 212.795pt>
+<CameraRGB_8h__incl.pdf, id=2824, 584.1825pt x 212.795pt>
 File: CameraRGB_8h__incl.pdf Graphic file (type pdf)
 <use CameraRGB_8h__incl.pdf>
 Package pdftex.def Info: CameraRGB_8h__incl.pdf  used on input line 13.
@@ -1664,7 +1667,7 @@ Package pdftex.def Info: CameraRGB_8h__incl.pdf  used on input line 13.
 pdfTeX warning: pdflatex (file ./CameraRGB_8h__dep__incl.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
 >
-<CameraRGB_8h__dep__incl.pdf, id=2836, 299.1175pt x 156.585pt>
+<CameraRGB_8h__dep__incl.pdf, id=2832, 299.1175pt x 156.585pt>
 File: CameraRGB_8h__dep__incl.pdf Graphic file (type pdf)
 <use CameraRGB_8h__dep__incl.pdf>
 Package pdftex.def Info: CameraRGB_8h__dep__incl.pdf  used on input line 20.
@@ -1690,7 +1693,7 @@ Underfull \hbox (badness 10000) detected at line 42
  []
 
 ) (./CLDashboard_8h.tex [61] <./CLDashboard_8h__incl.pdf>
-<CLDashboard_8h__incl.pdf, id=2856, 905.3825pt x 493.845pt>
+<CLDashboard_8h__incl.pdf, id=2852, 905.3825pt x 493.845pt>
 File: CLDashboard_8h__incl.pdf Graphic file (type pdf)
 <use CLDashboard_8h__incl.pdf>
 Package pdftex.def Info: CLDashboard_8h__incl.pdf  used on input line 14.
@@ -1700,7 +1703,7 @@ Package pdftex.def Info: CLDashboard_8h__incl.pdf  used on input line 14.
 pdfTeX warning: pdflatex (file ./CLDashboard_8h__dep__incl.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >
-<CLDashboard_8h__dep__incl.pdf, id=2864, 325.215pt x 156.585pt>
+<CLDashboard_8h__dep__incl.pdf, id=2860, 325.215pt x 156.585pt>
 File: CLDashboard_8h__dep__incl.pdf Graphic file (type pdf)
 <use CLDashboard_8h__dep__incl.pdf>
 Package pdftex.def Info: CLDashboard_8h__dep__incl.pdf  used on input line 21.
@@ -1726,7 +1729,7 @@ Underfull \hbox (badness 10000) detected at line 43
  []
 
 ) (./CLInterface_8h.tex <./CLInterface_8h__incl.pdf>
-<CLInterface_8h__incl.pdf, id=2884, 816.04875pt x 550.055pt>
+<CLInterface_8h__incl.pdf, id=2880, 816.04875pt x 550.055pt>
 File: CLInterface_8h__incl.pdf Graphic file (type pdf)
 <use CLInterface_8h__incl.pdf>
 Package pdftex.def Info: CLInterface_8h__incl.pdf  used on input line 15.
@@ -1736,7 +1739,7 @@ Package pdftex.def Info: CLInterface_8h__incl.pdf  used on input line 15.
 pdfTeX warning: pdflatex (file ./CLInterface_8h__dep__incl.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >
-<CLInterface_8h__dep__incl.pdf, id=2892, 307.1475pt x 156.585pt>
+<CLInterface_8h__dep__incl.pdf, id=2888, 307.1475pt x 156.585pt>
 File: CLInterface_8h__dep__incl.pdf Graphic file (type pdf)
 <use CLInterface_8h__dep__incl.pdf>
 Package pdftex.def Info: CLInterface_8h__dep__incl.pdf  used on input line 22.
@@ -1762,13 +1765,13 @@ Underfull \hbox (badness 10000) detected at line 44
  []
 
 ) (./CLIUtils_8h.tex <./CLIUtils_8h__incl.pdf>
-<CLIUtils_8h__incl.pdf, id=2910, 922.44624pt x 325.215pt>
+<CLIUtils_8h__incl.pdf, id=2906, 922.44624pt x 325.215pt>
 File: CLIUtils_8h__incl.pdf Graphic file (type pdf)
 <use CLIUtils_8h__incl.pdf>
 Package pdftex.def Info: CLIUtils_8h__incl.pdf  used on input line 19.
 (pdftex.def)             Requested size: 350.0pt x 123.39441pt.
  [64] <./CLIUtils_8h__dep__incl.pdf>
-<CLIUtils_8h__dep__incl.pdf, id=2926, 1324.95pt x 212.795pt>
+<CLIUtils_8h__dep__incl.pdf, id=2922, 1324.95pt x 212.795pt>
 File: CLIUtils_8h__dep__incl.pdf Graphic file (type pdf)
 <use CLIUtils_8h__dep__incl.pdf>
 Package pdftex.def Info: CLIUtils_8h__dep__incl.pdf  used on input line 26.
@@ -1798,7 +1801,7 @@ Underfull \hbox (badness 10000) detected at line 109
 pdfTeX warning: pdflatex (file ./CLLoginInterface_8h__incl.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >
-<CLLoginInterface_8h__incl.pdf, id=2978, 915.42pt x 493.845pt>
+<CLLoginInterface_8h__incl.pdf, id=2974, 915.42pt x 493.845pt>
 File: CLLoginInterface_8h__incl.pdf Graphic file (type pdf)
 <use CLLoginInterface_8h__incl.pdf>
 Package pdftex.def Info: CLLoginInterface_8h__incl.pdf  used on input line 14.
@@ -1808,7 +1811,7 @@ Package pdftex.def Info: CLLoginInterface_8h__incl.pdf  used on input line 14.
 pdfTeX warning: pdflatex (file ./CLLoginInterface_8h__dep__incl.pdf): PDF inclu
 sion: multiple pdfs with page group included in a single page
 >
-<CLLoginInterface_8h__dep__incl.pdf, id=2993, 359.3425pt x 156.585pt>
+<CLLoginInterface_8h__dep__incl.pdf, id=2989, 359.3425pt x 156.585pt>
 File: CLLoginInterface_8h__dep__incl.pdf Graphic file (type pdf)
 <use CLLoginInterface_8h__dep__incl.pdf>
 Package pdftex.def Info: CLLoginInterface_8h__dep__incl.pdf  used on input line
@@ -1835,7 +1838,7 @@ Underfull \hbox (badness 10000) detected at line 43
  []
 
 ) (./CLMenu_8h.tex <./CLMenu_8h__incl.pdf>
-<CLMenu_8h__incl.pdf, id=3013, 686.565pt x 437.635pt>
+<CLMenu_8h__incl.pdf, id=3009, 686.565pt x 437.635pt>
 File: CLMenu_8h__incl.pdf Graphic file (type pdf)
 <use CLMenu_8h__incl.pdf>
 Package pdftex.def Info: CLMenu_8h__incl.pdf  used on input line 14.
@@ -1845,7 +1848,7 @@ Package pdftex.def Info: CLMenu_8h__incl.pdf  used on input line 14.
 pdfTeX warning: pdflatex (file ./CLMenu_8h__dep__incl.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
 >
-<CLMenu_8h__dep__incl.pdf, id=3021, 273.02pt x 156.585pt>
+<CLMenu_8h__dep__incl.pdf, id=3017, 273.02pt x 156.585pt>
 File: CLMenu_8h__dep__incl.pdf Graphic file (type pdf)
 <use CLMenu_8h__dep__incl.pdf>
 Package pdftex.def Info: CLMenu_8h__dep__incl.pdf  used on input line 21.
@@ -1871,7 +1874,7 @@ Underfull \hbox (badness 10000) detected at line 43
  []
 
 ) (./CLMenuBar_8h.tex <./CLMenuBar_8h__incl.pdf>
-<CLMenuBar_8h__incl.pdf, id=3041, 971.63pt x 437.635pt>
+<CLMenuBar_8h__incl.pdf, id=3037, 971.63pt x 437.635pt>
 File: CLMenuBar_8h__incl.pdf Graphic file (type pdf)
 <use CLMenuBar_8h__incl.pdf>
 Package pdftex.def Info: CLMenuBar_8h__incl.pdf  used on input line 14.
@@ -1881,7 +1884,7 @@ Package pdftex.def Info: CLMenuBar_8h__incl.pdf  used on input line 14.
 pdfTeX warning: pdflatex (file ./CLMenuBar_8h__dep__incl.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
 >
-<CLMenuBar_8h__dep__incl.pdf, id=3049, 307.1475pt x 156.585pt>
+<CLMenuBar_8h__dep__incl.pdf, id=3045, 307.1475pt x 156.585pt>
 File: CLMenuBar_8h__dep__incl.pdf Graphic file (type pdf)
 <use CLMenuBar_8h__dep__incl.pdf>
 Package pdftex.def Info: CLMenuBar_8h__dep__incl.pdf  used on input line 21.
@@ -1907,13 +1910,13 @@ Underfull \hbox (badness 10000) detected at line 43
  []
 
 ) (./Config_8h.tex <./Config_8h__incl.pdf>
-<Config_8h__incl.pdf, id=3067, 271.0125pt x 156.585pt>
+<Config_8h__incl.pdf, id=3063, 271.0125pt x 156.585pt>
 File: Config_8h__incl.pdf Graphic file (type pdf)
 <use Config_8h__incl.pdf>
 Package pdftex.def Info: Config_8h__incl.pdf  used on input line 10.
 (pdftex.def)             Requested size: 270.0pt x 156.0064pt.
  [71] <./Config_8h__dep__incl.pdf>
-<Config_8h__dep__incl.pdf, id=3083, 1373.13pt x 550.055pt>
+<Config_8h__dep__incl.pdf, id=3079, 1373.13pt x 550.055pt>
 File: Config_8h__dep__incl.pdf Graphic file (type pdf)
 <use Config_8h__dep__incl.pdf>
 Package pdftex.def Info: Config_8h__dep__incl.pdf  used on input line 17.
@@ -1939,7 +1942,7 @@ Underfull \hbox (badness 10000) detected at line 37
  []
 
 ) (./Dashboard_8h.tex [72] <./Dashboard_8h__incl.pdf>
-<Dashboard_8h__incl.pdf, id=3102, 913.4125pt x 437.635pt>
+<Dashboard_8h__incl.pdf, id=3098, 913.4125pt x 437.635pt>
 File: Dashboard_8h__incl.pdf Graphic file (type pdf)
 <use Dashboard_8h__incl.pdf>
 Package pdftex.def Info: Dashboard_8h__incl.pdf  used on input line 16.
@@ -1949,7 +1952,7 @@ Package pdftex.def Info: Dashboard_8h__incl.pdf  used on input line 16.
 pdfTeX warning: pdflatex (file ./Dashboard_8h__dep__incl.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
 >
-<Dashboard_8h__dep__incl.pdf, id=3110, 622.325pt x 269.005pt>
+<Dashboard_8h__dep__incl.pdf, id=3106, 622.325pt x 269.005pt>
 File: Dashboard_8h__dep__incl.pdf Graphic file (type pdf)
 <use Dashboard_8h__dep__incl.pdf>
 Package pdftex.def Info: Dashboard_8h__dep__incl.pdf  used on input line 23.
@@ -1975,7 +1978,7 @@ Underfull \hbox (badness 10000) detected at line 45
  []
 
 ) (./Database_8h.tex <./Database_8h__incl.pdf>
-<Database_8h__incl.pdf, id=3130, 763.85374pt x 381.425pt>
+<Database_8h__incl.pdf, id=3126, 763.85374pt x 381.425pt>
 File: Database_8h__incl.pdf Graphic file (type pdf)
 <use Database_8h__incl.pdf>
 Package pdftex.def Info: Database_8h__incl.pdf  used on input line 18.
@@ -1985,7 +1988,7 @@ Package pdftex.def Info: Database_8h__incl.pdf  used on input line 18.
 pdfTeX warning: pdflatex (file ./Database_8h__dep__incl.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
 >
-<Database_8h__dep__incl.pdf, id=3138, 699.61375pt x 325.215pt>
+<Database_8h__dep__incl.pdf, id=3134, 699.61375pt x 325.215pt>
 File: Database_8h__dep__incl.pdf Graphic file (type pdf)
 <use Database_8h__dep__incl.pdf>
 Package pdftex.def Info: Database_8h__dep__incl.pdf  used on input line 25.
@@ -2011,7 +2014,7 @@ Underfull \hbox (badness 10000) detected at line 47
  []
 
 ) (./GlobalConfig_8h.tex <./GlobalConfig_8h__incl.pdf>
-<GlobalConfig_8h__incl.pdf, id=3157, 271.0125pt x 212.795pt>
+<GlobalConfig_8h__incl.pdf, id=3153, 271.0125pt x 212.795pt>
 File: GlobalConfig_8h__incl.pdf Graphic file (type pdf)
 <use GlobalConfig_8h__incl.pdf>
 Package pdftex.def Info: GlobalConfig_8h__incl.pdf  used on input line 8.
@@ -2021,7 +2024,7 @@ Package pdftex.def Info: GlobalConfig_8h__incl.pdf  used on input line 8.
 pdfTeX warning: pdflatex (file ./GlobalConfig_8h__dep__incl.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
 >
-<GlobalConfig_8h__dep__incl.pdf, id=3165, 711.65875pt x 325.215pt>
+<GlobalConfig_8h__dep__incl.pdf, id=3161, 711.65875pt x 325.215pt>
 File: GlobalConfig_8h__dep__incl.pdf Graphic file (type pdf)
 <use GlobalConfig_8h__dep__incl.pdf>
 Package pdftex.def Info: GlobalConfig_8h__dep__incl.pdf  used on input line 15.
@@ -2048,7 +2051,7 @@ Underfull \hbox (badness 10000) detected at line 35
  []
 
 ) (./Humidity_8h.tex <./Humidity_8h__incl.pdf>
-<Humidity_8h__incl.pdf, id=3183, 584.1825pt x 212.795pt>
+<Humidity_8h__incl.pdf, id=3179, 584.1825pt x 212.795pt>
 File: Humidity_8h__incl.pdf Graphic file (type pdf)
 <use Humidity_8h__incl.pdf>
 Package pdftex.def Info: Humidity_8h__incl.pdf  used on input line 13.
@@ -2058,7 +2061,7 @@ Package pdftex.def Info: Humidity_8h__incl.pdf  used on input line 13.
 pdfTeX warning: pdflatex (file ./Humidity_8h__dep__incl.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
 >
-<Humidity_8h__dep__incl.pdf, id=3191, 285.065pt x 156.585pt>
+<Humidity_8h__dep__incl.pdf, id=3187, 285.065pt x 156.585pt>
 File: Humidity_8h__dep__incl.pdf Graphic file (type pdf)
 <use Humidity_8h__dep__incl.pdf>
 Package pdftex.def Info: Humidity_8h__dep__incl.pdf  used on input line 20.
@@ -2084,7 +2087,7 @@ Underfull \hbox (badness 10000) detected at line 42
  []
 
 ) (./Interface_8h.tex [77] <./Interface_8h__incl.pdf>
-<Interface_8h__incl.pdf, id=3219, 1004.75375pt x 493.845pt>
+<Interface_8h__incl.pdf, id=3215, 1004.75375pt x 493.845pt>
 File: Interface_8h__incl.pdf Graphic file (type pdf)
 <use Interface_8h__incl.pdf>
 Package pdftex.def Info: Interface_8h__incl.pdf  used on input line 15.
@@ -2094,7 +2097,7 @@ Package pdftex.def Info: Interface_8h__incl.pdf  used on input line 15.
 pdfTeX warning: pdflatex (file ./Interface_8h__dep__incl.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
 >
-<Interface_8h__dep__incl.pdf, id=3227, 406.51875pt x 212.795pt>
+<Interface_8h__dep__incl.pdf, id=3223, 406.51875pt x 212.795pt>
 File: Interface_8h__dep__incl.pdf Graphic file (type pdf)
 <use Interface_8h__dep__incl.pdf>
 Package pdftex.def Info: Interface_8h__dep__incl.pdf  used on input line 22.
@@ -2120,7 +2123,7 @@ Underfull \hbox (badness 10000) detected at line 44
  []
 
 ) (./LoginInterface_8h.tex <./LoginInterface_8h__incl.pdf>
-<LoginInterface_8h__incl.pdf, id=3247, 618.31pt x 437.635pt>
+<LoginInterface_8h__incl.pdf, id=3243, 618.31pt x 437.635pt>
 File: LoginInterface_8h__incl.pdf Graphic file (type pdf)
 <use LoginInterface_8h__incl.pdf>
 Package pdftex.def Info: LoginInterface_8h__incl.pdf  used on input line 14.
@@ -2130,7 +2133,7 @@ Package pdftex.def Info: LoginInterface_8h__incl.pdf  used on input line 14.
 pdfTeX warning: pdflatex (file ./LoginInterface_8h__dep__incl.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >
-<LoginInterface_8h__dep__incl.pdf, id=3255, 699.61375pt x 269.005pt>
+<LoginInterface_8h__dep__incl.pdf, id=3251, 699.61375pt x 269.005pt>
 File: LoginInterface_8h__dep__incl.pdf Graphic file (type pdf)
 <use LoginInterface_8h__dep__incl.pdf>
 Package pdftex.def Info: LoginInterface_8h__dep__incl.pdf  used on input line 2
@@ -2157,13 +2160,13 @@ Underfull \hbox (badness 10000) detected at line 43
  []
 
 ) (./main_8h.tex <./main_8h__incl.pdf>
-<main_8h__incl.pdf, id=3274, 959.585pt x 550.055pt>
+<main_8h__incl.pdf, id=3269, 959.585pt x 550.055pt>
 File: main_8h__incl.pdf Graphic file (type pdf)
 <use main_8h__incl.pdf>
 Package pdftex.def Info: main_8h__incl.pdf  used on input line 15.
 (pdftex.def)             Requested size: 350.0pt x 200.62991pt.
  [80] <./main_8h__dep__incl.pdf>
-<main_8h__dep__incl.pdf, id=3289, 169.63374pt x 156.585pt>
+<main_8h__dep__incl.pdf, id=3285, 169.63374pt x 156.585pt>
 File: main_8h__dep__incl.pdf Graphic file (type pdf)
 <use main_8h__dep__incl.pdf>
 Package pdftex.def Info: main_8h__dep__incl.pdf  used on input line 22.
@@ -2189,7 +2192,7 @@ Underfull \hbox (badness 10000) detected at line 48
  []
 
 ) (./Menu_8h.tex <./Menu_8h__incl.pdf>
-<Menu_8h__incl.pdf, id=3310, 837.1275pt x 381.425pt>
+<Menu_8h__incl.pdf, id=3306, 837.1275pt x 381.425pt>
 File: Menu_8h__incl.pdf Graphic file (type pdf)
 <use Menu_8h__incl.pdf>
 Package pdftex.def Info: Menu_8h__incl.pdf  used on input line 14.
@@ -2199,7 +2202,7 @@ Package pdftex.def Info: Menu_8h__incl.pdf  used on input line 14.
 pdfTeX warning: pdflatex (file ./Menu_8h__dep__incl.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >
-<Menu_8h__dep__incl.pdf, id=3318, 659.46375pt x 325.215pt>
+<Menu_8h__dep__incl.pdf, id=3314, 659.46375pt x 325.215pt>
 File: Menu_8h__dep__incl.pdf Graphic file (type pdf)
 <use Menu_8h__dep__incl.pdf>
 Package pdftex.def Info: Menu_8h__dep__incl.pdf  used on input line 21.
@@ -2225,7 +2228,7 @@ Underfull \hbox (badness 10000) detected at line 43
  []
 
 ) (./MenuBar_8h.tex <./MenuBar_8h__incl.pdf>
-<MenuBar_8h__incl.pdf, id=3337, 499.8675pt x 381.425pt>
+<MenuBar_8h__incl.pdf, id=3333, 499.8675pt x 381.425pt>
 File: MenuBar_8h__incl.pdf Graphic file (type pdf)
 <use MenuBar_8h__incl.pdf>
 Package pdftex.def Info: MenuBar_8h__incl.pdf  used on input line 14.
@@ -2235,7 +2238,7 @@ Package pdftex.def Info: MenuBar_8h__incl.pdf  used on input line 14.
 pdfTeX warning: pdflatex (file ./MenuBar_8h__dep__incl.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
 >
-<MenuBar_8h__dep__incl.pdf, id=3345, 694.595pt x 325.215pt>
+<MenuBar_8h__dep__incl.pdf, id=3341, 694.595pt x 325.215pt>
 File: MenuBar_8h__dep__incl.pdf Graphic file (type pdf)
 <use MenuBar_8h__dep__incl.pdf>
 Package pdftex.def Info: MenuBar_8h__dep__incl.pdf  used on input line 21.
@@ -2261,13 +2264,13 @@ Underfull \hbox (badness 10000) detected at line 43
  []
 
 ) (./MinTerminalSize_8h.tex <./MinTerminalSize_8h__incl.pdf>
-<MinTerminalSize_8h__incl.pdf, id=3364, 224.84pt x 156.585pt>
+<MinTerminalSize_8h__incl.pdf, id=3360, 224.84pt x 156.585pt>
 File: MinTerminalSize_8h__incl.pdf Graphic file (type pdf)
 <use MinTerminalSize_8h__incl.pdf>
 Package pdftex.def Info: MinTerminalSize_8h__incl.pdf  used on input line 8.
 (pdftex.def)             Requested size: 224.0pt x 156.0064pt.
  [84] <./MinTerminalSize_8h__dep__incl.pdf>
-<MinTerminalSize_8h__dep__incl.pdf, id=3379, 1324.95pt x 269.005pt>
+<MinTerminalSize_8h__dep__incl.pdf, id=3375, 1324.95pt x 269.005pt>
 File: MinTerminalSize_8h__dep__incl.pdf Graphic file (type pdf)
 <use MinTerminalSize_8h__dep__incl.pdf>
 Package pdftex.def Info: MinTerminalSize_8h__dep__incl.pdf  used on input line 
@@ -2298,13 +2301,13 @@ Underfull \hbox (badness 10000) detected at line 35
 pdfTeX warning: pdflatex (file ./Moisture_8h__incl.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
 >
-<Moisture_8h__incl.pdf, id=3391, 584.1825pt x 212.795pt>
+<Moisture_8h__incl.pdf, id=3386, 584.1825pt x 212.795pt>
 File: Moisture_8h__incl.pdf Graphic file (type pdf)
 <use Moisture_8h__incl.pdf>
 Package pdftex.def Info: Moisture_8h__incl.pdf  used on input line 13.
 (pdftex.def)             Requested size: 350.0pt x 127.49614pt.
  [85] <./Moisture_8h__dep__incl.pdf>
-<Moisture_8h__dep__incl.pdf, id=3407, 283.0575pt x 156.585pt>
+<Moisture_8h__dep__incl.pdf, id=3403, 283.0575pt x 156.585pt>
 File: Moisture_8h__dep__incl.pdf Graphic file (type pdf)
 <use Moisture_8h__dep__incl.pdf>
 Package pdftex.def Info: Moisture_8h__dep__incl.pdf  used on input line 20.
@@ -2334,13 +2337,13 @@ Underfull \hbox (badness 10000) detected at line 42
 pdfTeX warning: pdflatex (file ./NotFoundArgument_8h__incl.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >
-<NotFoundArgument_8h__incl.pdf, id=3418, 238.8925pt x 156.585pt>
+<NotFoundArgument_8h__incl.pdf, id=3414, 238.8925pt x 156.585pt>
 File: NotFoundArgument_8h__incl.pdf Graphic file (type pdf)
 <use NotFoundArgument_8h__incl.pdf>
 Package pdftex.def Info: NotFoundArgument_8h__incl.pdf  used on input line 8.
 (pdftex.def)             Requested size: 238.0pt x 155.99922pt.
  [86] <./NotFoundArgument_8h__dep__incl.pdf>
-<NotFoundArgument_8h__dep__incl.pdf, id=3434, 238.8925pt x 212.795pt>
+<NotFoundArgument_8h__dep__incl.pdf, id=3430, 238.8925pt x 212.795pt>
 File: NotFoundArgument_8h__dep__incl.pdf Graphic file (type pdf)
 <use NotFoundArgument_8h__dep__incl.pdf>
 Package pdftex.def Info: NotFoundArgument_8h__dep__incl.pdf  used on input line
@@ -2367,7 +2370,7 @@ Underfull \hbox (badness 10000) detected at line 35
  []
 
 ) (./NotFoundUserException_8h.tex <./NotFoundUserException_8h__incl.pdf>
-<NotFoundUserException_8h__incl.pdf, id=3452, 261.97874pt x 156.585pt>
+<NotFoundUserException_8h__incl.pdf, id=3448, 261.97874pt x 156.585pt>
 File: NotFoundUserException_8h__incl.pdf Graphic file (type pdf)
 <use NotFoundUserException_8h__incl.pdf>
 Package pdftex.def Info: NotFoundUserException_8h__incl.pdf  used on input line
@@ -2378,7 +2381,7 @@ Package pdftex.def Info: NotFoundUserException_8h__incl.pdf  used on input line
 pdfTeX warning: pdflatex (file ./NotFoundUserException_8h__dep__incl.pdf): PDF 
 inclusion: multiple pdfs with page group included in a single page
 >
-<NotFoundUserException_8h__dep__incl.pdf, id=3460, 261.97874pt x 156.585pt>
+<NotFoundUserException_8h__dep__incl.pdf, id=3456, 261.97874pt x 156.585pt>
 File: NotFoundUserException_8h__dep__incl.pdf Graphic file (type pdf)
 <use NotFoundUserException_8h__dep__incl.pdf>
 Package pdftex.def Info: NotFoundUserException_8h__dep__incl.pdf  used on input
@@ -2405,7 +2408,7 @@ Underfull \hbox (badness 10000) detected at line 42
  []
 
 ) (./Sensor_8h.tex <./Sensor_8h__incl.pdf>
-<Sensor_8h__incl.pdf, id=3479, 584.1825pt x 156.585pt>
+<Sensor_8h__incl.pdf, id=3475, 584.1825pt x 156.585pt>
 File: Sensor_8h__incl.pdf Graphic file (type pdf)
 <use Sensor_8h__incl.pdf>
 Package pdftex.def Info: Sensor_8h__incl.pdf  used on input line 19.
@@ -2415,7 +2418,7 @@ Package pdftex.def Info: Sensor_8h__incl.pdf  used on input line 19.
 pdfTeX warning: pdflatex (file ./Sensor_8h__dep__incl.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
 >
-<Sensor_8h__dep__incl.pdf, id=3487, 1492.57625pt x 381.425pt>
+<Sensor_8h__dep__incl.pdf, id=3483, 1492.57625pt x 381.425pt>
 File: Sensor_8h__dep__incl.pdf Graphic file (type pdf)
 <use Sensor_8h__dep__incl.pdf>
 Package pdftex.def Info: Sensor_8h__dep__incl.pdf  used on input line 26.
@@ -2441,7 +2444,7 @@ Underfull \hbox (badness 10000) detected at line 48
  []
 
 ) (./Thermometer_8h.tex <./Thermometer_8h__incl.pdf>
-<Thermometer_8h__incl.pdf, id=3507, 584.1825pt x 212.795pt>
+<Thermometer_8h__incl.pdf, id=3503, 584.1825pt x 212.795pt>
 File: Thermometer_8h__incl.pdf Graphic file (type pdf)
 <use Thermometer_8h__incl.pdf>
 Package pdftex.def Info: Thermometer_8h__incl.pdf  used on input line 13.
@@ -2451,7 +2454,7 @@ Package pdftex.def Info: Thermometer_8h__incl.pdf  used on input line 13.
 pdfTeX warning: pdflatex (file ./Thermometer_8h__dep__incl.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >
-<Thermometer_8h__dep__incl.pdf, id=3516, 307.1475pt x 156.585pt>
+<Thermometer_8h__dep__incl.pdf, id=3511, 307.1475pt x 156.585pt>
 File: Thermometer_8h__dep__incl.pdf Graphic file (type pdf)
 <use Thermometer_8h__dep__incl.pdf>
 Package pdftex.def Info: Thermometer_8h__dep__incl.pdf  used on input line 20.
@@ -2477,7 +2480,7 @@ Underfull \hbox (badness 10000) detected at line 42
  []
 
 ) (./User_8h.tex <./User_8h__incl.pdf>
-<User_8h__incl.pdf, id=3536, 450.68375pt x 269.005pt>
+<User_8h__incl.pdf, id=3532, 450.68375pt x 269.005pt>
 File: User_8h__incl.pdf Graphic file (type pdf)
 <use User_8h__incl.pdf>
 Package pdftex.def Info: User_8h__incl.pdf  used on input line 18.
@@ -2487,7 +2490,7 @@ Package pdftex.def Info: User_8h__incl.pdf  used on input line 18.
 pdfTeX warning: pdflatex (file ./User_8h__dep__incl.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >
-<User_8h__dep__incl.pdf, id=3544, 1274.7625pt x 437.635pt>
+<User_8h__dep__incl.pdf, id=3540, 1274.7625pt x 437.635pt>
 File: User_8h__dep__incl.pdf Graphic file (type pdf)
 <use User_8h__dep__incl.pdf>
 Package pdftex.def Info: User_8h__dep__incl.pdf  used on input line 25.
@@ -2513,13 +2516,13 @@ Underfull \hbox (badness 10000) detected at line 47
  []
 
 ) (./UserConfig_8h.tex <./UserConfig_8h__incl.pdf>
-<UserConfig_8h__incl.pdf, id=3563, 271.0125pt x 212.795pt>
+<UserConfig_8h__incl.pdf, id=3559, 271.0125pt x 212.795pt>
 File: UserConfig_8h__incl.pdf Graphic file (type pdf)
 <use UserConfig_8h__incl.pdf>
 Package pdftex.def Info: UserConfig_8h__incl.pdf  used on input line 13.
 (pdftex.def)             Requested size: 270.0pt x 212.00868pt.
  [92] <./UserConfig_8h__dep__incl.pdf>
-<UserConfig_8h__dep__incl.pdf, id=3578, 1274.7625pt x 493.845pt>
+<UserConfig_8h__dep__incl.pdf, id=3574, 1274.7625pt x 493.845pt>
 File: UserConfig_8h__dep__incl.pdf Graphic file (type pdf)
 <use UserConfig_8h__dep__incl.pdf>
 Package pdftex.def Info: UserConfig_8h__dep__incl.pdf  used on input line 20.
@@ -2545,7 +2548,7 @@ Underfull \hbox (badness 10000) detected at line 42
  []
 
 ) (./Admin_8cpp.tex <./Admin_8cpp__incl.pdf>
-<Admin_8cpp__incl.pdf, id=3597, 450.68375pt x 381.425pt>
+<Admin_8cpp__incl.pdf, id=3593, 450.68375pt x 381.425pt>
 File: Admin_8cpp__incl.pdf Graphic file (type pdf)
 <use Admin_8cpp__incl.pdf>
 Package pdftex.def Info: Admin_8cpp__incl.pdf  used on input line 8.
@@ -2575,7 +2578,7 @@ Underfull \hbox (badness 10000) detected at line 23
 pdfTeX warning: pdflatex (file ./AirQuality_8cpp__incl.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
 >
-<AirQuality_8cpp__incl.pdf, id=3606, 584.1825pt x 269.005pt>
+<AirQuality_8cpp__incl.pdf, id=3602, 584.1825pt x 269.005pt>
 File: AirQuality_8cpp__incl.pdf Graphic file (type pdf)
 <use AirQuality_8cpp__incl.pdf>
 Package pdftex.def Info: AirQuality_8cpp__incl.pdf  used on input line 8.
@@ -2601,7 +2604,7 @@ Underfull \hbox (badness 10000) detected at line 23
  []
 
 ) (./CameraBW_8cpp.tex <./CameraBW_8cpp__incl.pdf>
-<CameraBW_8cpp__incl.pdf, id=3621, 584.1825pt x 269.005pt>
+<CameraBW_8cpp__incl.pdf, id=3617, 584.1825pt x 269.005pt>
 File: CameraBW_8cpp__incl.pdf Graphic file (type pdf)
 <use CameraBW_8cpp__incl.pdf>
 Package pdftex.def Info: CameraBW_8cpp__incl.pdf  used on input line 8.
@@ -2627,7 +2630,7 @@ Underfull \hbox (badness 10000) detected at line 23
  []
 
 ) (./CameraRGB_8cpp.tex <./CameraRGB_8cpp__incl.pdf>
-<CameraRGB_8cpp__incl.pdf, id=3639, 584.1825pt x 269.005pt>
+<CameraRGB_8cpp__incl.pdf, id=3635, 584.1825pt x 269.005pt>
 File: CameraRGB_8cpp__incl.pdf Graphic file (type pdf)
 <use CameraRGB_8cpp__incl.pdf>
 Package pdftex.def Info: CameraRGB_8cpp__incl.pdf  used on input line 8.
@@ -2657,7 +2660,7 @@ Underfull \hbox (badness 10000) detected at line 23
 pdfTeX warning: pdflatex (file ./CLDashboard_8cpp__incl.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
 >
-<CLDashboard_8cpp__incl.pdf, id=3648, 905.3825pt x 550.055pt>
+<CLDashboard_8cpp__incl.pdf, id=3644, 905.3825pt x 550.055pt>
 File: CLDashboard_8cpp__incl.pdf Graphic file (type pdf)
 <use CLDashboard_8cpp__incl.pdf>
 Package pdftex.def Info: CLDashboard_8cpp__incl.pdf  used on input line 8.
@@ -2683,7 +2686,7 @@ Underfull \hbox (badness 10000) detected at line 23
  []
 
 ) (./CLInterface_8cpp.tex <./CLInterface_8cpp__incl.pdf>
-<CLInterface_8cpp__incl.pdf, id=3663, 816.04875pt x 606.265pt>
+<CLInterface_8cpp__incl.pdf, id=3659, 816.04875pt x 606.265pt>
 File: CLInterface_8cpp__incl.pdf Graphic file (type pdf)
 <use CLInterface_8cpp__incl.pdf>
 Package pdftex.def Info: CLInterface_8cpp__incl.pdf  used on input line 8.
@@ -2709,7 +2712,7 @@ Underfull \hbox (badness 10000) detected at line 23
  []
 
 ) (./CLIUtils_8cpp.tex <./CLIUtils_8cpp__incl.pdf>
-<CLIUtils_8cpp__incl.pdf, id=3678, 922.44624pt x 381.425pt>
+<CLIUtils_8cpp__incl.pdf, id=3674, 922.44624pt x 381.425pt>
 File: CLIUtils_8cpp__incl.pdf Graphic file (type pdf)
 <use CLIUtils_8cpp__incl.pdf>
 Package pdftex.def Info: CLIUtils_8cpp__incl.pdf  used on input line 8.
@@ -2743,7 +2746,7 @@ Underfull \vbox (badness 2401) has occurred while \output is active []
 pdfTeX warning: pdflatex (file ./CLLoginInterface_8cpp__incl.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
 >
-<CLLoginInterface_8cpp__incl.pdf, id=3737, 915.42pt x 550.055pt>
+<CLLoginInterface_8cpp__incl.pdf, id=3733, 915.42pt x 550.055pt>
 File: CLLoginInterface_8cpp__incl.pdf Graphic file (type pdf)
 <use CLLoginInterface_8cpp__incl.pdf>
 Package pdftex.def Info: CLLoginInterface_8cpp__incl.pdf  used on input line 8.
@@ -2777,7 +2780,7 @@ Underfull \hbox (badness 10000) detected at line 23
 pdfTeX warning: pdflatex (file ./CLMenu_8cpp__incl.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
 >
-<CLMenu_8cpp__incl.pdf, id=3753, 686.565pt x 493.845pt>
+<CLMenu_8cpp__incl.pdf, id=3749, 686.565pt x 493.845pt>
 File: CLMenu_8cpp__incl.pdf Graphic file (type pdf)
 <use CLMenu_8cpp__incl.pdf>
 Package pdftex.def Info: CLMenu_8cpp__incl.pdf  used on input line 8.
@@ -2803,7 +2806,7 @@ Underfull \hbox (badness 10000) detected at line 23
  []
 
 ) (./CLMenuBar_8cpp.tex <./CLMenuBar_8cpp__incl.pdf>
-<CLMenuBar_8cpp__incl.pdf, id=3768, 971.63pt x 493.845pt>
+<CLMenuBar_8cpp__incl.pdf, id=3764, 971.63pt x 493.845pt>
 File: CLMenuBar_8cpp__incl.pdf Graphic file (type pdf)
 <use CLMenuBar_8cpp__incl.pdf>
 Package pdftex.def Info: CLMenuBar_8cpp__incl.pdf  used on input line 8.
@@ -2829,7 +2832,7 @@ Underfull \hbox (badness 10000) detected at line 23
  []
 
 ) (./Config_8cpp.tex <./Config_8cpp__incl.pdf>
-<Config_8cpp__incl.pdf, id=3783, 271.0125pt x 212.795pt>
+<Config_8cpp__incl.pdf, id=3779, 271.0125pt x 212.795pt>
 File: Config_8cpp__incl.pdf Graphic file (type pdf)
 <use Config_8cpp__incl.pdf>
 Package pdftex.def Info: Config_8cpp__incl.pdf  used on input line 8.
@@ -2855,7 +2858,7 @@ Underfull \hbox (badness 10000) detected at line 23
  []
 
 ) (./Dashboard_8cpp.tex <./Dashboard_8cpp__incl.pdf>
-<Dashboard_8cpp__incl.pdf, id=3798, 905.3825pt x 550.055pt>
+<Dashboard_8cpp__incl.pdf, id=3794, 905.3825pt x 550.055pt>
 File: Dashboard_8cpp__incl.pdf Graphic file (type pdf)
 <use Dashboard_8cpp__incl.pdf>
 Package pdftex.def Info: Dashboard_8cpp__incl.pdf  used on input line 9.
@@ -2881,7 +2884,7 @@ Underfull \hbox (badness 10000) detected at line 24
  []
 
 ) (./Database_8cpp.tex <./Database_8cpp__incl.pdf>
-<Database_8cpp__incl.pdf, id=3813, 847.165pt x 437.635pt>
+<Database_8cpp__incl.pdf, id=3809, 847.165pt x 437.635pt>
 File: Database_8cpp__incl.pdf Graphic file (type pdf)
 <use Database_8cpp__incl.pdf>
 Package pdftex.def Info: Database_8cpp__incl.pdf  used on input line 9.
@@ -2907,7 +2910,7 @@ Underfull \hbox (badness 10000) detected at line 24
  []
 
 ) (./GlobalConfig_8cpp.tex <./GlobalConfig_8cpp__incl.pdf>
-<GlobalConfig_8cpp__incl.pdf, id=3828, 271.0125pt x 269.005pt>
+<GlobalConfig_8cpp__incl.pdf, id=3824, 271.0125pt x 269.005pt>
 File: GlobalConfig_8cpp__incl.pdf Graphic file (type pdf)
 <use GlobalConfig_8cpp__incl.pdf>
 Package pdftex.def Info: GlobalConfig_8cpp__incl.pdf  used on input line 8.
@@ -2933,7 +2936,7 @@ Underfull \hbox (badness 10000) detected at line 23
  []
 
 ) (./Humidity_8cpp.tex <./Humidity_8cpp__incl.pdf>
-<Humidity_8cpp__incl.pdf, id=3845, 584.1825pt x 269.005pt>
+<Humidity_8cpp__incl.pdf, id=3841, 584.1825pt x 269.005pt>
 File: Humidity_8cpp__incl.pdf Graphic file (type pdf)
 <use Humidity_8cpp__incl.pdf>
 Package pdftex.def Info: Humidity_8cpp__incl.pdf  used on input line 8.
@@ -2959,7 +2962,7 @@ Underfull \hbox (badness 10000) detected at line 23
  []
 
 ) (./Interface_8cpp.tex <./Interface_8cpp__incl.pdf>
-<Interface_8cpp__incl.pdf, id=3860, 816.04875pt x 606.265pt>
+<Interface_8cpp__incl.pdf, id=3856, 816.04875pt x 606.265pt>
 File: Interface_8cpp__incl.pdf Graphic file (type pdf)
 <use Interface_8cpp__incl.pdf>
 Package pdftex.def Info: Interface_8cpp__incl.pdf  used on input line 9.
@@ -2985,7 +2988,7 @@ Underfull \hbox (badness 10000) detected at line 24
  []
 
 ) (./LoginInterface_8cpp.tex <./LoginInterface_8cpp__incl.pdf>
-<LoginInterface_8cpp__incl.pdf, id=3875, 1017.8025pt x 550.055pt>
+<LoginInterface_8cpp__incl.pdf, id=3871, 1017.8025pt x 550.055pt>
 File: LoginInterface_8cpp__incl.pdf Graphic file (type pdf)
 <use LoginInterface_8cpp__incl.pdf>
 Package pdftex.def Info: LoginInterface_8cpp__incl.pdf  used on input line 10.
@@ -3011,7 +3014,7 @@ Underfull \hbox (badness 10000) detected at line 25
  []
 
 ) (./main_8cpp.tex <./main_8cpp__incl.pdf>
-<main_8cpp__incl.pdf, id=3890, 959.585pt x 606.265pt>
+<main_8cpp__incl.pdf, id=3886, 959.585pt x 606.265pt>
 File: main_8cpp__incl.pdf Graphic file (type pdf)
 <use main_8cpp__incl.pdf>
 Package pdftex.def Info: main_8cpp__incl.pdf  used on input line 8.
@@ -3037,7 +3040,7 @@ Underfull \hbox (badness 10000) detected at line 29
  []
 
 ) (./Menu_8cpp.tex <./Menu_8cpp__incl.pdf>
-<Menu_8cpp__incl.pdf, id=3905, 680.5425pt x 493.845pt>
+<Menu_8cpp__incl.pdf, id=3901, 680.5425pt x 493.845pt>
 File: Menu_8cpp__incl.pdf Graphic file (type pdf)
 <use Menu_8cpp__incl.pdf>
 Package pdftex.def Info: Menu_8cpp__incl.pdf  used on input line 9.
@@ -3063,7 +3066,7 @@ Underfull \hbox (badness 10000) detected at line 24
  []
 
 ) (./MenuBar_8cpp.tex <./MenuBar_8cpp__incl.pdf>
-<MenuBar_8cpp__incl.pdf, id=3922, 971.63pt x 493.845pt>
+<MenuBar_8cpp__incl.pdf, id=3918, 971.63pt x 493.845pt>
 File: MenuBar_8cpp__incl.pdf Graphic file (type pdf)
 <use MenuBar_8cpp__incl.pdf>
 Package pdftex.def Info: MenuBar_8cpp__incl.pdf  used on input line 9.
@@ -3089,7 +3092,7 @@ Underfull \hbox (badness 10000) detected at line 24
  []
 
 ) (./Moisture_8cpp.tex <./Moisture_8cpp__incl.pdf>
-<Moisture_8cpp__incl.pdf, id=3938, 584.1825pt x 269.005pt>
+<Moisture_8cpp__incl.pdf, id=3934, 584.1825pt x 269.005pt>
 File: Moisture_8cpp__incl.pdf Graphic file (type pdf)
 <use Moisture_8cpp__incl.pdf>
 Package pdftex.def Info: Moisture_8cpp__incl.pdf  used on input line 8.
@@ -3115,7 +3118,7 @@ Underfull \hbox (badness 10000) detected at line 23
  []
 
 ) (./Sensor_8cpp.tex <./Sensor_8cpp__incl.pdf>
-<Sensor_8cpp__incl.pdf, id=3954, 653.44125pt x 269.005pt>
+<Sensor_8cpp__incl.pdf, id=3950, 653.44125pt x 269.005pt>
 File: Sensor_8cpp__incl.pdf Graphic file (type pdf)
 <use Sensor_8cpp__incl.pdf>
 Package pdftex.def Info: Sensor_8cpp__incl.pdf  used on input line 14.
@@ -3141,7 +3144,7 @@ Underfull \hbox (badness 10000) detected at line 29
  []
 
 ) (./Thermometer_8cpp.tex <./Thermometer_8cpp__incl.pdf>
-<Thermometer_8cpp__incl.pdf, id=3969, 584.1825pt x 269.005pt>
+<Thermometer_8cpp__incl.pdf, id=3965, 584.1825pt x 269.005pt>
 File: Thermometer_8cpp__incl.pdf Graphic file (type pdf)
 <use Thermometer_8cpp__incl.pdf>
 Package pdftex.def Info: Thermometer_8cpp__incl.pdf  used on input line 8.
@@ -3167,7 +3170,7 @@ Underfull \hbox (badness 10000) detected at line 23
  []
 
 ) (./User_8cpp.tex <./User_8cpp__incl.pdf>
-<User_8cpp__incl.pdf, id=3985, 450.68375pt x 325.215pt>
+<User_8cpp__incl.pdf, id=3981, 450.68375pt x 325.215pt>
 File: User_8cpp__incl.pdf Graphic file (type pdf)
 <use User_8cpp__incl.pdf>
 Package pdftex.def Info: User_8cpp__incl.pdf  used on input line 10.
@@ -3193,7 +3196,7 @@ Underfull \hbox (badness 10000) detected at line 31
  []
 
 ) (./UserConfig_8cpp.tex <./UserConfig_8cpp__incl.pdf>
-<UserConfig_8cpp__incl.pdf, id=4003, 271.0125pt x 269.005pt>
+<UserConfig_8cpp__incl.pdf, id=3999, 271.0125pt x 269.005pt>
 File: UserConfig_8cpp__incl.pdf Graphic file (type pdf)
 <use UserConfig_8cpp__incl.pdf>
 Package pdftex.def Info: UserConfig_8cpp__incl.pdf  used on input line 8.
@@ -3232,13 +3235,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 271.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 271.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 271.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 7DEE929407302EAE900FD1E00F07D21F;51281.
+(rerunfilecheck)             Checksum: 4C23B259A84BD5A26E190EADEFF578B3;51281.
  ) 
 Here is how much of TeX's memory you used:
- 18943 strings out of 481239
- 304764 string characters out of 5920376
- 585372 words of memory out of 5000000
- 32813 multiletter control sequences out of 15000+600000
+ 18938 strings out of 481239
+ 304568 string characters out of 5920376
+ 585261 words of memory out of 5000000
+ 32811 multiletter control sequences out of 15000+600000
  591905 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,96p,938b,627s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3255,10 +3258,10 @@ ve/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helve
 tic/uhvro8a.pfb>
-Output written on refman.pdf (131 pages, 1227842 bytes).
+Output written on refman.pdf (131 pages, 1227446 bytes).
 PDF statistics:
- 4472 PDF objects out of 5155 (max. 8388607)
- 3868 compressed objects within 39 object streams
- 918 named destinations out of 1000 (max. 500000)
+ 4468 PDF objects out of 5155 (max. 8388607)
+ 3863 compressed objects within 39 object streams
+ 915 named destinations out of 1000 (max. 500000)
  2521 words of extra memory for PDF output out of 10000 (max. 10000000)
 

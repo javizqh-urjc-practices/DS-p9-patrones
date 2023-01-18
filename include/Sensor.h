@@ -74,8 +74,6 @@ protected:
   char magnitude [11];
   bool active;
   int valPerMin;
-  void addNewData(int);
-  void removeOldData(int);
 };
 
 #endif

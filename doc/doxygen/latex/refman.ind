@@ -3,7 +3,7 @@
   \item {addNewSensor}
     \subitem {Dashboard}, \hyperpage{29}
   \item {addTimestamp}
-    \subitem {User}, \hyperpage{54}
+    \subitem {User}, \hyperpage{53}
   \item {addToMainMenu}
     \subitem {Dashboard}, \hyperpage{29}
   \item {Admin}, \hyperpage{7}
@@ -104,7 +104,7 @@
   \item {getDeleteUsers}
     \subitem {Dashboard}, \hyperpage{32}
   \item {getName}
-    \subitem {User}, \hyperpage{54}
+    \subitem {User}, \hyperpage{53}
   \item {getNewUsers}
     \subitem {Dashboard}, \hyperpage{32}
   \item {getTimestamp}
@@ -265,9 +265,9 @@
 
   \indexspace
 
-  \item {User}, \hyperpage{52}
-    \subitem {addTimestamp}, \hyperpage{54}
-    \subitem {getName}, \hyperpage{54}
+  \item {User}, \hyperpage{51}
+    \subitem {addTimestamp}, \hyperpage{53}
+    \subitem {getName}, \hyperpage{53}
     \subitem {getTimestamp}, \hyperpage{54}
     \subitem {hasAdminPermission}, \hyperpage{54}
     \subitem {setEmployeeNumber}, \hyperpage{54}
