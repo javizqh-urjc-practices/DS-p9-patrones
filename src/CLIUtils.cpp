@@ -259,10 +259,16 @@ void printGraphic(const std::vector<int> data, std::array<int,3> frontColor, std
   const int rangeX = maxRangeX / scale;
   const int rangeY = maxRangeY / scale;
 
-  int maxY = * max_element(data.begin(), data.end());
+  int maxY ;
+  if (data.size() > 0) maxY = * max_element(data.begin(), data.end());
+  else maxY = 100;
+
   if (maxY != 0) maxY = ((maxY / 10) + 1) * 10;
 
-  int minY = * min_element(data.begin(), data.end());
+  int minY ;
+  if (data.size() > 0) int minY = * min_element(data.begin(), data.end());
+  else minY = 0;
+
   if (minY != 0) minY = ((minY / 10) - 1) * 10;
   
   if ((maxY - minY) / (rangeY / stepY) % stepY == 2) maxY += 10; 
