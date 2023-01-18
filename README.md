@@ -7,6 +7,7 @@ Manage all your sensor from a single interface
  * [Requirements](#requirements)
  * [Installation](#installation)
  * [Execution](#execution)
+ * [First execution and account set up](#First-execution-and-account-set-up)
  * [CLI Options](#cli-options)
  * [Interface Termminal Commands](#interface-termminal-commands)
  * [Documentation](#documentation)
@@ -65,6 +66,25 @@ To know more about the options available use:
 ```bash
 man jveh
 ```
+
+## First execution and account set up 
+
+When running the program for the first time, you need to login with the following number and NIF:
+  * Default: employee number = 98765  NIF = 1234567A  Privileges = admin
+
+After login with that user create your own administrator account using the command admin. See [Interface Termminal Commands](#interface-termminal-commands).
+```
+admin <newEmployeeNumber> <newNIF> [name]
+```
+Remember that the employee number must be 5 digits or less and the NIF must be 8 digits (normally 7 digits and a letter).
+
+After creating the new account, logout and login with the new account.
+
+Then remove the default account using:
+```
+rm 98765 1234567A
+```
+You have finshed the setting up your admin account
 
 ## CLI Options
   * -u / --user: Logins with the specified number and NIF
