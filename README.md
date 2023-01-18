@@ -9,7 +9,7 @@ Manage all your sensor from a single interface
  * [Execution](#execution)
  * [First execution and account set up](#First-execution-and-account-set-up)
  * [CLI Options](#cli-options)
- * [Interface Termminal Commands](#interface-termminal-commands)
+ * [Interface Terminal Commands](#interface-terminal-commands)
  * [Available sensors](#available-sensors)
  * [Documentation](#documentation)
  * [Design pattern used](#design-pattern-used)
@@ -73,7 +73,7 @@ man jveh
 When running the program for the first time, you need to login with the following number and NIF:
   * Default: employee number = 98765  NIF = 1234567A  Privileges = admin
 
-After login with that user create your own administrator account using the command admin. See [Interface Termminal Commands](#interface-termminal-commands).
+After login with that user create your own administrator account using the command admin. See [Interface Terminal Commands](#interface-terminal-commands).
 ```
 admin <newEmployeeNumber> <newNIF> [name]
 ```
@@ -94,7 +94,7 @@ You have finshed the setting up your admin account
   * -f / --font: Change the login font color to specified rgb values
   * -l / --logo: Change the login logo color to specified rgb values
 
-## Interface Termminal Commands
+## Interface Terminal Commands
 To know more about the following commands type man <command>.
   * add
   * admin
@@ -130,7 +130,9 @@ The following types are the ones supported:
 
 ## Documentation
 
-The documentation can be read from the following [pdf](/doc/doxygen/refman.pdf). If you want to see the class diagram, it can be read from the next [pdf](doc/uml/ClassDiagram.pdf).
+The documentation can be read from the following [pdf](/doc/doxygen/refman.pdf). 
+
+If you want to see the class diagram, it can be read from the next [pdf](doc/uml/ClassDiagram.pdf).
 
 You can also see the documentation if you have the repository cloned opening the file /doc/doxygen/html/index.html in a search engine.
 
